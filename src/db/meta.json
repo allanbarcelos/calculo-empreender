@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "siteName": "Cálculo Empreender",
+  "lastReview": "2026-11-25",
+  "developer": { "name": "Barcelos.Dev", "url": "https://barcelos.dev" },
+  "repository": "https://github.com/allanbarcelos/calculo-empreender",
+  "notes": "Every list item may carry validFrom/validTo (YYYY-MM-DD). The site picks the version in force on the reference date. Values carry a kind: official (government table), market (published market average) or estimate (our estimate, explained in notes)."
+}

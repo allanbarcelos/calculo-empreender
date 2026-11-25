@@ -1,0 +1,300 @@
+{
+  "explainers": [
+    {
+      "id": "setup",
+      "validFrom": "2026-01-01",
+      "title": "Como estimamos a estrutura",
+      "kind": "steps",
+      "items": [
+        {
+          "title": "Aluguel.",
+          "text": "Média do aluguel comercial da cidade por m², com a origem indicada (índice oficial ou de mercado, ou estimativa). No interior, usamos uma fração do aluguel da capital. O valor real depende do ponto: rua de grande movimento custa mais."
+        },
+        {
+          "title": "Caução e meses sem vender.",
+          "text": "Antes de abrir, você paga a caução e o aluguel dos meses de reforma e licenças. Negociar carência de 1 a 3 meses reduz esse gasto."
+        },
+        {
+          "title": "Equipamentos.",
+          "text": "Preços de equipamentos novos em lojas e fabricantes. Usados podem custar 30% a 50% menos, mas sem garantia."
+        },
+        {
+          "title": "Reforma.",
+          "text": "Custo médio por m² para adequar um ponto comercial já construído. Negócios de alimentos precisam de exaustão, pias e revestimentos laváveis exigidos pela vigilância sanitária."
+        }
+      ]
+    },
+    {
+      "id": "legal",
+      "validFrom": "2026-01-01",
+      "title": "MEI ou Simples Nacional?",
+      "kind": "steps",
+      "items": [
+        {
+          "title": "MEI.",
+          "text": "Para quem fatura até {{limit|money}} por ano, com no máximo 1 empregado e em uma ocupação permitida. O imposto é fixo: {{das|money}} por mês, que já inclui o INSS do dono ([LC 123/2006, art. 18-A](source:simplesLaw))."
+        },
+        {
+          "title": "Simples Nacional.",
+          "text": "Para ME (até R$ 360 mil por ano) e EPP (até R$ 4,8 milhões). O imposto é um percentual do faturamento que cresce com a receita dos últimos 12 meses. Nos primeiros 12 meses, a lei usa a média dos meses já faturados ([LC 123/2006, art. 18](source:simplesLaw))."
+        },
+        {
+          "title": "Taxas de abertura.",
+          "text": "O MEI se registra de graça no [Portal do Empreendedor](source:meiPortal). ME e EPP pagam a Junta Comercial do estado. Atividades de baixo risco costumam ser dispensadas de alvará e vistoria prévia ([Lei 13.874/2019](source:economicFreedomLaw)), mas negócios de alimentos e de beleza precisam de licença sanitária."
+        },
+        {
+          "title": "Reforma tributária.",
+          "text": "A partir de 2027, CBS e IBS começam a substituir PIS, COFINS, ICMS e ISS. As empresas do Simples Nacional continuam pagando tudo no DAS ([LC 214/2025](source:taxReformLaw))."
+        }
+      ]
+    },
+    {
+      "id": "projection",
+      "validFrom": "2026-01-01",
+      "title": "Como projetamos as vendas e o lucro",
+      "kind": "steps",
+      "items": [
+        {
+          "title": "Vendas.",
+          "text": "Faturamento maduro = ticket médio × clientes por dia × dias abertos. Um negócio novo começa vendendo menos: o 1º mês tem {{start|percent}} das vendas maduras, que crescem em linha reta até o mês {{months|number}}."
+        },
+        {
+          "title": "Custos variáveis.",
+          "text": "Mercadorias e insumos (CMV), taxa do cartão sobre as vendas no cartão e, no Simples, o imposto sobre o faturamento."
+        },
+        {
+          "title": "Custos fixos.",
+          "text": "Aluguel, energia, água, contador, sistema, marketing, folha, sua retirada e, no MEI, o DAS. Eles não mudam com as vendas."
+        },
+        {
+          "title": "Retorno do investimento.",
+          "text": "Mês em que o lucro acumulado paga tudo o que foi gasto para abrir. A reserva de capital de giro não conta como gasto: ela existe para cobrir os meses de prejuízo do começo."
+        }
+      ]
+    }
+  ],
+  "callouts": [
+    {
+      "id": "businessProfile",
+      "tone": "info",
+      "title": "{{label}}: o que já vem preenchido",
+      "text": "Ponto de cerca de **{{area}} m²**, equipe inicial de {{staff}}. CNAE {{cnae}}, Simples Nacional Anexo {{annex}}. {{mei}}"
+    },
+    {
+      "id": "interiorEstimate",
+      "tone": "info",
+      "title": "Interior do estado: valores estimados",
+      "text": "Não temos dados de aluguel de cada cidade do interior. Usamos {{factor|percent}} do aluguel médio de {{capital}}, uma estimativa. Digite o aluguel do imóvel que você encontrou na etapa seguinte."
+    },
+    {
+      "id": "meiRules",
+      "tone": "info",
+      "title": "Regras do MEI",
+      "text": "Imposto fixo de **{{das|money}} por mês** (INSS + ICMS e/ou ISS), faturamento de até {{limit|money}} por ano e no máximo **{{maxEmployees}} empregado**, que deve receber o salário mínimo ou o piso da categoria ([LC 123/2006, art. 18-A e 18-C](source:simplesLaw))."
+    },
+    {
+      "id": "simplesRules",
+      "tone": "info",
+      "title": "Simples Nacional, Anexo {{annex}}",
+      "text": "O imposto é calculado sobre o faturamento de cada mês, com alíquota que cresce conforme a receita dos últimos 12 meses ([LC 123/2006, Anexos](source:simplesLaw)). A contribuição patronal ao INSS já está dentro do DAS nos Anexos I, II e III; sobre a folha, a empresa paga o FGTS."
+    },
+    {
+      "id": "teamSuggestion",
+      "tone": "info",
+      "title": "Equipe típica para começar",
+      "text": "Negócios como este costumam abrir com {{staff}}. Você pode começar com menos pessoas e contratar quando as vendas crescerem."
+    },
+    {
+      "id": "warning_meiNotAllowed",
+      "tone": "warning",
+      "title": "Esta atividade não pode ser MEI",
+      "text": "A ocupação não está na lista do MEI. Escolha o Simples Nacional na etapa Formalização."
+    },
+    {
+      "id": "warning_meiLimit",
+      "tone": "warning",
+      "title": "Faturamento acima do limite do MEI",
+      "text": "A projeção é de {{yearlyRevenue|money}} por ano, acima do limite de {{limit|money}}. Passando do limite, o MEI é desenquadrado e paga o Simples Nacional sobre o faturamento. Escolha o Simples Nacional na etapa Formalização."
+    },
+    {
+      "id": "warning_meiEmployees",
+      "tone": "warning",
+      "title": "MEI pode ter só {{max}} empregado",
+      "text": "Você informou {{employees}} funcionários. Com mais de {{max}}, a empresa precisa ser ME ou EPP no Simples Nacional."
+    },
+    {
+      "id": "warning_simplesLimit",
+      "tone": "warning",
+      "title": "Faturamento acima do limite do Simples Nacional",
+      "text": "A projeção é de {{yearlyRevenue|money}} por ano, acima de {{limit|money}}. Procure um contador para avaliar o Lucro Presumido ou o Lucro Real."
+    },
+    {
+      "id": "warning_payrollMissing",
+      "tone": "warning",
+      "title": "Falta o custo da equipe",
+      "text": "Você informou {{employees}} funcionário(s), mas o custo da folha está zerado. Calcule no Cálculo CLT e preencha na etapa Equipe."
+    },
+    {
+      "id": "warning_payrollEstimated",
+      "tone": "info",
+      "title": "A folha está estimada",
+      "text": "Usamos {{payroll|money}} por mês para {{employees}} funcionário(s), uma estimativa com o salário mínimo. Salários de função, pisos estaduais e benefícios costumam elevar esse valor: calcule cada função no [Cálculo CLT](source:calculoClt) e digite o total na etapa Equipe."
+    },
+    {
+      "id": "warning_noProfit",
+      "tone": "warning",
+      "title": "Mesmo com as vendas maduras, o mês fecha no prejuízo",
+      "text": "Os custos superam o faturamento. Reveja o aluguel, a equipe, o ticket médio ou o número de clientes antes de investir."
+    },
+    {
+      "id": "warning_noPayback",
+      "tone": "warning",
+      "title": "O investimento não se paga em {{months}} meses",
+      "text": "O lucro acumulado não cobre o que foi gasto para abrir dentro do período projetado. Reduza o investimento inicial ou reveja as vendas e os custos."
+    },
+    {
+      "id": "warning_workingCapital",
+      "tone": "warning",
+      "title": "A reserva de capital de giro não cobre o começo",
+      "text": "Os prejuízos dos primeiros meses somam até {{maxLoss|money}}, mais do que a reserva de {{reserve|money}}. Aumente a reserva ou reduza os custos fixos para não ficar sem caixa."
+    },
+    {
+      "id": "dataQuality",
+      "tone": "info",
+      "title": "De onde vêm os números",
+      "text": "Cada valor tem a origem indicada: **oficial** (tabela do governo, como a Junta Comercial e as tarifas de energia homologadas pela ANEEL), **média de mercado** (índices e pesquisas publicadas, como o FipeZAP e o Sebrae) ou **estimativa** (nossa estimativa quando não há dado publicado, explicada nas fontes). Confirme os valores do seu caso antes de investir."
+    },
+    {
+      "id": "beforeOpening",
+      "tone": "success",
+      "title": "Antes de abrir",
+      "text": "Faça um plano de negócios com o [Sebrae](source:sebrae), pesquise o ponto e a concorrência, confirme as licenças na prefeitura e no Corpo de Bombeiros e converse com um contador. Esta calculadora é uma referência, não uma garantia de resultado."
+    }
+  ],
+  "breakdown": {
+    "groups": {
+      "formalization": "Formalização e licenças",
+      "premises": "Ponto comercial",
+      "equipment": "Equipamentos e móveis",
+      "launch": "Estoque e lançamento",
+      "workingCapital": "Capital de giro (reserva)",
+      "variable": "Custos que acompanham as vendas",
+      "fixed": "Custos fixos"
+    },
+    "items": {
+      "registration": "Registro na Junta Comercial",
+      "firefighters": "Corpo de Bombeiros",
+      "businessLicense": "Alvará de funcionamento",
+      "sanitaryLicense": "Licença sanitária",
+      "digitalCertificate": "Certificado digital e-CNPJ",
+      "trademark": "Registro de marca no INPI",
+      "openingService": "Contador para abrir a empresa",
+      "deposit": "Caução ({{months|number}} meses de aluguel)",
+      "preOpeningRent": "Aluguel antes de abrir ({{months|number}} meses)",
+      "renovation": "Reforma e adequação ({{area|number}} m² × {{perM2|money}})",
+      "facade": "Fachada e identidade visual",
+      "initialStock": "Estoque inicial",
+      "initialMarketing": "Divulgação de inauguração",
+      "otherInitial": "Outros gastos iniciais",
+      "workingCapital": "Reserva para {{months|number}} meses de custos fixos",
+      "goods": "Mercadorias e insumos ({{rate|percent}} das vendas)",
+      "cardFees": "Taxa do cartão ({{rate|percent}} sobre {{share|percent}} das vendas)",
+      "simplesTax": "Simples Nacional ({{rate|percent}} efetivo)",
+      "rent": "Aluguel ({{area|number}} m² × {{perM2|money}})",
+      "energy": "Energia ({{kwh|number}} kWh × {{tariff|money}})",
+      "water": "Água e esgoto ({{m3|number}} m³ × {{tariff|money}})",
+      "consumables": "Limpeza e descartáveis",
+      "maintenance": "Manutenção",
+      "software": "Sistema, internet e telefone",
+      "marketing": "Marketing",
+      "accounting": "Contabilidade",
+      "payroll": "Folha de pagamento ({{employees|number}} funcionários)",
+      "proLabore": "Sua retirada (pró-labore)",
+      "otherFixed": "Outros custos fixos",
+      "meiDas": "DAS do MEI"
+    }
+  },
+  "labels": {
+    "skipToCalculator": "Pular para a calculadora",
+    "navAria": "Seções da página",
+    "navCalculator": "Calculadora",
+    "navMethod": "Como calculamos",
+    "navSources": "Fontes",
+    "footerTagline": "Quanto custa abrir um negócio no Brasil e quando ele se paga, com fontes oficiais e médias de mercado.",
+    "footerNavTitle": "Nesta página",
+    "footerProjectTitle": "Projeto",
+    "footerRepository": "Código no GitHub",
+    "footerIssues": "Reportar um problema",
+    "footerReview": "Dados revisados em {{date}}",
+    "footerDevelopedBy": "Desenvolvido por",
+    "heroEyebrow": "Valores de referência em",
+    "heroTitle": "Quanto custa abrir o seu negócio, e quando ele se paga?",
+    "heroLead": "Escolha o negócio e a cidade e veja o investimento inicial (equipamentos, reforma, licenças, registro), o custo de cada mês e a projeção de lucro em 3, 6, 12, 24 e 36 meses. Cada número mostra se vem de uma fonte oficial ou de média de mercado.",
+    "sourcesTitle": "Fontes",
+    "sourcesIntro": "Fontes oficiais (governo federal, estados, prefeituras, ANEEL, Sebrae) e de mercado (índices e pesquisas publicadas). Última revisão dos dados:",
+    "kind_official": "oficial",
+    "kind_market": "média de mercado",
+    "kind_estimate": "estimativa",
+    "kindHelp_official": "Valor de tabela ou norma do governo.",
+    "kindHelp_market": "Média publicada por índice, pesquisa ou entidade do setor.",
+    "kindHelp_estimate": "Estimativa nossa, quando não há dado publicado.",
+    "liveTitle": "Investimento inicial",
+    "liveMonthlyRevenue": "Faturamento do mês (maduro)",
+    "liveMonthlyCosts": "Custos do mês (maduro)",
+    "liveMonthlyProfit": "Lucro do mês (maduro)",
+    "livePayback": "Retorno do investimento",
+    "liveHint": "Inclui a reserva de capital de giro. Os valores mudam a cada resposta.",
+    "resetButton": "Nova simulação",
+    "resetConfirm": "Iniciar uma nova simulação? Os dados preenchidos serão apagados.",
+    "months": "{{months}} meses",
+    "paybackNone": "não se paga no período",
+    "heroLabel": "Investimento inicial estimado: {{business}} em {{place}}",
+    "heroSpent": "Gasto para abrir",
+    "heroReserve": "Reserva de capital de giro",
+    "heroRevenue": "Faturamento mensal (maduro)",
+    "heroProfit": "Lucro mensal (maduro)",
+    "heroBreakEven": "Faturamento de equilíbrio",
+    "heroPayback": "Retorno do investimento",
+    "heroNote": "Mês típico: mês {{month}}, com as vendas maduras e o imposto do Simples já calculado sobre 12 meses de faturamento. O lucro já desconta a sua retirada.",
+    "investmentTitle": "Investimento inicial",
+    "investmentCaption": "O que precisa ser pago antes e logo depois de abrir",
+    "investmentTotal": "Investimento inicial total",
+    "monthTitle": "Um mês de operação (mês {{month}})",
+    "monthCaption": "Faturamento, custos e lucro do mês {{month}}",
+    "monthRevenue": "Faturamento",
+    "monthCosts": "Custos totais",
+    "monthProfit": "Lucro do mês",
+    "projectionTitle": "Projeção",
+    "horizonCaption": "Resultado acumulado em cada período",
+    "colPeriod": "Período",
+    "colRevenue": "Faturamento",
+    "colCosts": "Custos",
+    "colProfit": "Lucro acumulado",
+    "colAverage": "Lucro médio por mês",
+    "colPosition": "Saldo após o investimento",
+    "chartCaption": "Saldo mês a mês: lucro acumulado menos o que foi gasto para abrir",
+    "chartAria": "Gráfico do saldo em {{months}} meses: termina em {{last}}; retorno do investimento em {{payback}}.",
+    "chartStart": "Mês 1",
+    "chartZero": "investimento pago",
+    "printButton": "Imprimir ou salvar em PDF"
+  },
+  "method": [
+    {
+      "title": "Investimento inicial",
+      "text": "Formalização (Junta Comercial, Bombeiros, alvará, licença sanitária, certificado, marca), ponto (caução, aluguel antes de abrir, reforma, fachada), equipamentos, estoque, divulgação e uma reserva de capital de giro."
+    },
+    {
+      "title": "Custos do mês",
+      "text": "Fixos (aluguel, energia pela tarifa do estado, água, contador, sistema, marketing, folha, sua retirada, DAS do MEI) e variáveis (mercadorias, taxa do cartão e imposto do Simples Nacional pela tabela oficial)."
+    },
+    {
+      "title": "Projeção",
+      "text": "As vendas começam abaixo do normal e crescem até amadurecer. Somamos mês a mês faturamento, custos e lucro em 3, 6, 12, 24 e 36 meses e mostramos quando o investimento se paga."
+    },
+    {
+      "title": "Origem de cada número",
+      "text": "Usamos valores oficiais quando existem (tabelas do governo, ANEEL, Junta Comercial, LC 123) e médias de mercado publicadas (FipeZAP, Sebrae, entidades do setor) quando não existem. Quando nem isso existe, a estimativa é marcada como tal."
+    }
+  ],
+  "footer": "Esta calculadora é uma ferramenta de referência e não substitui um plano de negócios, a orientação de um contador nem a consulta aos órgãos de licenciamento da sua cidade. Preços, tarifas e taxas mudam com frequência."
+}

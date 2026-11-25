@@ -1,0 +1,1268 @@
+{
+  "sources": [
+    {
+      "id": "minWage",
+      "title": "Decreto nº 12.797/2025 — salário mínimo de R$ 1.621,00 em 2026",
+      "short": "Decreto 12.797/2025",
+      "org": "Presidência da República",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12797.htm"
+    },
+    {
+      "id": "simplesLaw",
+      "title": "Lei Complementar nº 123/2006 — Simples Nacional e MEI (Anexos I a V)",
+      "short": "LC 123/2006",
+      "org": "Presidência da República",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm"
+    },
+    {
+      "id": "meiDas",
+      "title": "Agência Brasil — recolhimento mensal do MEI em 2026 (DAS de R$ 82,05 a R$ 87,05)",
+      "short": "DAS do MEI 2026",
+      "org": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-01/recolhimento-do-mei-sobe-para-r-8105-em-2026"
+    },
+    {
+      "id": "meiLimitLaw",
+      "title": "Fenacon — sancionada a LC 238/2026, que amplia o limite de faturamento do MEI",
+      "short": "LC 238/2026 (limite do MEI)",
+      "org": "Fenacon",
+      "url": "https://fenacon.org.br/noticias/sancionada-lei-que-amplia-limite-de-faturamento-do-mei/"
+    },
+    {
+      "id": "meiPortal",
+      "title": "Portal do Empreendedor — formalização gratuita do MEI",
+      "short": "Portal do Empreendedor",
+      "org": "Governo Federal",
+      "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor"
+    },
+    {
+      "id": "inpiFees",
+      "title": "INPI — tabela de retribuições de marcas (vigente desde 20/12/2025)",
+      "short": "Tabela INPI 2025",
+      "org": "INPI",
+      "url": "https://www.gov.br/inpi/pt-br/servicos/custos-e-pagamento/NovaTabeladeRetribuiesINPI_MARCAS_Final_20_dez_25.pdf"
+    },
+    {
+      "id": "digitalCertificate",
+      "title": "Omie — valor do certificado digital A1 e A3 em 2026",
+      "short": "Certificado digital 2026",
+      "org": "Omie",
+      "url": "https://www.omie.com.br/blog/qual-e-o-valor-do-certificado-digital-a1-e-a3-em-2026/"
+    },
+    {
+      "id": "accountingMarket",
+      "title": "Agilize — quanto custa um contador para pequena empresa em 2026",
+      "short": "Honorários contábeis 2026",
+      "org": "Agilize",
+      "url": "https://agilize.com.br/artigos/custo-contador-mensal-simples-nacional"
+    },
+    {
+      "id": "cardFees",
+      "title": "Calculadora Brasil — comparativo de taxas de maquininha (junho de 2026)",
+      "short": "Taxas de maquininha 2026",
+      "org": "Calculadora Brasil",
+      "url": "https://calculadorabrasil.com.br/?p=10733"
+    },
+    {
+      "id": "proLaboreInss",
+      "title": "Contabilizei — INSS sobre o pró-labore em 2026 (11% até o teto)",
+      "short": "INSS do pró-labore",
+      "org": "Contabilizei",
+      "url": "https://www.contabilizei.com.br/contabilidade-online/inss-pro-labore/"
+    },
+    {
+      "id": "sebraeWorkingCapital",
+      "title": "Sebrae PR — reserva de emergência e capital de giro da empresa",
+      "short": "Sebrae: capital de giro",
+      "org": "Sebrae PR",
+      "url": "https://sebraepr.com.br/?p=437713"
+    },
+    {
+      "id": "sebraeSurvival",
+      "title": "DataSebrae — sobrevivência das empresas mercantis brasileiras (2021–2025)",
+      "short": "Sebrae: sobrevivência de empresas",
+      "org": "Sebrae",
+      "url": "https://datasebrae.com.br/wp-content/uploads/2026/03/Apresentacao-Sobrevivencia-das-empresas-mercantis-brasileiras-2021-2025.pdf"
+    },
+    {
+      "id": "sebrae",
+      "title": "Sebrae — orientação para abrir e planejar um pequeno negócio",
+      "short": "Sebrae",
+      "org": "Sebrae",
+      "url": "https://sebrae.com.br/sites/PortalSebrae"
+    },
+    {
+      "id": "calculoClt",
+      "title": "Cálculo CLT — custo real de um funcionário CLT",
+      "short": "Cálculo CLT",
+      "org": "Cálculo CLT",
+      "url": "https://allanbarcelos.github.io/calculo-clt/"
+    },
+    {
+      "id": "tenancyLaw",
+      "title": "Lei nº 8.245/1991 (Lei do Inquilinato), art. 38 — caução de até 3 meses de aluguel",
+      "short": "Lei 8.245/1991",
+      "org": "Presidência da República",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l8245.htm"
+    },
+    {
+      "id": "economicFreedomLaw",
+      "title": "Lei nº 13.874/2019 (Liberdade Econômica) — dispensa de alvará para atividades de baixo risco",
+      "short": "Lei 13.874/2019",
+      "org": "Presidência da República",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13874.htm"
+    },
+    {
+      "id": "taxReformLaw",
+      "title": "Lei Complementar nº 214/2025 — IBS, CBS e o Simples Nacional na reforma tributária",
+      "short": "LC 214/2025",
+      "org": "Presidência da República",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+    },
+    {
+      "id": "ownEstimate",
+      "title": "Estimativas do Cálculo Empreender: como foram feitas",
+      "short": "Estimativa própria",
+      "org": "Cálculo Empreender",
+      "url": "https://github.com/allanbarcelos/calculo-empreender#estimativas"
+    },
+    {
+      "id": "aneel-dados-abertos-tarifas-homologadas",
+      "title": "ANEEL – Dados Abertos: Tarifas Homologadas das Distribuidoras (REH 3.318/2026)",
+      "short": "ANEEL – Dados Abertos: Tarifas Homologadas das Distribuidora",
+      "org": "dadosabertos.aneel.gov.br",
+      "url": "https://dadosabertos.aneel.gov.br/dataset/tarifas-distribuidoras-energia-eletrica"
+    },
+    {
+      "id": "facilite-tabela-de-precos-das-juntas-com",
+      "title": "Facilite – Tabela de preços das Juntas Comerciais (atualizado 28/08/2025)",
+      "short": "Facilite – Tabela de preços das Juntas Comerciais (atualizad",
+      "org": "facilite.co",
+      "url": "https://www.facilite.co/tabela-de-precos-junta-comercial"
+    },
+    {
+      "id": "lei-no-2679-de-27-12-2012-ac",
+      "title": "Lei nº 2679 de 27/12/2012 (AC)",
+      "short": "Lei nº 2679 de 27/12/2012 (AC)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-2679-2012-ac_249272.html"
+    },
+    {
+      "id": "indice-fipezap-locacao-residencial-infor",
+      "title": "Índice FipeZAP Locação Residencial – Informe de outubro/2026 (preço médio por cidade)",
+      "short": "Índice FipeZAP Locação Residencial – Informe de outubro/2026",
+      "org": "downloads.fipe.org.br",
+      "url": "https://downloads.fipe.org.br/indices/fipezap/fipezap-202610-residencial-locacao.pdf"
+    },
+    {
+      "id": "decreto-no-1683-2019-rio-branco",
+      "title": "Decreto nº 1683/2019 – Rio Branco",
+      "short": "Decreto nº 1683/2019 – Rio Branco",
+      "org": "cgm.riobranco.ac.gov.br",
+      "url": "https://cgm.riobranco.ac.gov.br/lai/wp-content/uploads/2015/06/DECRETO-Nº-1683-2019-Classificação-de-risco-de-atividades-econômicas-concessão-e-dispensa-do-Alvará-de-Licenciamento.pdf"
+    },
+    {
+      "id": "decreto-96-2015-rio-branco",
+      "title": "Decreto 96/2015 – Rio Branco",
+      "short": "Decreto 96/2015 – Rio Branco",
+      "org": "contabeis.com.br",
+      "url": "https://www.contabeis.com.br/legislacao/70841/decreto-96-2015/"
+    },
+    {
+      "id": "resolucao-do-plenario-juceal-no-30-de-27",
+      "title": "Resolução do Plenário JUCEAL nº 30 de 27/11/2025 (tabela 2026, Anexo I)",
+      "short": "Resolução do Plenário JUCEAL nº 30 de 27/11/2025 (tabela 202",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/resolucao-do-plenario-30-2025-al_486990.html"
+    },
+    {
+      "id": "lei-no-6-442-de-31-12-2003-al",
+      "title": "Lei nº 6.442 de 31/12/2003 (AL)",
+      "short": "Lei nº 6.442 de 31/12/2003 (AL)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-6442-2003-al_116497.html"
+    },
+    {
+      "id": "decreto-no-9991-de-12-02-2025-maceio",
+      "title": "Decreto nº 9991 de 12/02/2025 (Maceió)",
+      "short": "Decreto nº 9991 de 12/02/2025 (Maceió)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/decreto-9991-2025-maceio_473675.html"
+    },
+    {
+      "id": "lei-complementar-no-209-de-23-12-2025-ma",
+      "title": "Lei Complementar Nº 209 de 23/12/2025 – Macapá",
+      "short": "Lei Complementar Nº 209 de 23/12/2025 – Macapá",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=489013"
+    },
+    {
+      "id": "lei-no-3862-de-28-02-2013-am",
+      "title": "Lei nº 3862 de 28/02/2013 (AM)",
+      "short": "Lei nº 3862 de 28/02/2013 (AM)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-3862-2013-am_251993.html"
+    },
+    {
+      "id": "decreto-manaus-dom-20-jan-2026",
+      "title": "Decreto Manaus – DOM 20 jan 2026",
+      "short": "Decreto Manaus – DOM 20 jan 2026",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=489724"
+    },
+    {
+      "id": "apresentacao-simbravisa-visa-manaus",
+      "title": "Apresentação SIMBRAVISA – VISA Manaus",
+      "short": "Apresentação SIMBRAVISA – VISA Manaus",
+      "org": "ideiasus.fiocruz.br",
+      "url": "https://ideiasus.fiocruz.br/wp-content/uploads/2025/05/APRESENTACAO-SIMBRAVISA-2-1.pdf"
+    },
+    {
+      "id": "juceb-tabela-de-precos-capital-atualizad",
+      "title": "JUCEB – Tabela de Preços Capital (atualizada em 21/01/2026)",
+      "short": "JUCEB – Tabela de Preços Capital (atualizada em 21/01/2026)",
+      "org": "ba.gov.br",
+      "url": "https://www.ba.gov.br/juceb/tabelas-de-precos-capital"
+    },
+    {
+      "id": "lei-no-12929-de-27-12-2013-ba",
+      "title": "Lei nº 12929 de 27/12/2013 (BA)",
+      "short": "Lei nº 12929 de 27/12/2013 (BA)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-12929-2013-ba_263836.html"
+    },
+    {
+      "id": "indice-fipezap-venda-e-locacao-comercial",
+      "title": "Índice FipeZAP Venda e Locação Comercial – Informe de outubro/2026 (salas e conjuntos até 200 m²)",
+      "short": "Índice FipeZAP Venda e Locação Comercial – Informe de outubr",
+      "org": "downloads.fipe.org.br",
+      "url": "https://downloads.fipe.org.br/indices/fipezap/fipezap-202610-comercial.pdf"
+    },
+    {
+      "id": "lei-no-9417-de-17-12-2018-salvador",
+      "title": "Lei nº 9417 de 17/12/2018 (Salvador)",
+      "short": "Lei nº 9417 de 17/12/2018 (Salvador)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-9417-2018-salvador_372387.html"
+    },
+    {
+      "id": "lei-7-995-2011-salvador-tvs",
+      "title": "Lei 7.995/2011 (Salvador) – TVS",
+      "short": "Lei 7.995/2011 (Salvador) – TVS",
+      "org": "contabeis.com.br",
+      "url": "https://www.contabeis.com.br/legislacao/75295/lei-7995-2011/"
+    },
+    {
+      "id": "quanto-custa-abrir-uma-empresa-no-ceara",
+      "title": "Quanto custa abrir uma empresa no Ceará em 2026? (Jornal Contábil)",
+      "short": "Quanto custa abrir uma empresa no Ceará em 2026? (Jornal Con",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quanto-custa-abrir-uma-empresa-no-ceara-em-2026/"
+    },
+    {
+      "id": "lei-no-15838-de-27-07-2015-ce",
+      "title": "Lei nº 15838 de 27/07/2015 (CE)",
+      "short": "Lei nº 15838 de 27/07/2015 (CE)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-15838-2015-ce_287748.html"
+    },
+    {
+      "id": "manual-isencao-unica-do-funcionamento-pr",
+      "title": "Manual Isenção Única do Funcionamento – Prefeitura de Fortaleza",
+      "short": "Manual Isenção Única do Funcionamento – Prefeitura de Fortal",
+      "org": "urbanismoemeioambiente.fortaleza.ce.gov.br",
+      "url": "https://urbanismoemeioambiente.fortaleza.ce.gov.br/images/urbanismo-e-meio-ambiente/manuais/MANUAL_ISENCAO_UNICA_DO_FUNCIONAMENTO.pdf"
+    },
+    {
+      "id": "check-list-licenca-sanitaria-fortaleza-o",
+      "title": "Check list Licença Sanitária – Fortaleza Online",
+      "short": "Check list Licença Sanitária – Fortaleza Online",
+      "org": "portal.seuma.fortaleza.ce.gov.br",
+      "url": "https://portal.seuma.fortaleza.ce.gov.br/fortalezaonline/portal/legislacao/Licenca_Sanitaria/CHECK_LIST_-_LICENCA_SANITARIA.pdf"
+    },
+    {
+      "id": "jucis-df-resolucao-no-01-de-30-de-dezemb",
+      "title": "JUCIS-DF Resolução nº 01, de 30 de dezembro de 2025 (tabela de preços vigente desde 20/01/2026)",
+      "short": "JUCIS-DF Resolução nº 01, de 30 de dezembro de 2025 (tabela ",
+      "org": "vlex.com.br",
+      "url": "https://vlex.com.br/vid/resolucao-n-01-30-1099466153"
+    },
+    {
+      "id": "ato-cbm-df-s-no-de-07-01-2022-valores-da",
+      "title": "Ato CBM-DF s/nº de 07/01/2022 (valores das taxas do CBMDF)",
+      "short": "Ato CBM-DF s/nº de 07/01/2022 (valores das taxas do CBMDF)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/ato-2022-df_425957.html"
+    },
+    {
+      "id": "lei-no-6-725-de-24-11-2020-df",
+      "title": "Lei nº 6.725 de 24/11/2020 (DF)",
+      "short": "Lei nº 6.725 de 24/11/2020 (DF)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-6725-2020-df_404914.html"
+    },
+    {
+      "id": "portaria-no-11-de-07-de-janeiro-de-2026",
+      "title": "Portaria nº 11, de 07 de janeiro de 2026 (SES-DF)",
+      "short": "Portaria nº 11, de 07 de janeiro de 2026 (SES-DF)",
+      "org": "vlex.com.br",
+      "url": "https://vlex.com.br/vid/portaria-n-11-07-1101618337"
+    },
+    {
+      "id": "contaja-taxas-jucees-tabela-2026-citada",
+      "title": "Contajá – taxas JUCEES (tabela 2026 citada; LTDA = valor da SLU)",
+      "short": "Contajá – taxas JUCEES (tabela 2026 citada; LTDA = valor da ",
+      "org": "contaja.com.br",
+      "url": "https://contaja.com.br/lp/?p=761"
+    },
+    {
+      "id": "lei-es-no-7-001-2001",
+      "title": "Lei ES nº 7.001/2001",
+      "short": "Lei ES nº 7.001/2001",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-7001-2001-es_125444.html"
+    },
+    {
+      "id": "decreto-es-no-4231-r-2018-simplifica-es",
+      "title": "Decreto ES nº 4231-R/2018 (Simplifica-ES)",
+      "short": "Decreto ES nº 4231-R/2018 (Simplifica-ES)",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=358493"
+    },
+    {
+      "id": "decreto-vitoria-no-17-201-2017",
+      "title": "Decreto Vitória nº 17.201/2017",
+      "short": "Decreto Vitória nº 17.201/2017",
+      "org": "contabeis.com.br",
+      "url": "https://www.contabeis.com.br/legislacao/2308730/decreto-17201-2017/"
+    },
+    {
+      "id": "quais-os-custos-para-abrir-uma-empresa-e",
+      "title": "Quais os custos para abrir uma empresa em Goiás em 2026 (Jornal Contábil)",
+      "short": "Quais os custos para abrir uma empresa em Goiás em 2026 (Jor",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quais-os-custos-para-abrir-uma-empresa-em-goias-em-2026/"
+    },
+    {
+      "id": "anexo-iii-tse-2026-cbmgo",
+      "title": "Anexo III TSE 2026 (CBMGO)",
+      "short": "Anexo III TSE 2026 (CBMGO)",
+      "org": "bombeiros.go.gov.br",
+      "url": "https://www.bombeiros.go.gov.br/wp-content/uploads/2026/02/Anexo-III-TSE-2026.pdf"
+    },
+    {
+      "id": "codigo-de-posturas-do-municipio-de-goian",
+      "title": "Código de Posturas do Município de Goiânia",
+      "short": "Código de Posturas do Município de Goiânia",
+      "org": "goiania.go.gov.br",
+      "url": "https://www.goiania.go.gov.br/procuradoria/wp-content/uploads/sites/11/2024/02/Codigo-de-Posturas-do-Municipio-de-Goiania.pdf"
+    },
+    {
+      "id": "portaria-sms-63-2023-visa-goiania",
+      "title": "Portaria SMS 63/2023 (VISA Goiânia)",
+      "short": "Portaria SMS 63/2023 (VISA Goiânia)",
+      "org": "saude.goiania.go.gov.br",
+      "url": "https://saude.goiania.go.gov.br/wp-content/uploads/sites/3/2023/09/Portaria-SMS-63-2023-VISA.pdf"
+    },
+    {
+      "id": "quanto-custa-abrir-uma-empresa-no-maranh",
+      "title": "Quanto custa abrir uma empresa no Maranhão em 2026? (Jornal Contábil)",
+      "short": "Quanto custa abrir uma empresa no Maranhão em 2026? (Jornal ",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quanto-custa-abrir-uma-empresa-no-maranhao-em-2026/"
+    },
+    {
+      "id": "lei-no-11390-de-21-12-2020-ma",
+      "title": "Lei nº 11390 de 21/12/2020 (MA)",
+      "short": "Lei nº 11390 de 21/12/2020 (MA)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-11390-2020-ma_406995.html"
+    },
+    {
+      "id": "sao-luis-alvara-2026-ja-esta-disponivel",
+      "title": "São Luís: Alvará 2026 já está disponível para emissão no site da Semfaz (LegisWeb)",
+      "short": "São Luís: Alvará 2026 já está disponível para emissão no sit",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/noticia/?id=32373"
+    },
+    {
+      "id": "quanto-custa-abrir-uma-empresa-em-mato-g",
+      "title": "Quanto custa abrir uma empresa em Mato Grosso em 2026 (Jornal Contábil)",
+      "short": "Quanto custa abrir uma empresa em Mato Grosso em 2026 (Jorna",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quanto-custa-abrir-uma-empresa-em-mato-grosso-em-2026/amp/"
+    },
+    {
+      "id": "lei-no-12-774-de-20-12-2024-mt-taxas-est",
+      "title": "Lei nº 12.774 de 20/12/2024 (MT, taxas estaduais em UPF/MT)",
+      "short": "Lei nº 12.774 de 20/12/2024 (MT, taxas estaduais em UPF/MT)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-12774-2024-mt_470930.html"
+    },
+    {
+      "id": "deliberacao-jucems-no-4-de-23-03-2026-do",
+      "title": "Deliberação JUCEMS nº 4, de 23/03/2026 (DOE-MS 27/03/2026), vigência 01/05/2026",
+      "short": "Deliberação JUCEMS nº 4, de 23/03/2026 (DOE-MS 27/03/2026), ",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=493351"
+    },
+    {
+      "id": "654-atividades-dispensadas-de-alvara-em",
+      "title": "654 atividades dispensadas de alvará em Campo Grande",
+      "short": "654 atividades dispensadas de alvará em Campo Grande",
+      "org": "acritica.net",
+      "url": "https://acritica.net/economia/654-atividades-dispensadas-alvara-campo-grande-como-saber-passo-a-passo/"
+    },
+    {
+      "id": "resolucao-sesau-no-946-de-22-12-2025",
+      "title": "Resolução SESAU nº 946 de 22/12/2025",
+      "short": "Resolução SESAU nº 946 de 22/12/2025",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/resolucao-946-2025-campo-grande_488495.html"
+    },
+    {
+      "id": "jucemg-tabela-de-precos-atualizada-2026",
+      "title": "JUCEMG – Tabela de preços atualizada 2026",
+      "short": "JUCEMG – Tabela de preços atualizada 2026",
+      "org": "jucemg.mg.gov.br",
+      "url": "https://jucemg.mg.gov.br/tabela_de_precos_atualizada_2026.html"
+    },
+    {
+      "id": "cbmmg-instrucao-tecnica-01-10a-edicao-po",
+      "title": "CBMMG – Instrução Técnica 01, 10ª edição (Portaria 72/2023)",
+      "short": "CBMMG – Instrução Técnica 01, 10ª edição (Portaria 72/2023)",
+      "org": "bombeiros.mg.gov.br",
+      "url": "https://bombeiros.mg.gov.br/storage/files/shares/intrucoestecnicas/IT_01_10a_Ed_portaria_72.pdf"
+    },
+    {
+      "id": "prefeitura-de-bh-simplifica-obtencao-de",
+      "title": "Prefeitura de BH simplifica obtenção de Alvará de Localização e Funcionamento",
+      "short": "Prefeitura de BH simplifica obtenção de Alvará de Localizaçã",
+      "org": "prefeitura.pbh.gov.br",
+      "url": "https://prefeitura.pbh.gov.br/noticias/prefeitura-de-bh-simplifica-obtencao-de-alvara-de-localizacao-e-funcionamento"
+    },
+    {
+      "id": "vigilancia-sanitaria-prefeitura-de-belo",
+      "title": "Vigilância Sanitária – Prefeitura de Belo Horizonte",
+      "short": "Vigilância Sanitária – Prefeitura de Belo Horizonte",
+      "org": "prefeitura.pbh.gov.br",
+      "url": "https://prefeitura.pbh.gov.br/saude/informacoes/vigilancia/vigilancia-sanitaria"
+    },
+    {
+      "id": "portaria-no-1015-de-29-11-2019-cbmpa",
+      "title": "Portaria nº 1015 de 29/11/2019 – CBMPA",
+      "short": "Portaria nº 1015 de 29/11/2019 – CBMPA",
+      "org": "bombeiros.pa.gov.br",
+      "url": "https://www.bombeiros.pa.gov.br/wp-content/uploads/2021/03/PORTARIA-No-1015-DE-29-DE-NOVEMBRO-DE-2019..pdf"
+    },
+    {
+      "id": "o-liberal-abrir-empresa-em-belem-custa-a",
+      "title": "O Liberal – Abrir empresa em Belém custa até R$ 7 mil",
+      "short": "O Liberal – Abrir empresa em Belém custa até R$ 7 mil",
+      "org": "oliberal.com",
+      "url": "https://www.oliberal.com/economia/abrir-empresa-em-belem-custa-ate-r-7-mil-e-e-mais-caro-que-no-interior-1.1105076"
+    },
+    {
+      "id": "quanto-custa-abrir-uma-empresa-na-paraib",
+      "title": "Quanto custa abrir uma empresa na Paraíba em 2026? (Jornal Contábil)",
+      "short": "Quanto custa abrir uma empresa na Paraíba em 2026? (Jornal C",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quanto-custa-abrir-uma-empresa-na-paraiba-em-2026/"
+    },
+    {
+      "id": "portaria-cbmpb-no-16-de-06-06-2013",
+      "title": "Portaria CBMPB nº 16 de 06/06/2013",
+      "short": "Portaria CBMPB nº 16 de 06/06/2013",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/portaria-16-2013-pb_255540.html"
+    },
+    {
+      "id": "decreto-no-11258-de-26-03-2026-joao-pess",
+      "title": "Decreto nº 11258 de 26/03/2026 (João Pessoa)",
+      "short": "Decreto nº 11258 de 26/03/2026 (João Pessoa)",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=493498"
+    },
+    {
+      "id": "lei-no-13656-de-06-05-2025-pb-codigo-san",
+      "title": "Lei nº 13656 de 06/05/2025 (PB) – Código Sanitário",
+      "short": "Lei nº 13656 de 06/05/2025 (PB) – Código Sanitário",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-13656-2025-pb_477781.html"
+    },
+    {
+      "id": "quanto-custa-abrir-uma-empresa-no-parana",
+      "title": "Quanto custa abrir uma empresa no Paraná em 2026 (Jornal Contábil)",
+      "short": "Quanto custa abrir uma empresa no Paraná em 2026 (Jornal Con",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quanto-custa-abrir-uma-empresa-no-parana-em-2026/amp/"
+    },
+    {
+      "id": "curitiba-amplia-dispensa-de-alvaras-para",
+      "title": "Curitiba amplia dispensa de alvarás para 1.200 categorias empresariais",
+      "short": "Curitiba amplia dispensa de alvarás para 1.200 categorias em",
+      "org": "tribunapr.com.br",
+      "url": "https://www.tribunapr.com.br/noticias/curitiba-regiao/curitiba-amplia-dispensa-de-alvaras-para-1-200-categorias-empresariais/"
+    },
+    {
+      "id": "decreto-no-2350-de-11-11-2025-curitiba",
+      "title": "Decreto nº 2350 de 11/11/2025 (Curitiba)",
+      "short": "Decreto nº 2350 de 11/11/2025 (Curitiba)",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/decreto-2350-2025-curitiba_486277.html"
+    },
+    {
+      "id": "portaria-jucepe-no-20-de-09-03-2020-ulti",
+      "title": "Portaria JUCEPE nº 20 de 09/03/2020 (última tabela localizada: EI R$137, contrato social R$396)",
+      "short": "Portaria JUCEPE nº 20 de 09/03/2020 (última tabela localizad",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/portaria-20-2020-pe_390506.html"
+    },
+    {
+      "id": "decreto-pe-no-60-137-2025-anexo-i-valore",
+      "title": "Decreto PE nº 60.137/2025, Anexo I (valores TFUSP/TPEI 2026)",
+      "short": "Decreto PE nº 60.137/2025, Anexo I (valores TFUSP/TPEI 2026)",
+      "org": "sefaz.pe.gov.br",
+      "url": "https://www.sefaz.pe.gov.br/Legislacao/Tributaria/Documents/Legislacao/Decretos/2025/Dec60137_2025.htm"
+    },
+    {
+      "id": "decreto-recife-no-37-386-de-29-12-2023",
+      "title": "Decreto Recife nº 37.386 de 29/12/2023",
+      "short": "Decreto Recife nº 37.386 de 29/12/2023",
+      "org": "licenciamentounificado.recife.pe.gov.br",
+      "url": "https://licenciamentounificado.recife.pe.gov.br/sites/default/files/inline-files/Decreto%20N%C2%BA%2037386%20DE%2029_12_2023%20-%20Municipal%20-%20Recife%20-%20LegisWeb.pdf"
+    },
+    {
+      "id": "decreto-recife-no-36-521-2023-licenciame",
+      "title": "Decreto Recife nº 36.521/2023 (licenciamento sanitário)",
+      "short": "Decreto Recife nº 36.521/2023 (licenciamento sanitário)",
+      "org": "licenciamentounificado.recife.pe.gov.br",
+      "url": "https://licenciamentounificado.recife.pe.gov.br/sites/default/files/inline-files/Decreto%20N%C2%BA%2036521%20DE%2005_04_2023%20-%20Municipal%20-%20Recife%20-%20LegisWeb.pdf"
+    },
+    {
+      "id": "jornal-contabil-quanto-custa-abrir-uma-e",
+      "title": "Jornal Contábil: quanto custa abrir uma empresa no Piauí em 2026",
+      "short": "Jornal Contábil: quanto custa abrir uma empresa no Piauí em ",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quanto-custa-abrir-uma-empresa-no-piaui-em-2026/"
+    },
+    {
+      "id": "lei-pi-no-5-483-2005",
+      "title": "Lei PI nº 5.483/2005",
+      "short": "Lei PI nº 5.483/2005",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=151563"
+    },
+    {
+      "id": "lei-complementar-teresina-no-5-787-de-19",
+      "title": "Lei Complementar Teresina nº 5.787 de 19/08/2022",
+      "short": "Lei Complementar Teresina nº 5.787 de 19/08/2022",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=435648"
+    },
+    {
+      "id": "dom-teresina-21-12-2018-trifs",
+      "title": "DOM Teresina 21/12/2018 (TRIFS)",
+      "short": "DOM Teresina 21/12/2018 (TRIFS)",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=372913"
+    },
+    {
+      "id": "deliberacao-jucerja-no-158-de-11-12-2023",
+      "title": "Deliberação JUCERJA nº 158 de 11/12/2023 (vigente desde 02/01/2024)",
+      "short": "Deliberação JUCERJA nº 158 de 11/12/2023 (vigente desde 02/0",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=453169"
+    },
+    {
+      "id": "cbmerj-nt-1-07-atividades-economicas-de",
+      "title": "CBMERJ – NT 1-07 Atividades econômicas de baixo risco (2020)",
+      "short": "CBMERJ – NT 1-07 Atividades econômicas de baixo risco (2020)",
+      "org": "cbmerj.rj.gov.br",
+      "url": "https://cbmerj.rj.gov.br/wp-content/uploads/2022/04/NT-1-07-Atividades-economicas-de-baixo-risco-2020.pdf"
+    },
+    {
+      "id": "alvara-a-jato-carioca-digital",
+      "title": "Alvará a Jato – Carioca Digital",
+      "short": "Alvará a Jato – Carioca Digital",
+      "org": "carioca.rio",
+      "url": "https://carioca.rio/servicos/alvara-a-jato/"
+    },
+    {
+      "id": "portaria-s-ivisa-rio-no-828-de-23-12-202",
+      "title": "Portaria S-IVISA-RIO Nº 828 DE 23/12/2025 (DOM 05/01/2026)",
+      "short": "Portaria S-IVISA-RIO Nº 828 DE 23/12/2025 (DOM 05/01/2026)",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=489042"
+    },
+    {
+      "id": "jornal-contabil-quanto-custa-abrir-uma-e-2",
+      "title": "Jornal Contábil: quanto custa abrir uma empresa no Rio Grande do Norte em 2026",
+      "short": "Jornal Contábil: quanto custa abrir uma empresa no Rio Grand",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quanto-custa-abrir-uma-empresa-no-rio-grande-do-norte-em-2026/amp/"
+    },
+    {
+      "id": "lc-rn-601-2017-consolidada-ate-a-lc-704",
+      "title": "LC RN 601/2017 consolidada até a LC 704/2022",
+      "short": "LC RN 601/2017 consolidada até a LC 704/2022",
+      "org": "sistemascbm.rn.gov.br",
+      "url": "https://sistemascbm.rn.gov.br/serten/webroot/downloads/Legislacao_Vigente/LC 601-17 CONSOLIDADA ATÉ A LCE 704-22.pdf"
+    },
+    {
+      "id": "lc-natal-185-2019-coad",
+      "title": "LC Natal 185/2019 (COAD)",
+      "short": "LC Natal 185/2019 (COAD)",
+      "org": "coad.com.br",
+      "url": "https://coad.com.br/app/webroot/imagensMat/lc185natal2019.pdf"
+    },
+    {
+      "id": "lc-natal-no-250-2024-dom-24-12-2024-taxa",
+      "title": "LC Natal nº 250/2024 (DOM 24/12/2024), Taxa de Vigilância Sanitária",
+      "short": "LC Natal nº 250/2024 (DOM 24/12/2024), Taxa de Vigilância Sa",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=471040"
+    },
+    {
+      "id": "resolucao-gab-pres-jucisrs-no-1-de-24-03",
+      "title": "Resolução GAB/PRES/JUCISRS nº 1, de 24/03/2026 (DOE-RS 25/03/2026), vigência 01/04/2026",
+      "short": "Resolução GAB/PRES/JUCISRS nº 1, de 24/03/2026 (DOE-RS 25/03",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=493100"
+    },
+    {
+      "id": "rtcbmrs-no-05-parte-05-taxas-2025",
+      "title": "RTCBMRS nº 05 Parte 05 – Taxas 2025",
+      "short": "RTCBMRS nº 05 Parte 05 – Taxas 2025",
+      "org": "bombeiros.rs.gov.br",
+      "url": "https://bombeiros.rs.gov.br/upload/arquivos/202501/17094843-rtcbmrs-n-05-parte-05-2025-taxas.pdf"
+    },
+    {
+      "id": "autodeclaracao-de-dispensa-de-alvara-pre",
+      "title": "Autodeclaração de dispensa de alvará – Prefeitura de Porto Alegre",
+      "short": "Autodeclaração de dispensa de alvará – Prefeitura de Porto A",
+      "org": "prefeitura.poa.br",
+      "url": "https://prefeitura.poa.br/carta-de-servicos/autodeclaracao-de-dispensa-de-alvara"
+    },
+    {
+      "id": "sefin-ro-lei-853-taxa-de-fiscalizacao-e",
+      "title": "SEFIN-RO – Lei 853 Taxa de Fiscalização e Utilização Bombeiros",
+      "short": "SEFIN-RO – Lei 853 Taxa de Fiscalização e Utilização Bombeir",
+      "org": "sefin.ro.gov.br",
+      "url": "https://sefin.ro.gov.br/portalsefin/anexos/523.2191363313789L99-853-TX. FISCALIIZ. E UTILIZ. BOMBEIROS .PDF"
+    },
+    {
+      "id": "lei-complementar-no-906-de-07-07-2022-po",
+      "title": "Lei Complementar nº 906 de 07/07/2022 – Porto Velho",
+      "short": "Lei Complementar nº 906 de 07/07/2022 – Porto Velho",
+      "org": "normasbrasil.com.br",
+      "url": "https://www.normasbrasil.com.br/norma/lei-complementar-906-2022-porto-velho_433720.html"
+    },
+    {
+      "id": "portaria-001-2026-dvisa-semusa-classific",
+      "title": "Portaria 001/2026 DVISA/SEMUSA – Classificação de risco",
+      "short": "Portaria 001/2026 DVISA/SEMUSA – Classificação de risco",
+      "org": "visa.portovelho.ro.gov.br",
+      "url": "https://visa.portovelho.ro.gov.br/uploads/arquivos/DOM 4311 - 26 AGO 2026 - PORTARIA 001-2026-DVISA-SEMUSA - CLASSIFICAÇÃO DE RISCO E ANEXOS.pdf"
+    },
+    {
+      "id": "resolucao-jucerr-no-1-de-13-02-2023",
+      "title": "Resolução JUCERR nº 1 de 13/02/2023",
+      "short": "Resolução JUCERR nº 1 de 13/02/2023",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=442405"
+    },
+    {
+      "id": "folha-bv-bombeiros-19-07-2019",
+      "title": "Folha BV – Bombeiros (19/07/2019)",
+      "short": "Folha BV – Bombeiros (19/07/2019)",
+      "org": "folhabv.com.br",
+      "url": "https://www.folhabv.com.br/?p=55548"
+    },
+    {
+      "id": "jornal-contabil-quanto-custa-abrir-uma-e-3",
+      "title": "Jornal Contábil – Quanto custa abrir uma empresa em Roraima em 2026",
+      "short": "Jornal Contábil – Quanto custa abrir uma empresa em Roraima ",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quanto-custa-abrir-uma-empresa-em-roraima-em-2026/"
+    },
+    {
+      "id": "quanto-custa-abrir-uma-empresa-em-santa",
+      "title": "Quanto custa abrir uma empresa em Santa Catarina em 2026 (Jornal Contábil)",
+      "short": "Quanto custa abrir uma empresa em Santa Catarina em 2026 (Jo",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quanto-custa-abrir-uma-empresa-em-santa-catarina-em-2026/"
+    },
+    {
+      "id": "cbmsc-diretriz-sobre-vistorias-para-func",
+      "title": "CBMSC – Diretriz sobre vistorias para funcionamento (cobrança e isenção da TPCS)",
+      "short": "CBMSC – Diretriz sobre vistorias para funcionamento (cobranç",
+      "org": "documentoscbmsc.cbm.sc.gov.br",
+      "url": "https://documentoscbmsc.cbm.sc.gov.br/uploads/1170d3530869b981be4d40972ccb1636.pdf"
+    },
+    {
+      "id": "aasp-regulamento-da-jucesp-valores-dare",
+      "title": "AASP – Regulamento da JUCESP (valores DARE revisados em 02/01/2026, Portaria Jucesp nº 146/2025)",
+      "short": "AASP – Regulamento da JUCESP (valores DARE revisados em 02/0",
+      "org": "aasp.org.br",
+      "url": "https://www.aasp.org.br/regulamentos/regulamento-da-jucesp"
+    },
+    {
+      "id": "lei-sp-no-15-266-2013-compilada-alesp",
+      "title": "Lei SP nº 15.266/2013 (compilada) – ALESP",
+      "short": "Lei SP nº 15.266/2013 (compilada) – ALESP",
+      "org": "al.sp.gov.br",
+      "url": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2013/compilacao-lei-15266-26.12.2013.html"
+    },
+    {
+      "id": "alf-baixo-risco-subprefeituras-prefeitur",
+      "title": "ALF BAIXO RISCO – Subprefeituras – Prefeitura de São Paulo",
+      "short": "ALF BAIXO RISCO – Subprefeituras – Prefeitura de São Paulo",
+      "org": "prefeitura.sp.gov.br",
+      "url": "https://prefeitura.sp.gov.br/web/subprefeituras/w/deguos/344419"
+    },
+    {
+      "id": "perguntas-frequentes-vigilancia-sanitari",
+      "title": "Perguntas Frequentes – Vigilância Sanitária – Secretaria Municipal da Saúde de São Paulo",
+      "short": "Perguntas Frequentes – Vigilância Sanitária – Secretaria Mun",
+      "org": "prefeitura.sp.gov.br",
+      "url": "https://prefeitura.sp.gov.br/web/saude/w/vigilancia_em_saude/vigilancia_sanitaria/361088"
+    },
+    {
+      "id": "jornal-contabil-quanto-custa-abrir-uma-e-4",
+      "title": "Jornal Contábil: quanto custa abrir uma empresa em Sergipe em 2026",
+      "short": "Jornal Contábil: quanto custa abrir uma empresa em Sergipe e",
+      "org": "jornalcontabil.com.br",
+      "url": "https://jornalcontabil.com.br/noticia/quanto-custa-abrir-uma-empresa-em-sergipe-em-2026/"
+    },
+    {
+      "id": "contabeis-em-sergipe-abrir-uma-empresa-e",
+      "title": "Contábeis: em Sergipe abrir uma empresa em dois dias já é realidade",
+      "short": "Contábeis: em Sergipe abrir uma empresa em dois dias já é re",
+      "org": "contabeis.com.br",
+      "url": "https://www.contabeis.com.br/noticias/38048/em-sergipe-abrir-uma-empresa-em-dois-dias-ja-e-realidade/"
+    },
+    {
+      "id": "aracaju-guia-pratico-de-licenciamento-ur",
+      "title": "Aracaju – Guia prático de licenciamento urbanístico autodeclaratório",
+      "short": "Aracaju – Guia prático de licenciamento urbanístico autodecl",
+      "org": "slim.aracaju.se.gov.br",
+      "url": "https://slim.aracaju.se.gov.br/home/wp-content/uploads/2024/12/Guia-pratico-LICENCIAMENTO-UBBANISTICO-AUTODECLARATORIO.pdf"
+    },
+    {
+      "id": "lei-complementar-aracaju-no-135-de-01-08",
+      "title": "Lei Complementar Aracaju nº 135 de 01/08/2014",
+      "short": "Lei Complementar Aracaju nº 135 de 01/08/2014",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=273312"
+    },
+    {
+      "id": "norma-cbmto-doe-to-25-set-2012",
+      "title": "Norma CBMTO – DOE-TO 25 set 2012",
+      "short": "Norma CBMTO – DOE-TO 25 set 2012",
+      "org": "legisweb.com.br",
+      "url": "https://www.legisweb.com.br/legislacao/?id=245460"
+    },
+    {
+      "id": "conexao-to-palmas-facilita-funcionamento",
+      "title": "Conexão TO – Palmas facilita funcionamento para MEIs e pequenos negócios",
+      "short": "Conexão TO – Palmas facilita funcionamento para MEIs e peque",
+      "org": "conexaoto.com.br",
+      "url": "https://conexaoto.com.br/2022/02/26/palmas-facilita-funcionamento-para-meis-e-pequenos-negocios"
+    },
+    {
+      "id": "portaria-semus-gab-supavs-no-1198-2023-p",
+      "title": "Portaria SEMUS/GAB/SUPAVS nº 1198/2023 – Palmas",
+      "short": "Portaria SEMUS/GAB/SUPAVS nº 1198/2023 – Palmas",
+      "org": "econeteditora.com.br",
+      "url": "https://www.econeteditora.com.br/icms_to/portarias/2023/port_semus_gabsupavs_1198_2023.php"
+    },
+    {
+      "id": "stone-como-montar-uma-lanchonete-espaco",
+      "title": "Stone — Como montar uma lanchonete (espaço mínimo de 15 a 30 m², 40% para mesas; jun/2025)",
+      "short": "Stone — Como montar uma lanchonete (espaço mínimo de 15 a 30",
+      "org": "conteudo.stone.com.br",
+      "url": "https://conteudo.stone.com.br/como-montar-uma-lanchonete/"
+    },
+    {
+      "id": "ponto-frio-chapa-profissional-a-gas-marc",
+      "title": "Ponto Frio — Chapa profissional a gás Marchesoni 80 cm 3 queimadores CH7083 (R$ 2.057,74)",
+      "short": "Ponto Frio — Chapa profissional a gás Marchesoni 80 cm 3 que",
+      "org": "pontofrio.com.br",
+      "url": "https://www.pontofrio.com.br/chapa-profissional-a-gas-marchesoni-80cm-3-queimadores-ch7083/p/1571936229"
+    },
+    {
+      "id": "loja-do-mecanico-chapa-bifeteira-a-gas-c",
+      "title": "Loja do Mecânico — Chapa bifeteira a gás CB80 80 cm Tostando",
+      "short": "Loja do Mecânico — Chapa bifeteira a gás CB80 80 cm Tostando",
+      "org": "lojadomecanico.com.br",
+      "url": "https://www.lojadomecanico.com.br/produto/602577/72/899/chapa-bifeteira-a-gas-baixa-pressao-cb80-80cm-com-2-queimadores-tostando-60180"
+    },
+    {
+      "id": "buscape-freezer-horizontal-electrolux-40",
+      "title": "Buscapé — Freezer Horizontal Electrolux 400 L HI440 (R$ 2.799)",
+      "short": "Buscapé — Freezer Horizontal Electrolux 400 L HI440 (R$ 2.79",
+      "org": "buscape.com.br",
+      "url": "https://www.buscape.com.br/freezer/freezer-horizontal-electrolux-400-litros-cycle-defrost-hi440"
+    },
+    {
+      "id": "saipos-qual-investimento-necessario-para",
+      "title": "Saipos — Qual investimento necessário para abrir uma lanchonete (cita Sebrae: ~R$ 80 mil para pequeno porte)",
+      "short": "Saipos — Qual investimento necessário para abrir uma lanchon",
+      "org": "saipos.com",
+      "url": "https://saipos.com/lanchonete/qual-investimento-necessario-para-abrir-uma-lanchonete"
+    },
+    {
+      "id": "baressp-empresas-do-setor-de-alimentacao",
+      "title": "BaresSP — Empresas do setor de alimentação têm menor índice de prejuízo desde dezembro, aponta Abrasel (maio/2025: 41% com lucro, 18% prejuízo)",
+      "short": "BaresSP — Empresas do setor de alimentação têm menor índice ",
+      "org": "baressp.com.br",
+      "url": "https://baressp.com.br/noticias/empresas-do-setor-de-alimentacao-tem-menor-indice-de-prejuizo-desde-dezembro-aponta-abrasel"
+    },
+    {
+      "id": "contabilidade-com-cnae-5611-2-03-lanchon",
+      "title": "Contabilidade.com — CNAE 5611-2/03 Lanchonetes: pode ser MEI?",
+      "short": "Contabilidade.com — CNAE 5611-2/03 Lanchonetes: pode ser MEI",
+      "org": "contabilidade.com",
+      "url": "https://contabilidade.com/blog/cnae-5611203-lanchonetes-casas-de-cha-de-sucos-e-similares-pode-ser-mei-quanto-paga-e-quando-desenquadrar-do-mei/"
+    },
+    {
+      "id": "vri-consulting-lista-de-atividades-permi",
+      "title": "VRI Consulting — Lista de atividades permitidas ao MEI",
+      "short": "VRI Consulting — Lista de atividades permitidas ao MEI",
+      "org": "vriconsulting.com.br",
+      "url": "https://vriconsulting.com.br/cnaes/atividades-permitidas-microempreendedor-individual-mei.php?pagina=12"
+    },
+    {
+      "id": "maquininha-com-menor-taxa-por-que-o-nume",
+      "title": "Maquininha com menor taxa: por que o número do anúncio não basta na escolha (Uai) — cita MDR média do Banco Central 1º sem. 2026: 2,11% crédito, 1,06% débito",
+      "short": "Maquininha com menor taxa: por que o número do anúncio não b",
+      "org": "uai.com.br",
+      "url": "https://www.uai.com.br/?p=189262"
+    },
+    {
+      "id": "idinheiro-maquina-de-cartao-com-menor-ta",
+      "title": "iDinheiro — máquina de cartão com menor taxa no débito (débito ~1,69%, crédito à vista ~3,86% em plano de entrada)",
+      "short": "iDinheiro — máquina de cartão com menor taxa no débito (débi",
+      "org": "idinheiro.com.br",
+      "url": "https://www.idinheiro.com.br/negocios/maquina-cartao-menor-taxa-debito/"
+    },
+    {
+      "id": "shopify-brasil-sistema-de-pdv-para-peque",
+      "title": "Shopify Brasil — sistema de PDV para pequenas empresas (PDV a partir de R$ 49/mês; VHSYS R$ 139 a R$ 399/mês)",
+      "short": "Shopify Brasil — sistema de PDV para pequenas empresas (PDV ",
+      "org": "shopify.com",
+      "url": "https://www.shopify.com/br/blog/sistema-de-pdv-para-pequenas-empresas"
+    },
+    {
+      "id": "lar-pontual-custo-de-reforma-por-m2-2026",
+      "title": "Lar Pontual — Custo de reforma por m² 2026 (R$ 800 a R$ 3.500/m² médio; básica R$ 500–1.200/m²; completa R$ 1.500–3.800/m²)",
+      "short": "Lar Pontual — Custo de reforma por m² 2026 (R$ 800 a R$ 3.50",
+      "org": "larpontual.com.br",
+      "url": "https://larpontual.com.br/portal/custo-de-reforma-por-m2"
+    },
+    {
+      "id": "portal-do-empreendedor-gov-br-ocupacoes",
+      "title": "Portal do Empreendedor (gov.br) — ocupações permitidas ao MEI (Anexo XI, Res. CGSN 140/2018)",
+      "short": "Portal do Empreendedor (gov.br) — ocupações permitidas ao ME",
+      "org": "gov.br",
+      "url": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/quero-ser-mei/atividades-permitidas/f"
+    },
+    {
+      "id": "contabilizei-atividades-mei-2026-tabela",
+      "title": "Contabilizei — Atividades MEI 2026: tabela CNAE MEI e atividades permitidas",
+      "short": "Contabilizei — Atividades MEI 2026: tabela CNAE MEI e ativid",
+      "org": "contabilizei.com.br",
+      "url": "https://www.contabilizei.com.br/contabilidade-online/atividades-mei/"
+    },
+    {
+      "id": "sebrae-pagina-de-ideias-de-negocio-cita",
+      "title": "Sebrae — página de ideias de negócio cita teto do MEI: R$ 81 mil/ano hoje; Super MEI R$ 110 mil em 2027 e R$ 140 mil em 2028 (LC 238)",
+      "short": "Sebrae — página de ideias de negócio cita teto do MEI: R$ 81",
+      "org": "sebrae.com.br",
+      "url": "https://sebrae.com.br/sites/PortalSebrae/ideias/como-montar-um-minimercado,64f87a51b9105410VgnVCM1000003b74010aRCRD"
+    },
+    {
+      "id": "ponto-frio-forno-turbo-eletrico-5-esteir",
+      "title": "Ponto Frio — Forno turbo elétrico 5 esteiras FVT5E Venâncio (R$ 7.949)",
+      "short": "Ponto Frio — Forno turbo elétrico 5 esteiras FVT5E Venâncio ",
+      "org": "pontofrio.com.br",
+      "url": "https://www.pontofrio.com.br/forno-turbo-eletrico-5-esteiras-fvt5e-venancio/p/1571192609"
+    },
+    {
+      "id": "loja-do-mecanico-forno-turbo-ft5e-eletri",
+      "title": "Loja do Mecânico — Forno turbo FT5E elétrico 5 esteiras 9.250 W Tostando (R$ 4.799,90, trifásico)",
+      "short": "Loja do Mecânico — Forno turbo FT5E elétrico 5 esteiras 9.25",
+      "org": "lojadomecanico.com.br",
+      "url": "https://www.lojadomecanico.com.br/produto/602593/72/899/forno-turbo-ft5e-eletrico-para-5-esteiras-9250w-220v-trifasico-tostando-60017id211076"
+    },
+    {
+      "id": "magazine-luiza-busca-masseira-15-braesi",
+      "title": "Magazine Luiza — busca 'masseira 15' (Braesi 15 kg ~R$ 4.690–4.970; G.Paniz AM-15 R$ 5.488; Copametal ~R$ 3.654)",
+      "short": "Magazine Luiza — busca 'masseira 15' (Braesi 15 kg ~R$ 4.690",
+      "org": "m.magazineluiza.com.br",
+      "url": "https://m.magazineluiza.com.br/busca/masseira+15"
+    },
+    {
+      "id": "casas-bahia-amassadeira-rapida-15-kg-ven",
+      "title": "Casas Bahia — Amassadeira rápida 15 kg Venâncio",
+      "short": "Casas Bahia — Amassadeira rápida 15 kg Venâncio",
+      "org": "casasbahia.com.br",
+      "url": "https://www.casasbahia.com.br/amassadeira-rapida-15-kg-venancio-220v-arsv15nr220/p/1569922115"
+    },
+    {
+      "id": "sebrae-es-oportunidades-padaria-equipame",
+      "title": "Sebrae ES — Oportunidades Padaria (equipamentos básicos: fornos, amassadeiras, cilindros, modeladoras, batedeiras)",
+      "short": "Sebrae ES — Oportunidades Padaria (equipamentos básicos: for",
+      "org": "sebrae.com.br",
+      "url": "https://sebrae.com.br/Sebrae/Portal Sebrae/UFs/ES/Conteúdos/E-books/Arquivos/Oportunidades_Padaria.pdf"
+    },
+    {
+      "id": "o-hoje-panificacao-cresce-no-brasil-idea",
+      "title": "O Hoje — Panificação cresce no Brasil (IDEAL/ABIP: faturamento do setor R$ 164,12 bi em 2025; ticket médio +5,75% jan–mai/2026, fluxo de clientes −2,31%; pão francês R$ 21,73/kg)",
+      "short": "O Hoje — Panificação cresce no Brasil (IDEAL/ABIP: faturamen",
+      "org": "ohoje.com",
+      "url": "https://ohoje.com/2026/08/21/panificacao-cresce-no-brasil-e-centro-oeste-tem-o-pao-frances-mais-caro/"
+    },
+    {
+      "id": "agencia-sebrae-paixao-nacional-50-milhoe",
+      "title": "Agência Sebrae — Paixão nacional: 50 milhões de consumidores vão à padaria diariamente",
+      "short": "Agência Sebrae — Paixão nacional: 50 milhões de consumidores",
+      "org": "agenciasebrae.com.br",
+      "url": "https://agenciasebrae.com.br/cultura-empreendedora/paixao-nacional-50-milhoes-de-consumidores-vao-a-padaria-diariamente-no-pais/"
+    },
+    {
+      "id": "times-brasil-setor-de-panificacao-deve-f",
+      "title": "Times Brasil — Setor de panificação deve faturar R$ 160 bi e enfrenta 'tempestade perfeita' de custos, juros e concorrência",
+      "short": "Times Brasil — Setor de panificação deve faturar R$ 160 bi e",
+      "org": "timesbrasil.com.br",
+      "url": "https://timesbrasil.com.br/brasil/setor-de-panificacao-deve-faturar-r-160-bi-e-enfrenta-tempestade-perfeita-de-custos-juros-e-concorrencia/"
+    },
+    {
+      "id": "monitor-mercantil-panificacao-63-83-das",
+      "title": "Monitor Mercantil — Panificação: 63,83% das empresas são registradas como MEI",
+      "short": "Monitor Mercantil — Panificação: 63,83% das empresas são reg",
+      "org": "monitormercantil.com.br",
+      "url": "https://monitormercantil.com.br/panificacao-6383-das-empresas-sao-registradas-como-mei/"
+    },
+    {
+      "id": "decreto-7-212-2010-ripi-art-5o-v-preparo",
+      "title": "Decreto 7.212/2010 (RIPI), art. 5º, V — preparo de alimentos em padarias/confeitarias vendidos diretamente ao consumidor não é industrialização",
+      "short": "Decreto 7.212/2010 (RIPI), art. 5º, V — preparo de alimentos",
+      "org": "planalto.gov.br",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/decreto/d7212.htm"
+    },
+    {
+      "id": "catraca-livre-quanto-custa-montar-um-sal",
+      "title": "Catraca Livre — Quanto custa montar um salão de beleza do zero (jan/2026: salão de bairro R$ 30–70 mil; reforma R$ 10–40 mil; móveis e equipamentos R$ 15–60 mil)",
+      "short": "Catraca Livre — Quanto custa montar um salão de beleza do ze",
+      "org": "catracalivre.com.br",
+      "url": "https://catracalivre.com.br/saude-bem-estar/quanto-custa-montar-um-salao-de-beleza-do-zero/"
+    },
+    {
+      "id": "mercado-livre-cadeira-hidraulica-reclina",
+      "title": "Mercado Livre — cadeira hidráulica (reclinável de R$ 1.340 a R$ 2.618)",
+      "short": "Mercado Livre — cadeira hidráulica (reclinável de R$ 1.340 a",
+      "org": "lista.mercadolivre.com.br",
+      "url": "https://lista.mercadolivre.com.br/cadeira-hidraulica"
+    },
+    {
+      "id": "mercado-livre-cc-s-moveis-profissionais",
+      "title": "Mercado Livre — CC&S Móveis Profissionais (lavatórios de porcelana R$ 2.349–3.086)",
+      "short": "Mercado Livre — CC&S Móveis Profissionais (lavatórios de por",
+      "org": "mercadolivre.com.br",
+      "url": "https://www.mercadolivre.com.br/pagina/ccesmoveiscorreiaesilvest5863"
+    },
+    {
+      "id": "casas-bahia-kit-salao-evidence-cadeira-r",
+      "title": "Casas Bahia — Kit salão Evidence cadeira reclinável + lavatório",
+      "short": "Casas Bahia — Kit salão Evidence cadeira reclinável + lavató",
+      "org": "casasbahia.com.br",
+      "url": "https://www.casasbahia.com.br/kit-salao-evidence-cadeira-recl-estrela-lavatorio-c-ap-preto/p/1558792886"
+    },
+    {
+      "id": "lei-13-352-2016-lei-do-salao-parceiro",
+      "title": "Lei 13.352/2016 (Lei do Salão-Parceiro)",
+      "short": "Lei 13.352/2016 (Lei do Salão-Parceiro)",
+      "org": "planalto.gov.br",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13352.htm"
+    },
+    {
+      "id": "gg-contabilidade-montar-um-salao-de-bele",
+      "title": "GG Contabilidade — Montar um salão de beleza: quanto custa (anúncios online R$ 500–3.000/mês)",
+      "short": "GG Contabilidade — Montar um salão de beleza: quanto custa (",
+      "org": "ggcontabilidade.com",
+      "url": "https://ggcontabilidade.com/montar-um-salao-de-beleza-quanto-custa/"
+    },
+    {
+      "id": "contabilizei-como-montar-salao-de-beleza",
+      "title": "Contabilizei — Como montar salão de beleza",
+      "short": "Contabilizei — Como montar salão de beleza",
+      "org": "contabilizei.com.br",
+      "url": "https://www.contabilizei.com.br/contabilidade-online/como-montar-salao-de-beleza/"
+    },
+    {
+      "id": "sumup-como-montar-um-mercadinho-r-20-mil",
+      "title": "SumUp — Como montar um mercadinho (R$ 20 mil a R$ 200 mil; margem ~6% em mercadinhos vs ~2,9% grandes redes, ABRAS; abr/2024)",
+      "short": "SumUp — Como montar um mercadinho (R$ 20 mil a R$ 200 mil; m",
+      "org": "sumup.com",
+      "url": "https://www.sumup.com/pt-br/comecar/ideias-de-negocios/como-montar-um-mercadinho/"
+    },
+    {
+      "id": "sebrae-pr-minimercado-comece-seu-negocio",
+      "title": "Sebrae PR — Minimercado: comece seu negócio (gôndolas, freezers, caixas, balanças, impressoras fiscais; marcas patrocinam fachadas e geladeiras; set/2024)",
+      "short": "Sebrae PR — Minimercado: comece seu negócio (gôndolas, freez",
+      "org": "sebraepr.com.br",
+      "url": "https://sebraepr.com.br/wp-content/uploads/2024/09/Minimercado-Comece-seu-negocio.pdf"
+    },
+    {
+      "id": "magazine-luiza-busca-freezer-expositor-h",
+      "title": "Magazine Luiza — busca freezer expositor horizontal (Gelopar GHD-400 R$ 4.007 no Pix)",
+      "short": "Magazine Luiza — busca freezer expositor horizontal (Gelopar",
+      "org": "m.magazineluiza.com.br",
+      "url": "https://m.magazineluiza.com.br/busca/freezer+expositora+horizontal/"
+    },
+    {
+      "id": "creditas-como-montar-loja-de-roupas-loja",
+      "title": "Creditas — Como montar loja de roupas (loja física R$ 30–200 mil incl. reforma, estoque e mobiliário; cita média de R$ 30 mil da Contabilizei para lojas femininas/infantis)",
+      "short": "Creditas — Como montar loja de roupas (loja física R$ 30–200",
+      "org": "creditas.com",
+      "url": "https://www.creditas.com/exponencial/como-montar-loja-de-roupas/"
+    },
+    {
+      "id": "correio-do-estado-abrir-loja-de-roupas-p",
+      "title": "Correio do Estado — Abrir loja de roupas (presença digital R$ 2 mil a R$ 8 mil/mês)",
+      "short": "Correio do Estado — Abrir loja de roupas (presença digital R",
+      "org": "correiodoestado.com.br",
+      "url": "https://correiodoestado.com.br/mix/?p=11660"
+    },
+    {
+      "id": "bling-como-montar-um-pet-shop-pequeno-ci",
+      "title": "Bling — Como montar um pet shop pequeno (cita Sebrae 2021: ~R$ 45 mil para loja de 60 m²)",
+      "short": "Bling — Como montar um pet shop pequeno (cita Sebrae 2021: ~",
+      "org": "blog.bling.com.br",
+      "url": "https://blog.bling.com.br/como-abrir-pet-shop/"
+    },
+    {
+      "id": "sebrae-pr-serie-sebrae-em-dados-analise",
+      "title": "Sebrae PR — Série Sebrae em dados: análise do setor de pet shop (investimento a partir de R$ 10 mil)",
+      "short": "Sebrae PR — Série Sebrae em dados: análise do setor de pet s",
+      "org": "sebraepr.com.br",
+      "url": "https://sebraepr.com.br/comunidade/artigo/serie-sebrae-em-dados-e-oportunidades-analise-do-setor-de-pet-shop"
+    },
+    {
+      "id": "magazine-luiza-busca-banho-caes-mesa-de",
+      "title": "Magazine Luiza — busca banho cães (Mesa de banho e tosa inox AlcaPet 80x55 R$ 749,77)",
+      "short": "Magazine Luiza — busca banho cães (Mesa de banho e tosa inox",
+      "org": "magazineluiza.com.br",
+      "url": "https://www.magazineluiza.com.br/busca/banho+caes/"
+    },
+    {
+      "id": "magazine-luiza-marca-mega-groomer-soprad",
+      "title": "Magazine Luiza — marca Mega Groomer (sopradores profissionais R$ 510 a R$ 2.460)",
+      "short": "Magazine Luiza — marca Mega Groomer (sopradores profissionai",
+      "org": "magazineluiza.com.br",
+      "url": "https://www.magazineluiza.com.br/marcas/mega-groomer"
+    },
+    {
+      "id": "itatiaia-pesquisa-aponta-diferencas-nos",
+      "title": "Itatiaia — Pesquisa aponta diferenças nos preços de serviços de pet shops em BH (MercadoMineiro, out/2026: banho e tosa até 5 kg R$ 96,82–100,23; 10–15 kg R$ 126,59–128,86; banho pelo curto até 5 kg R$ 70,09)",
+      "short": "Itatiaia — Pesquisa aponta diferenças nos preços de serviços",
+      "org": "itatiaia.com.br",
+      "url": "https://www.itatiaia.com.br/economia/pesquisa-aponta-diferencas-nos-precos-de-servicos-de-pet-shops-em-bh-confira"
+    },
+    {
+      "id": "sebrae-ideia-de-negocio-mei-tosadora-de",
+      "title": "Sebrae — Ideia de negócio MEI: tosadora de animais domésticos",
+      "short": "Sebrae — Ideia de negócio MEI: tosadora de animais doméstico",
+      "org": "bibliotecas.sebrae.com.br",
+      "url": "https://bibliotecas.sebrae.com.br/chronus/ARQUIVOS_CHRONUS/IDEIAS_DE_NEGOCIO/PDFS/ideia-de-negocio_mei--tosadora-de-animais-domesticos.pdf"
+    }
+  ],
+  "groups": [
+    {
+      "title": "Leis e impostos",
+      "ids": [
+        "minWage",
+        "simplesLaw",
+        "meiDas",
+        "meiLimitLaw",
+        "meiPortal",
+        "taxReformLaw",
+        "proLaboreInss",
+        "economicFreedomLaw",
+        "tenancyLaw",
+        "inpiFees"
+      ]
+    },
+    {
+      "title": "Sebrae e orientação",
+      "ids": [
+        "sebrae",
+        "sebraeWorkingCapital",
+        "sebraeSurvival",
+        "calculoClt"
+      ]
+    },
+    {
+      "title": "Preços de serviços",
+      "ids": [
+        "digitalCertificate",
+        "accountingMarket",
+        "cardFees"
+      ]
+    },
+    {
+      "title": "Aluguel, energia e taxas por estado e capital",
+      "ids": [
+        "aneel-dados-abertos-tarifas-homologadas",
+        "facilite-tabela-de-precos-das-juntas-com",
+        "lei-no-2679-de-27-12-2012-ac",
+        "resolucao-do-plenario-juceal-no-30-de-27",
+        "lei-no-6-442-de-31-12-2003-al",
+        "lei-no-3862-de-28-02-2013-am",
+        "juceb-tabela-de-precos-capital-atualizad",
+        "lei-no-12929-de-27-12-2013-ba",
+        "quanto-custa-abrir-uma-empresa-no-ceara",
+        "lei-no-15838-de-27-07-2015-ce",
+        "jucis-df-resolucao-no-01-de-30-de-dezemb",
+        "ato-cbm-df-s-no-de-07-01-2022-valores-da",
+        "contaja-taxas-jucees-tabela-2026-citada",
+        "lei-es-no-7-001-2001",
+        "quais-os-custos-para-abrir-uma-empresa-e",
+        "anexo-iii-tse-2026-cbmgo",
+        "quanto-custa-abrir-uma-empresa-no-maranh",
+        "lei-no-11390-de-21-12-2020-ma",
+        "quanto-custa-abrir-uma-empresa-em-mato-g",
+        "lei-no-12-774-de-20-12-2024-mt-taxas-est",
+        "deliberacao-jucems-no-4-de-23-03-2026-do",
+        "jucemg-tabela-de-precos-atualizada-2026",
+        "cbmmg-instrucao-tecnica-01-10a-edicao-po",
+        "portaria-no-1015-de-29-11-2019-cbmpa",
+        "quanto-custa-abrir-uma-empresa-na-paraib",
+        "portaria-cbmpb-no-16-de-06-06-2013",
+        "quanto-custa-abrir-uma-empresa-no-parana",
+        "curitiba-amplia-dispensa-de-alvaras-para",
+        "portaria-jucepe-no-20-de-09-03-2020-ulti",
+        "decreto-pe-no-60-137-2025-anexo-i-valore",
+        "jornal-contabil-quanto-custa-abrir-uma-e",
+        "lei-pi-no-5-483-2005",
+        "deliberacao-jucerja-no-158-de-11-12-2023",
+        "cbmerj-nt-1-07-atividades-economicas-de",
+        "jornal-contabil-quanto-custa-abrir-uma-e-2",
+        "lc-rn-601-2017-consolidada-ate-a-lc-704",
+        "resolucao-gab-pres-jucisrs-no-1-de-24-03",
+        "rtcbmrs-no-05-parte-05-taxas-2025",
+        "sefin-ro-lei-853-taxa-de-fiscalizacao-e",
+        "resolucao-jucerr-no-1-de-13-02-2023",
+        "folha-bv-bombeiros-19-07-2019",
+        "quanto-custa-abrir-uma-empresa-em-santa",
+        "cbmsc-diretriz-sobre-vistorias-para-func",
+        "aasp-regulamento-da-jucesp-valores-dare",
+        "lei-sp-no-15-266-2013-compilada-alesp",
+        "jornal-contabil-quanto-custa-abrir-uma-e-4",
+        "contabeis-em-sergipe-abrir-uma-empresa-e",
+        "norma-cbmto-doe-to-25-set-2012",
+        "indice-fipezap-locacao-residencial-infor",
+        "decreto-no-1683-2019-rio-branco",
+        "decreto-96-2015-rio-branco",
+        "decreto-no-9991-de-12-02-2025-maceio",
+        "lei-complementar-no-209-de-23-12-2025-ma",
+        "decreto-manaus-dom-20-jan-2026",
+        "apresentacao-simbravisa-visa-manaus",
+        "indice-fipezap-venda-e-locacao-comercial",
+        "lei-no-9417-de-17-12-2018-salvador",
+        "lei-7-995-2011-salvador-tvs",
+        "manual-isencao-unica-do-funcionamento-pr",
+        "check-list-licenca-sanitaria-fortaleza-o",
+        "lei-no-6-725-de-24-11-2020-df",
+        "portaria-no-11-de-07-de-janeiro-de-2026",
+        "decreto-es-no-4231-r-2018-simplifica-es",
+        "decreto-vitoria-no-17-201-2017",
+        "codigo-de-posturas-do-municipio-de-goian",
+        "portaria-sms-63-2023-visa-goiania",
+        "sao-luis-alvara-2026-ja-esta-disponivel",
+        "654-atividades-dispensadas-de-alvara-em",
+        "resolucao-sesau-no-946-de-22-12-2025",
+        "prefeitura-de-bh-simplifica-obtencao-de",
+        "vigilancia-sanitaria-prefeitura-de-belo",
+        "o-liberal-abrir-empresa-em-belem-custa-a",
+        "decreto-no-11258-de-26-03-2026-joao-pess",
+        "lei-no-13656-de-06-05-2025-pb-codigo-san",
+        "decreto-no-2350-de-11-11-2025-curitiba",
+        "decreto-recife-no-37-386-de-29-12-2023",
+        "decreto-recife-no-36-521-2023-licenciame",
+        "lei-complementar-teresina-no-5-787-de-19",
+        "dom-teresina-21-12-2018-trifs",
+        "alvara-a-jato-carioca-digital",
+        "portaria-s-ivisa-rio-no-828-de-23-12-202",
+        "lc-natal-185-2019-coad",
+        "lc-natal-no-250-2024-dom-24-12-2024-taxa",
+        "autodeclaracao-de-dispensa-de-alvara-pre",
+        "lei-complementar-no-906-de-07-07-2022-po",
+        "portaria-001-2026-dvisa-semusa-classific",
+        "jornal-contabil-quanto-custa-abrir-uma-e-3",
+        "alf-baixo-risco-subprefeituras-prefeitur",
+        "perguntas-frequentes-vigilancia-sanitari",
+        "aracaju-guia-pratico-de-licenciamento-ur",
+        "lei-complementar-aracaju-no-135-de-01-08",
+        "conexao-to-palmas-facilita-funcionamento",
+        "portaria-semus-gab-supavs-no-1198-2023-p"
+      ]
+    },
+    {
+      "title": "Equipamentos, vendas e custos dos negócios",
+      "ids": [
+        "stone-como-montar-uma-lanchonete-espaco",
+        "ponto-frio-chapa-profissional-a-gas-marc",
+        "loja-do-mecanico-chapa-bifeteira-a-gas-c",
+        "buscape-freezer-horizontal-electrolux-40",
+        "saipos-qual-investimento-necessario-para",
+        "baressp-empresas-do-setor-de-alimentacao",
+        "contabilidade-com-cnae-5611-2-03-lanchon",
+        "vri-consulting-lista-de-atividades-permi",
+        "maquininha-com-menor-taxa-por-que-o-nume",
+        "idinheiro-maquina-de-cartao-com-menor-ta",
+        "shopify-brasil-sistema-de-pdv-para-peque",
+        "lar-pontual-custo-de-reforma-por-m2-2026",
+        "portal-do-empreendedor-gov-br-ocupacoes",
+        "contabilizei-atividades-mei-2026-tabela",
+        "sebrae-pagina-de-ideias-de-negocio-cita",
+        "ponto-frio-forno-turbo-eletrico-5-esteir",
+        "loja-do-mecanico-forno-turbo-ft5e-eletri",
+        "magazine-luiza-busca-masseira-15-braesi",
+        "casas-bahia-amassadeira-rapida-15-kg-ven",
+        "sebrae-es-oportunidades-padaria-equipame",
+        "o-hoje-panificacao-cresce-no-brasil-idea",
+        "agencia-sebrae-paixao-nacional-50-milhoe",
+        "times-brasil-setor-de-panificacao-deve-f",
+        "monitor-mercantil-panificacao-63-83-das",
+        "decreto-7-212-2010-ripi-art-5o-v-preparo",
+        "catraca-livre-quanto-custa-montar-um-sal",
+        "mercado-livre-cadeira-hidraulica-reclina",
+        "mercado-livre-cc-s-moveis-profissionais",
+        "casas-bahia-kit-salao-evidence-cadeira-r",
+        "lei-13-352-2016-lei-do-salao-parceiro",
+        "gg-contabilidade-montar-um-salao-de-bele",
+        "contabilizei-como-montar-salao-de-beleza",
+        "sumup-como-montar-um-mercadinho-r-20-mil",
+        "sebrae-pr-minimercado-comece-seu-negocio",
+        "magazine-luiza-busca-freezer-expositor-h",
+        "creditas-como-montar-loja-de-roupas-loja",
+        "correio-do-estado-abrir-loja-de-roupas-p",
+        "bling-como-montar-um-pet-shop-pequeno-ci",
+        "sebrae-pr-serie-sebrae-em-dados-analise",
+        "magazine-luiza-busca-banho-caes-mesa-de",
+        "magazine-luiza-marca-mega-groomer-soprad",
+        "itatiaia-pesquisa-aponta-diferencas-nos",
+        "sebrae-ideia-de-negocio-mei-tosadora-de"
+      ]
+    },
+    {
+      "title": "Estimativas",
+      "ids": [
+        "ownEstimate"
+      ]
+    }
+  ]
+}

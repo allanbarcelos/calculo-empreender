@@ -1,0 +1,1346 @@
+{
+  "scenarios": [
+    {
+      "id": "low",
+      "label": "Conservador",
+      "description": "Movimento fraco ou ponto pouco visível."
+    },
+    {
+      "id": "medium",
+      "label": "Moderado",
+      "description": "Movimento típico de um bom ponto de bairro."
+    },
+    {
+      "id": "high",
+      "label": "Otimista",
+      "description": "Ponto de grande movimento e boa divulgação."
+    }
+  ],
+  "businesses": [
+    {
+      "id": "lanchonete",
+      "validFrom": "2026-01-01",
+      "label": "Lanchonete",
+      "description": "Lanches, salgados e bebidas, com chapa, fritadeira e balcão refrigerado.",
+      "areaM2": 40,
+      "renovationPerM2": 1200,
+      "facade": 4000,
+      "initialStock": 5000,
+      "initialMarketing": 2000,
+      "equipment": [
+        {
+          "id": "chapa",
+          "label": "Chapa bifeteira a gás 80 cm inox",
+          "qty": 1,
+          "unitCost": 2000,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "fritadeira",
+          "label": "Fritadeira elétrica industrial 2 cubas",
+          "qty": 1,
+          "unitCost": 1300,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "coifa",
+          "label": "Coifa inox 1,5 m com exaustor e duto",
+          "qty": 1,
+          "unitCost": 6000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "refrigerador4p",
+          "label": "Refrigerador comercial 4 portas inox",
+          "qty": 1,
+          "unitCost": 8000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "freezer",
+          "label": "Freezer horizontal 400 L",
+          "qty": 1,
+          "unitCost": 2900,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "expositorBebidas",
+          "label": "Expositor vertical de bebidas 1 porta",
+          "qty": 1,
+          "unitCost": 4500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "estufa",
+          "label": "Estufa/vitrine aquecida para salgados",
+          "qty": 1,
+          "unitCost": 1500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "microondas",
+          "label": "Micro-ondas 30 L",
+          "qty": 1,
+          "unitCost": 800,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "liquidificador",
+          "label": "Liquidificador industrial 2 L",
+          "qty": 1,
+          "unitCost": 600,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "espremedor",
+          "label": "Espremedor de frutas industrial",
+          "qty": 1,
+          "unitCost": 500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "bancadaInox",
+          "label": "Bancada/mesa inox 1,9 m",
+          "qty": 2,
+          "unitCost": 1800,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "pia",
+          "label": "Pia inox com cuba e torneira",
+          "qty": 1,
+          "unitCost": 1200,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "balcao",
+          "label": "Balcão de atendimento",
+          "qty": 1,
+          "unitCost": 2500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "mesasCadeiras",
+          "label": "Jogo de mesa + 4 cadeiras",
+          "qty": 6,
+          "unitCost": 700,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "pdv",
+          "label": "Computador/tablet PDV + impressora térmica NFC-e",
+          "qty": 1,
+          "unitCost": 2500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "utensilios",
+          "label": "Utensílios (panelas, placas, facas, potes, gastronorm)",
+          "qty": 1,
+          "unitCost": 2000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "seguranca",
+          "label": "Extintores, sinalização e iluminação de emergência",
+          "qty": 1,
+          "unitCost": 800,
+          "essential": true,
+          "kind": "estimate"
+        }
+      ],
+      "monthly": {
+        "energyKwh": 1100,
+        "waterM3": 15,
+        "consumables": 900,
+        "maintenance": 300,
+        "software": 150,
+        "marketing": 800,
+        "other": 600
+      },
+      "otherNote": "Gás GLP para a chapa (aprox. 1 botijão P45 ou 4–5 P13/mês)",
+      "revenue": {
+        "ticket": 30,
+        "customersPerDay": {
+          "low": 60,
+          "medium": 100,
+          "high": 160
+        },
+        "openDays": 26,
+        "rampUpMonths": 6,
+        "cmvRate": 0.35,
+        "cardShare": 0.75,
+        "netMarginRange": [
+          0.05,
+          0.12
+        ]
+      },
+      "staff": [
+        {
+          "role": "Chapeiro/cozinheiro",
+          "count": 1
+        },
+        {
+          "role": "Auxiliar de cozinha",
+          "count": 1
+        },
+        {
+          "role": "Atendente/caixa",
+          "count": 1
+        }
+      ],
+      "tax": {
+        "cnae": "5611-2/03 (Lanchonetes, casas de chá, de sucos e similares)",
+        "meiAllowed": true,
+        "meiOccupation": "Proprietário(a) de lanchonete independente",
+        "meiActivity": "commerce",
+        "simplesAnnex": "I"
+      },
+      "licenses": {
+        "sanitary": "food",
+        "firefighters": true,
+        "license": true
+      },
+      "kinds": {
+        "ticket": "estimate",
+        "customers": "estimate",
+        "cmv": "estimate",
+        "renovation": "market",
+        "area": "market"
+      },
+      "sources": [
+        "stone-como-montar-uma-lanchonete-espaco",
+        "ponto-frio-chapa-profissional-a-gas-marc",
+        "loja-do-mecanico-chapa-bifeteira-a-gas-c",
+        "buscape-freezer-horizontal-electrolux-40",
+        "saipos-qual-investimento-necessario-para",
+        "baressp-empresas-do-setor-de-alimentacao",
+        "contabilidade-com-cnae-5611-2-03-lanchon",
+        "vri-consulting-lista-de-atividades-permi",
+        "maquininha-com-menor-taxa-por-que-o-nume",
+        "idinheiro-maquina-de-cartao-com-menor-ta",
+        "shopify-brasil-sistema-de-pdv-para-peque",
+        "lar-pontual-custo-de-reforma-por-m2-2026",
+        "portal-do-empreendedor-gov-br-ocupacoes",
+        "contabilizei-atividades-mei-2026-tabela",
+        "sebrae-pagina-de-ideias-de-negocio-cita"
+      ],
+      "notes": "Receita média na maturidade ≈ R$ 78 mil/mês (cenário médio), o que excede muito o teto do MEI (R$ 81 mil/ano); MEI só serve para operação mínima. Simples Anexo I (comércio, inclui alimentação). Delivery por app cobra comissão de 12–27% sobre o pedido, não incluída no CMV. Embalagens descartáveis entram em consumables."
+    },
+    {
+      "id": "padaria",
+      "validFrom": "2026-01-01",
+      "label": "Padaria (pequena, de bairro)",
+      "description": "Produção própria de pães e confeitaria, com forno, amassadeira e vitrines.",
+      "areaM2": 80,
+      "renovationPerM2": 1400,
+      "facade": 5000,
+      "initialStock": 8000,
+      "initialMarketing": 2000,
+      "equipment": [
+        {
+          "id": "fornoTurbo",
+          "label": "Forno turbo elétrico 5 esteiras",
+          "qty": 1,
+          "unitCost": 7950,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "amassadeira",
+          "label": "Amassadeira semi-rápida 15 kg",
+          "qty": 1,
+          "unitCost": 4700,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "cilindro",
+          "label": "Cilindro laminador 30 cm",
+          "qty": 1,
+          "unitCost": 4000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "modeladora",
+          "label": "Modeladora de pão",
+          "qty": 1,
+          "unitCost": 4500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "armarioFermentacao",
+          "label": "Armário de fermentação/crescimento 20 esteiras",
+          "qty": 1,
+          "unitCost": 3500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "batedeira",
+          "label": "Batedeira planetária 12 L",
+          "qty": 1,
+          "unitCost": 3200,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "esteiras",
+          "label": "Esteiras/assadeiras 58x70 (perfuradas e lisas)",
+          "qty": 40,
+          "unitCost": 60,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "bancadaInox",
+          "label": "Mesa inox de produção 1,9 m",
+          "qty": 2,
+          "unitCost": 1800,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "balcaoRefrigerado",
+          "label": "Balcão vitrine refrigerado 1,5 m (frios/doces)",
+          "qty": 1,
+          "unitCost": 7000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "vitrinePao",
+          "label": "Balcão seco/expositor de pães",
+          "qty": 1,
+          "unitCost": 3500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "refrigerador4p",
+          "label": "Refrigerador comercial 4 portas",
+          "qty": 1,
+          "unitCost": 8000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "freezer",
+          "label": "Freezer horizontal 400 L",
+          "qty": 1,
+          "unitCost": 2900,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "cafeExpresso",
+          "label": "Máquina de café expresso profissional 1 grupo",
+          "qty": 1,
+          "unitCost": 6000,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "fatiador",
+          "label": "Fatiador de frios",
+          "qty": 1,
+          "unitCost": 2500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "balanca",
+          "label": "Balança eletrônica com etiqueta",
+          "qty": 2,
+          "unitCost": 800,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "pdv",
+          "label": "PDV (computador, leitor, impressora NFC-e, gaveta)",
+          "qty": 1,
+          "unitCost": 3000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "exaustao",
+          "label": "Exaustão/coifa da área do forno",
+          "qty": 1,
+          "unitCost": 4000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "mesasCadeiras",
+          "label": "Jogo de mesa + 4 cadeiras (consumo no local)",
+          "qty": 4,
+          "unitCost": 700,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "utensilios",
+          "label": "Utensílios, formas, bacias, carrinho de esteiras",
+          "qty": 1,
+          "unitCost": 2500,
+          "essential": true,
+          "kind": "estimate"
+        }
+      ],
+      "monthly": {
+        "energyKwh": 2300,
+        "waterM3": 25,
+        "consumables": 1200,
+        "maintenance": 500,
+        "software": 200,
+        "marketing": 600,
+        "other": 0
+      },
+      "otherNote": "Se o forno for a gás, somar ~R$ 1.500/mês de GLP e reduzir ~1.500 kWh.",
+      "revenue": {
+        "ticket": 18,
+        "customersPerDay": {
+          "low": 120,
+          "medium": 200,
+          "high": 320
+        },
+        "openDays": 30,
+        "rampUpMonths": 6,
+        "cmvRate": 0.4,
+        "cardShare": 0.7,
+        "netMarginRange": [
+          0.04,
+          0.12
+        ]
+      },
+      "staff": [
+        {
+          "role": "Padeiro",
+          "count": 1
+        },
+        {
+          "role": "Auxiliar de padeiro/confeiteiro",
+          "count": 1
+        },
+        {
+          "role": "Balconista",
+          "count": 2
+        },
+        {
+          "role": "Operador(a) de caixa",
+          "count": 1
+        }
+      ],
+      "tax": {
+        "cnae": "1091-1/02 (Fabricação de produtos de padaria e confeitaria com predominância de produção própria)",
+        "meiAllowed": true,
+        "meiOccupation": "Padeiro(a) independente",
+        "meiActivity": "commerce",
+        "simplesAnnex": "I"
+      },
+      "licenses": {
+        "sanitary": "food",
+        "firefighters": true,
+        "license": true
+      },
+      "kinds": {
+        "ticket": "market",
+        "customers": "market",
+        "cmv": "estimate",
+        "renovation": "market",
+        "area": "estimate"
+      },
+      "sources": [
+        "ponto-frio-forno-turbo-eletrico-5-esteir",
+        "loja-do-mecanico-forno-turbo-ft5e-eletri",
+        "magazine-luiza-busca-masseira-15-braesi",
+        "casas-bahia-amassadeira-rapida-15-kg-ven",
+        "buscape-freezer-horizontal-electrolux-40",
+        "sebrae-es-oportunidades-padaria-equipame",
+        "o-hoje-panificacao-cresce-no-brasil-idea",
+        "agencia-sebrae-paixao-nacional-50-milhoe",
+        "times-brasil-setor-de-panificacao-deve-f",
+        "monitor-mercantil-panificacao-63-83-das",
+        "decreto-7-212-2010-ripi-art-5o-v-preparo",
+        "maquininha-com-menor-taxa-por-que-o-nume",
+        "idinheiro-maquina-de-cartao-com-menor-ta",
+        "shopify-brasil-sistema-de-pdv-para-peque",
+        "lar-pontual-custo-de-reforma-por-m2-2026",
+        "portal-do-empreendedor-gov-br-ocupacoes",
+        "contabilizei-atividades-mei-2026-tabela",
+        "sebrae-pagina-de-ideias-de-negocio-cita"
+      ],
+      "notes": "Abre todos os dias (openDays 30). Receita cenário médio ≈ R$ 108 mil/mês: incompatível com o teto do MEI, que só cobre mini padaria caseira. Anexo I: pela exclusão do RIPI, a venda direta ao consumidor de produção própria não é industrialização; se vender para terceiros (revenda a mercados), parte da receita vai ao Anexo II — confirmar com contador. Exige entrada de energia trifásica."
+    },
+    {
+      "id": "salao_beleza",
+      "validFrom": "2026-01-01",
+      "label": "Salão de beleza",
+      "description": "Cabelo, unhas e estética, com cadeiras, lavatórios e equipamentos de beleza.",
+      "areaM2": 50,
+      "renovationPerM2": 700,
+      "facade": 3500,
+      "initialStock": 5000,
+      "initialMarketing": 2000,
+      "equipment": [
+        {
+          "id": "cadeiraHidraulica",
+          "label": "Cadeira hidráulica reclinável de corte",
+          "qty": 3,
+          "unitCost": 2000,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "lavatorio",
+          "label": "Lavatório com cuba de porcelana e apoio de pernas",
+          "qty": 2,
+          "unitCost": 2300,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "bancadaEspelho",
+          "label": "Bancada de trabalho com espelho",
+          "qty": 3,
+          "unitCost": 900,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "secador",
+          "label": "Secador de cabelo profissional 2.000 W+",
+          "qty": 3,
+          "unitCost": 450,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "prancha",
+          "label": "Prancha alisadora profissional",
+          "qty": 2,
+          "unitCost": 400,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "carrinho",
+          "label": "Carrinho auxiliar",
+          "qty": 3,
+          "unitCost": 250,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "manicure",
+          "label": "Cadeira + mesa de manicure/pedicure",
+          "qty": 1,
+          "unitCost": 1200,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "autoclave",
+          "label": "Autoclave 12 L para esterilização de alicates",
+          "qty": 1,
+          "unitCost": 2800,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "kitFerramentas",
+          "label": "Kit tesouras, máquina de corte, escovas, pentes",
+          "qty": 1,
+          "unitCost": 1500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "toalhasCapas",
+          "label": "Toalhas, capas e enxoval",
+          "qty": 1,
+          "unitCost": 800,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "recepcao",
+          "label": "Balcão de recepção",
+          "qty": 1,
+          "unitCost": 1800,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "espera",
+          "label": "Sofá/poltronas de espera",
+          "qty": 1,
+          "unitCost": 1500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "computador",
+          "label": "Computador/tablet para agenda e caixa",
+          "qty": 1,
+          "unitCost": 2500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "arCondicionado",
+          "label": "Ar-condicionado split 12.000 BTU instalado",
+          "qty": 1,
+          "unitCost": 2800,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "aquecedor",
+          "label": "Aquecedor de água para lavatórios",
+          "qty": 1,
+          "unitCost": 1200,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "maca",
+          "label": "Maca para depilação/estética",
+          "qty": 1,
+          "unitCost": 900,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "vaporizador",
+          "label": "Vaporizador/ozônio capilar",
+          "qty": 1,
+          "unitCost": 1200,
+          "essential": false,
+          "kind": "estimate"
+        }
+      ],
+      "monthly": {
+        "energyKwh": 900,
+        "waterM3": 20,
+        "consumables": 600,
+        "maintenance": 200,
+        "software": 120,
+        "marketing": 600,
+        "other": 0
+      },
+      "otherNote": "",
+      "revenue": {
+        "ticket": 90,
+        "customersPerDay": {
+          "low": 10,
+          "medium": 18,
+          "high": 28
+        },
+        "openDays": 25,
+        "rampUpMonths": 6,
+        "cmvRate": 0.12,
+        "cardShare": 0.8,
+        "netMarginRange": [
+          0.1,
+          0.2
+        ]
+      },
+      "staff": [
+        {
+          "role": "Cabeleireiro(a)",
+          "count": 2
+        },
+        {
+          "role": "Manicure/pedicure",
+          "count": 1
+        },
+        {
+          "role": "Recepcionista",
+          "count": 1
+        }
+      ],
+      "tax": {
+        "cnae": "9602-5/01 (Cabeleireiros, manicure e pedicure)",
+        "meiAllowed": true,
+        "meiOccupation": "Cabeleireiro(a) independente (também Manicure/pedicure independente)",
+        "meiActivity": "services",
+        "simplesAnnex": "III"
+      },
+      "licenses": {
+        "sanitary": "beauty",
+        "firefighters": true,
+        "license": true
+      },
+      "kinds": {
+        "ticket": "estimate",
+        "customers": "estimate",
+        "cmv": "estimate",
+        "renovation": "market",
+        "area": "estimate"
+      },
+      "sources": [
+        "catraca-livre-quanto-custa-montar-um-sal",
+        "mercado-livre-cadeira-hidraulica-reclina",
+        "mercado-livre-cc-s-moveis-profissionais",
+        "casas-bahia-kit-salao-evidence-cadeira-r",
+        "lei-13-352-2016-lei-do-salao-parceiro",
+        "gg-contabilidade-montar-um-salao-de-bele",
+        "contabilizei-como-montar-salao-de-beleza",
+        "maquininha-com-menor-taxa-por-que-o-nume",
+        "idinheiro-maquina-de-cartao-com-menor-ta",
+        "shopify-brasil-sistema-de-pdv-para-peque",
+        "lar-pontual-custo-de-reforma-por-m2-2026",
+        "buscape-freezer-horizontal-electrolux-40",
+        "portal-do-empreendedor-gov-br-ocupacoes",
+        "contabilizei-atividades-mei-2026-tabela",
+        "sebrae-pagina-de-ideias-de-negocio-cita"
+      ],
+      "notes": "Margem depende do modelo: com profissionais CLT a folha é o maior custo; com salão-parceiro (Lei 13.352/2016) o salão retém ~40–60% do serviço e só a cota-parte do salão é receita tributável. Atividade fica no Anexo III do Simples (pode cair no V via fator R em outras atividades; 9602-5/01 é Anexo III direto). Vigilância sanitária exige esterilização de instrumentos (autoclave). Bombeiros: pequenos salões costumam ter dispensa/licenciamento simplificado por baixo risco, mas extintor é exigido."
+    },
+    {
+      "id": "minimercado",
+      "validFrom": "2026-01-01",
+      "label": "Minimercado / mercearia de bairro",
+      "description": "Mercearia de bairro com gôndolas, refrigeração e caixa.",
+      "areaM2": 120,
+      "renovationPerM2": 600,
+      "facade": 6000,
+      "initialStock": 60000,
+      "initialMarketing": 3000,
+      "equipment": [
+        {
+          "id": "gondolaParede",
+          "label": "Gôndola de parede (módulo 1 m)",
+          "qty": 20,
+          "unitCost": 650,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "gondolaCentro",
+          "label": "Gôndola de centro dupla face (módulo 1 m)",
+          "qty": 12,
+          "unitCost": 750,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "freezer",
+          "label": "Freezer horizontal 400 L",
+          "qty": 2,
+          "unitCost": 2900,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "expositorCongelados",
+          "label": "Freezer expositor horizontal 400 L com tampa de vidro",
+          "qty": 1,
+          "unitCost": 4000,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "expositorBebidas",
+          "label": "Expositor vertical de bebidas 1 porta",
+          "qty": 2,
+          "unitCost": 4500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "balcaoFrios",
+          "label": "Balcão refrigerado de frios/laticínios 2 m",
+          "qty": 1,
+          "unitCost": 8000,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "checkout",
+          "label": "Balcão de checkout",
+          "qty": 2,
+          "unitCost": 2500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "balancaCheckout",
+          "label": "Balança eletrônica de checkout",
+          "qty": 2,
+          "unitCost": 800,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "balancaEtiquetadora",
+          "label": "Balança etiquetadora (frios/hortifrúti)",
+          "qty": 1,
+          "unitCost": 3500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "pdv",
+          "label": "PDV (computador, leitor, impressora NFC-e, gaveta)",
+          "qty": 2,
+          "unitCost": 3500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "cestas",
+          "label": "Cestinha de compras",
+          "qty": 30,
+          "unitCost": 40,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "carrinhos",
+          "label": "Carrinho de compras",
+          "qty": 10,
+          "unitCost": 450,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "fatiador",
+          "label": "Fatiador de frios",
+          "qty": 1,
+          "unitCost": 2500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "estanteEstoque",
+          "label": "Estante de aço para estoque",
+          "qty": 10,
+          "unitCost": 350,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "hortifruti",
+          "label": "Banca/expositor de hortifrúti",
+          "qty": 3,
+          "unitCost": 900,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "cftv",
+          "label": "Kit CFTV (câmeras + gravador)",
+          "qty": 1,
+          "unitCost": 2500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "seguranca",
+          "label": "Extintores, sinalização e iluminação de emergência",
+          "qty": 1,
+          "unitCost": 1200,
+          "essential": true,
+          "kind": "estimate"
+        }
+      ],
+      "monthly": {
+        "energyKwh": 2500,
+        "waterM3": 10,
+        "consumables": 800,
+        "maintenance": 500,
+        "software": 250,
+        "marketing": 800,
+        "other": 0
+      },
+      "otherNote": "",
+      "revenue": {
+        "ticket": 32,
+        "customersPerDay": {
+          "low": 100,
+          "medium": 180,
+          "high": 300
+        },
+        "openDays": 30,
+        "rampUpMonths": 4,
+        "cmvRate": 0.75,
+        "cardShare": 0.75,
+        "netMarginRange": [
+          0.02,
+          0.06
+        ]
+      },
+      "staff": [
+        {
+          "role": "Operador(a) de caixa",
+          "count": 2
+        },
+        {
+          "role": "Repositor/estoquista",
+          "count": 1
+        }
+      ],
+      "tax": {
+        "cnae": "4712-1/00 (Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios — minimercados, mercearias e armazéns)",
+        "meiAllowed": true,
+        "meiOccupation": "Merceeiro(a) independente",
+        "meiActivity": "commerce",
+        "simplesAnnex": "I"
+      },
+      "licenses": {
+        "sanitary": "food",
+        "firefighters": true,
+        "license": true
+      },
+      "kinds": {
+        "ticket": "estimate",
+        "customers": "market",
+        "cmv": "estimate",
+        "renovation": "market",
+        "area": "estimate"
+      },
+      "sources": [
+        "sumup-como-montar-um-mercadinho-r-20-mil",
+        "sebrae-pr-minimercado-comece-seu-negocio",
+        "buscape-freezer-horizontal-electrolux-40",
+        "magazine-luiza-busca-freezer-expositor-h",
+        "maquininha-com-menor-taxa-por-que-o-nume",
+        "idinheiro-maquina-de-cartao-com-menor-ta",
+        "shopify-brasil-sistema-de-pdv-para-peque",
+        "lar-pontual-custo-de-reforma-por-m2-2026",
+        "portal-do-empreendedor-gov-br-ocupacoes",
+        "contabilizei-atividades-mei-2026-tabela",
+        "sebrae-pagina-de-ideias-de-negocio-cita"
+      ],
+      "notes": "Capital intensivo em estoque; capital de giro é crítico (fornecedores com 14–28 dias de prazo ajudam). Receita do cenário médio ≈ R$ 173 mil/mês: o MEI só é viável para mercearia mínima. Se vender bebida alcoólica e carnes/frios fracionados, a vigilância sanitária é mais exigente. Expositores de bebidas e parte da fachada podem vir de fornecedores (custo zero)."
+    },
+    {
+      "id": "loja_roupas",
+      "validFrom": "2026-01-01",
+      "label": "Loja de roupas (moda)",
+      "description": "Moda e acessórios, com araras, provadores e vitrine.",
+      "areaM2": 50,
+      "renovationPerM2": 800,
+      "facade": 5000,
+      "initialStock": 35000,
+      "initialMarketing": 3000,
+      "equipment": [
+        {
+          "id": "araraParede",
+          "label": "Arara/cabideiro de parede (módulo)",
+          "qty": 6,
+          "unitCost": 350,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "araraChao",
+          "label": "Arara de chão com rodízios",
+          "qty": 4,
+          "unitCost": 300,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "mesaExpositora",
+          "label": "Mesa/ilha expositora central",
+          "qty": 2,
+          "unitCost": 1200,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "provador",
+          "label": "Provador montado (estrutura, cortina/porta, espelho)",
+          "qty": 2,
+          "unitCost": 1500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "espelho",
+          "label": "Espelho grande de chão",
+          "qty": 2,
+          "unitCost": 500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "manequim",
+          "label": "Manequim/busto",
+          "qty": 4,
+          "unitCost": 350,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "balcaoCaixa",
+          "label": "Balcão de caixa",
+          "qty": 1,
+          "unitCost": 2500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "pdv",
+          "label": "PDV (computador, leitor, impressora NFC-e)",
+          "qty": 1,
+          "unitCost": 3000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "cabides",
+          "label": "Cabides",
+          "qty": 300,
+          "unitCost": 4,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "iluminacao",
+          "label": "Spot LED de trilho",
+          "qty": 15,
+          "unitCost": 120,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "arCondicionado",
+          "label": "Ar-condicionado split 18.000 BTU instalado",
+          "qty": 1,
+          "unitCost": 3800,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "antifurto",
+          "label": "Sistema antifurto (antenas + etiquetas)",
+          "qty": 1,
+          "unitCost": 4500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "cftv",
+          "label": "Kit CFTV",
+          "qty": 1,
+          "unitCost": 2000,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "puff",
+          "label": "Poltrona/puff de espera",
+          "qty": 1,
+          "unitCost": 800,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "estoque",
+          "label": "Prateleiras de estoque",
+          "qty": 4,
+          "unitCost": 350,
+          "essential": true,
+          "kind": "estimate"
+        }
+      ],
+      "monthly": {
+        "energyKwh": 450,
+        "waterM3": 3,
+        "consumables": 400,
+        "maintenance": 150,
+        "software": 150,
+        "marketing": 1500,
+        "other": 0
+      },
+      "otherNote": "",
+      "revenue": {
+        "ticket": 170,
+        "customersPerDay": {
+          "low": 6,
+          "medium": 10,
+          "high": 18
+        },
+        "openDays": 26,
+        "rampUpMonths": 6,
+        "cmvRate": 0.5,
+        "cardShare": 0.85,
+        "netMarginRange": [
+          0.06,
+          0.15
+        ]
+      },
+      "staff": [
+        {
+          "role": "Vendedor(a)",
+          "count": 2
+        }
+      ],
+      "tax": {
+        "cnae": "4781-4/00 (Comércio varejista de artigos do vestuário e acessórios)",
+        "meiAllowed": true,
+        "meiOccupation": "Comerciante de artigos do vestuário e acessórios independente",
+        "meiActivity": "commerce",
+        "simplesAnnex": "I"
+      },
+      "licenses": {
+        "sanitary": null,
+        "firefighters": true,
+        "license": true
+      },
+      "kinds": {
+        "ticket": "estimate",
+        "customers": "estimate",
+        "cmv": "estimate",
+        "renovation": "market",
+        "area": "estimate"
+      },
+      "sources": [
+        "creditas-como-montar-loja-de-roupas-loja",
+        "correio-do-estado-abrir-loja-de-roupas-p",
+        "contabilizei-atividades-mei-2026-tabela",
+        "maquininha-com-menor-taxa-por-que-o-nume",
+        "idinheiro-maquina-de-cartao-com-menor-ta",
+        "shopify-brasil-sistema-de-pdv-para-peque",
+        "lar-pontual-custo-de-reforma-por-m2-2026",
+        "buscape-freezer-horizontal-electrolux-40",
+        "portal-do-empreendedor-gov-br-ocupacoes",
+        "sebrae-pagina-de-ideias-de-negocio-cita"
+      ],
+      "notes": "Sem vigilância sanitária (não manipula alimentos/saúde). Ponto e vitrine pesam mais que equipamento; estoque com baixo giro e risco de coleção encalhada. Em shopping, acrescentar luvas, fundo de promoção e condomínio (não modelado). Cenário médio ≈ R$ 44 mil/mês."
+    },
+    {
+      "id": "pet_shop",
+      "validFrom": "2026-01-01",
+      "label": "Pet shop com banho e tosa",
+      "description": "Banho e tosa e venda de rações e acessórios.",
+      "areaM2": 60,
+      "renovationPerM2": 800,
+      "facade": 4000,
+      "initialStock": 15000,
+      "initialMarketing": 2000,
+      "equipment": [
+        {
+          "id": "banheira",
+          "label": "Banheira inox para pet com ducha",
+          "qty": 2,
+          "unitCost": 2800,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "mesaTosa",
+          "label": "Mesa de banho e tosa inox",
+          "qty": 2,
+          "unitCost": 750,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "soprador",
+          "label": "Soprador profissional",
+          "qty": 2,
+          "unitCost": 1500,
+          "essential": true,
+          "kind": "market"
+        },
+        {
+          "id": "secadorEstufa",
+          "label": "Secador de pedestal ou box de secagem",
+          "qty": 1,
+          "unitCost": 3500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "maquinaTosa",
+          "label": "Máquina de tosa profissional com lâminas",
+          "qty": 2,
+          "unitCost": 900,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "kitTosa",
+          "label": "Kit tesouras, pentes, escovas, cortador de unha",
+          "qty": 1,
+          "unitCost": 1200,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "aquecedor",
+          "label": "Aquecedor de água (boiler/a gás) instalado",
+          "qty": 1,
+          "unitCost": 2000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "baias",
+          "label": "Baia/gaiola de espera inox",
+          "qty": 6,
+          "unitCost": 600,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "toalhas",
+          "label": "Toalhas e enxoval",
+          "qty": 1,
+          "unitCost": 600,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "prateleiras",
+          "label": "Prateleira/gôndola para produtos",
+          "qty": 6,
+          "unitCost": 600,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "balcao",
+          "label": "Balcão de atendimento",
+          "qty": 1,
+          "unitCost": 2000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "pdv",
+          "label": "PDV (computador, leitor, impressora NFC-e)",
+          "qty": 1,
+          "unitCost": 2500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "balancaPet",
+          "label": "Balança para pets",
+          "qty": 1,
+          "unitCost": 600,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "arCondicionado",
+          "label": "Ar-condicionado split 12.000 BTU instalado",
+          "qty": 1,
+          "unitCost": 2800,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "seguranca",
+          "label": "Extintores e sinalização",
+          "qty": 1,
+          "unitCost": 500,
+          "essential": true,
+          "kind": "estimate"
+        }
+      ],
+      "monthly": {
+        "energyKwh": 900,
+        "waterM3": 30,
+        "consumables": 500,
+        "maintenance": 250,
+        "software": 150,
+        "marketing": 700,
+        "other": 0
+      },
+      "otherNote": "Com leva-e-traz próprio, somar combustível/manutenção do veículo (veículo não incluído no investimento).",
+      "revenue": {
+        "ticket": 85,
+        "customersPerDay": {
+          "low": 8,
+          "medium": 14,
+          "high": 22
+        },
+        "openDays": 26,
+        "rampUpMonths": 6,
+        "cmvRate": 0.3,
+        "cardShare": 0.8,
+        "netMarginRange": [
+          0.08,
+          0.18
+        ]
+      },
+      "staff": [
+        {
+          "role": "Banhista",
+          "count": 1
+        },
+        {
+          "role": "Tosador(a)",
+          "count": 1
+        },
+        {
+          "role": "Atendente/vendedor(a)",
+          "count": 1
+        }
+      ],
+      "tax": {
+        "cnae": "9609-2/08 (Higiene e embelezamento de animais domésticos); secundário 4789-0/04 (comércio de artigos e alimentos para animais)",
+        "meiAllowed": true,
+        "meiOccupation": "Tosador(a) de animais domésticos independente",
+        "meiActivity": "both",
+        "simplesAnnex": "III"
+      },
+      "licenses": {
+        "sanitary": "beauty",
+        "firefighters": true,
+        "license": true
+      },
+      "kinds": {
+        "ticket": "market",
+        "customers": "estimate",
+        "cmv": "estimate",
+        "renovation": "market",
+        "area": "market"
+      },
+      "sources": [
+        "bling-como-montar-um-pet-shop-pequeno-ci",
+        "sebrae-pr-serie-sebrae-em-dados-analise",
+        "magazine-luiza-busca-banho-caes-mesa-de",
+        "magazine-luiza-marca-mega-groomer-soprad",
+        "itatiaia-pesquisa-aponta-diferencas-nos",
+        "sebrae-ideia-de-negocio-mei-tosadora-de",
+        "maquininha-com-menor-taxa-por-que-o-nume",
+        "idinheiro-maquina-de-cartao-com-menor-ta",
+        "shopify-brasil-sistema-de-pdv-para-peque",
+        "lar-pontual-custo-de-reforma-por-m2-2026",
+        "buscape-freezer-horizontal-electrolux-40",
+        "portal-do-empreendedor-gov-br-ocupacoes",
+        "contabilizei-atividades-mei-2026-tabela",
+        "sebrae-pagina-de-ideias-de-negocio-cita"
+      ],
+      "notes": "Receita mista: banho e tosa (Simples Anexo III, ISS) + venda de ração/acessórios (Anexo I, ICMS). Exigências sanitárias variam por município (vigilância sanitária e/ou zoonoses); venda de medicamentos veterinários ou consultório exige registro no CRMV e responsável técnico (não modelado). Leva-e-traz com veículo (R$ 14–80 por trajeto em BH) não incluído."
+    }
+  ]
+}

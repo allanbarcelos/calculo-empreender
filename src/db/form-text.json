@@ -1,0 +1,268 @@
+{
+  "steps": {
+    "business": {
+      "title": "Negócio",
+      "heading": "Qual negócio você quer abrir?",
+      "intro": "Cada tipo de negócio já vem com equipamentos, custos e vendas típicos. Tudo pode ser ajustado depois."
+    },
+    "place": {
+      "title": "Local",
+      "heading": "Onde vai abrir",
+      "intro": "Aluguel, energia e taxas de abertura mudam de estado para estado e de cidade para cidade."
+    },
+    "setup": {
+      "title": "Estrutura",
+      "heading": "Ponto, reforma e equipamentos",
+      "intro": "O que precisa ser pago antes de abrir as portas."
+    },
+    "legal": {
+      "title": "Formalização",
+      "heading": "Empresa, licenças e impostos",
+      "intro": "MEI ou Simples Nacional, registro, alvarás e contador."
+    },
+    "team": {
+      "title": "Equipe",
+      "heading": "Equipe e pró-labore",
+      "intro": "Quantas pessoas vão trabalhar e quanto você vai retirar por mês."
+    },
+    "sales": {
+      "title": "Vendas e custos",
+      "heading": "Vendas e custos do mês",
+      "intro": "Ticket médio, clientes por dia e os custos de todo mês."
+    },
+    "result": {
+      "title": "Resultado",
+      "heading": "Resultado",
+      "intro": "Investimento inicial, custo do mês e projeção de lucro."
+    }
+  },
+  "sections": {
+    "premises": "Ponto comercial",
+    "equipment": "Equipamentos e móveis",
+    "launch": "Estoque inicial e lançamento",
+    "sales": "Vendas",
+    "variable": "Custos que acompanham as vendas",
+    "fixed": "Custos fixos do mês"
+  },
+  "fields": {
+    "businessId": {
+      "label": "Tipo de negócio",
+      "hint": "Os valores vêm de médias de mercado e de fontes oficiais, com a origem indicada em cada número.",
+      "option": "{{description}} Ticket médio de referência: {{ticket}}.",
+      "meiYes": "Pode ser MEI (ocupação: {{occupation}}), se o faturamento couber no limite.",
+      "meiNo": "Não pode ser MEI: abre como empresa do Simples Nacional."
+    },
+    "uf": {
+      "label": "Estado",
+      "tableCaption": "Custos do local: {{place}}",
+      "colItem": "Item",
+      "colValue": "Valor",
+      "colKind": "Origem",
+      "rent": "Aluguel comercial médio",
+      "energy": "Energia elétrica (comercial, com impostos)",
+      "water": "Água e esgoto (comercial)",
+      "juntaIndividual": "Junta Comercial: empresário individual",
+      "juntaLtda": "Junta Comercial: sociedade limitada",
+      "firefighters": "Corpo de Bombeiros",
+      "license": "Alvará de funcionamento",
+      "sanitary": "Licença sanitária"
+    },
+    "cityId": {
+      "label": "Cidade",
+      "capital": "{{name}} (capital)",
+      "interior": "Outra cidade do estado (interior)",
+      "feesFromCapital": "As taxas municipais mostradas são as de {{capital}}, como referência. Confirme na prefeitura da sua cidade."
+    },
+    "areaM2": {
+      "label": "Área do ponto",
+      "hint": "Tamanho típico para este negócio; ajuste ao imóvel que você encontrou.",
+      "suffix": "m²"
+    },
+    "rentPerM2": {
+      "label": "Aluguel por m² por mês",
+      "hint": "Média de {{place}}: {{average}}/m². Digite o valor do imóvel que você está negociando.",
+      "prefix": "R$",
+      "auto": "Usando a média do local.",
+      "useAverage": "Voltar à média do local ({{average}}/m²)",
+      "monthly": "Aluguel mensal: {{rent}}."
+    },
+    "depositMonths": {
+      "label": "Caução (meses de aluguel)",
+      "hint": "A [Lei do Inquilinato](source:tenancyLaw) permite caução de até 3 aluguéis. Use 0 se tiver fiador ou seguro-fiança.",
+      "suffix": "meses"
+    },
+    "preOpeningMonths": {
+      "label": "Meses de aluguel antes de abrir",
+      "hint": "Tempo de reforma e licenças, pagando aluguel sem vender. Negocie carência com o proprietário.",
+      "suffix": "meses"
+    },
+    "renovationPerM2": {
+      "label": "Reforma e adequação por m²",
+      "hint": "Elétrica, hidráulica, pisos, pintura e, para alimentos, exaustão e áreas laváveis.",
+      "prefix": "R$"
+    },
+    "facade": {
+      "label": "Fachada, letreiro e identidade visual",
+      "prefix": "R$"
+    },
+    "equipment": {
+      "caption": "Marque o que vai comprar e ajuste quantidades e preços (equipamento novo).",
+      "colItem": "Item",
+      "colQty": "Qtd.",
+      "colUnit": "Preço unitário (R$)",
+      "colTotal": "Total",
+      "optional": "opcional",
+      "qtyAria": "Quantidade de {{item}}",
+      "unitAria": "Preço unitário de {{item}}",
+      "total": "Total em equipamentos e móveis"
+    },
+    "initialStock": {
+      "label": "Estoque inicial",
+      "hint": "Mercadorias e insumos para abrir.",
+      "prefix": "R$"
+    },
+    "initialMarketing": {
+      "label": "Divulgação de inauguração",
+      "hint": "Redes sociais, panfletos, evento de abertura.",
+      "prefix": "R$"
+    },
+    "otherInitial": {
+      "label": "Outros gastos iniciais",
+      "hint": "Uniformes, utensílios, cofre, câmeras etc.",
+      "prefix": "R$"
+    },
+    "regime": {
+      "label": "Como formalizar o negócio?",
+      "hint": "O regime define o imposto mensal e se você pode ter mais de 1 funcionário.",
+      "optionMei": "MEI (Microempreendedor Individual)",
+      "descMei": "Imposto fixo de {{das}} por mês, faturamento de até {{limit}} por ano e no máximo 1 empregado. Ocupação: {{occupation}}.",
+      "descMeiNotAllowed": "Esta atividade não está na lista de ocupações do MEI.",
+      "optionSimples": "Simples Nacional (ME ou EPP)",
+      "descSimples": "Imposto sobre o faturamento, pela tabela do Anexo {{annex}}, sem limite de funcionários.",
+      "feesCaption": "Custos de formalização",
+      "feesTotal": "Total da formalização"
+    },
+    "companyType": {
+      "label": "Tipo de empresa",
+      "hint": "A taxa da Junta Comercial muda com o tipo.",
+      "optionIndividual": "Empresário individual (EI)",
+      "descIndividual": "Um dono, sem separação entre o patrimônio pessoal e o da empresa.",
+      "optionLtda": "Sociedade limitada (LTDA, inclusive com um único sócio)",
+      "descLtda": "O patrimônio pessoal fica separado das dívidas da empresa."
+    },
+    "digitalCertificate": {
+      "label": "Certificado digital (e-CNPJ A1, 1 ano)",
+      "hint": "Necessário no Simples Nacional para emitir notas e acessar sistemas do governo; o MEI geralmente não precisa."
+    },
+    "trademark": {
+      "label": "Registrar a marca no INPI",
+      "hint": "Protege o nome e o logo. Valor com o desconto para MEI, ME e EPP."
+    },
+    "openingService": {
+      "label": "Contratar contador para abrir a empresa",
+      "hint": "O MEI abre de graça no Portal do Empreendedor. ME e EPP costumam pagar ao contador pela abertura."
+    },
+    "accountingAuto": {
+      "label": "Usar a mensalidade média de contabilidade ({{value}} por mês)",
+      "hint": "Desmarque para digitar o valor do seu contador."
+    },
+    "accountingMonthly": {
+      "label": "Contabilidade por mês",
+      "prefix": "R$"
+    },
+    "employees": {
+      "label": "Número de funcionários",
+      "hint": "Sem contar você."
+    },
+    "payrollMonthly": {
+      "label": "Custo mensal total da folha",
+      "hint": "Salários, encargos, 13º, férias e benefícios de todos os funcionários, por mês.",
+      "prefix": "R$",
+      "linkTitle": "Calcule o custo real de cada funcionário no Cálculo CLT",
+      "linkText": "O custo de um funcionário vai muito além do salário: encargos, 13º, férias, FGTS e benefícios. Calcule cada função no Cálculo CLT, com o piso do seu estado e o regime da sua empresa, e some aqui o custo mensal.",
+      "linkButton": "Abrir o Cálculo CLT",
+      "auto": "Estimativa usada até você digitar o seu valor: {{employees}} funcionário(s) no salário mínimo × {{factor}} = {{estimate}} por mês. Calcule o valor real no Cálculo CLT.",
+      "useEstimate": "Voltar à estimativa ({{estimate}} por mês)"
+    },
+    "proLabore": {
+      "label": "Sua retirada mensal (pró-labore)",
+      "hint": "Quanto você vai tirar todo mês para viver. Entra como custo para mostrar o lucro de verdade.",
+      "prefix": "R$"
+    },
+    "scenario": {
+      "label": "Cenário de vendas",
+      "hint": "Número de clientes por dia depois que o negócio amadurece.",
+      "option": "{{customers}} clientes por dia. {{description}}"
+    },
+    "ticket": {
+      "label": "Ticket médio",
+      "hint": "Quanto cada cliente gasta, em média.",
+      "prefix": "R$",
+      "mature": "Faturamento mensal maduro: {{revenue}} ({{yearly}} por ano)."
+    },
+    "customersPerDay": {
+      "label": "Clientes por dia (negócio maduro)"
+    },
+    "openDays": {
+      "label": "Dias abertos por mês",
+      "suffix": "dias"
+    },
+    "rampUpMonths": {
+      "label": "Meses até as vendas amadurecerem",
+      "hint": "O 1º mês começa com {{start}} das vendas maduras e cresce até este mês.",
+      "suffix": "meses"
+    },
+    "cmvRate": {
+      "label": "Custo das mercadorias e insumos",
+      "hint": "Percentual do faturamento (CMV). Referência do setor: {{reference}}.",
+      "suffix": "%"
+    },
+    "cardShare": {
+      "label": "Vendas no cartão",
+      "hint": "Percentual do faturamento pago com cartão (crédito e débito).",
+      "suffix": "%"
+    },
+    "cardFeeRate": {
+      "label": "Taxa média da maquininha",
+      "hint": "Média entre débito e crédito à vista.",
+      "suffix": "%"
+    },
+    "energyKwh": {
+      "label": "Energia por mês",
+      "hint": "Tarifa do local: {{tariff}}/kWh. Custo: {{cost}}.",
+      "suffix": "kWh"
+    },
+    "waterM3": {
+      "label": "Água por mês",
+      "hint": "Tarifa de referência: {{tariff}}/m³. Custo: {{cost}}.",
+      "suffix": "m³"
+    },
+    "consumables": {
+      "label": "Material de limpeza e descartáveis",
+      "prefix": "R$"
+    },
+    "maintenance": {
+      "label": "Manutenção",
+      "prefix": "R$"
+    },
+    "software": {
+      "label": "Sistema de vendas (PDV), internet e telefone",
+      "prefix": "R$"
+    },
+    "marketing": {
+      "label": "Marketing mensal",
+      "prefix": "R$"
+    },
+    "otherFixed": {
+      "label": "Outros custos fixos",
+      "hint": "Seguro, segurança, taxas bancárias etc.",
+      "prefix": "R$"
+    },
+    "workingCapitalMonths": {
+      "label": "Reserva de capital de giro",
+      "hint": "Meses de custos fixos guardados para atravessar o início, quando as vendas ainda são baixas.",
+      "suffix": "meses",
+      "total": "Custos fixos por mês: {{fixed}}. Reserva: {{reserve}}."
+    }
+  }
+}

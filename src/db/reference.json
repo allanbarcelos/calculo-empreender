@@ -1,0 +1,70 @@
+{
+  "minimumWage": [
+    { "validFrom": "2026-01-01", "value": 1621, "source": "minWage" }
+  ],
+  "mei": [
+    { "validFrom": "2026-01-01", "validTo": "2026-12-31", "revenueLimit": 81000, "maxEmployees": 1, "das": { "commerce": 82.05, "services": 86.05, "both": 87.05 }, "source": "meiDas" },
+    { "validFrom": "2027-01-01", "validTo": "2027-12-31", "revenueLimit": 110000, "maxEmployees": 1, "das": { "commerce": 82.05, "services": 86.05, "both": 87.05 }, "source": "meiLimitLaw", "notes": "LC 238/2026: limit R$ 110 mil in 2027 and R$ 140 mil from 2028; up to 2 employees with no confirmed start date (kept at 1 until confirmed). DAS follows the 2027 minimum wage, not published yet." },
+    { "validFrom": "2028-01-01", "revenueLimit": 140000, "maxEmployees": 1, "das": { "commerce": 82.05, "services": 86.05, "both": 87.05 }, "source": "meiLimitLaw" }
+  ],
+  "simples": [
+    {
+      "validFrom": "2026-01-01",
+      "limit": 4800000,
+      "annexes": {
+        "I": [
+          { "upTo": 180000, "rate": 0.04, "deduct": 0 },
+          { "upTo": 360000, "rate": 0.073, "deduct": 5940 },
+          { "upTo": 720000, "rate": 0.095, "deduct": 13860 },
+          { "upTo": 1800000, "rate": 0.107, "deduct": 22500 },
+          { "upTo": 3600000, "rate": 0.143, "deduct": 87300 },
+          { "upTo": 4800000, "rate": 0.19, "deduct": 378000 }
+        ],
+        "II": [
+          { "upTo": 180000, "rate": 0.045, "deduct": 0 },
+          { "upTo": 360000, "rate": 0.078, "deduct": 5940 },
+          { "upTo": 720000, "rate": 0.1, "deduct": 13860 },
+          { "upTo": 1800000, "rate": 0.112, "deduct": 22500 },
+          { "upTo": 3600000, "rate": 0.147, "deduct": 85500 },
+          { "upTo": 4800000, "rate": 0.3, "deduct": 720000 }
+        ],
+        "III": [
+          { "upTo": 180000, "rate": 0.06, "deduct": 0 },
+          { "upTo": 360000, "rate": 0.112, "deduct": 9360 },
+          { "upTo": 720000, "rate": 0.135, "deduct": 17640 },
+          { "upTo": 1800000, "rate": 0.16, "deduct": 35640 },
+          { "upTo": 3600000, "rate": 0.21, "deduct": 125640 },
+          { "upTo": 4800000, "rate": 0.33, "deduct": 648000 }
+        ]
+      },
+      "source": "simplesLaw"
+    }
+  ],
+  "proLabore": [
+    { "validFrom": "2026-01-01", "inssRate": 0.11, "ceiling": 8475.55, "source": "proLaboreInss" }
+  ],
+  "accounting": [
+    { "validFrom": "2026-01-01", "mei": 0, "simples": 450, "kind": "market", "range": [150, 1500], "source": "accountingMarket" }
+  ],
+  "digitalCertificate": [
+    { "validFrom": "2026-01-01", "value": 240, "kind": "market", "range": [180, 280], "source": "digitalCertificate" }
+  ],
+  "trademark": [
+    { "validFrom": "2025-12-20", "full": 880, "discounted": 440, "kind": "official", "notes": "Pedido com especificação pré-aprovada, uma classe; o 1º decênio e o certificado já estão incluídos.", "source": "inpiFees" }
+  ],
+  "openingService": [
+    { "validFrom": "2026-01-01", "value": 800, "kind": "estimate", "range": [0, 1500], "source": "accountingMarket" }
+  ],
+  "cardFees": [
+    { "validFrom": "2026-01-01", "debit": 0.015, "credit": 0.029, "blended": 0.022, "kind": "market", "source": "cardFees" }
+  ],
+  "projection": [
+    { "validFrom": "2026-01-01", "months": 36, "horizons": [3, 6, 12, 24, 36], "rampStartShare": 0.4, "workingCapitalMonths": 3, "workingCapitalRange": [3, 6], "preOpeningMonths": 1, "depositMonths": 3, "source": "sebraeWorkingCapital" }
+  ],
+  "payrollReference": [
+    { "validFrom": "2026-01-01", "roughFactor": 1.5, "calculatorUrl": "https://allanbarcelos.github.io/calculo-clt/", "source": "calculoClt" }
+  ],
+  "survival": [
+    { "validFrom": "2026-01-01", "twoYears": { "mei": 0.653, "smallCompany": 0.89 }, "fiveYears": { "mei": 0.415, "smallCompany": 0.76 }, "source": "sebraeSurvival" }
+  ]
+}
