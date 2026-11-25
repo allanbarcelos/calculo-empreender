@@ -37,9 +37,9 @@ scripts/validate-db.mjs   database validation (both pages) run before every buil
 
 - `OccupationService`: occupations and the values they pre-fill (earnings, workload, vehicle, tools, courses, tax profile, CLT reference salary).
 - `WorkloadService`: an average month — days per month × 12 minus days off and idle days, ÷ 12; hours, revenue (per logged hour for apps, per job for services) and km.
-- `VehicleService`: fuel by km (ANP price of the state), maintenance per km, depreciation, insurance, IPVA (state rate, motorcycle exemptions) and licensing for an owned car or motorcycle; weekly rent for a rented one; bus fares for public transport.
+- `VehicleService`: fuel by km (ANP price of the state), maintenance per km, depreciation, the return the vehicle's value would earn invested, insurance, IPVA (state rate, motorcycle exemptions) and licensing for an owned car or motorcycle; weekly rent for a rented one; bus fares for public transport.
 - `WorkCostService`: materials, platform commission, paid leads, phone and the replacement of tools over their life; the money needed to start.
-- `WorkTaxService`: MEI (DAS by activity, exempt profit up to 8/16/32% of revenue) or autônomo (INSS 11% of the minimum wage or 20% of the base — at least 20% of gross fares for drivers, Decreto 3.048/1999 art. 214 § 19 —, carnê-leão on 60% of passenger fares, 10% of cargo or revenue minus livro-caixa expenses, municipal ISS).
+- `WorkTaxService`: MEI (DAS by activity, exempt profit up to 8/16/32% of revenue) or autônomo (INSS 11% of the minimum wage or 20% of the base — 20% of gross fares for drivers and couriers, Decreto 3.048/1999 art. 214 § 20 —, carnê-leão on 60% of passenger fares, 10% of cargo or the whole revenue with the livro-caixa expenses plus INSS as deductions, or the simplified discount when larger, municipal ISS).
 - `IncomeTaxService`: monthly IRPF table with the Lei 15.270/2025 reduction.
 - `CltComparisonService`: yearly CLT package (11 net salaries, vacation month with 1/3, 13th, FGTS), hours per year and the salary that matches the autonomous yearly net.
 - `WorkCalculator`: orchestrates them and raises the warnings (MEI limit, diarista as domestic employee, loss, below the minimum wage per hour, long hours, own vehicle not in the investment).
@@ -83,6 +83,8 @@ Add it to `cities` and its municipal costs to `cityCosts` (`rent`, `license`, `s
 
 ## Expert review
 
+The autonomous-work page was reviewed by an accountant specialized in MEI, carnê-leão and INSS, a consultant for autonomous workers and a specialist in work-vehicle costs. Their corrections are in the model and data: livro-caixa and simplified discount as alternatives, the 20%-of-gross INSS base of drivers, no waiting period for maternity pay and accident-related incapacity, the opportunity cost and faster depreciation of app vehicles, the equipment required of motorcycle couriers, hazard pay in the CLT references and motorcycle IPVA by engine size.
+
 The business figures and the model were reviewed by specialists in small food businesses, in services and retail, and in small-business finance and taxation. Their corrections are in the data: salons follow the Lei do Salão-Parceiro (the ticket is the salon's share, professionals are partners), fashion stores use a higher card fee and a larger stock and reserve, pet shops split services and products, food businesses have larger teams, higher CMV, delivery commission and the sinks required by Anvisa RDC 216/2004, and minimarkets take ICMS-ST and monofásico out of the Simples tax.
 
 ## Estimativas
@@ -106,11 +108,12 @@ These are references to plan, not guarantees. Confirm the values of your case be
 
 - **Earnings per logged hour (drivers and couriers):** no survey measures them. Derived from the Cebrap/Amobitec 2025 earnings per hour in a ride and calibrated so that the medium scenario reproduces the IBGE PNAD 2024 monthly income of app workers, updated to 2026 by the IPCA. Bicycle couriers: below motorcycles, as there is no specific data.
 - **Jobs per day (electrician, plumber, manicure):** 1,5 / 1,5 / 3 in the medium scenario, counting days without calls and quotes that do not close; ticket values from 2026 price guides, mostly from capitals in the Southeast.
-- **Vehicle:** maintenance per km derived from the Cebrap 2024 spending survey; insurance as a share of the FIPE value; depreciation of 10% a year for cars and motorcycles in app use (FIPE average 5–7% for normal use); bicycle value and maintenance.
-- **Phone:** data plan plus the replacement of the handset for app workers; plan only for the other occupations.
+- **Vehicle:** maintenance per km derived from the Cebrap 2024 spending survey; insurance as a share of the FIPE value (7% for a car with app-use cover); depreciation of 15% a year for cars and motorcycles in app use (about 50 thousand km a year; FIPE average 5–7% for normal use); the return of the vehicle's value invested at 8% a year, so that owning and renting compare fairly (the own car then costs about R$ 1,15/km, close to the R$ 1,26/km of the TST 2026 study); bicycle value and maintenance.
+- **Phone:** data plan plus the replacement of the handset for app workers; plan only for the other occupations. Car wash for app drivers: R$ 120 a month in other costs.
 - **Days off and idle days:** 30 and 12 a year.
 - **Tool prices and useful lives:** retail prices; lives of 1 to 6 years.
 - **ISS of the self-employed:** zero by default (São Paulo and Rio do not charge it to individuals without premises), editable.
 - **MEI income tax on the profit above the exempt share:** declared yearly; estimated monthly with the monthly table and reduction.
+- **CLT reference salaries:** Novo CAGED medians; for the motorcycle courier and the electrician plus the 30% hazard pay the law grants them.
 - **CLT hours:** 44 hours a week without 30 days of vacation and 9 national holidays.
 - **Uncertain rules, flagged on the page:** the CNAE of the MEI driver (4923-0/01 or 4923-0/02), couriers taxed as cargo transport (10% taxable, 8% presumed profit) and the 20%-of-gross INSS base applied to motorcycle couriers.

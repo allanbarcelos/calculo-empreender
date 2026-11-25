@@ -53,6 +53,7 @@ export default function VehicleStep({ data, set, result }) {
                 <NumberField {...t.field('depreciationPct')} value={data.depreciationPct} max={100} onChange={(v) => set({ depreciationPct: v })} />
                 {motor && <NumberField {...t.field('insurancePct')} value={data.insurancePct} max={100} onChange={(v) => set({ insurancePct: v })} />}
                 <NumberField {...t.field('maintenancePerKm')} value={data.maintenancePerKm} onChange={(v) => set({ maintenancePerKm: v })} />
+                <NumberField {...t.field('capitalPct')} value={data.capitalPct} max={50} onChange={(v) => set({ capitalPct: v })} />
               </>
             )}
             {motor && <NumberField {...t.field('consumption')} value={data.consumption} onChange={(v) => set({ consumption: v })} />}

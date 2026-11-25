@@ -32,7 +32,7 @@
         },
         {
           "title": "Desgaste.",
-          "text": "O veículo perde valor a cada ano de uso. Mesmo que você já tenha pago o carro, essa perda é dinheiro que um dia vai faltar para trocar de veículo."
+          "text": "O veículo perde valor a cada ano, e mais rápido com muitos km. Mesmo que você já tenha pago o veículo, essa perda é dinheiro que um dia vai faltar para trocá-lo. Também contamos o rendimento que o dinheiro parado no veículo teria numa aplicação: é o que torna justa a comparação entre veículo próprio e alugado."
         },
         {
           "title": "Seguro, IPVA e licenciamento.",
@@ -72,11 +72,11 @@
       "items": [
         {
           "title": "MEI.",
-          "text": "DAS fixo por mês: 5% do salário mínimo para o INSS e R$ 5 de ISS ([LC 123/2006, art. 18-A](source:simplesLaw)). O lucro até a parte presumida do faturamento é isento de imposto de renda; o que passar disso entra na sua declaração."
+          "text": "DAS fixo por mês: 5% do salário mínimo para o INSS, mais R$ 5 de ISS e/ou R$ 1 de ICMS conforme a atividade ([LC 123/2006, art. 18-A](source:simplesLaw)). O lucro até a parte presumida do faturamento (8%, 16% ou 32%, conforme a atividade) é isento de imposto de renda; o que passar disso entra na declaração anual."
         },
         {
           "title": "Autônomo.",
-          "text": "INSS de contribuinte individual (11% do salário mínimo ou 20% do valor escolhido), imposto de renda mensal pelo carnê-leão com a tabela progressiva e a redução da Lei 15.270/2025, e o ISS da prefeitura."
+          "text": "INSS de contribuinte individual (11% do salário mínimo ou 20% do valor escolhido; para motorista e entregador, 20% sobre 20% do valor bruto recebido), imposto de renda mensal pelo carnê-leão com a tabela progressiva e a redução da Lei 15.270/2025, e o ISS da prefeitura."
         },
         {
           "title": "Redução do imposto de renda.",
@@ -120,7 +120,7 @@
       "id": "req_moto",
       "tone": "warning",
       "title": "O que é exigido do entregador de moto",
-      "text": "A [Lei 12.009/2009](source:motofreteLaw) exige 21 anos, 2 anos de CNH categoria A com a observação EAR e o curso especializado de motofretista ([Senatran](source:motofreteCourse)), que o SEST SENAT costuma oferecer de graça. A medida provisória que flexibilizava essas regras perdeu a validade em setembro de 2026. Use capacete, colete refletivo e equipamentos de segurança."
+      "text": "A [Lei 12.009/2009](source:motofreteLaw) e o Código de Trânsito exigem 21 anos, 2 anos de CNH categoria A com a observação EAR, o curso especializado de motofretista ([Senatran](source:motofreteCourse)), que o SEST SENAT costuma oferecer de graça, protetor de motor e pernas (mata-cachorro), antena corta-pipa e inspeção semestral do veículo, além das regras da prefeitura. A medida provisória que flexibilizava essas regras perdeu a validade em setembro de 2026. Use capacete, colete refletivo e equipamentos de segurança."
     },
     {
       "id": "req_bike",
@@ -131,8 +131,8 @@
     {
       "id": "req_electrician",
       "tone": "info",
-      "title": "O que é exigido do eletricista",
-      "text": "O curso **NR-10** (segurança em instalações elétricas), com reciclagem a cada 2 anos, e o NR-35 para trabalho acima de 2 metros. Projetos e instalações que exigem ART precisam de técnico ou engenheiro registrado no CFT ou no CREA."
+      "title": "Eletricista: cursos e registro",
+      "text": "O curso **NR-10** (segurança em instalações elétricas, com reciclagem a cada 2 anos) é exigido por empresas e condomínios e muito recomendado para atender casas. O NR-35 vale para trabalho acima de 2 metros. Projetos e serviços que exigem ART precisam de técnico ou engenheiro registrado no CFT ou no CREA."
     },
     {
       "id": "req_plumber",
@@ -150,7 +150,7 @@
       "id": "req_manicure",
       "tone": "info",
       "title": "Manicure a domicílio",
-      "text": "A profissão não exige registro ([Lei 12.592/2012](source:manicureLaw)), mas a vigilância sanitária exige esterilizar alicates e espátulas (estufa ou autoclave) e usar lixas e palitos descartáveis."
+      "text": "A profissão não exige registro ([Lei 12.592/2012](source:manicureLaw)), mas a vigilância sanitária exige esterilizar alicates e espátulas e usar lixas e palitos descartáveis. Várias cidades já só aceitam a autoclave (está como opcional na lista de ferramentas). Tome a vacina de hepatite B, gratuita no SUS."
     },
     {
       "id": "occupationProfile",
@@ -168,7 +168,7 @@
       "id": "meiRules",
       "tone": "info",
       "title": "Regras do MEI",
-      "text": "DAS fixo de **{{das|money}} por mês**. Faturamento de até **{{limit|money}} por ano** a partir de {{year}} ([LC 238/2026](source:lc238)); no ano em que abrir, o limite é proporcional aos meses. Pela simulação você faturaria {{revenue|money}} por ano. O lucro de até {{presumption|percent}} do faturamento é isento de imposto de renda."
+      "text": "DAS fixo de **{{das|money}} por mês**. Faturamento de até **{{limit|money}} por ano** a partir de {{year}} ([LC 238/2026](source:lc238)); no ano em que abrir, o limite é proporcional aos meses, e a tolerância de 20% vale sobre esse limite proporcional. Pela simulação você faturaria {{revenue|money}} por ano. O lucro de até {{presumption|percent}} do faturamento é isento de imposto de renda; com contabilidade feita por contador, todo o lucro apurado pode ser isento. O que passar da parte isenta vai na declaração anual de imposto de renda, como rendimento recebido de pessoa jurídica: o valor mensal mostrado é uma estimativa."
     },
     {
       "id": "incomeTax_passengers",
@@ -186,25 +186,25 @@
       "id": "incomeTax_bookkeeping",
       "tone": "info",
       "title": "Imposto de renda do autônomo",
-      "text": "O imposto do carnê-leão é calculado sobre o que você recebe menos as despesas do trabalho anotadas no livro-caixa (material, comissões e anúncios), e menos o INSS. Gastos com veículo e deslocamento não podem ser deduzidos ([RIR/2018](source:rir2018))."
+      "text": "O imposto do carnê-leão é calculado sobre o que você recebe de pessoas físicas, menos **o maior** entre: as despesas do trabalho anotadas no livro-caixa (material, comissões, anúncios, celular) somadas ao INSS, ou o desconto simplificado de R$ 607,20. Gastos com veículo, deslocamento e desgaste de ferramentas não podem ser deduzidos ([RIR/2018, arts. 68 e 69](source:rir2018))."
     },
     {
       "id": "benefits",
       "tone": "info",
       "title": "O que a sua contribuição garante",
-      "text": "MEI (5%) e plano simplificado (11%) dão direito a auxílio por incapacidade (após 12 contribuições), salário-maternidade (após 10) e aposentadoria por idade de 1 salário mínimo. Com 20% sobre um valor maior, os benefícios são calculados sobre esse valor. Sem contribuir, você fica sem renda se adoecer ([INSS](source:inssIndividual))."
+      "text": "MEI (5%) e plano simplificado (11%) dão direito a auxílio por incapacidade (após 12 contribuições; **em caso de acidente, mesmo fora do trabalho, não há carência: basta estar contribuindo**), salário-maternidade (sem carência desde a [decisão do STF](source:maternityAdi)), pensão por morte para a família e aposentadoria por idade de 1 salário mínimo ([Lei 8.213/1991](source:inssIndividual)). Com 20% sobre um valor maior, os benefícios acompanham esse valor. Sem contribuir, você fica sem renda se adoecer ou se acidentar."
     },
     {
       "id": "cltIntro",
       "tone": "info",
       "title": "Comparação justa",
-      "text": "Um emprego CLT paga 13º, férias com 1/3 e FGTS, e o empregador cobre o INSS patronal. Para trabalhar por conta valer a pena, o que sobra para você no ano precisa cobrir tudo isso. Este é um cálculo de referência, não uma recomendação para trocar de emprego."
+      "text": "Um emprego CLT paga 13º, férias com 1/3 e FGTS, dá seguro-desemprego e multa de 40% do FGTS na demissão sem justa causa, e o empregador paga o INSS patronal. Para trabalhar por conta valer a pena, o que sobra para você no ano precisa cobrir tudo isso. Este é um cálculo de referência, não uma recomendação para trocar de emprego."
     },
     {
       "id": "compareAhead",
       "tone": "success",
       "title": "Por conta própria você fica à frente",
-      "text": "Na simulação, você termina o ano com **{{difference|money}} a mais** do que no emprego CLT. Equivale a um salário CLT de **{{salary|money}}**. Lembre que essa diferença precisa pagar os riscos que o empregado não tem: renda que varia, acidente, veículo parado."
+      "text": "Na simulação, você termina o ano com **{{difference|money}} a mais** do que no emprego CLT. Equivale a um salário CLT de **{{salary|money}}**. Essa diferença precisa pagar os riscos que o empregado não tem: renda que varia, acidente, veículo parado, sem seguro-desemprego. Guarde uma reserva de pelo menos 3 meses de custos."
     },
     {
       "id": "compareBehind",
@@ -225,6 +225,9 @@
       "items": [
         {
           "text": "Anote por algumas semanas o que entra e o que sai, inclusive os km. Os números reais costumam ser piores que os imaginados."
+        },
+        {
+          "text": "Conte com meses fracos: diaristas e manicures perdem clientes em janeiro e julho, motoristas e entregadores têm dezembro forte e começo de ano fraco, e eletricistas e encanadores dependem das chuvas. Os dias parados da simulação só cobrem parte disso."
         },
         {
           "text": "Pague o INSS desde o primeiro mês: um acidente sem cobertura pode deixar você sem renda."
@@ -283,7 +286,13 @@
       "id": "warning_ownVehicle",
       "tone": "info",
       "title": "O veículo não está no investimento",
-      "text": "Consideramos que você já tem o veículo (valor de {{value|money}}). Se for comprar ou financiar, some a entrada ao que precisa para começar e as parcelas aos custos do mês."
+      "text": "Consideramos que você já tem o veículo (valor de {{value|money}}). O desgaste e o rendimento que esse dinheiro teria aplicado entram no custo do mês. Se for comprar financiado, some a entrada ao que precisa para começar e os juros das parcelas aos custos do mês (o valor do veículo em si já está no desgaste)."
+    },
+    {
+      "id": "payerCompany",
+      "tone": "info",
+      "title": "Quando quem paga é uma empresa",
+      "text": "O carnê-leão vale para o que você recebe de pessoas físicas. Quando uma empresa paga você como autônomo, ela desconta 11% de INSS e o imposto de renda na fonte ([Lei 10.666/2003](source:withholding)), e nessa parte não vale o plano simplificado de 11%. Se a maior parte vem de empresas, converse com um contador: o MEI costuma ser mais simples."
     }
   ],
   "breakdown": {
@@ -314,7 +323,8 @@
       "incomeTax": "Imposto de renda (carnê-leão)",
       "iss": "ISS de autônomo",
       "rentalDeposit": "Caução do aluguel do veículo",
-      "otherInitial": "Outros gastos para começar"
+      "otherInitial": "Outros gastos para começar",
+      "capital": "Rendimento que o valor do veículo teria aplicado ({{rate|percent}} ao ano)"
     }
   },
   "labels": {
@@ -357,14 +367,15 @@
     "rowHourly": "Por hora",
     "rowRights": "Férias pagas, 13º e FGTS",
     "rightsAutonomous": "Não: você guarda",
-    "rightsClt": "Sim",
+    "rightsClt": "Sim, e seguro-desemprego",
     "investmentTitle": "Para começar",
     "investmentCaption": "Ferramentas, equipamentos, cursos e caução",
     "investmentTotal": "Total para começar",
     "investmentNone": "Nada a comprar além do que você já tem.",
     "payback": "Com a sobra do mês, o que foi gasto para começar volta em cerca de {{months}} meses.",
     "paybackNone": "Com estes números, a sobra do mês não paga o que foi gasto para começar.",
-    "printButton": "Imprimir ou salvar em PDF"
+    "printButton": "Imprimir ou salvar em PDF",
+    "paybackOne": "Com a sobra do mês, o que foi gasto para começar volta em cerca de 1 mês."
   },
   "method": [
     {

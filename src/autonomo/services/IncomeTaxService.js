@@ -15,8 +15,9 @@ export class IncomeTaxService {
     return 0;
   }
 
-  // income: taxable income of the month; deductions: INSS and other legal deductions. The
-  // simplified monthly discount replaces them when larger.
+  // income: taxable income of the month (it also sets the reduction); deductions: INSS,
+  // livro-caixa and other legal deductions. The simplified monthly discount replaces them all
+  // when larger.
   monthly(income, deductions = 0) {
     const table = this.table();
     if (income <= 0) return { base: 0, before: 0, tax: 0 };

@@ -51,7 +51,9 @@ export class VehicleService {
     if (['car', 'moto', 'bike'].includes(type)) {
       if (own) {
         add('maintenance', work.km * input.maintenancePerKm, 'market');
-        add('depreciation', (input.vehicleValue * input.depreciationPct) / 100 / 12, 'market');
+        add('depreciation', (input.vehicleValue * input.depreciationPct) / 100 / 12, 'estimate');
+        // The money tied up in the vehicle would earn interest if it were invested.
+        add('capital', (input.vehicleValue * input.capitalPct) / 100 / 12, 'estimate', { rate: input.capitalPct / 100 });
         if (MOTOR_VEHICLES.includes(type)) {
           add('insurance', (input.vehicleValue * input.insurancePct) / 100 / 12, 'market');
           add('ipva', (input.vehicleValue * this.ipvaRate(input)) / 12, state?.ipva.kind, { rate: this.ipvaRate(input) });

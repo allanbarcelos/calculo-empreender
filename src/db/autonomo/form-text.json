@@ -70,7 +70,7 @@
     "ticket": {
       "label": "Valor médio por serviço",
       "prefix": "R$",
-      "hint": "Quanto você cobra pela mão de obra de um serviço ou diária. Referência: {{range}}."
+      "hint": "Quanto você cobra pela mão de obra de um serviço, com a taxa de visita, sem o material que o cliente paga à parte. Referência: {{range}}."
     },
     "jobsPerDay": {
       "label": "Serviços por dia de trabalho",
@@ -143,7 +143,7 @@
       "label": "Valor do veículo hoje",
       "prefix": "R$",
       "hint": "Quanto ele vale na tabela FIPE. Serve para calcular desgaste, seguro e IPVA.",
-      "stateTaxes": "Em {{uf}}: IPVA de {{ipva}} do valor por ano e licenciamento de {{licensing}}."
+      "stateTaxes": "Em {{uf}}: IPVA de {{ipva}} do valor por ano e licenciamento de {{licensing}}. Isenções dependem de condições (cilindrada, um só veículo, sem multas): confira na Secretaria da Fazenda."
     },
     "depreciationPct": {
       "label": "Perda de valor por ano",
@@ -164,7 +164,7 @@
     "consumption": {
       "label": "Consumo",
       "suffix": "km/l",
-      "hint": "Quantos km o veículo faz com um litro, na cidade."
+      "hint": "Quantos km o veículo faz com um litro de gasolina, na cidade. Se usa etanol ou GNV, digite o consumo e o preço desse combustível."
     },
     "rentWeekly": {
       "label": "Aluguel por semana",
@@ -172,17 +172,18 @@
       "hint": "Preço de locadoras para motoristas e entregadores de aplicativo."
     },
     "fuelPrice": {
-      "label": "Preço da gasolina ({{uf}})",
+      "label": "Preço do combustível ({{uf}})",
       "prefix": "R$",
       "suffix": "/litro",
-      "auto": "Média do estado no levantamento da ANP ({{date}}).",
+      "auto": "Média da gasolina comum no estado, no levantamento da ANP ({{date}}).",
       "useAverage": "Usar a média do estado ({{value}})"
     },
     "transitDaily": {
       "label": "Transporte por dia de trabalho",
       "prefix": "R$",
       "auto": "{{fares}} passagens de ônibus de {{fare}} ({{city}}).",
-      "useFare": "Usar {{fares}} passagens da capital ({{value}})"
+      "useFare": "Usar {{fares}} passagens da capital ({{value}})",
+      "hint": "Se precisa de mais conduções por dia (integração, ônibus intermunicipal), digite o valor."
     },
     "items": {
       "caption": "Ferramentas, equipamentos e cursos",
@@ -203,9 +204,9 @@
       "hint": "Produtos e peças que não são cobrados à parte do cliente. Referência: {{reference}}."
     },
     "platformFeePct": {
-      "label": "Comissão de aplicativo ou agência",
+      "label": "Comissão de aplicativo ou taxa da maquininha",
       "suffix": "% do faturamento",
-      "hint": "Para quem consegue clientes por plataforma que cobra comissão. Referência: {{reference}}."
+      "hint": "Comissão de plataforma que traz clientes e taxa de cartão ou Pix parcelado. Referência: {{reference}}."
     },
     "leadCostMonthly": {
       "label": "Captação de clientes por mês",
@@ -220,7 +221,7 @@
     "otherMonthly": {
       "label": "Outros custos por mês",
       "prefix": "R$",
-      "hint": "Estacionamento, pedágio, alimentação fora de casa, uniforme, contador."
+      "hint": "Lavagem do carro, estacionamento, pedágio, multas, alimentação fora de casa (R$ 300 a R$ 500 por mês para quem trabalha na rua), contador."
     },
     "otherInitial": {
       "label": "Outros gastos para começar",
@@ -243,9 +244,10 @@
       "label": "Contribuição ao INSS",
       "hint": "Quem trabalha por conta paga o próprio INSS. Sem pagar, fica sem auxílio se adoecer e sem aposentadoria.",
       "optionSimplified": "Plano simplificado (11%)",
-      "descSimplified": "11% do salário mínimo: {{amount}} por mês. Aposentadoria por idade de 1 salário mínimo.",
+      "descSimplified": "11% do salário mínimo: {{amount}} por mês. Aposentadoria por idade de 1 salário mínimo; não conta para certidão de tempo de contribuição, a não ser que você complemente 9% depois.",
       "optionFull": "Plano normal (20%)",
-      "descFull": "20% sobre o valor que você escolher, do salário mínimo até {{ceiling}}. Benefícios calculados sobre esse valor."
+      "descFull": "20% sobre o valor que você escolher, do salário mínimo até {{ceiling}}. Benefícios calculados sobre esse valor.",
+      "driverBase": "Para motorista e entregador, a contribuição é sobre 20% do que você recebe das corridas ou entregas (Decreto 3.048/1999, art. 214, § 20), entre o salário mínimo e o teto: {{base}} na simulação."
     },
     "inssBase": {
       "label": "Valor sobre o qual contribuir",
@@ -277,6 +279,21 @@
       "label": "Valor sobre o qual contribuir",
       "prefix": "R$",
       "hint": "Para motorista e entregador autônomo, o mínimo é 20% do que você recebe das corridas ou entregas (Decreto 3.048/1999): {{minimum}} na simulação. Se digitar menos, usamos esse mínimo."
+    },
+    "ticketDaily": {
+      "label": "Valor da diária",
+      "prefix": "R$",
+      "hint": "Quanto você cobra por um dia de faxina. Referência: {{range}}."
+    },
+    "hoursPerDayDaily": {
+      "label": "Horas por dia de trabalho",
+      "suffix": "h",
+      "hint": "Inclui a ida e a volta de ônibus."
+    },
+    "capitalPct": {
+      "label": "Rendimento do dinheiro parado no veículo",
+      "suffix": "% ao ano",
+      "hint": "Quanto o valor do veículo renderia numa aplicação. Ajuda a comparar com o aluguel. Zere se não quiser contar."
     }
   }
 }

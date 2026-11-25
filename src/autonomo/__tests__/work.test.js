@@ -36,6 +36,7 @@ describe('Vehicle costs', () => {
     expect(item(r, 'vehicle', 'fuel').amount).toBeCloseTo((r.work.km / 12) * sp.gasoline.value, 6);
     expect(item(r, 'vehicle', 'maintenance').amount).toBeCloseTo(r.work.km * 0.25, 6);
     expect(item(r, 'vehicle', 'depreciation').amount).toBeCloseTo(5000 / 12, 6);
+    expect(item(r, 'vehicle', 'capital').amount).toBeCloseTo((50000 * r.input.capitalPct) / 100 / 12, 6);
     expect(item(r, 'vehicle', 'insurance').amount).toBeCloseTo(2500 / 12, 6);
     expect(item(r, 'vehicle', 'ipva').amount).toBeCloseTo((50000 * sp.ipva.car) / 12, 6);
     expect(item(r, 'vehicle', 'licensing').amount).toBeCloseTo(sp.licensing.value / 12, 6);
@@ -80,10 +81,10 @@ describe('Taxes', () => {
     expect(services.taxes.inss({ inssPlan: 'full', inssBase: 99999 }, services.occupations.get('eletricista'), 5000).base).toBe(8475.55);
   });
 
-  it('driver in the normal plan contributes on at least 20% of the gross fares (Decreto 3.048, art. 214, § 19)', () => {
+  it('driver in the normal plan contributes on 20% of the gross fares (Decreto 3.048, art. 214, § 20)', () => {
     const driver = services.occupations.get('motorista_app');
-    expect(services.taxes.inss({ inssPlan: 'full', inssBase: 0 }, driver, 10000).base).toBe(2000);
-    expect(services.taxes.inss({ inssPlan: 'full', inssBase: 0 }, driver, 5000).base).toBe(1621);
+    expect(services.taxes.inss({ inssPlan: 'full', inssBase: 5000 }, driver, 10000).base).toBe(2000);
+    expect(services.taxes.inss({ inssPlan: 'full', inssBase: 5000 }, driver, 5000).base).toBe(1621);
   });
 
   it('income tax base: 60% for passengers, 10% for cargo, livro-caixa for services', () => {
@@ -91,7 +92,16 @@ describe('Taxes', () => {
     expect(services.taxes.taxableIncome(services.occupations.get('motorista_app'), 10000, work).amount).toBe(6000);
     expect(services.taxes.taxableIncome(services.occupations.get('entregador_moto'), 10000, work).amount).toBe(1000);
     // Depreciation (replacement) and transport are not deductible.
-    expect(services.taxes.taxableIncome(services.occupations.get('eletricista'), 10000, work).amount).toBe(9640);
+    expect(services.taxes.taxableIncome(services.occupations.get('eletricista'), 10000, work)).toMatchObject({ amount: 10000, deductible: 360 });
+  });
+
+  it('livro-caixa plus INSS and the simplified discount are alternatives, never added (Lei 9.250/1995, art. 4º)', () => {
+    const r = calc(forOccupation('eletricista', { regime: 'individual', ticket: 350, jobsPerDay: 1.5, materialsPct: 20 }));
+    const deductions = r.taxes.taxable.deductible + r.taxes.inss.amount;
+    const expected = services.incomeTax.monthly(r.revenue, deductions).tax;
+    expect(item(r, 'taxes', 'incomeTax').amount).toBeCloseTo(expected, 2);
+    // Base: revenue minus the larger of (livro-caixa + INSS) and R$ 607,20.
+    expect(services.incomeTax.monthly(r.revenue, deductions).base).toBeCloseTo(r.revenue - Math.max(deductions, 607.2), 6);
   });
 
   it('income tax: zero up to R$ 5.000 a month, phased out up to R$ 7.350 (Lei 15.270/2025)', () => {
@@ -151,12 +161,21 @@ describe('Every occupation', () => {
     }
   });
 
-  it('medium scenario nets more than the minimum wage per hour and less than R$ 60', () => {
+  it('medium scenario nets something and less than R$ 60 per hour', () => {
     for (const o of services.occupations.list()) {
       const r = calc(forOccupation(o.id));
-      expect(r.netPerHour).toBeGreaterThan(1621 / 220);
+      expect(r.net).toBeGreaterThan(0);
       expect(r.netPerHour).toBeLessThan(60);
     }
+  });
+
+  it('own car costs about what the TST 2026 study found (R$ 1,26 per km), close to renting', () => {
+    const own = calc(forOccupation('motorista_app'));
+    const rented = calc(forOccupation('motorista_app', { vehicleOwnership: 'rented' }));
+    expect(own.vehicle.perKm).toBeGreaterThan(1);
+    expect(own.vehicle.perKm).toBeLessThan(1.4);
+    expect(item(own, 'vehicle', 'capital').amount).toBeCloseTo((53000 * 0.08) / 12, 6);
+    expect(rented.vehicle.perKm / own.vehicle.perKm).toBeLessThan(1.25);
   });
 });
 

@@ -43,7 +43,8 @@
     ],
     "overrides": {
      "car": {
-      "depreciationRate": 0.1
+      "depreciationRate": 0.15,
+      "insuranceRate": 0.07
      }
     }
    },
@@ -52,17 +53,18 @@
     "platformFeeRate": 0,
     "leadCostMonthly": 0,
     "phoneMonthly": 110,
+    "otherMonthly": 120,
     "kind": "estimate",
     "source": "phonePlans",
-    "note": "O ganho por hora já vem sem a comissão do aplicativo. Celular: plano de dados e reposição do aparelho."
+    "note": "O ganho por hora já vem sem a comissão do aplicativo. Celular: plano de dados e reposição do aparelho. Outros custos: lavagem e limpeza do carro (2 a 4 lavagens por mês)."
    },
    "items": [
     {
      "id": "cnhEar",
-     "label": "CNH com observação EAR (exames e taxa do Detran)",
+     "label": "CNH com observação EAR (exames e taxa do Detran; renovação a cada 5 anos)",
      "qty": 1,
      "unitCost": 200,
-     "lifeYears": null,
+     "lifeYears": 5,
      "essential": true,
      "kind": "estimate",
      "source": "cnhExams",
@@ -92,10 +94,10 @@
     },
     {
      "id": "carKit",
-     "label": "Kit de limpeza, tapetes e água para passageiros",
+     "label": "Tapetes, organizador e kit de limpeza",
      "qty": 1,
      "unitCost": 120,
-     "lifeYears": 1,
+     "lifeYears": 2,
      "essential": true,
      "kind": "estimate",
      "source": "ownEstimateWork",
@@ -174,7 +176,7 @@
     ],
     "overrides": {
      "moto": {
-      "depreciationRate": 0.1
+      "depreciationRate": 0.15
      }
     }
    },
@@ -204,7 +206,7 @@
      "label": "CNH categoria A com observação EAR (exames e taxa do Detran)",
      "qty": 1,
      "unitCost": 200,
-     "lifeYears": null,
+     "lifeYears": 5,
      "essential": true,
      "kind": "estimate",
      "source": "cnhExams",
@@ -260,6 +262,28 @@
      "qty": 1,
      "unitCost": 100,
      "lifeYears": 1,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "engineGuard",
+     "label": "Protetor de motor e pernas (mata-cachorro), exigido pela Lei 12.009",
+     "qty": 1,
+     "unitCost": 200,
+     "lifeYears": 5,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "kiteAntenna",
+     "label": "Antena corta-pipa, exigida pela Lei 12.009",
+     "qty": 1,
+     "unitCost": 40,
+     "lifeYears": 3,
      "essential": true,
      "kind": "estimate",
      "source": "ownEstimateWork",
@@ -581,10 +605,10 @@
    },
    "clt": {
     "role": "Eletricista de instalações (CBO 7156-15)",
-    "salary": 2356,
+    "salary": 3063,
     "kind": "market",
     "source": "cagedElectrician",
-    "note": "Mediana do Novo CAGED, sem o adicional de periculosidade de 30% pago a quem trabalha exposto a energia elétrica."
+    "note": "Mediana do Novo CAGED (R$ 2.356) mais o adicional de periculosidade de 30% que o eletricista exposto a energia elétrica recebe (CLT, art. 193, e NR-16)."
    },
    "callouts": [
     "req_electrician"
@@ -707,6 +731,17 @@
      "category": "tool"
     },
     {
+     "id": "fusion",
+     "label": "Termofusora para tubos PPR",
+     "qty": 1,
+     "unitCost": 400,
+     "lifeYears": 5,
+     "essential": false,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
      "id": "machine",
      "label": "Máquina desentupidora elétrica",
      "qty": 1,
@@ -762,6 +797,7 @@
    "description": "Faxina por diária em casas de clientes diferentes.",
    "model": "jobs",
    "work": {
+    "unit": "day",
     "ticket": {
      "low": 130,
      "medium": 180,
@@ -769,7 +805,7 @@
     },
     "jobsPerDay": 1,
     "hoursPerDay": 10,
-    "daysPerMonth": 19.5,
+    "daysPerMonth": 20,
     "kmPerUnit": 0,
     "kind": "market",
     "source": "cleanerPrice",
@@ -939,6 +975,17 @@
      "essential": true,
      "kind": "estimate",
      "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "autoclave",
+     "label": "Autoclave de 5 litros (exigida por algumas vigilâncias sanitárias)",
+     "qty": 1,
+     "unitCost": 1800,
+     "lifeYears": 6,
+     "essential": false,
+     "kind": "market",
+     "source": "manicureKit",
      "category": "tool"
     },
     {

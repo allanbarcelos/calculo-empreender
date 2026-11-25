@@ -73,6 +73,7 @@ export class OccupationService {
       ...this.vehiclePatch(o, o.vehicle.type),
       faresPerDay: o.vehicle.faresPerDay ?? 2,
       phoneMonthly: o.costs.phoneMonthly,
+      otherMonthly: o.costs.otherMonthly ?? 0,
       materialsPct: pct(o.costs.materialsRate),
       platformFeePct: pct(o.costs.platformFeeRate),
       leadCostMonthly: o.costs.leadCostMonthly ?? 0,

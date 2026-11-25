@@ -11,6 +11,8 @@ export default function WorkStep({ data, set, result }) {
   const w = occupation.work;
   const range = (r) => (typeof r === 'number' ? formatMoney(r) : `${formatMoney(r.low)} a ${formatMoney(r.high)}`);
   const unit = hourly ? 'hour' : 'job';
+  // One job a day (a cleaning day): the field would always read 1.
+  const daily = w.unit === 'day';
 
   return (
     <>
@@ -36,8 +38,8 @@ export default function WorkStep({ data, set, result }) {
             <NumberField {...t.field('earningsPerHour', { range: range(w.earningsPerHour) })} value={data.earningsPerHour} onChange={(v) => set({ earningsPerHour: v })} />
           ) : (
             <>
-              <NumberField {...t.field('ticket', { range: range(w.ticket) })} value={data.ticket} onChange={(v) => set({ ticket: v })} />
-              <NumberField {...t.field('jobsPerDay')} value={data.jobsPerDay} max={30} onChange={(v) => set({ jobsPerDay: v })} />
+              <NumberField {...t.field(daily ? 'ticketDaily' : 'ticket', { range: range(w.ticket) })} value={data.ticket} onChange={(v) => set({ ticket: v })} />
+              {!daily && <NumberField {...t.field('jobsPerDay')} value={data.jobsPerDay} max={30} onChange={(v) => set({ jobsPerDay: v })} />}
             </>
           )}
         </div>
@@ -47,7 +49,7 @@ export default function WorkStep({ data, set, result }) {
       <fieldset className="subsection">
         <legend>{t.section('time')}</legend>
         <div className="grid-2">
-          <NumberField {...t.field(hourly ? 'hoursPerDayHourly' : 'hoursPerDay')} value={data.hoursPerDay} max={24} onChange={(v) => set({ hoursPerDay: v })} />
+          <NumberField {...t.field(hourly ? 'hoursPerDayHourly' : daily ? 'hoursPerDayDaily' : 'hoursPerDay')} value={data.hoursPerDay} max={24} onChange={(v) => set({ hoursPerDay: v })} />
           <NumberField {...t.field('daysPerMonth')} value={data.daysPerMonth} max={31} onChange={(v) => set({ daysPerMonth: v })} />
           <NumberField {...t.field('vacationDays')} value={data.vacationDays} max={365} onChange={(v) => set({ vacationDays: v })} />
           <NumberField {...t.field('idleDays')} value={data.idleDays} max={365} onChange={(v) => set({ idleDays: v })} />

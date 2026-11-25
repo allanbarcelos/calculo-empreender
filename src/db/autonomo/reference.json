@@ -35,7 +35,7 @@
    },
    "moto": {
     "value": 15700,
-    "consumption": 35,
+    "consumption": 38,
     "maintenancePerKm": 0.1,
     "insuranceRate": 0.07,
     "depreciationRate": 0.08,
@@ -51,6 +51,7 @@
     "rentWeekly": 95,
     "rentalDeposit": 0
    },
+   "capitalRate": 0.08,
    "transit": {},
    "none": {},
    "notes": "Carro: Onix 2018 na FIPE, consumo urbano Inmetro, manutenção por km derivada do Cebrap 2024. Moto: CG 160 2022. Bicicleta: valor e manutenção estimados; aluguel de e-bike do iFood Pedal."

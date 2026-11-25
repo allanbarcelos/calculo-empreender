@@ -65,7 +65,7 @@
    },
    "ipva": {
     "car": 0.03,
-    "moto": 0.02,
+    "moto": 0.0275,
     "motoExemptUpToCc": null,
     "kind": "market",
     "note": "Moto: 2% até 150 cc; 2,75% 151–400 cc; 3,25% acima de 400 cc. Fontes divergem (algumas dizem 1%). Carro: Faixas por potência: 2,75% até 80 cv; 3% de 80 a 160 cv; 3,25% acima de 160 cv. Usado 3% (faixa da maioria dos carros). App drivers: isenção prevista na Lei estadual 8.785/2022 (requisitos e regulamento; ver Lupa).",
@@ -193,7 +193,7 @@
    },
    "ipva": {
     "car": 0.025,
-    "moto": 0.01,
+    "moto": 0.03,
     "motoExemptUpToCc": null,
     "kind": "market",
     "note": "Moto: 1% até 125 cc sem infração de trânsito no último ano; 2% até 125 cc com infração; 3% 126–300 cc; 3,5% acima de 300 cc. Carro: Faixas por potência: 2,5% até 100 cv; 3% de 101 a 180 cv; 3,5% acima de 180 cv. Isenção para app drivers apenas em projeto de lei.",

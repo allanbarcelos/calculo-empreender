@@ -324,10 +324,24 @@
   },
   {
    "id": "driverInssBase",
-   "title": "Decreto 3.048/1999, art. 214, § 19: salário de contribuição do condutor autônomo e do motorista de aplicativo (20% do valor bruto)",
-   "short": "Decreto 3.048/1999",
-   "org": "Câmara dos Deputados (texto atualizado)",
-   "url": "https://www2.camara.leg.br/legin/fed/decret/1999/decreto-3048-6-maio-1999-368532-normaatualizada-pe.html"
+   "title": "Decreto 3.048/1999, art. 214, § 20 (redação do Decreto 10.410/2020): salário de contribuição do condutor autônomo e do motorista de aplicativo é 20% do valor bruto",
+   "short": "Decreto 3.048/1999, art. 214, § 20",
+   "org": "Presidência da República",
+   "url": "https://planalto.gov.br/ccivil_03/_ato2019-2022/2020/decreto/d10410.htm"
+  },
+  {
+   "id": "maternityAdi",
+   "title": "STF, ADI 2110 e 2111: fim da carência do salário-maternidade para contribuintes individuais (2024)",
+   "short": "STF, ADI 2110/2111",
+   "org": "Senado Federal",
+   "url": "https://legis.senado.leg.br/norma/38306350"
+  },
+  {
+   "id": "withholding",
+   "title": "Lei 10.666/2003, art. 4º: empresa retém 11% de INSS do contribuinte individual que lhe presta serviço",
+   "short": "Lei 10.666/2003",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2003/l10.666.htm"
   },
   {
    "id": "inssTableAuto",
@@ -707,6 +721,8 @@
     "inssContribution",
     "inssIndividual",
     "driverInssBase",
+    "maternityAdi",
+    "withholding",
     "inssTableAuto",
     "fgtsLaw",
     "meiOccupations",

@@ -65,7 +65,7 @@ export default function WorkResultStep({ result }) {
           totalLabel={label('investmentTotal')}
         />
       ) : <p>{label('investmentNone')}</p>}
-      <p className="hint">{paybackMonths ? label('payback', { months: paybackMonths }) : label('paybackNone')}</p>
+      <p className="hint">{paybackMonths ? label(paybackMonths === 1 ? 'paybackOne' : 'payback', { months: paybackMonths }) : label('paybackNone')}</p>
 
       <ContentCallout id="dataQuality" />
       <ContentCallout id="beforeStarting" />

@@ -12,7 +12,7 @@ export default function TaxStep({ data, set, result }) {
   const inssRules = repositories.workReference.inssIndividual();
   const minimumWage = repositories.reference.minimumWage();
   const das = taxService.meiDas(occupation);
-  const minimumBase = taxService.minimumBase(occupation, result.revenue);
+  const inssBase = taxService.base(data, occupation, result.revenue);
   const presumption = repositories.workReference.meiProfit().presumption[occupation.tax.meiPresumption];
   const share = repositories.workReference.incomeTax().taxableShare[occupation.tax.incomeTaxBase];
 
@@ -50,10 +50,12 @@ export default function TaxStep({ data, set, result }) {
             ]}
           />
           <div className="grid-2">
-            {data.inssPlan === 'full' && <NumberField {...t.field(occupation.tax.inssGrossShare ? 'inssBaseDriver' : 'inssBase', { minimum: formatMoney(minimumBase) })} value={data.inssBase} onChange={(v) => set({ inssBase: v })} />}
+            {data.inssPlan === 'full' && !occupation.tax.inssGrossShare && <NumberField {...t.field('inssBase', { minimum: formatMoney(minimumWage) })} value={data.inssBase} onChange={(v) => set({ inssBase: v })} />}
             <NumberField {...t.field('issMonthly')} value={data.issMonthly} onChange={(v) => set({ issMonthly: v })} />
           </div>
+          {data.inssPlan === 'full' && occupation.tax.inssGrossShare && <p className="hint" aria-live="polite">{t.text('inssPlan', 'driverBase', { base: formatMoney(inssBase) })}</p>}
           <ContentCallout id={`incomeTax_${occupation.tax.incomeTaxBase}`} vars={{ share }} />
+          <ContentCallout id="payerCompany" />
         </>
       )}
 
