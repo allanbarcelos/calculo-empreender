@@ -30,11 +30,11 @@ scripts/validate-db.mjs   database validation run before every build
 
 - `LocationService`: rent, electricity and water tariffs, Junta Comercial, fire department, business and sanitary licences for the state capital, the interior (capital rent × `interiorRentFactor`) or a city with its own data.
 - `BusinessService`: business catalogue and the values it pre-fills (equipment, fit-out, stock, monthly figures, revenue model).
-- `TaxService`: MEI (fixed DAS) and Simples Nacional (effective rate from the annex tables; RBT12 of a company in its first year per LC 123/2006, art. 18, §§ 2º e 3º).
-- `OperatingService`: one month — revenue with the ramp-up of a new business, goods (CMV), card fees, taxes and fixed costs.
+- `TaxService`: MEI (fixed DAS) and Simples Nacional (effective rate from the annex tables; RBT12 of a company in its first year per LC 123/2006, art. 18, §§ 2º e 3º). Revenue is split by annex (`tax.annexMix`, e.g. pet shop services in Anexo III and products in Anexo I) and the ICMS and PIS/COFINS shares of the DAS (`simples.partition`) come off the revenue under ICMS-ST (`tax.stShare`) or monofásico (`tax.monoShare`).
+- `OperatingService`: one month — revenue with the ramp-up of a new business, goods (CMV), card fees, delivery-app commission, taxes and fixed costs (including annual fees ÷ 12 and an equipment replacement fund over `projection.equipmentLifeYears`).
 - `InvestmentService`: formalization, premises (deposit, rent before opening, renovation, façade), equipment, launch and the working-capital reserve.
-- `ProjectionService`: 36 months, horizons (3, 6, 12, 24, 36 months), payback and whether the reserve covers the early losses.
-- `Calculator`: orchestrates the services and raises the warnings (MEI limits, Simples limit, payroll, profit, payback, working capital).
+- `ProjectionService`: 36 months, horizons (3, 6, 12, 24, 36 months), payback and whether the reserve covers the early losses plus the credit-card receivables (D+30).
+- `Calculator`: orchestrates the services and raises the warnings: MEI limit per calendar year (proportional in the opening year; LC 238/2026 from 2027), MEI employees, Simples limit, payroll, profit, payback, working capital and margin outside the sector range (`revenue.netMarginRange`).
 
 Values typed by the user always win; `rentAuto` and `payrollAuto` keep following the database (location rent, payroll estimate) until the user types their own.
 
@@ -61,6 +61,10 @@ Add an item to `businesses.json` with the same fields as the existing ones and a
 
 Add it to `cities` and its municipal costs to `cityCosts` (`rent`, `license`, `sanitary`, each with `value`, `kind` and `source`). Cities without data use the capital's.
 
+## Expert review
+
+The business figures and the model were reviewed by specialists in small food businesses, in services and retail, and in small-business finance and taxation. Their corrections are in the data: salons follow the Lei do Salão-Parceiro (the ticket is the salon's share, professionals are partners), fashion stores use a higher card fee and a larger stock and reserve, pet shops split services and products, food businesses have larger teams, higher CMV, delivery commission and the sinks required by Anvisa RDC 216/2004, and minimarkets take ICMS-ST and monofásico out of the Simples tax.
+
 ## Estimativas
 
 When no official value or published market average exists, the database uses an estimate marked `estimate`:
@@ -70,7 +74,10 @@ When no official value or published market average exists, the database uses an 
 - **Water:** R$ 18/m³ for water + sewage at a commercial tariff.
 - **Fees not published by a Junta, fire department or city hall:** values reported by accounting firms or the average of nearby states, explained in the source.
 - **Business figures:** where Sebrae and sector bodies do not publish numbers (ticket, customers per day, CMV, renovation per m², equipment without a listed price), values from market prices and sector practice.
-- **Payroll:** until the user types the cost from Cálculo CLT, employees × minimum wage × 1,5.
-- **Sales ramp-up:** a new business starts at 40% of mature sales, growing linearly until the chosen month.
+- **Payroll:** until the user types the cost from Cálculo CLT, employees × minimum wage × 1,8 (state and category floors above the minimum, FGTS, 13th, vacation, transport).
+- **Sales ramp-up:** a new business starts at 40% of mature sales, growing linearly until the chosen month. Values are constant (no inflation).
+- **2027 minimum wage and MEI DAS:** R$ 1.741 from the 2027 budget bill, until the decree is published.
+- **Electricity:** the ANEEL tariff is official; the taxes added to it are estimated, so the final value is marked as an estimate.
+- **Rent:** FipeZAP Comercial measures offices and commercial units up to 200 m²; street shops in busy spots usually cost more.
 
 These are references to plan, not guarantees. Confirm the values of your case before investing.

@@ -32,7 +32,7 @@ export class BusinessService {
 
   // Form patch when a business type is chosen. MEI is suggested only when the activity allows it
   // and the expected yearly revenue fits the MEI limit.
-  patch(id, scenario = 'medium', meiLimit = Infinity) {
+  patch(id, scenario = 'medium', meiLimit = Infinity, defaults = {}) {
     const b = this.get(id);
     const fitsMei = b.tax.meiAllowed && this.matureRevenue(b, scenario) * 12 <= meiLimit;
     return {
@@ -57,8 +57,15 @@ export class BusinessService {
       rampUpMonths: b.revenue.rampUpMonths,
       cmvRate: b.revenue.cmvRate * 100,
       cardShare: b.revenue.cardShare * 100,
+      // Business-specific card fee (e.g. fashion with instalments) or the national average.
+      cardFeeRate: (b.revenue.cardFeeRate ?? defaults.cardFeeRate ?? 0) * 100,
+      deliveryShare: (b.revenue.deliveryShare ?? 0) * 100,
+      deliveryFeeRate: (b.revenue.deliveryFeeRate ?? 0) * 100,
+      workingCapitalMonths: b.workingCapitalMonths ?? defaults.workingCapitalMonths,
       employees: b.staff.reduce((s, r) => s + r.count, 0),
       regime: fitsMei ? 'mei' : 'simples',
+      // MEI uses the gov.br account; a digital certificate is for ME/EPP.
+      digitalCertificate: !fitsMei,
     };
   }
 }

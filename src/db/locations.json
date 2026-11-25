@@ -415,8 +415,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.0917,
-        "kind": "official",
-        "distributor": "Energisa Acre (EAC) · tarifa ANEEL B3 com ICMS de 19% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Energisa Acre (EAC) · tarifa oficial ANEEL (B3) + ICMS de 19% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -429,7 +429,8 @@
         "value": 80,
         "rule": "Lei 2.679/2012: vistoria por área (R$ 40 até 50 m²; R$ 80 de 50–100 m²). Baixo risco via Declaração de Comprometimento (NT 01 CBMAC)",
         "kind": "official",
-        "source": "lei-no-2679-de-27-12-2012-ac"
+        "source": "lei-no-2679-de-27-12-2012-ac",
+        "annual": false
       }
     },
     {
@@ -437,8 +438,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.1263,
-        "kind": "official",
-        "distributor": "Equatorial Alagoas · tarifa ANEEL B3 com ICMS de 22% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Equatorial Alagoas · tarifa oficial ANEEL (B3) + ICMS de 22% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -451,7 +452,8 @@
         "value": 150,
         "rule": "Taxas do CBMAL em UPFAL conforme área construída e ocupação (Lei 6.442/2003, Anexo Único); licenciamento digital via Previni/Facilita Alagoas",
         "kind": "estimate",
-        "source": "lei-no-6-442-de-31-12-2003-al"
+        "source": "lei-no-6-442-de-31-12-2003-al",
+        "annual": false
       }
     },
     {
@@ -459,8 +461,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.0716,
-        "kind": "official",
-        "distributor": "CEA Equatorial · tarifa ANEEL B3 com ICMS de 18% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "CEA Equatorial · tarifa oficial ANEEL (B3) + ICMS de 18% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -473,7 +475,8 @@
         "value": 150,
         "rule": "Sem tabela oficial localizada; estimativa para licenciamento simplificado de baixo risco",
         "kind": "estimate",
-        "source": "ownEstimate"
+        "source": "ownEstimate",
+        "annual": false
       }
     },
     {
@@ -481,8 +484,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.1676,
-        "kind": "official",
-        "distributor": "Amazonas Energia (Âmbar Amazonas) · tarifa ANEEL B3 com ICMS de 20% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Amazonas Energia (Âmbar Amazonas) · tarifa oficial ANEEL (B3) + ICMS de 20% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -495,7 +498,8 @@
         "value": 150,
         "rule": "Lei 3.862/2013: vistoria com valor mínimo de R$ 80; regra de baixo risco CBMAM não localizada",
         "kind": "estimate",
-        "source": "lei-no-3862-de-28-02-2013-am"
+        "source": "lei-no-3862-de-28-02-2013-am",
+        "annual": false
       }
     },
     {
@@ -503,8 +507,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.2032,
-        "kind": "official",
-        "distributor": "Neoenergia Coelba · tarifa ANEEL B3 com ICMS de 20% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Neoenergia Coelba · tarifa oficial ANEEL (B3) + ICMS de 20% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -517,7 +521,8 @@
         "value": 150,
         "rule": "Lei 12.929/2013: imóveis com menos de 100 m² (ou 200 m², conforme a redação vigente) dispensados de vistoria; baixo risco usa CLCB/DDRCB. Há também a Taxa de Incêndio anual por coeficiente de risco",
         "kind": "estimate",
-        "source": "lei-no-12929-de-27-12-2013-ba"
+        "source": "lei-no-12929-de-27-12-2013-ba",
+        "annual": true
       }
     },
     {
@@ -525,8 +530,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 0.9074,
-        "kind": "official",
-        "distributor": "Enel Distribuição Ceará · tarifa ANEEL B3 com ICMS de 20% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Enel Distribuição Ceará · tarifa oficial ANEEL (B3) + ICMS de 20% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -539,7 +544,8 @@
         "value": 120,
         "rule": "Taxa em UFIRCE (Lei 15.838/2015). Certificação online de baixo risco para imóveis com menos de 3 pavimentos e menos de 750 m², válida por 4 anos (Lei 16.361/2017)",
         "kind": "estimate",
-        "source": "lei-no-15838-de-27-07-2015-ce"
+        "source": "lei-no-15838-de-27-07-2015-ce",
+        "annual": false
       }
     },
     {
@@ -547,8 +553,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.0949,
-        "kind": "official",
-        "distributor": "Neoenergia Brasília · tarifa ANEEL B3 com ICMS de 20% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Neoenergia Brasília · tarifa oficial ANEEL (B3) + ICMS de 20% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -561,7 +567,8 @@
         "value": 0,
         "rule": "Baixo risco: dispensa/autodeclaração (Lei 13.874/2019). Pela LC 943/2018, a vistoria para alvará de funcionamento fica fora das taxas cobradas. Análise de projeto ou habite-se custa cerca de R$ 52 até 50 m², mais R$ 0,10 por m² excedente (valores de 2022).",
         "kind": "estimate",
-        "source": "ato-cbm-df-s-no-de-07-01-2022-valores-da"
+        "source": "ato-cbm-df-s-no-de-07-01-2022-valores-da",
+        "annual": false
       }
     },
     {
@@ -569,8 +576,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.0825,
-        "kind": "official",
-        "distributor": "EDP Espírito Santo · tarifa ANEEL B3 com ICMS de 17% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "EDP Espírito Santo · tarifa oficial ANEEL (B3) + ICMS de 17% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -583,7 +590,8 @@
         "value": 150,
         "rule": "Taxa de Segurança contra Sinistro em VRTE (Lei ES 7.001/2001). Baixo risco dispensado de licenciamento prévio ou com alvará provisório (ALPCB). Valor não localizado",
         "kind": "estimate",
-        "source": "lei-es-no-7-001-2001"
+        "source": "lei-es-no-7-001-2001",
+        "annual": false
       }
     },
     {
@@ -591,8 +599,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.2756,
-        "kind": "official",
-        "distributor": "Equatorial Goiás · tarifa ANEEL B3 com ICMS de 19% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Equatorial Goiás · tarifa oficial ANEEL (B3) + ICMS de 19% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -605,7 +613,8 @@
         "value": 150,
         "rule": "Taxa de serviço estadual (TSE) do CBMGO conforme o Anexo III TSE 2026. Baixo risco usa licenciamento simplificado por declaração. Não foi possível ler o valor no PDF.",
         "kind": "estimate",
-        "source": "anexo-iii-tse-2026-cbmgo"
+        "source": "anexo-iii-tse-2026-cbmgo",
+        "annual": false
       }
     },
     {
@@ -613,8 +622,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.26,
-        "kind": "official",
-        "distributor": "Equatorial Maranhão · tarifa ANEEL B3 com ICMS de 23% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Equatorial Maranhão · tarifa oficial ANEEL (B3) + ICMS de 23% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -627,7 +636,8 @@
         "value": 200,
         "rule": "Lei 11.390/2020: Certificado de Aprovação = 10 × VBBM para imóveis de até 750 m² e 12 m de altura; baixo risco com fator 1,0. Processo simplificado para ME/EPP/MEI de baixo risco (Res. GABIN 7/2015)",
         "kind": "estimate",
-        "source": "lei-no-11390-de-21-12-2020-ma"
+        "source": "lei-no-11390-de-21-12-2020-ma",
+        "annual": false
       }
     },
     {
@@ -635,8 +645,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.2195,
-        "kind": "official",
-        "distributor": "Energisa Mato Grosso (EMT) · tarifa ANEEL B3 com ICMS de 17% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Energisa Mato Grosso (EMT) · tarifa oficial ANEEL (B3) + ICMS de 17% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -649,7 +659,8 @@
         "value": 200,
         "rule": "Taxa do CBMMT indexada à UPF/MT. Sem risco alto, o alvará simplificado pode sair antes da vistoria.",
         "kind": "estimate",
-        "source": "lei-no-12-774-de-20-12-2024-mt-taxas-est"
+        "source": "lei-no-12-774-de-20-12-2024-mt-taxas-est",
+        "annual": false
       }
     },
     {
@@ -657,8 +668,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.3378,
-        "kind": "official",
-        "distributor": "Energisa Mato Grosso do Sul (EMS) · tarifa ANEEL B3 com ICMS de 17% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Energisa Mato Grosso do Sul (EMS) · tarifa oficial ANEEL (B3) + ICMS de 17% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -671,7 +682,8 @@
         "value": 100,
         "rule": "Taxa do CBMMS em UFERMS. Baixo risco tem certificação simplificada por declaração.",
         "kind": "estimate",
-        "source": "ownEstimate"
+        "source": "ownEstimate",
+        "annual": false
       }
     },
     {
@@ -679,8 +691,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.1774,
-        "kind": "official",
-        "distributor": "CEMIG Distribuição · tarifa ANEEL B3 com ICMS de 18% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "CEMIG Distribuição · tarifa oficial ANEEL (B3) + ICMS de 18% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -693,7 +705,8 @@
         "value": 0,
         "rule": "IT 01 (10ª ed., CBMMG): nível de risco I dispensado de licenciamento e de vistoria; nível de risco II (baixo risco) obtém Certificado de Licenciamento Provisório por procedimento declaratório, sem vistoria prévia. Para AVCB/CLCB incide a Taxa de Segurança Pública (TSP) em UFEMG",
         "kind": "official",
-        "source": "cbmmg-instrucao-tecnica-01-10a-edicao-po"
+        "source": "cbmmg-instrucao-tecnica-01-10a-edicao-po",
+        "annual": false
       }
     },
     {
@@ -701,8 +714,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.3654,
-        "kind": "official",
-        "distributor": "Equatorial Pará · tarifa ANEEL B3 com ICMS de 19% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Equatorial Pará · tarifa oficial ANEEL (B3) + ICMS de 19% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -715,7 +728,8 @@
         "value": 200,
         "rule": "Portaria CBMPA 1015/2019: baixo risco com certificado emitido logo após o pagamento da taxa, sem vistoria prévia; valor estimado",
         "kind": "estimate",
-        "source": "portaria-no-1015-de-29-11-2019-cbmpa"
+        "source": "portaria-no-1015-de-29-11-2019-cbmpa",
+        "annual": false
       }
     },
     {
@@ -723,8 +737,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 0.9303,
-        "kind": "official",
-        "distributor": "Energisa Paraíba (EPB) · tarifa ANEEL B3 com ICMS de 20% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Energisa Paraíba (EPB) · tarifa oficial ANEEL (B3) + ICMS de 20% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -737,7 +751,8 @@
         "value": 100,
         "rule": "Imóveis de até 200 m² com acesso direto à via dispensados de vistoria prévia (Portaria CBMPB 16/2013). Processo Técnico Simplificado para ME (NT 007/2014, Portaria 77/2014)",
         "kind": "estimate",
-        "source": "portaria-cbmpb-no-16-de-06-06-2013"
+        "source": "portaria-cbmpb-no-16-de-06-06-2013",
+        "annual": false
       }
     },
     {
@@ -745,8 +760,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.0443,
-        "kind": "official",
-        "distributor": "Copel Distribuição · tarifa ANEEL B3 com ICMS de 19% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Copel Distribuição · tarifa oficial ANEEL (B3) + ICMS de 19% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -759,7 +774,8 @@
         "value": 0,
         "rule": "isento: baixo risco inicia após consulta de viabilidade e autodeclaração, sem licença do Corpo de Bombeiros (Facilita Mais)",
         "kind": "estimate",
-        "source": "curitiba-amplia-dispensa-de-alvaras-para"
+        "source": "curitiba-amplia-dispensa-de-alvaras-para",
+        "annual": false
       }
     },
     {
@@ -767,8 +783,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.0918,
-        "kind": "official",
-        "distributor": "Neoenergia Pernambuco (Celpe) · tarifa ANEEL B3 com ICMS de 20% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Neoenergia Pernambuco (Celpe) · tarifa oficial ANEEL (B3) + ICMS de 20% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -781,7 +797,8 @@
         "value": 356.42,
         "rule": "TPEI anual CBMPE 2026 por faixa de área, comercial RMR: 48–80 m² R$286,77; 80–120 m² R$356,42; 120–160 m² R$434,26. Vistoria à parte (mín. R$120,59–241,18), em geral dispensada para baixo risco",
         "kind": "official",
-        "source": "decreto-pe-no-60-137-2025-anexo-i-valore"
+        "source": "decreto-pe-no-60-137-2025-anexo-i-valore",
+        "annual": true
       }
     },
     {
@@ -789,8 +806,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.2931,
-        "kind": "official",
-        "distributor": "Equatorial Piauí · tarifa ANEEL B3 com ICMS de 22% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Equatorial Piauí · tarifa oficial ANEEL (B3) + ICMS de 22% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -803,7 +820,8 @@
         "value": 500,
         "rule": "Taxa de vistoria CBMEPI = 100 × UFR-PI para edificações até 900 m² (Lei 5.483/2005); UFR-PI 2026 não localizada (~R$5). Baixo risco pode ser dispensado de vistoria prévia",
         "kind": "estimate",
-        "source": "lei-pi-no-5-483-2005"
+        "source": "lei-pi-no-5-483-2005",
+        "annual": false
       }
     },
     {
@@ -811,8 +829,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.2582,
-        "kind": "official",
-        "distributor": "Light SESA · tarifa ANEEL B3 com ICMS de 24% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Light SESA · tarifa oficial ANEEL (B3) + ICMS de 24% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -825,7 +843,8 @@
         "value": 0,
         "rule": "Atividades de baixo risco (NT 1-07 CBMERJ) dispensadas de regularização e da taxa de licenciamento; as demais de baixo porte usam o CAS (Certificado de Aprovação Simplificado), com taxa. A Taxa de Incêndio (Funesbom) anual continua devida",
         "kind": "official",
-        "source": "cbmerj-nt-1-07-atividades-economicas-de"
+        "source": "cbmerj-nt-1-07-atividades-economicas-de",
+        "annual": true
       }
     },
     {
@@ -833,8 +852,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.046,
-        "kind": "official",
-        "distributor": "Neoenergia Cosern · tarifa ANEEL B3 com ICMS de 20% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Neoenergia Cosern · tarifa oficial ANEEL (B3) + ICMS de 20% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -847,7 +866,8 @@
         "value": 150,
         "rule": "Baixo risco dispensado de AVCB: emite-se o CLCB, com taxa TCLCB calculada por m² (LC 601/2017 alterada pela LC 704/2022). Valor por m² não localizado",
         "kind": "estimate",
-        "source": "lc-rn-601-2017-consolidada-ate-a-lc-704"
+        "source": "lc-rn-601-2017-consolidada-ate-a-lc-704",
+        "annual": false
       }
     },
     {
@@ -856,7 +876,7 @@
       "energy": {
         "value": 1.0538,
         "kind": "estimate",
-        "distributor": "CEEE Equatorial (CEEE-D) · tarifa ANEEL B3 com ICMS de 17% e PIS/COFINS estimados, bandeira verde",
+        "distributor": "CEEE Equatorial (CEEE-D) · tarifa oficial ANEEL (B3) + ICMS de 17% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -869,7 +889,8 @@
         "value": 420,
         "rule": "Taxa única de APPCI via PSPCI: 15 UPF-RS (RTCBMRS nº 05, Parte 05, item 18), cerca de R$ 420 com a UPF-RS de 2026 estimada. ME e MEI ficam isentos (Lei 8.109/1985 e LC 123/2006).",
         "kind": "official",
-        "source": "rtcbmrs-no-05-parte-05-taxas-2025"
+        "source": "rtcbmrs-no-05-parte-05-taxas-2025",
+        "annual": false
       }
     },
     {
@@ -877,8 +898,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.0098,
-        "kind": "official",
-        "distributor": "Energisa Rondônia (ERO) · tarifa ANEEL B3 com ICMS de 20% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Energisa Rondônia (ERO) · tarifa oficial ANEEL (B3) + ICMS de 20% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -891,7 +912,8 @@
         "value": 150,
         "rule": "Taxa de fiscalização/utilização de bombeiros em UPF (Lei 853/1999), cobrada em municípios com unidade do CBMRO; valor para baixo risco não localizado",
         "kind": "estimate",
-        "source": "sefin-ro-lei-853-taxa-de-fiscalizacao-e"
+        "source": "sefin-ro-lei-853-taxa-de-fiscalizacao-e",
+        "annual": false
       }
     },
     {
@@ -899,8 +921,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.0527,
-        "kind": "official",
-        "distributor": "Roraima Energia (Âmbar Roraima) · tarifa ANEEL B3 com ICMS de 20% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Roraima Energia (Âmbar Roraima) · tarifa oficial ANEEL (B3) + ICMS de 20% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -913,7 +935,8 @@
         "value": 148,
         "rule": "Baixo risco (<750 m²) sem vistoria prévia, só com documentação; taxa de R$ 148; MEI isento",
         "kind": "official",
-        "source": "folha-bv-bombeiros-19-07-2019"
+        "source": "folha-bv-bombeiros-19-07-2019",
+        "annual": false
       }
     },
     {
@@ -921,8 +944,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 0.9741,
-        "kind": "official",
-        "distributor": "Celesc Distribuição · tarifa ANEEL B3 com ICMS de 17% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Celesc Distribuição · tarifa oficial ANEEL (B3) + ICMS de 17% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -935,7 +958,8 @@
         "value": 150,
         "rule": "Taxa de Prevenção Contra Sinistros (TPCS), proporcional à área vistoriada (Lei 7.541/1988). MEI fica isento.",
         "kind": "estimate",
-        "source": "cbmsc-diretriz-sobre-vistorias-para-func"
+        "source": "cbmsc-diretriz-sobre-vistorias-para-func",
+        "annual": false
       }
     },
     {
@@ -943,8 +967,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.0037,
-        "kind": "official",
-        "distributor": "Enel Distribuição São Paulo (ELETROPAULO) · tarifa ANEEL B3 com ICMS de 18% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Enel Distribuição São Paulo (ELETROPAULO) · tarifa oficial ANEEL (B3) + ICMS de 18% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -957,7 +981,8 @@
         "value": 147.53,
         "rule": "Emissão de CLCB = 3,84 UFESP (Lei 15.266/2013, Anexo I, Cap. VI, item 10.1.1); UFESP 2026 = R$ 38,42. Baixo risco até 750 m² via CLCB sem vistoria prévia (Via Fácil Bombeiros); vistoria/análise, se exigidas, também 3,84 UFESP cada",
         "kind": "official",
-        "source": "lei-sp-no-15-266-2013-compilada-alesp"
+        "source": "lei-sp-no-15-266-2013-compilada-alesp",
+        "annual": false
       }
     },
     {
@@ -965,8 +990,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 0.9808,
-        "kind": "official",
-        "distributor": "Energisa Sergipe (ESE) · tarifa ANEEL B3 com ICMS de 19% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Energisa Sergipe (ESE) · tarifa oficial ANEEL (B3) + ICMS de 19% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -979,7 +1004,8 @@
         "value": 87,
         "rule": "Baixo risco sem vistoria prévia (Decreto SE 40.637/2020); paga-se apenas a taxa de emissão do documento, R$87 segundo o CBMSE em reportagem",
         "kind": "estimate",
-        "source": "contabeis-em-sergipe-abrir-uma-empresa-e"
+        "source": "contabeis-em-sergipe-abrir-uma-empresa-e",
+        "annual": false
       }
     },
     {
@@ -987,8 +1013,8 @@
       "validFrom": "2026-01-01",
       "energy": {
         "value": 1.3144,
-        "kind": "official",
-        "distributor": "Energisa Tocantins (ETO) · tarifa ANEEL B3 com ICMS de 20% e PIS/COFINS estimados, bandeira verde",
+        "kind": "estimate",
+        "distributor": "Energisa Tocantins (ETO) · tarifa oficial ANEEL (B3) + ICMS de 20% e PIS/COFINS estimados; bandeira verde, sem iluminação pública",
         "source": "aneel-dados-abertos-tarifas-homologadas"
       },
       "junta": {
@@ -1001,7 +1027,8 @@
         "value": 0,
         "rule": "Edificações com menos de 100 m² e saída direta para a via pública dispensadas de vistoria (norma técnica estadual de 2012)",
         "kind": "official",
-        "source": "norma-cbmto-doe-to-25-set-2012"
+        "source": "norma-cbmto-doe-to-25-set-2012",
+        "annual": false
       }
     }
   ],
@@ -1012,20 +1039,22 @@
       "rent": {
         "value": 30.0,
         "kind": "estimate",
-        "source": "indice-fipezap-locacao-residencial-infor"
+        "source": "ownEstimate"
       },
       "license": {
         "value": 0,
         "rule": "isento – Decreto 1.683/2019: baixo risco A dispensado de alvará; baixo risco B com licenciamento automático",
         "kind": "official",
-        "source": "decreto-no-1683-2019-rio-branco"
+        "source": "decreto-no-1683-2019-rio-branco",
+        "annual": false
       },
       "sanitary": {
         "food": 250,
         "beauty": 150,
         "rule": "Alvará Sanitário emitido pela SEMSA (Decreto 96/2015); baixo risco A dispensado; valores estimados",
         "kind": "estimate",
-        "source": "decreto-96-2015-rio-branco"
+        "source": "decreto-96-2015-rio-branco",
+        "annual": false
       }
     },
     {
@@ -1040,14 +1069,16 @@
         "value": 300,
         "rule": "Baixo risco dispensado de alvará e vistoria (Decreto 9.991/2025; Lei 7.203/2022), mas a TLF anual segue cobrada conforme o Anexo III da Lei 7.506/2024",
         "kind": "estimate",
-        "source": "decreto-no-9991-de-12-02-2025-maceio"
+        "source": "decreto-no-9991-de-12-02-2025-maceio",
+        "annual": true
       },
       "sanitary": {
         "food": 250,
         "beauty": 150,
         "rule": "Licença sanitária municipal conforme o grau de risco; baixo risco dispensado (Decreto 9.991/2025). Valores não localizados",
         "kind": "estimate",
-        "source": "decreto-no-9991-de-12-02-2025-maceio"
+        "source": "decreto-no-9991-de-12-02-2025-maceio",
+        "annual": false
       }
     },
     {
@@ -1056,20 +1087,22 @@
       "rent": {
         "value": 30.0,
         "kind": "estimate",
-        "source": "indice-fipezap-locacao-residencial-infor"
+        "source": "ownEstimate"
       },
       "license": {
         "value": 300,
         "rule": "LC 209/2025 criou a Taxa Unificada (TUFE) em UFM, cobrada também do baixo risco (MEI isento); valores do anexo não localizados",
         "kind": "estimate",
-        "source": "lei-complementar-no-209-de-23-12-2025-ma"
+        "source": "lei-complementar-no-209-de-23-12-2025-ma",
+        "annual": false
       },
       "sanitary": {
         "food": 0,
         "beauty": 0,
         "rule": "Taxa de licença sanitária incorporada e revogada pela TUFE (LC 209/2025); custo já incluído na licença municipal",
         "kind": "official",
-        "source": "lei-complementar-no-209-de-23-12-2025-ma"
+        "source": "lei-complementar-no-209-de-23-12-2025-ma",
+        "annual": false
       }
     },
     {
@@ -1084,14 +1117,16 @@
         "value": 0,
         "rule": "isento – baixo risco dispensado de vistoria/licença conforme classificação CNAE municipal (decreto DOM 20/01/2026)",
         "kind": "estimate",
-        "source": "decreto-manaus-dom-20-jan-2026"
+        "source": "decreto-manaus-dom-20-jan-2026",
+        "annual": false
       },
       "sanitary": {
         "food": 300,
         "beauty": 150,
         "rule": "VISA Manaus: baixo risco A sem licença; baixo risco B com licença automática; demais com taxa. Valores estimados",
         "kind": "estimate",
-        "source": "apresentacao-simbravisa-visa-manaus"
+        "source": "apresentacao-simbravisa-visa-manaus",
+        "annual": false
       }
     },
     {
@@ -1106,14 +1141,16 @@
         "value": 400,
         "rule": "TFF anual de Salvador por atividade (Lei 9.417/2018, Tabela IV); baixo risco dispensado de alvará via REDESIM, mas sem isenção geral da TFF",
         "kind": "estimate",
-        "source": "lei-no-9417-de-17-12-2018-salvador"
+        "source": "lei-no-9417-de-17-12-2018-salvador",
+        "annual": true
       },
       "sanitary": {
         "food": 350,
         "beauty": 200,
         "rule": "Taxa de Vigilância Sanitária (TVS) anual por atividade (Lei 7.186/2006, Tabela VIII, alterada pela Lei 7.995/2011); valores atualizados não localizados",
         "kind": "estimate",
-        "source": "lei-7-995-2011-salvador-tvs"
+        "source": "lei-7-995-2011-salvador-tvs",
+        "annual": true
       }
     },
     {
@@ -1128,14 +1165,16 @@
         "value": 0,
         "rule": "isento – Isenção Única de Fortaleza dispensa alvará, licença sanitária e ambiental para baixo risco com até 200 m². Fora dela, a ME pagava taxa de R$ 60,94 (material de 2023)",
         "kind": "official",
-        "source": "manual-isencao-unica-do-funcionamento-pr"
+        "source": "manual-isencao-unica-do-funcionamento-pr",
+        "annual": false
       },
       "sanitary": {
         "food": 150,
         "beauty": 0,
         "rule": "Risco sanitário isento ou baixo: certidão de isenção gratuita e automática. Atividades de médio/alto risco (alimentação com manipulação) pagam licença sanitária",
         "kind": "estimate",
-        "source": "check-list-licenca-sanitaria-fortaleza-o"
+        "source": "check-list-licenca-sanitaria-fortaleza-o",
+        "annual": false
       }
     },
     {
@@ -1150,14 +1189,16 @@
         "value": 0,
         "rule": "isento: baixo risco dispensado de licença de funcionamento (Lei 6.725/2020 e Lei 5.547/2015)",
         "kind": "estimate",
-        "source": "lei-no-6-725-de-24-11-2020-df"
+        "source": "lei-no-6-725-de-24-11-2020-df",
+        "annual": false
       },
       "sanitary": {
         "food": 200,
         "beauty": 150,
         "rule": "Taxa de Expediente da Vigilância Sanitária, paga por DAR (código 3573) com valores no anexo da Portaria SES 11/2026. O anexo não foi acessado.",
         "kind": "estimate",
-        "source": "portaria-no-11-de-07-de-janeiro-de-2026"
+        "source": "portaria-no-11-de-07-de-janeiro-de-2026",
+        "annual": false
       }
     },
     {
@@ -1172,14 +1213,16 @@
         "value": 0,
         "rule": "Baixo risco dispensado de alvará de localização e funcionamento em Vitória (decreto municipal de dispensa; Simplifica-ES, Decreto 4231-R/2018)",
         "kind": "estimate",
-        "source": "decreto-es-no-4231-r-2018-simplifica-es"
+        "source": "decreto-es-no-4231-r-2018-simplifica-es",
+        "annual": false
       },
       "sanitary": {
         "food": 250,
         "beauty": 150,
         "rule": "Licença sanitária municipal (Código Sanitário, Lei 4.424/1997; Decreto Vitória 17.201/2017). Baixo risco por autodeclaração, com inspeção posterior. Taxa não localizada",
         "kind": "estimate",
-        "source": "decreto-vitoria-no-17-201-2017"
+        "source": "decreto-vitoria-no-17-201-2017",
+        "annual": false
       }
     },
     {
@@ -1194,14 +1237,16 @@
         "value": 0,
         "rule": "isento: atividades de baixo risco dispensadas da Licença de Localização e Funcionamento (Código de Posturas, Decreto 419/2024)",
         "kind": "estimate",
-        "source": "codigo-de-posturas-do-municipio-de-goian"
+        "source": "codigo-de-posturas-do-municipio-de-goian",
+        "annual": false
       },
       "sanitary": {
         "food": 300,
         "beauty": 200,
         "rule": "Baixo risco é dispensado de licença sanitária prévia, mas paga Taxa de Inspeção Sanitária anual. Alimentos costuma ser médio risco.",
         "kind": "estimate",
-        "source": "portaria-sms-63-2023-visa-goiania"
+        "source": "portaria-sms-63-2023-visa-goiania",
+        "annual": true
       }
     },
     {
@@ -1216,14 +1261,16 @@
         "value": 0,
         "rule": "isento – em São Luís, ME com faturamento anual até R$ 239.778,66 é isenta da taxa de licença/localização e da taxa de expediente. Acima disso, cerca de R$ 700",
         "kind": "official",
-        "source": "sao-luis-alvara-2026-ja-esta-disponivel"
+        "source": "sao-luis-alvara-2026-ja-esta-disponivel",
+        "annual": true
       },
       "sanitary": {
         "food": 200,
         "beauty": 120,
         "rule": "Licença sanitária municipal (SEMUS) conforme o risco; valores não localizados",
         "kind": "estimate",
-        "source": "ownEstimate"
+        "source": "ownEstimate",
+        "annual": false
       }
     },
     {
@@ -1238,14 +1285,16 @@
         "value": 150,
         "rule": "Baixo risco começa sem alvará (Lei 6.598/2020), mas o município pode cobrar a taxa de fiscalização",
         "kind": "estimate",
-        "source": "ownEstimate"
+        "source": "ownEstimate",
+        "annual": false
       },
       "sanitary": {
         "food": 250,
         "beauty": 150,
         "rule": "Licença sanitária municipal de Cuiabá, cobrada conforme risco e área",
         "kind": "estimate",
-        "source": "ownEstimate"
+        "source": "ownEstimate",
+        "annual": false
       }
     },
     {
@@ -1260,14 +1309,16 @@
         "value": 200,
         "rule": "654 atividades de baixo risco dispensadas de alvará (LC 528/2024 e Decreto 16.204/2025). Continua devida a TFLF anual (Decreto 16.503/2026).",
         "kind": "estimate",
-        "source": "654-atividades-dispensadas-de-alvara-em"
+        "source": "654-atividades-dispensadas-de-alvara-em",
+        "annual": true
       },
       "sanitary": {
         "food": 250,
         "beauty": 180,
         "rule": "Licenciamento sanitário municipal (SESAU) conforme risco/CNAE",
         "kind": "estimate",
-        "source": "resolucao-sesau-no-946-de-22-12-2025"
+        "source": "resolucao-sesau-no-946-de-22-12-2025",
+        "annual": false
       }
     },
     {
@@ -1282,14 +1333,16 @@
         "value": 0,
         "rule": "ALF emitido de forma automática e imediata para atividades de baixo risco; taxa de emissão não indicada. A TFLF anual pode incidir",
         "kind": "estimate",
-        "source": "prefeitura-de-bh-simplifica-obtencao-de"
+        "source": "prefeitura-de-bh-simplifica-obtencao-de",
+        "annual": true
       },
       "sanitary": {
         "food": 300,
         "beauty": 200,
         "rule": "Taxa de Fiscalização Sanitária (TFS) anual por faixa de área, em UFPBH (Lei 5.641/1989 e Lei 7.774/1999); tabela 2026 não acessível (portal da Fazenda retornou 403)",
         "kind": "estimate",
-        "source": "vigilancia-sanitaria-prefeitura-de-belo"
+        "source": "vigilancia-sanitaria-prefeitura-de-belo",
+        "annual": true
       }
     },
     {
@@ -1304,14 +1357,16 @@
         "value": 400,
         "rule": "Belém cobra a TLPL (Lei 7.056/1977, arts. 82–87) para o alvará; dispensa municipal para baixo risco não localizada",
         "kind": "estimate",
-        "source": "o-liberal-abrir-empresa-em-belem-custa-a"
+        "source": "o-liberal-abrir-empresa-em-belem-custa-a",
+        "annual": false
       },
       "sanitary": {
         "food": 300,
         "beauty": 200,
         "rule": "Licença sanitária municipal (DEVISA Belém); valores estimados",
         "kind": "estimate",
-        "source": "ownEstimate"
+        "source": "ownEstimate",
+        "annual": false
       }
     },
     {
@@ -1326,14 +1381,16 @@
         "value": 0,
         "rule": "isento – atividades de Nível de Risco I dispensadas de alvará e de licenciamento sanitário e ambiental (Decreto 11.258/2026). Demais casos: cerca de R$ 350 a R$ 1.100",
         "kind": "official",
-        "source": "decreto-no-11258-de-26-03-2026-joao-pess"
+        "source": "decreto-no-11258-de-26-03-2026-joao-pess",
+        "annual": false
       },
       "sanitary": {
         "food": 200,
         "beauty": 0,
         "rule": "Baixo risco (Nível I) dispensado de licença sanitária (Código Sanitário da PB, Lei 13.656/2025; Decreto JP 11.258/2026). Alimentação com manipulação geralmente médio risco, com taxa",
         "kind": "estimate",
-        "source": "lei-no-13656-de-06-05-2025-pb-codigo-san"
+        "source": "lei-no-13656-de-06-05-2025-pb-codigo-san",
+        "annual": false
       }
     },
     {
@@ -1348,14 +1405,16 @@
         "value": 0,
         "rule": "isento: 1.200 atividades de baixo risco dispensadas do Alvará de Localização (Decreto 2.350/2025, vigente desde 09/02/2026)",
         "kind": "official",
-        "source": "decreto-no-2350-de-11-11-2025-curitiba"
+        "source": "decreto-no-2350-de-11-11-2025-curitiba",
+        "annual": false
       },
       "sanitary": {
         "food": 200,
         "beauty": 100,
         "rule": "Baixo risco é dispensado de licença sanitária. Alimentos e estética de médio risco pagam taxa de licença sanitária.",
         "kind": "estimate",
-        "source": "curitiba-amplia-dispensa-de-alvaras-para"
+        "source": "curitiba-amplia-dispensa-de-alvaras-para",
+        "annual": false
       }
     },
     {
@@ -1370,14 +1429,16 @@
         "value": 0,
         "rule": "isento: atividades de baixo (e médio) risco dispensadas de licença de funcionamento em Recife (Decreto 37.386/2023)",
         "kind": "official",
-        "source": "decreto-recife-no-37-386-de-29-12-2023"
+        "source": "decreto-recife-no-37-386-de-29-12-2023",
+        "annual": false
       },
       "sanitary": {
         "food": 300,
         "beauty": 200,
         "rule": "Taxa de Vigilância Sanitária municipal (Lei 16.004/95); licença por classe de risco, validade até 3 anos para baixo/médio risco (Decreto 36.521/2023). Valores não localizados",
         "kind": "estimate",
-        "source": "decreto-recife-no-36-521-2023-licenciame"
+        "source": "decreto-recife-no-36-521-2023-licenciame",
+        "annual": false
       }
     },
     {
@@ -1392,14 +1453,16 @@
         "value": 0,
         "rule": "isento: atividades 'baixo risco A' dispensadas de alvarás e licenças (LC Teresina 5.787/2022, art. 5º e 9º §1º). Declaração opcional sujeita a taxa de serviço. MEI isento de taxas (art. 12)",
         "kind": "official",
-        "source": "lei-complementar-teresina-no-5-787-de-19"
+        "source": "lei-complementar-teresina-no-5-787-de-19",
+        "annual": false
       },
       "sanitary": {
         "food": 250,
         "beauty": 150,
         "rule": "TRIFS – Taxa de Registro, Inspeção e Fiscalização Sanitária (Teresina); tabela de valores não localizada",
         "kind": "estimate",
-        "source": "dom-teresina-21-12-2018-trifs"
+        "source": "dom-teresina-21-12-2018-trifs",
+        "annual": false
       }
     },
     {
@@ -1414,14 +1477,16 @@
         "value": 0,
         "rule": "Alvará a Jato: cadastro de baixo risco no Carioca Digital, sem emissão de alvará físico; taxa não confirmada (TLE/TFLF podem incidir)",
         "kind": "estimate",
-        "source": "alvara-a-jato-carioca-digital"
+        "source": "alvara-a-jato-carioca-digital",
+        "annual": false
       },
       "sanitary": {
         "food": 488.62,
         "beauty": 488.62,
         "rule": "Taxa de Licenciamento Sanitário (TLS) do IVISA-Rio: valor-base 2026 de R$ 488,62 (Portaria S/IVISA-RIO nº 828/2025). O multiplicador por atividade não foi localizado; o valor-base é usado como piso",
         "kind": "official",
-        "source": "portaria-s-ivisa-rio-no-828-de-23-12-202"
+        "source": "portaria-s-ivisa-rio-no-828-de-23-12-202",
+        "annual": false
       }
     },
     {
@@ -1436,14 +1501,16 @@
         "value": 0,
         "rule": "Baixo risco A dispensado pela LC Natal 185/2019 e pela Lei 13.874/2019. Demais casos: alvará provisório automático com taxa da Semurb",
         "kind": "estimate",
-        "source": "lc-natal-185-2019-coad"
+        "source": "lc-natal-185-2019-coad",
+        "annual": false
       },
       "sanitary": {
         "food": 250,
         "beauty": 120,
         "rule": "TVS anual por área e grupo de risco (LC Natal 250/2024, Tabela XX). 31–50 m²: baixo R$60, médio R$200, alto R$300. 51–100 m²: baixo R$120, médio R$250, alto R$400. Lanchonete presumida médio risco e salão baixo risco, ~80 m²",
         "kind": "official",
-        "source": "lc-natal-no-250-2024-dom-24-12-2024-taxa"
+        "source": "lc-natal-no-250-2024-dom-24-12-2024-taxa",
+        "annual": true
       }
     },
     {
@@ -1458,14 +1525,16 @@
         "value": 0,
         "rule": "isento: autodeclaração de dispensa de alvará para baixo risco (Decreto 22.102/2023 e alterações), certificado emitido na hora",
         "kind": "estimate",
-        "source": "autodeclaracao-de-dispensa-de-alvara-pre"
+        "source": "autodeclaracao-de-dispensa-de-alvara-pre",
+        "annual": false
       },
       "sanitary": {
         "food": 300,
         "beauty": 150,
         "rule": "Alvará sanitário municipal (SMS/POA) para atividades de médio risco",
         "kind": "estimate",
-        "source": "ownEstimate"
+        "source": "ownEstimate",
+        "annual": false
       }
     },
     {
@@ -1474,20 +1543,22 @@
       "rent": {
         "value": 30.0,
         "kind": "estimate",
-        "source": "indice-fipezap-locacao-residencial-infor"
+        "source": "ownEstimate"
       },
       "license": {
         "value": 0,
         "rule": "isento – LC 906/2022: atividades de baixo risco dispensadas de licenças",
         "kind": "official",
-        "source": "lei-complementar-no-906-de-07-07-2022-po"
+        "source": "lei-complementar-no-906-de-07-07-2022-po",
+        "annual": false
       },
       "sanitary": {
         "food": 200,
         "beauty": 100,
         "rule": "Baixo risco isento, com declaração de dispensa automática (Portaria 001/2026 DVISA). Demais pagam o Alvará de Saúde em UPF (Lei 595; baixo risco 50% UPF/ano). Valores estimados",
         "kind": "estimate",
-        "source": "portaria-001-2026-dvisa-semusa-classific"
+        "source": "portaria-001-2026-dvisa-semusa-classific",
+        "annual": false
       }
     },
     {
@@ -1496,20 +1567,22 @@
       "rent": {
         "value": 30.0,
         "kind": "estimate",
-        "source": "indice-fipezap-locacao-residencial-infor"
+        "source": "ownEstimate"
       },
       "license": {
         "value": 200,
         "rule": "Boa Vista: muitas atividades de baixo risco dispensadas de alvará físico, mas podem incidir taxas; valor estimado",
         "kind": "estimate",
-        "source": "jornal-contabil-quanto-custa-abrir-uma-e-3"
+        "source": "jornal-contabil-quanto-custa-abrir-uma-e-3",
+        "annual": false
       },
       "sanitary": {
         "food": 300,
         "beauty": 150,
         "rule": "Taxas de R$ 100 a R$ 1.200 conforme a complexidade da inspeção; valores estimados",
         "kind": "estimate",
-        "source": "jornal-contabil-quanto-custa-abrir-uma-e-3"
+        "source": "jornal-contabil-quanto-custa-abrir-uma-e-3",
+        "annual": false
       }
     },
     {
@@ -1524,14 +1597,16 @@
         "value": 150,
         "rule": "Alvará de funcionamento municipal (taxa de licença). O baixo risco segue a dispensa da Lei 13.874/2019, mas a taxa pode ser cobrada.",
         "kind": "estimate",
-        "source": "ownEstimate"
+        "source": "ownEstimate",
+        "annual": false
       },
       "sanitary": {
         "food": 250,
         "beauty": 150,
         "rule": "Alvará sanitário municipal (VISA Florianópolis) conforme risco",
         "kind": "estimate",
-        "source": "ownEstimate"
+        "source": "ownEstimate",
+        "annual": false
       }
     },
     {
@@ -1546,14 +1621,16 @@
         "value": 0,
         "rule": "ALF Baixo Risco emitido automaticamente pelo sistema (Empreenda Fácil) quando a atividade é de baixo risco; nenhuma taxa de emissão indicada. A TFE (Taxa de Fiscalização de Estabelecimentos) anual é cobrada à parte",
         "kind": "estimate",
-        "source": "alf-baixo-risco-subprefeituras-prefeitur"
+        "source": "alf-baixo-risco-subprefeituras-prefeitur",
+        "annual": true
       },
       "sanitary": {
         "food": 0,
         "beauty": 0,
         "rule": "Vigilância em Saúde de São Paulo informa que não cobra taxa para o cadastro (CMVS) nem na inspeção; só as atividades do Anexo I da Portaria SMS 266/2025 exigem licença sanitária",
         "kind": "official",
-        "source": "perguntas-frequentes-vigilancia-sanitari"
+        "source": "perguntas-frequentes-vigilancia-sanitari",
+        "annual": false
       }
     },
     {
@@ -1568,14 +1645,16 @@
         "value": 0,
         "rule": "Baixo risco: alvará via Agiliza Sergipe em até 48h, dispensa de ato de liberação pela Lei 13.874/2019. A cobrança de taxa municipal (TFLF) em Aracaju não foi confirmada",
         "kind": "estimate",
-        "source": "aracaju-guia-pratico-de-licenciamento-ur"
+        "source": "aracaju-guia-pratico-de-licenciamento-ur",
+        "annual": false
       },
       "sanitary": {
         "food": 500,
         "beauty": 500,
         "rule": "Taxa de Vigilância Sanitária anual de R$500 para todas as atividades sujeitas a alvará sanitário; MEI isento (LC Aracaju 135/2014). Pode ter sido reajustada",
         "kind": "official",
-        "source": "lei-complementar-aracaju-no-135-de-01-08"
+        "source": "lei-complementar-aracaju-no-135-de-01-08",
+        "annual": true
       }
     },
     {
@@ -1584,20 +1663,22 @@
       "rent": {
         "value": 30.0,
         "kind": "estimate",
-        "source": "indice-fipezap-locacao-residencial-infor"
+        "source": "ownEstimate"
       },
       "license": {
         "value": 0,
         "rule": "isento – Decreto 2.167/2022: baixo risco dispensado de licença de localização e funcionamento; MEI/ME/EPP do Simples em baixo risco dispensados",
         "kind": "official",
-        "source": "conexao-to-palmas-facilita-funcionamento"
+        "source": "conexao-to-palmas-facilita-funcionamento",
+        "annual": false
       },
       "sanitary": {
         "food": 200,
         "beauty": 100,
         "rule": "Nível I (baixo risco A) sem licenciamento sanitário; Nível II com licença provisória. Demais pagam taxa (valores estimados)",
         "kind": "estimate",
-        "source": "portaria-semus-gab-supavs-no-1198-2023-p"
+        "source": "portaria-semus-gab-supavs-no-1198-2023-p",
+        "annual": false
       }
     }
   ],

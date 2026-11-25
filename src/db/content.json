@@ -32,7 +32,7 @@
       "items": [
         {
           "title": "MEI.",
-          "text": "Para quem fatura até {{limit|money}} por ano, com no máximo 1 empregado e em uma ocupação permitida. O imposto é fixo: {{das|money}} por mês, que já inclui o INSS do dono ([LC 123/2006, art. 18-A](source:simplesLaw))."
+          "text": "Para quem fatura até {{limit|money}} por ano (R$ 81 mil em 2026, R$ 110 mil em 2027 e R$ 140 mil a partir de 2028 se previsto no orçamento), com até 1 empregado em 2026 e até 2 a partir de 2027, numa ocupação permitida. O imposto é fixo: {{das|money}} por mês, que já inclui o INSS do dono ([LC 123/2006, art. 18-A](source:simplesLaw); [LC 238/2026](source:lc238))."
         },
         {
           "title": "Simples Nacional.",
@@ -44,7 +44,11 @@
         },
         {
           "title": "Reforma tributária.",
-          "text": "A partir de 2027, CBS e IBS começam a substituir PIS, COFINS, ICMS e ISS. As empresas do Simples Nacional continuam pagando tudo no DAS ([LC 214/2025](source:taxReformLaw))."
+          "text": "Em 2027, a CBS substitui o PIS e a COFINS; o IBS substitui o ICMS e o ISS aos poucos, de 2029 a 2033. Empresas do Simples Nacional continuam pagando tudo no DAS, mas a partir de 2027 podem optar por recolher IBS e CBS fora dele, o que interessa a quem vende para outras empresas ([LC 214/2025](source:taxReformLaw))."
+        },
+        {
+          "title": "Salão de beleza.",
+          "text": "Pela [Lei do Salão-Parceiro](source:salonPartnerLaw), a parte do profissional-parceiro não é receita do salão: o imposto incide só sobre a cota-parte do salão."
         }
       ]
     },
@@ -56,19 +60,23 @@
       "items": [
         {
           "title": "Vendas.",
-          "text": "Faturamento maduro = ticket médio × clientes por dia × dias abertos. Um negócio novo começa vendendo menos: o 1º mês tem {{start|percent}} das vendas maduras, que crescem em linha reta até o mês {{months|number}}."
+          "text": "Faturamento maduro = ticket médio × clientes por dia × dias abertos. Um negócio novo começa vendendo menos: o 1º mês tem {{start|percent}} das vendas maduras (estimativa nossa), que crescem em linha reta até o mês {{months|number}}. Os valores são constantes, sem reajuste de aluguel, salários ou preços."
         },
         {
           "title": "Custos variáveis.",
-          "text": "Mercadorias e insumos (CMV), taxa do cartão sobre as vendas no cartão e, no Simples, o imposto sobre o faturamento."
+          "text": "Mercadorias e insumos (CMV), taxa do cartão, comissão de aplicativos de delivery e, no Simples, o imposto sobre o faturamento, já separado por anexo e sem o ICMS e o PIS/COFINS de produtos com substituição tributária ou monofásicos."
         },
         {
           "title": "Custos fixos.",
-          "text": "Aluguel, energia, água, contador, sistema, marketing, folha, sua retirada e, no MEI, o DAS. Eles não mudam com as vendas."
+          "text": "Aluguel, energia, água, contador, sistema, marketing, folha, sua retirada, taxas anuais divididas por 12, uma reserva para repor os equipamentos ao longo da vida útil e, no MEI, o DAS."
+        },
+        {
+          "title": "Capital de giro.",
+          "text": "Regra prática: guardar de 3 a 6 meses de custos fixos. O caixa precisa cobrir os prejuízos do começo e as vendas no crédito que só entram cerca de 30 dias depois ([Sebrae](source:sebraeCapital))."
         },
         {
           "title": "Retorno do investimento.",
-          "text": "Mês em que o lucro acumulado paga tudo o que foi gasto para abrir. A reserva de capital de giro não conta como gasto: ela existe para cobrir os meses de prejuízo do começo."
+          "text": "Mês, contado a partir da abertura, em que o lucro acumulado paga tudo o que foi gasto para abrir. É um retorno simples, sem juros. A reserva de capital de giro não conta como gasto: ela fica em caixa para cobrir o começo."
         }
       ]
     }
@@ -90,13 +98,13 @@
       "id": "meiRules",
       "tone": "info",
       "title": "Regras do MEI",
-      "text": "Imposto fixo de **{{das|money}} por mês** (INSS + ICMS e/ou ISS), faturamento de até {{limit|money}} por ano e no máximo **{{maxEmployees}} empregado**, que deve receber o salário mínimo ou o piso da categoria ([LC 123/2006, art. 18-A e 18-C](source:simplesLaw))."
+      "text": "Imposto fixo de **{{das|money}} por mês** (INSS + ICMS e/ou ISS), faturamento de até {{limit|money}} por ano (proporcional aos meses no ano de abertura) e no máximo **{{maxEmployees}} empregado(s)**, recebendo o salário mínimo ou o piso da categoria ([LC 123/2006, arts. 18-A e 18-C](source:simplesLaw); [LC 238/2026](source:lc238)). Sobre o salário do empregado do MEI incidem 3% de INSS patronal e 8% de FGTS: no Cálculo CLT, escolha o regime MEI."
     },
     {
       "id": "simplesRules",
       "tone": "info",
       "title": "Simples Nacional, Anexo {{annex}}",
-      "text": "O imposto é calculado sobre o faturamento de cada mês, com alíquota que cresce conforme a receita dos últimos 12 meses ([LC 123/2006, Anexos](source:simplesLaw)). A contribuição patronal ao INSS já está dentro do DAS nos Anexos I, II e III; sobre a folha, a empresa paga o FGTS."
+      "text": "O imposto é calculado sobre o faturamento de cada mês, com alíquota que cresce conforme a receita dos últimos 12 meses ([LC 123/2006, Anexos](source:simplesLaw)). Quem vende produtos e serviços separa as receitas por anexo, e a parte do ICMS e do PIS/COFINS sai do imposto sobre produtos já tributados por substituição tributária ou no regime monofásico (bebidas, higiene, cigarros etc.), o que a calculadora já considera. Compras de outros estados podem gerar DIFAL ou antecipação de ICMS, pagos fora do DAS: confira com o contador. A contribuição patronal ao INSS está dentro do DAS nos Anexos I, II e III; sobre a folha, a empresa paga o FGTS."
     },
     {
       "id": "teamSuggestion",
@@ -114,7 +122,7 @@
       "id": "warning_meiLimit",
       "tone": "warning",
       "title": "Faturamento acima do limite do MEI",
-      "text": "A projeção é de {{yearlyRevenue|money}} por ano, acima do limite de {{limit|money}}. Passando do limite, o MEI é desenquadrado e paga o Simples Nacional sobre o faturamento. Escolha o Simples Nacional na etapa Formalização."
+      "text": "Em {{year}}, a projeção é de {{revenue|money}} em {{months}} meses, acima do limite de {{limit|money}} para o período ([LC 123/2006, art. 18-A](source:simplesLaw)). Se o excesso for de até 20%, o MEI paga um complemento sobre o excesso e vira ME a partir de janeiro seguinte; acima de 20%, é desenquadrado desde o início do ano (ou da abertura) e paga o Simples Nacional sobre todo o faturamento. Escolha o Simples Nacional na etapa Formalização."
     },
     {
       "id": "warning_meiEmployees",
@@ -138,7 +146,7 @@
       "id": "warning_payrollEstimated",
       "tone": "info",
       "title": "A folha está estimada",
-      "text": "Usamos {{payroll|money}} por mês para {{employees}} funcionário(s), uma estimativa com o salário mínimo. Salários de função, pisos estaduais e benefícios costumam elevar esse valor: calcule cada função no [Cálculo CLT](source:calculoClt) e digite o total na etapa Equipe."
+      "text": "Usamos {{payroll|money}} por mês para {{employees}} funcionário(s): salário mínimo × 1,8, uma estimativa que considera pisos estaduais e de categoria acima do mínimo, FGTS, 13º, férias e vale-transporte. Calcule cada função no [Cálculo CLT](source:calculoClt) (no MEI, escolha o regime MEI: 3% de INSS patronal e 8% de FGTS) e digite o total na etapa Equipe."
     },
     {
       "id": "warning_noProfit",
@@ -156,7 +164,19 @@
       "id": "warning_workingCapital",
       "tone": "warning",
       "title": "A reserva de capital de giro não cobre o começo",
-      "text": "Os prejuízos dos primeiros meses somam até {{maxLoss|money}}, mais do que a reserva de {{reserve|money}}. Aumente a reserva ou reduza os custos fixos para não ficar sem caixa."
+      "text": "Além dos prejuízos dos primeiros meses ({{maxLoss|money}}), as vendas no crédito só caem na conta cerca de 30 dias depois ({{receivables|money}} a receber num mês maduro). O caixa necessário é de {{need|money}}, mais do que a reserva de {{reserve|money}}. Aumente a reserva, negocie prazo com fornecedores ou reduza custos fixos."
+    },
+    {
+      "id": "warning_marginAboveSector",
+      "tone": "info",
+      "title": "Margem acima do típico do setor",
+      "text": "A margem líquida madura é de {{margin|percent}}, acima da faixa típica de {{min|percent}} a {{max|percent}} para este negócio. Confira se o ticket médio, o número de clientes e o custo da equipe são realistas para o seu ponto."
+    },
+    {
+      "id": "warning_marginBelowSector",
+      "tone": "warning",
+      "title": "Margem abaixo do típico do setor",
+      "text": "A margem líquida madura é de {{margin|percent}}, abaixo da faixa típica de {{min|percent}} a {{max|percent}} para este negócio. Reveja aluguel, equipe, mix de produtos e preços antes de investir."
     },
     {
       "id": "dataQuality",
@@ -168,7 +188,7 @@
       "id": "beforeOpening",
       "tone": "success",
       "title": "Antes de abrir",
-      "text": "Faça um plano de negócios com o [Sebrae](source:sebrae), pesquise o ponto e a concorrência, confirme as licenças na prefeitura e no Corpo de Bombeiros e converse com um contador. Esta calculadora é uma referência, não uma garantia de resultado."
+      "text": "Faça um plano de negócios com o [Sebrae](source:sebrae), pesquise o ponto e a concorrência, confirme as licenças na prefeitura e no Corpo de Bombeiros e converse com um contador. Segundo o [Sebrae](source:sebraeSurvival), cerca de 1 em cada 3 MEIs e 1 em cada 9 micro e pequenas empresas fecham em até 2 anos. Esta calculadora é uma referência, não uma garantia de resultado."
     }
   ],
   "breakdown": {
@@ -189,7 +209,7 @@
       "digitalCertificate": "Certificado digital e-CNPJ",
       "trademark": "Registro de marca no INPI",
       "openingService": "Contador para abrir a empresa",
-      "deposit": "Caução ({{months|number}} meses de aluguel)",
+      "deposit": "Caução ({{months|number}} meses de aluguel, devolvida no fim do contrato)",
       "preOpeningRent": "Aluguel antes de abrir ({{months|number}} meses)",
       "renovation": "Reforma e adequação ({{area|number}} m² × {{perM2|money}})",
       "facade": "Fachada e identidade visual",
@@ -211,7 +231,13 @@
       "payroll": "Folha de pagamento ({{employees|number}} funcionários)",
       "proLabore": "Sua retirada (pró-labore)",
       "otherFixed": "Outros custos fixos",
-      "meiDas": "DAS do MEI"
+      "meiDas": "DAS do MEI",
+      "delivery": "Comissão de aplicativos de delivery ({{rate|percent}} sobre {{share|percent}} das vendas)",
+      "annualFees": "Taxas anuais (fiscalização, Bombeiros, vigilância sanitária), por mês",
+      "equipmentReplacement": "Reserva para repor equipamentos (vida útil de {{years|number}} anos)",
+      "firefightersAnnual": "Corpo de Bombeiros (taxa anual, 1º ano)",
+      "businessLicenseAnnual": "Taxa de funcionamento/fiscalização (anual, 1º ano)",
+      "sanitaryLicenseAnnual": "Taxa de vigilância sanitária (anual, 1º ano)"
     }
   },
   "labels": {

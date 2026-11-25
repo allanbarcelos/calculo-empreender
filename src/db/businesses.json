@@ -40,7 +40,7 @@
           "id": "fritadeira",
           "label": "Fritadeira elétrica industrial 2 cubas",
           "qty": 1,
-          "unitCost": 1300,
+          "unitCost": 2200,
           "essential": true,
           "kind": "estimate"
         },
@@ -48,7 +48,7 @@
           "id": "coifa",
           "label": "Coifa inox 1,5 m com exaustor e duto",
           "qty": 1,
-          "unitCost": 6000,
+          "unitCost": 8000,
           "essential": true,
           "kind": "estimate"
         },
@@ -135,7 +135,7 @@
         {
           "id": "mesasCadeiras",
           "label": "Jogo de mesa + 4 cadeiras",
-          "qty": 6,
+          "qty": 4,
           "unitCost": 700,
           "essential": true,
           "kind": "estimate"
@@ -163,20 +163,28 @@
           "unitCost": 800,
           "essential": true,
           "kind": "estimate"
+        },
+        {
+          "id": "lavatorio",
+          "label": "Lavatório exclusivo para as mãos, com acionamento não manual (RDC 216/2004)",
+          "qty": 1,
+          "unitCost": 600,
+          "essential": true,
+          "kind": "estimate"
         }
       ],
       "monthly": {
         "energyKwh": 1100,
         "waterM3": 15,
         "consumables": 900,
-        "maintenance": 300,
+        "maintenance": 450,
         "software": 150,
         "marketing": 800,
         "other": 600
       },
       "otherNote": "Gás GLP para a chapa (aprox. 1 botijão P45 ou 4–5 P13/mês)",
       "revenue": {
-        "ticket": 30,
+        "ticket": 28,
         "customersPerDay": {
           "low": 60,
           "medium": 100,
@@ -184,12 +192,14 @@
         },
         "openDays": 26,
         "rampUpMonths": 6,
-        "cmvRate": 0.35,
-        "cardShare": 0.75,
+        "cmvRate": 0.38,
+        "cardShare": 0.65,
         "netMarginRange": [
-          0.05,
-          0.12
-        ]
+          0.08,
+          0.18
+        ],
+        "deliveryShare": 0.25,
+        "deliveryFeeRate": 0.2
       },
       "staff": [
         {
@@ -202,7 +212,7 @@
         },
         {
           "role": "Atendente/caixa",
-          "count": 1
+          "count": 2
         }
       ],
       "tax": {
@@ -210,7 +220,9 @@
         "meiAllowed": true,
         "meiOccupation": "Proprietário(a) de lanchonete independente",
         "meiActivity": "commerce",
-        "simplesAnnex": "I"
+        "simplesAnnex": "I",
+        "stShare": 0.15,
+        "monoShare": 0.15
       },
       "licenses": {
         "sanitary": "food",
@@ -368,8 +380,8 @@
         },
         {
           "id": "balanca",
-          "label": "Balança eletrônica com etiqueta",
-          "qty": 2,
+          "label": "Balança de checkout",
+          "qty": 1,
           "unitCost": 800,
           "essential": true,
           "kind": "estimate"
@@ -405,20 +417,60 @@
           "unitCost": 2500,
           "essential": true,
           "kind": "estimate"
+        },
+        {
+          "id": "balancaEtiquetadora",
+          "label": "Balança etiquetadora",
+          "qty": 1,
+          "unitCost": 3500,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "pia",
+          "label": "Pia inox com cuba e lavatório exclusivo para as mãos (RDC 216/2004)",
+          "qty": 1,
+          "unitCost": 1800,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "seguranca",
+          "label": "Extintores, sinalização e iluminação de emergência",
+          "qty": 1,
+          "unitCost": 1000,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "estufaSalgados",
+          "label": "Estufa/vitrine aquecida para salgados",
+          "qty": 1,
+          "unitCost": 1500,
+          "essential": false,
+          "kind": "estimate"
+        },
+        {
+          "id": "chapa",
+          "label": "Chapa para pão na chapa e lanches",
+          "qty": 1,
+          "unitCost": 1500,
+          "essential": false,
+          "kind": "estimate"
         }
       ],
       "monthly": {
-        "energyKwh": 2300,
+        "energyKwh": 2600,
         "waterM3": 25,
         "consumables": 1200,
-        "maintenance": 500,
+        "maintenance": 650,
         "software": 200,
         "marketing": 600,
         "other": 0
       },
       "otherNote": "Se o forno for a gás, somar ~R$ 1.500/mês de GLP e reduzir ~1.500 kWh.",
       "revenue": {
-        "ticket": 18,
+        "ticket": 20,
         "customersPerDay": {
           "low": 120,
           "medium": 200,
@@ -426,17 +478,17 @@
         },
         "openDays": 30,
         "rampUpMonths": 6,
-        "cmvRate": 0.4,
-        "cardShare": 0.7,
+        "cmvRate": 0.44,
+        "cardShare": 0.65,
         "netMarginRange": [
-          0.04,
-          0.12
+          0.06,
+          0.15
         ]
       },
       "staff": [
         {
           "role": "Padeiro",
-          "count": 1
+          "count": 2
         },
         {
           "role": "Auxiliar de padeiro/confeiteiro",
@@ -444,7 +496,7 @@
         },
         {
           "role": "Balconista",
-          "count": 2
+          "count": 3
         },
         {
           "role": "Operador(a) de caixa",
@@ -456,7 +508,9 @@
         "meiAllowed": true,
         "meiOccupation": "Padeiro(a) independente",
         "meiActivity": "commerce",
-        "simplesAnnex": "I"
+        "simplesAnnex": "I",
+        "stShare": 0.15,
+        "monoShare": 0.15
       },
       "licenses": {
         "sanitary": "food",
@@ -638,6 +692,30 @@
           "unitCost": 1200,
           "essential": false,
           "kind": "estimate"
+        },
+        {
+          "id": "lavadora",
+          "label": "Máquina de lavar (toalhas e capas)",
+          "qty": 1,
+          "unitCost": 2200,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "armario",
+          "label": "Armário/estante para produtos e estoque",
+          "qty": 1,
+          "unitCost": 600,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "seladora",
+          "label": "Seladora para esterilização e lixeiras com pedal",
+          "qty": 1,
+          "unitCost": 400,
+          "essential": true,
+          "kind": "estimate"
         }
       ],
       "monthly": {
@@ -651,30 +729,22 @@
       },
       "otherNote": "",
       "revenue": {
-        "ticket": 90,
+        "ticket": 45,
         "customersPerDay": {
           "low": 10,
           "medium": 18,
           "high": 28
         },
-        "openDays": 25,
+        "openDays": 24,
         "rampUpMonths": 6,
-        "cmvRate": 0.12,
-        "cardShare": 0.8,
+        "cmvRate": 0.24,
+        "cardShare": 0.7,
         "netMarginRange": [
           0.1,
           0.2
         ]
       },
       "staff": [
-        {
-          "role": "Cabeleireiro(a)",
-          "count": 2
-        },
-        {
-          "role": "Manicure/pedicure",
-          "count": 1
-        },
         {
           "role": "Recepcionista",
           "count": 1
@@ -704,7 +774,7 @@
         "mercado-livre-cadeira-hidraulica-reclina",
         "mercado-livre-cc-s-moveis-profissionais",
         "casas-bahia-kit-salao-evidence-cadeira-r",
-        "lei-13-352-2016-lei-do-salao-parceiro",
+        "salonPartnerLaw",
         "gg-contabilidade-montar-um-salao-de-bele",
         "contabilizei-como-montar-salao-de-beleza",
         "maquininha-com-menor-taxa-por-que-o-nume",
@@ -716,7 +786,7 @@
         "contabilizei-atividades-mei-2026-tabela",
         "sebrae-pagina-de-ideias-de-negocio-cita"
       ],
-      "notes": "Margem depende do modelo: com profissionais CLT a folha é o maior custo; com salão-parceiro (Lei 13.352/2016) o salão retém ~40–60% do serviço e só a cota-parte do salão é receita tributável. Atividade fica no Anexo III do Simples (pode cair no V via fator R em outras atividades; 9602-5/01 é Anexo III direto). Vigilância sanitária exige esterilização de instrumentos (autoclave). Bombeiros: pequenos salões costumam ter dispensa/licenciamento simplificado por baixo risco, mas extintor é exigido."
+      "notes": "Modelo de salão-parceiro (Lei 13.352/2016): cabeleireiros e manicures são profissionais-parceiros (em geral MEI) e ficam com 40% a 60% do valor de cada serviço; o restante é a cota-parte do salão. O ticket médio já é só a cota do salão (cerca de metade do preço cobrado do cliente), porque a parte do profissional não é receita do salão nem entra no imposto. O contrato de parceria precisa ser escrito e homologado. Se preferir equipe CLT, use o ticket cheio e some a folha."
     },
     {
       "id": "minimercado",
@@ -774,7 +844,7 @@
           "label": "Balcão refrigerado de frios/laticínios 2 m",
           "qty": 1,
           "unitCost": 8000,
-          "essential": false,
+          "essential": true,
           "kind": "estimate"
         },
         {
@@ -873,9 +943,9 @@
         "maintenance": 500,
         "software": 250,
         "marketing": 800,
-        "other": 0
+        "other": 400
       },
-      "otherNote": "",
+      "otherNote": "Alarme monitorado e seguro do estoque.",
       "revenue": {
         "ticket": 32,
         "customersPerDay": {
@@ -885,8 +955,8 @@
         },
         "openDays": 30,
         "rampUpMonths": 4,
-        "cmvRate": 0.75,
-        "cardShare": 0.75,
+        "cmvRate": 0.73,
+        "cardShare": 0.65,
         "netMarginRange": [
           0.02,
           0.06
@@ -895,7 +965,7 @@
       "staff": [
         {
           "role": "Operador(a) de caixa",
-          "count": 2
+          "count": 3
         },
         {
           "role": "Repositor/estoquista",
@@ -907,7 +977,9 @@
         "meiAllowed": true,
         "meiOccupation": "Merceeiro(a) independente",
         "meiActivity": "commerce",
-        "simplesAnnex": "I"
+        "simplesAnnex": "I",
+        "stShare": 0.5,
+        "monoShare": 0.25
       },
       "licenses": {
         "sanitary": "food",
@@ -944,7 +1016,7 @@
       "areaM2": 50,
       "renovationPerM2": 800,
       "facade": 5000,
-      "initialStock": 35000,
+      "initialStock": 45000,
       "initialMarketing": 3000,
       "equipment": [
         {
@@ -1040,7 +1112,7 @@
           "label": "Sistema antifurto (antenas + etiquetas)",
           "qty": 1,
           "unitCost": 4500,
-          "essential": false,
+          "essential": true,
           "kind": "estimate"
         },
         {
@@ -1048,7 +1120,7 @@
           "label": "Kit CFTV",
           "qty": 1,
           "unitCost": 2000,
-          "essential": false,
+          "essential": true,
           "kind": "estimate"
         },
         {
@@ -1064,6 +1136,14 @@
           "label": "Prateleiras de estoque",
           "qty": 4,
           "unitCost": 350,
+          "essential": true,
+          "kind": "estimate"
+        },
+        {
+          "id": "etiquetadora",
+          "label": "Etiquetadora de preço, sacolas e embalagens de lançamento",
+          "qty": 1,
+          "unitCost": 1500,
           "essential": true,
           "kind": "estimate"
         }
@@ -1087,12 +1167,13 @@
         },
         "openDays": 26,
         "rampUpMonths": 6,
-        "cmvRate": 0.5,
-        "cardShare": 0.85,
+        "cmvRate": 0.53,
+        "cardShare": 0.8,
         "netMarginRange": [
           0.06,
           0.15
-        ]
+        ],
+        "cardFeeRate": 0.038
       },
       "staff": [
         {
@@ -1131,7 +1212,8 @@
         "portal-do-empreendedor-gov-br-ocupacoes",
         "sebrae-pagina-de-ideias-de-negocio-cita"
       ],
-      "notes": "Sem vigilância sanitária (não manipula alimentos/saúde). Ponto e vitrine pesam mais que equipamento; estoque com baixo giro e risco de coleção encalhada. Em shopping, acrescentar luvas, fundo de promoção e condomínio (não modelado). Cenário médio ≈ R$ 44 mil/mês."
+      "notes": "Sem vigilância sanitária (não manipula alimentos/saúde). Ponto e vitrine pesam mais que equipamento; estoque com baixo giro e risco de coleção encalhada. Em shopping, acrescentar luvas, fundo de promoção e condomínio (não modelado). Cenário médio ≈ R$ 44 mil/mês. A taxa do cartão já considera vendas parceladas em 2 a 6 vezes. O CMV inclui liquidações, perdas e a comissão dos vendedores. Vendas se concentram no Dia das Mães, no Natal e nas trocas de estação, e a reposição de coleção é comprada antes de vender: por isso a reserva sugerida é de 5 meses.",
+      "workingCapitalMonths": 5
     },
     {
       "id": "pet_shop",
@@ -1139,7 +1221,7 @@
       "label": "Pet shop com banho e tosa",
       "description": "Banho e tosa e venda de rações e acessórios.",
       "areaM2": 60,
-      "renovationPerM2": 800,
+      "renovationPerM2": 900,
       "facade": 4000,
       "initialStock": 15000,
       "initialMarketing": 2000,
@@ -1263,6 +1345,14 @@
           "unitCost": 500,
           "essential": true,
           "kind": "estimate"
+        },
+        {
+          "id": "lavadora",
+          "label": "Máquina de lavar e secar toalhas",
+          "qty": 1,
+          "unitCost": 3000,
+          "essential": true,
+          "kind": "estimate"
         }
       ],
       "monthly": {
@@ -1278,14 +1368,14 @@
       "revenue": {
         "ticket": 85,
         "customersPerDay": {
-          "low": 8,
-          "medium": 14,
-          "high": 22
+          "low": 12,
+          "medium": 20,
+          "high": 30
         },
         "openDays": 26,
-        "rampUpMonths": 6,
-        "cmvRate": 0.3,
-        "cardShare": 0.8,
+        "rampUpMonths": 8,
+        "cmvRate": 0.38,
+        "cardShare": 0.7,
         "netMarginRange": [
           0.08,
           0.18
@@ -1310,7 +1400,13 @@
         "meiAllowed": true,
         "meiOccupation": "Tosador(a) de animais domésticos independente",
         "meiActivity": "both",
-        "simplesAnnex": "III"
+        "simplesAnnex": "III",
+        "annexMix": {
+          "III": 0.55,
+          "I": 0.45
+        },
+        "stShare": 0.3,
+        "monoShare": 0
       },
       "licenses": {
         "sanitary": "beauty",
@@ -1340,7 +1436,7 @@
         "contabilizei-atividades-mei-2026-tabela",
         "sebrae-pagina-de-ideias-de-negocio-cita"
       ],
-      "notes": "Receita mista: banho e tosa (Simples Anexo III, ISS) + venda de ração/acessórios (Anexo I, ICMS). Exigências sanitárias variam por município (vigilância sanitária e/ou zoonoses); venda de medicamentos veterinários ou consultório exige registro no CRMV e responsável técnico (não modelado). Leva-e-traz com veículo (R$ 14–80 por trajeto em BH) não incluído."
+      "notes": "Receita mista: banho e tosa (Simples Anexo III, ISS) + venda de ração/acessórios (Anexo I, ICMS). Exigências sanitárias variam por município (vigilância sanitária e/ou zoonoses); venda de medicamentos veterinários ou consultório exige registro no CRMV e responsável técnico (não modelado). Leva-e-traz com veículo (R$ 14–80 por trajeto em BH) não incluído. Clientes por dia somam banhos/tosas e vendas de balcão. O imposto separa serviços (Anexo III, cerca de 55%) e produtos (Anexo I, cerca de 45%). Pet shop só com banho, tosa e venda de produtos não precisa de veterinário responsável; com consultório ou atos veterinários, precisa de registro no CRMV."
     }
   ]
 }

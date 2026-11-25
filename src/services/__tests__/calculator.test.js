@@ -30,9 +30,19 @@ describe('TaxService', () => {
     expect(taxes.meiDas({ tax: { meiActivity: 'both' } })).toBe(87.05);
   });
 
-  it('MEI limit follows LC 238/2026 by date', () => {
-    expect(createServices(jsonDatabase, '2027-03-01').taxes.mei().revenueLimit).toBe(110000);
+  it('MEI limit and employees follow LC 238/2026 by date', () => {
+    expect(createServices(jsonDatabase, '2027-03-01').taxes.mei()).toMatchObject({ revenueLimit: 110000, maxEmployees: 2 });
     expect(createServices(jsonDatabase, '2028-03-01').taxes.mei().revenueLimit).toBe(140000);
+  });
+
+  it('splits revenue by annex and takes ICMS-ST and monofásico out of the goods share', () => {
+    const rbt12 = 600000;
+    const pet = services.businesses.get('pet_shop');
+    const expected = 0.55 * taxes.simplesRate('III', rbt12) + 0.45 * taxes.simplesRate('I', rbt12) - pet.tax.stShare * taxes.simplesRate('I', rbt12) * 0.335;
+    expect(taxes.simplesBlendedRate(pet, rbt12)).toBeCloseTo(expected, 10);
+    const market = services.businesses.get('minimercado');
+    const rate = taxes.simplesRate('I', rbt12);
+    expect(taxes.simplesBlendedRate(market, rbt12)).toBeCloseTo(rate - market.tax.stShare * rate * 0.335 - market.tax.monoShare * rate * 0.155, 10);
   });
 });
 
@@ -70,7 +80,7 @@ describe('Calculator', () => {
     const m = r.mature;
     expect(m.profit).toBeCloseTo(m.revenue - m.variableTotal - m.fixedTotal, 6);
     const tax = m.variable.find((i) => i.id === 'simplesTax');
-    expect(tax.amount).toBeCloseTo(m.revenue * services.taxes.simplesRate('I', tax.params.rbt12), 6);
+    expect(tax.amount).toBeCloseTo(m.revenue * services.taxes.simplesBlendedRate(services.businesses.get('loja_roupas'), tax.params.rbt12), 6);
   });
 
   it('MEI pays the fixed DAS and no Simples tax on revenue', () => {
@@ -103,8 +113,45 @@ describe('Calculator', () => {
 
   it('payroll follows the estimate until the user types it', () => {
     const auto = calc(forBusiness('lanchonete', { employees: 2 }));
-    expect(auto.input.payrollMonthly).toBeCloseTo(2 * 1621 * 1.5, 2);
+    expect(auto.input.payrollMonthly).toBeCloseTo(2 * 1621 * 1.8, 2);
     expect(calc(forBusiness('lanchonete', { payrollAuto: false, payrollMonthly: 9000 })).input.payrollMonthly).toBe(9000);
+  });
+});
+
+describe('Expert-review rules', () => {
+  it('delivery commission is a variable cost', () => {
+    const r = calc(forBusiness('lanchonete'));
+    const d = r.mature.variable.find((i) => i.id === 'delivery');
+    expect(d.amount).toBeCloseTo(r.mature.revenue * 0.25 * 0.2, 6);
+  });
+
+  it('equipment replacement is a fixed cost over the useful life, not in the working capital', () => {
+    const r = calc(forBusiness('padaria'));
+    const item = r.mature.fixed.find((i) => i.id === 'equipmentReplacement');
+    expect(item.amount).toBeCloseTo(r.investment.equipment / 120, 6);
+    expect(r.investment.reserve).toBeCloseTo((r.mature.fixedTotal - item.amount) * r.input.workingCapitalMonths, 6);
+  });
+
+  it('working capital need includes credit-card receivables', () => {
+    const r = calc(forBusiness('minimercado'));
+    expect(r.projection.receivables).toBeCloseTo(services.operating.matureRevenue(r.input) * 0.65 * 0.5, 6);
+    expect(r.projection.cashNeed).toBeCloseTo(r.projection.maxLoss + r.projection.receivables, 6);
+  });
+
+  it('MEI limit is proportional in the opening year', () => {
+    // Opens in November 2026 (no months before opening): 2 months of the 2026 limit.
+    const r = calc(forBusiness('salao_beleza', { regime: 'mei', customersPerDay: 15, preOpeningMonths: 0 }));
+    const w = r.warnings.find((x) => x.id === 'meiLimit');
+    expect(w.vars).toMatchObject({ year: 2026, months: 2 });
+    expect(w.vars.limit).toBeCloseTo((81000 / 12) * 2, 6);
+    // From 2027 the limit is R$ 110 mil (LC 238/2026).
+    expect(r.meiRules.revenueLimit).toBe(81000);
+  });
+
+  it('salon uses the salon share (Lei do Salão-Parceiro) and fashion its own card fee', () => {
+    expect(services.businesses.get('salao_beleza').staff).toEqual([{ role: 'Recepcionista', count: 1 }]);
+    expect(forBusiness('loja_roupas').cardFeeRate).toBeCloseTo(3.8, 6);
+    expect(forBusiness('lanchonete').cardFeeRate).toBeCloseTo(2.2, 6);
   });
 });
 

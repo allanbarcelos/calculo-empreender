@@ -17,7 +17,7 @@ export class ProjectionService {
     let payback = null;
     for (let m = 1; m <= count; m += 1) {
       revenues.push(this.operating.revenue(input, m));
-      const month = this.operating.month(input, place, business, revenues, m);
+      const month = this.operating.month(input, place, business, revenues, m, investment.equipment);
       cumulativeProfit += month.profit;
       worstCumulative = Math.min(worstCumulative, cumulativeProfit);
       // Cash after paying back what was spent to open (the working capital reserve is not spent).
@@ -32,13 +32,20 @@ export class ProjectionService {
       return { months: h, revenue: sum('revenue'), costs: sum('costs'), profit: sum('profit'), position: slice.at(-1).position, averageProfit: sum('profit') / h };
     });
 
+    // Cash the business needs on top of what it spends: the losses while sales grow and the
+    // credit-card sales not received yet (paid D+30) once sales are mature (Sebrae: capital de
+    // giro = needs of the cash cycle).
+    const { creditShare, creditDays } = this.reference.cardFees();
+    const receivables = this.operating.matureRevenue(input) * (input.cardShare / 100) * creditShare * (creditDays / 30);
+    const cashNeed = -worstCumulative + receivables;
     return {
       months,
       horizons,
       payback,
-      // Losses while sales grow must fit in the working capital reserve.
       maxLoss: -worstCumulative,
-      reserveCovers: -worstCumulative <= investment.reserve + 0.005,
+      receivables,
+      cashNeed,
+      reserveCovers: cashNeed <= investment.reserve + 0.005,
     };
   }
 }

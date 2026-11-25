@@ -120,6 +120,41 @@
       "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
     },
     {
+      "id": "ploa2027",
+      "title": "Agência Brasil — proposta de orçamento para 2027 prevê salário mínimo de R$ 1.741",
+      "short": "PLOA 2027",
+      "org": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/economia/audio/2026-08/proposta-de-orcamento-para-2027-preve-salario-minimo-de-r-1741"
+    },
+    {
+      "id": "lc238",
+      "title": "Lei Complementar nº 238/2026 — novo limite do MEI e até 2 empregados",
+      "short": "LC 238/2026",
+      "org": "Presidência da República",
+      "url": "https://planalto.gov.br/ccivil_03/leis/lcp/lcp238.htm"
+    },
+    {
+      "id": "salonPartnerLaw",
+      "title": "Lei nº 13.352/2016 — Lei do Salão-Parceiro",
+      "short": "Lei 13.352/2016",
+      "org": "Presidência da República",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13352.htm"
+    },
+    {
+      "id": "sanitaryRdc216",
+      "title": "Anvisa — RDC nº 216/2004, boas práticas para serviços de alimentação",
+      "short": "RDC Anvisa 216/2004",
+      "org": "Anvisa",
+      "url": "https://bvsms.saude.gov.br/bvs/saudelegis/anvisa/2004/res0216_15_09_2004.html"
+    },
+    {
+      "id": "sebraeCapital",
+      "title": "Sebrae — como calcular o capital de giro",
+      "short": "Sebrae: capital de giro",
+      "org": "Sebrae",
+      "url": "https://sebrae.com.br/sites/PortalSebrae/artigos/como-calcular-o-capital-de-giro"
+    },
+    {
       "id": "ownEstimate",
       "title": "Estimativas do Cálculo Empreender: como foram feitas",
       "short": "Estimativa própria",
@@ -148,13 +183,6 @@
       "url": "https://www.normasbrasil.com.br/norma/lei-2679-2012-ac_249272.html"
     },
     {
-      "id": "indice-fipezap-locacao-residencial-infor",
-      "title": "Índice FipeZAP Locação Residencial – Informe de outubro/2026 (preço médio por cidade)",
-      "short": "Índice FipeZAP Locação Residencial – Informe de outubro/2026",
-      "org": "downloads.fipe.org.br",
-      "url": "https://downloads.fipe.org.br/indices/fipezap/fipezap-202610-residencial-locacao.pdf"
-    },
-    {
       "id": "decreto-no-1683-2019-rio-branco",
       "title": "Decreto nº 1683/2019 – Rio Branco",
       "short": "Decreto nº 1683/2019 – Rio Branco",
@@ -181,6 +209,13 @@
       "short": "Lei nº 6.442 de 31/12/2003 (AL)",
       "org": "normasbrasil.com.br",
       "url": "https://www.normasbrasil.com.br/norma/lei-6442-2003-al_116497.html"
+    },
+    {
+      "id": "indice-fipezap-locacao-residencial-infor",
+      "title": "Índice FipeZAP Locação Residencial – Informe de outubro/2026 (preço médio por cidade)",
+      "short": "Índice FipeZAP Locação Residencial – Informe de outubro/2026",
+      "org": "downloads.fipe.org.br",
+      "url": "https://downloads.fipe.org.br/indices/fipezap/fipezap-202610-residencial-locacao.pdf"
     },
     {
       "id": "decreto-no-9991-de-12-02-2025-maceio",
@@ -981,13 +1016,6 @@
       "url": "https://www.casasbahia.com.br/kit-salao-evidence-cadeira-recl-estrela-lavatorio-c-ap-preto/p/1558792886"
     },
     {
-      "id": "lei-13-352-2016-lei-do-salao-parceiro",
-      "title": "Lei 13.352/2016 (Lei do Salão-Parceiro)",
-      "short": "Lei 13.352/2016 (Lei do Salão-Parceiro)",
-      "org": "planalto.gov.br",
-      "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13352.htm"
-    },
-    {
       "id": "gg-contabilidade-montar-um-salao-de-bele",
       "title": "GG Contabilidade — Montar um salão de beleza: quanto custa (anúncios online R$ 500–3.000/mês)",
       "short": "GG Contabilidade — Montar um salão de beleza: quanto custa (",
@@ -1084,9 +1112,13 @@
       "title": "Leis e impostos",
       "ids": [
         "minWage",
+        "ploa2027",
         "simplesLaw",
         "meiDas",
         "meiLimitLaw",
+        "lc238",
+        "salonPartnerLaw",
+        "sanitaryRdc216",
         "meiPortal",
         "taxReformLaw",
         "proLaboreInss",
@@ -1099,6 +1131,7 @@
       "title": "Sebrae e orientação",
       "ids": [
         "sebrae",
+        "sebraeCapital",
         "sebraeWorkingCapital",
         "sebraeSurvival",
         "calculoClt"
@@ -1163,9 +1196,9 @@
         "jornal-contabil-quanto-custa-abrir-uma-e-4",
         "contabeis-em-sergipe-abrir-uma-empresa-e",
         "norma-cbmto-doe-to-25-set-2012",
-        "indice-fipezap-locacao-residencial-infor",
         "decreto-no-1683-2019-rio-branco",
         "decreto-96-2015-rio-branco",
+        "indice-fipezap-locacao-residencial-infor",
         "decreto-no-9991-de-12-02-2025-maceio",
         "lei-complementar-no-209-de-23-12-2025-ma",
         "decreto-manaus-dom-20-jan-2026",
@@ -1242,7 +1275,6 @@
         "mercado-livre-cadeira-hidraulica-reclina",
         "mercado-livre-cc-s-moveis-profissionais",
         "casas-bahia-kit-salao-evidence-cadeira-r",
-        "lei-13-352-2016-lei-do-salao-parceiro",
         "gg-contabilidade-montar-um-salao-de-bele",
         "contabilizei-como-montar-salao-de-beleza",
         "sumup-como-montar-um-mercadinho-r-20-mil",

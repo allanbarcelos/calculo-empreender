@@ -18,9 +18,9 @@ export class InvestmentService {
     const trademark = this.reference.trademark();
     return [
       { id: 'registration', amount: this.registrationFee(input, place), kind: place.junta.kind, params: { type: input.regime === 'mei' ? 'mei' : input.companyType } },
-      { id: 'firefighters', amount: licenses.firefighters ? place.firefighters.value : 0, kind: place.firefighters.kind },
-      { id: 'businessLicense', amount: licenses.license ? place.license.value : 0, kind: place.license.kind },
-      { id: 'sanitaryLicense', amount: licenses.sanitary ? (place.sanitary[licenses.sanitary] ?? 0) : 0, kind: place.sanitary.kind },
+      { id: 'firefighters', labelKey: place.firefighters.annual ? 'firefightersAnnual' : undefined, amount: licenses.firefighters ? place.firefighters.value : 0, kind: place.firefighters.kind },
+      { id: 'businessLicense', labelKey: place.license.annual ? 'businessLicenseAnnual' : undefined, amount: licenses.license ? place.license.value : 0, kind: place.license.kind },
+      { id: 'sanitaryLicense', labelKey: place.sanitary.annual ? 'sanitaryLicenseAnnual' : undefined, amount: licenses.sanitary ? (place.sanitary[licenses.sanitary] ?? 0) : 0, kind: place.sanitary.kind },
       { id: 'digitalCertificate', amount: input.digitalCertificate ? this.reference.digitalCertificate().value : 0, kind: 'market' },
       { id: 'trademark', amount: input.trademark ? trademark.discounted : 0, kind: 'official' },
       { id: 'openingService', amount: input.openingService ? this.reference.openingService().value : 0, kind: 'market' },
@@ -70,6 +70,7 @@ export class InvestmentService {
     ];
     const total = groups.reduce((s, g) => s + g.total, 0);
     const reserve = groups.find((g) => g.id === 'workingCapital').total;
-    return { groups, total, reserve, spent: total - reserve };
+    const equipmentTotal = groups.find((g) => g.id === 'equipment').total;
+    return { groups, total, reserve, spent: total - reserve, equipment: equipmentTotal };
   }
 }

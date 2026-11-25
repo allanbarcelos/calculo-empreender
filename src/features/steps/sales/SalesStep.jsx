@@ -37,6 +37,8 @@ export default function SalesStep({ data, set, result }) {
           <NumberField {...t.field('cmvRate', { reference: formatPercent(revenue.cmvRate) })} value={data.cmvRate} max={100} onChange={(v) => set({ cmvRate: v })} />
           <NumberField {...t.field('cardShare')} value={data.cardShare} max={100} onChange={(v) => set({ cardShare: v })} />
           <NumberField {...t.field('cardFeeRate')} value={data.cardFeeRate} max={20} onChange={(v) => set({ cardFeeRate: v })} />
+          <NumberField {...t.field('deliveryShare')} value={data.deliveryShare} max={100} onChange={(v) => set({ deliveryShare: v })} />
+          {data.deliveryShare > 0 && <NumberField {...t.field('deliveryFeeRate')} value={data.deliveryFeeRate} max={40} onChange={(v) => set({ deliveryFeeRate: v })} />}
         </div>
       </fieldset>
 
@@ -49,7 +51,7 @@ export default function SalesStep({ data, set, result }) {
           <NumberField {...t.field('maintenance')} value={data.maintenance} onChange={(v) => set({ maintenance: v })} />
           <NumberField {...t.field('software')} value={data.software} onChange={(v) => set({ software: v })} />
           <NumberField {...t.field('marketing')} value={data.marketing} onChange={(v) => set({ marketing: v })} />
-          <NumberField {...t.field('otherFixed')} value={data.otherFixed} onChange={(v) => set({ otherFixed: v })} />
+          <NumberField {...t.field('otherFixed')} hint={business.otherNote || t.field('otherFixed').hint} value={data.otherFixed} onChange={(v) => set({ otherFixed: v })} />
           <NumberField {...t.field('workingCapitalMonths')} value={data.workingCapitalMonths} max={12} onChange={(v) => set({ workingCapitalMonths: v })} />
         </div>
         <p className="hint" aria-live="polite">{t.text('workingCapitalMonths', 'total', { fixed: formatMoney(result.fixedMonthly), reserve: formatMoney(result.investment.reserve) })}</p>

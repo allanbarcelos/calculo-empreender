@@ -80,7 +80,7 @@
     },
     "rentPerM2": {
       "label": "Aluguel por m² por mês",
-      "hint": "Média de {{place}}: {{average}}/m². Digite o valor do imóvel que você está negociando.",
+      "hint": "Referência de {{place}}: {{average}}/m², média de salas e conjuntos comerciais. Lojas de rua em pontos de movimento costumam custar mais: digite o valor do imóvel que você está negociando.",
       "prefix": "R$",
       "auto": "Usando a média do local.",
       "useAverage": "Voltar à média do local ({{average}}/m²)",
@@ -135,7 +135,7 @@
       "label": "Como formalizar o negócio?",
       "hint": "O regime define o imposto mensal e se você pode ter mais de 1 funcionário.",
       "optionMei": "MEI (Microempreendedor Individual)",
-      "descMei": "Imposto fixo de {{das}} por mês, faturamento de até {{limit}} por ano e no máximo 1 empregado. Ocupação: {{occupation}}.",
+      "descMei": "Imposto fixo de {{das}} por mês, faturamento de até {{limit}} por ano e no máximo {{maxEmployees}} empregado(s). Ocupação: {{occupation}}.",
       "descMeiNotAllowed": "Esta atividade não está na lista de ocupações do MEI.",
       "optionSimples": "Simples Nacional (ME ou EPP)",
       "descSimples": "Imposto sobre o faturamento, pela tabela do Anexo {{annex}}, sem limite de funcionários.",
@@ -186,7 +186,7 @@
     },
     "proLabore": {
       "label": "Sua retirada mensal (pró-labore)",
-      "hint": "Quanto você vai tirar todo mês para viver. Entra como custo para mostrar o lucro de verdade.",
+      "hint": "Valor bruto que você vai tirar por mês para viver; no Simples, 11% dele vão para o seu INSS. Começa no salário mínimo, que é o mínimo legal: coloque o valor real de que você precisa, porque ele muda o lucro e o retorno do investimento.",
       "prefix": "R$"
     },
     "scenario": {
@@ -219,12 +219,12 @@
     },
     "cardShare": {
       "label": "Vendas no cartão",
-      "hint": "Percentual do faturamento pago com cartão (crédito e débito).",
+      "hint": "Percentual do faturamento pago com cartão (crédito e débito). Vendas no Pix e em dinheiro ficam de fora.",
       "suffix": "%"
     },
     "cardFeeRate": {
       "label": "Taxa média da maquininha",
-      "hint": "Média entre débito e crédito à vista.",
+      "hint": "Média entre débito, crédito e parcelado. Lojas que parcelam muito pagam mais.",
       "suffix": "%"
     },
     "energyKwh": {
@@ -260,9 +260,19 @@
     },
     "workingCapitalMonths": {
       "label": "Reserva de capital de giro",
-      "hint": "Meses de custos fixos guardados para atravessar o início, quando as vendas ainda são baixas.",
+      "hint": "Meses de custos fixos guardados para atravessar o início. Regra prática: de 3 a 6 meses; varejo com coleção e vendas parceladas precisa de mais.",
       "suffix": "meses",
       "total": "Custos fixos por mês: {{fixed}}. Reserva: {{reserve}}."
+    },
+    "deliveryShare": {
+      "label": "Vendas por aplicativo de delivery",
+      "hint": "Percentual do faturamento que vem de iFood e similares.",
+      "suffix": "%"
+    },
+    "deliveryFeeRate": {
+      "label": "Comissão média dos aplicativos",
+      "hint": "Plano básico cerca de 12% + 3,2% de pagamento online; plano com entrega cerca de 23% + 3,2%.",
+      "suffix": "%"
     }
   }
 }

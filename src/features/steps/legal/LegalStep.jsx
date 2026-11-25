@@ -9,7 +9,8 @@ export default function LegalStep({ data, set, result }) {
   const t = useFormText();
   const labels = useLabels();
   const { business, investment } = result;
-  const mei = taxes.mei();
+  const mei = result.meiRules;
+  const das = mei.das[business.tax.meiActivity] ?? mei.das.both;
   const accounting = repositories.reference.accounting();
   const formalization = investment.groups.find((g) => g.id === 'formalization');
 
@@ -20,9 +21,9 @@ export default function LegalStep({ data, set, result }) {
         hint={t.field('regime').hint}
         name="regime"
         value={data.regime}
-        onChange={(regime) => set({ regime })}
+        onChange={(regime) => set({ regime, digitalCertificate: regime === 'simples' })}
         options={[
-          { value: 'mei', label: t.text('regime', 'optionMei'), description: t.text('regime', business.tax.meiAllowed ? 'descMei' : 'descMeiNotAllowed', { das: formatMoney(taxes.meiDas(business)), limit: formatMoney(mei.revenueLimit), occupation: business.tax.meiOccupation ?? '' }) },
+          { value: 'mei', label: t.text('regime', 'optionMei'), description: t.text('regime', business.tax.meiAllowed ? 'descMei' : 'descMeiNotAllowed', { das: formatMoney(das), limit: formatMoney(mei.revenueLimit), maxEmployees: mei.maxEmployees, occupation: business.tax.meiOccupation ?? '' }) },
           { value: 'simples', label: t.text('regime', 'optionSimples'), description: t.text('regime', 'descSimples', { annex: business.tax.simplesAnnex }) },
         ]}
       />
@@ -39,7 +40,7 @@ export default function LegalStep({ data, set, result }) {
           ]}
         />
       )}
-      <ContentCallout id={data.regime === 'mei' ? 'meiRules' : 'simplesRules'} vars={{ das: taxes.meiDas(business), limit: mei.revenueLimit, maxEmployees: mei.maxEmployees, annex: business.tax.simplesAnnex }} />
+      <ContentCallout id={data.regime === 'mei' ? 'meiRules' : 'simplesRules'} vars={{ das, limit: mei.revenueLimit, maxEmployees: mei.maxEmployees, annex: Object.keys(taxes.annexMix(business)).join(' e ') }} />
 
       <Toggle {...t.field('digitalCertificate')} checked={data.digitalCertificate} onChange={(v) => set({ digitalCertificate: v })} />
       <Toggle {...t.field('trademark')} checked={data.trademark} onChange={(v) => set({ trademark: v })} />
@@ -63,7 +64,7 @@ export default function LegalStep({ data, set, result }) {
           <tfoot><tr><th scope="row">{t.text('regime', 'feesTotal')}</th><td className="num">{formatMoney(formalization.total)}</td></tr></tfoot>
         </table>
       </div>
-      <Explainer id="legal" vars={{ das: taxes.meiDas(business), limit: mei.revenueLimit }} />
+      <Explainer id="legal" vars={{ das, limit: mei.revenueLimit }} />
     </>
   );
 }

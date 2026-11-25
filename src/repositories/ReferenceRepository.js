@@ -1,3 +1,4 @@
+import { pickVersion } from '../lib/versioning.js';
 import { VersionedRepository } from './VersionedRepository.js';
 
 // National references: tax regimes (MEI, Simples Nacional), market prices of services and the
@@ -5,6 +6,8 @@ import { VersionedRepository } from './VersionedRepository.js';
 export class ReferenceRepository extends VersionedRepository {
   minimumWage() { return this.version('minimumWage').value; }
   mei() { return this.version('mei'); }
+  // MEI rules on another date (e.g. the opening date or the next year).
+  meiOn(date) { return pickVersion(this.section.mei, date); }
   simples() { return this.version('simples'); }
   proLabore() { return this.version('proLabore'); }
   accounting() { return this.version('accounting'); }
