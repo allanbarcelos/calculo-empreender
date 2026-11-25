@@ -1,0 +1,890 @@
+{
+ "national": [
+  {
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.47,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "licensing": {
+    "value": 158.0,
+    "kind": "estimate",
+    "source": "ownEstimate"
+   },
+   "busFare": {
+    "value": 4.95,
+    "city": "mediana das capitais",
+    "kind": "estimate",
+    "source": "ownEstimate"
+   }
+  }
+ ],
+ "states": [
+  {
+   "uf": "AC",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 7.4,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.02,
+    "moto": 0,
+    "motoExemptUpToCc": 170,
+    "kind": "market",
+    "note": "Moto: isenção até 170 cc (Alíquota zero para motos até 170 cc se for a única moto do proprietário (desde 2024)).",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-autopapo-isencao-de-ipva-motos-2026"
+   },
+   "licensing": {
+    "value": 200.25,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 3.5,
+    "city": "Rio Branco",
+    "kind": "market",
+    "source": "r-diariodotransporte-conselho-aprova-tarifa-tecnica",
+    "note": "Tarifa ao usuário mantida em R$ 3,50 em 2026 (tarifa técnica R$ 11,29, subsidiada)."
+   }
+  },
+  {
+   "uf": "AL",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.57,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.03,
+    "moto": 0.02,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Moto: 2% até 150 cc; 2,75% 151–400 cc; 3,25% acima de 400 cc. Fontes divergem (algumas dizem 1%). Carro: Faixas por potência: 2,75% até 80 cv; 3% de 80 a 160 cv; 3,25% acima de 160 cv. Usado 3% (faixa da maioria dos carros). App drivers: isenção prevista na Lei estadual 8.785/2022 (requisitos e regulamento; ver Lupa).",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 36.03,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": "Valor baixo segundo Despachante Dok; Gringo indica R$ 155,41 — verificar."
+   },
+   "busFare": {
+    "value": 4.0,
+    "city": "Maceió",
+    "kind": "market",
+    "source": "r-atarde-salvador-cobra-mais-caro-que-sao-paulo-e-ri",
+    "note": "R$ 3,49 com cartão Vamu Cidadão (2025)."
+   }
+  },
+  {
+   "uf": "AM",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.58,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.015,
+    "moto": 0.015,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Moto: Alíquota de moto diverge entre fontes (1,5% mais citado). Na prática a maioria das motos pequenas fica isenta pelo 'IPVA Social' (imposto calculado ≤ R$ 420). Carro: LC 280/2025 cortou alíquotas pela metade a partir de 2026: 1,5% até 1.000 cc (e elétricos/híbridos), 2% acima de 1.000 cc. 'IPVA Social': veículo cujo imposto calculado fique ≤ R$ 420 é isento automaticamente.",
+    "source": "r-autopapo-ipva-am-2026-datas-valores-descontos",
+    "motoSource": "r-autopapo-ipva-am-2026-datas-valores-descontos"
+   },
+   "licensing": {
+    "value": 122.88,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 5.0,
+    "city": "Manaus",
+    "kind": "market",
+    "source": "r-diariodotransporte-vale-transporte-em-manaus-am-pa",
+    "note": "Tarifa cheia R$ 6, mas usuário em dinheiro/cartão PassaFácil paga R$ 5 (março/2026)."
+   }
+  },
+  {
+   "uf": "AP",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.4,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.03,
+    "moto": 0.015,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 128.54,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 3.7,
+    "city": "Macapá",
+    "kind": "market",
+    "source": "r-autopapo-preco-passagem-de-onibus-veja-valores-cap",
+    "note": "Valor de 2025; nenhum reajuste 2026 encontrado."
+   }
+  },
+  {
+   "uf": "BA",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.64,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.025,
+    "moto": 0.01,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Moto: Fontes divergem: 1% (SBT, Zul), 1,5% ou 2,5% (Webmotors). Carro: 3% para diesel.",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 173.5,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 5.9,
+    "city": "Salvador",
+    "kind": "market",
+    "source": "r-cnnbrasil-salvador-passa-a-ter-uma-das-tarifas-de",
+    "note": "Desde 05/01/2026."
+   }
+  },
+  {
+   "uf": "CE",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.88,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.025,
+    "moto": 0.01,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Moto: 1% até 125 cc sem infração de trânsito no último ano; 2% até 125 cc com infração; 3% 126–300 cc; 3,5% acima de 300 cc. Carro: Faixas por potência: 2,5% até 100 cv; 3% de 101 a 180 cv; 3,5% acima de 180 cv. Isenção para app drivers apenas em projeto de lei.",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-diariodonordeste-ipva-2026-de-motos-no-ceara-varia"
+   },
+   "licensing": {
+    "value": 220.46,
+    "kind": "market",
+    "source": "r-gringo-taxa-de-licenciamento",
+    "note": "Fonte Gringo (pode ser de ano anterior); motos R$ 188,96."
+   },
+   "busFare": {
+    "value": 5.4,
+    "city": "Fortaleza",
+    "kind": "market",
+    "source": "r-diariodonordeste-passagem-de-onibus-em-fortaleza-s",
+    "note": "Desde 01/01/2026."
+   }
+  },
+  {
+   "uf": "DF",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.54,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.03,
+    "moto": 0.02,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Carro: Fontes divergem: maioria (Vrum, BB Investalk, SBT) diz 3%; Webmotors/Gringo dizem 3,5%. Projeto de isenção/desconto para app drivers e motoboys em discussão, não vigente.",
+    "source": "r-vrum-7302591-ipva-2026-df-divulga-calendario-e-ali",
+    "motoSource": "r-vrum-7302591-ipva-2026-df-divulga-calendario-e-ali"
+   },
+   "licensing": {
+    "value": 102.0,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 5.5,
+    "city": "Brasília",
+    "kind": "market",
+    "source": "r-autopapo-preco-passagem-de-onibus-veja-valores-cap",
+    "note": "Tarifa máxima (linhas longas); R$ 2,70 circulares e R$ 3,80 curtas. Sem reajuste encontrado em 2026."
+   }
+  },
+  {
+   "uf": "ES",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.43,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.02,
+    "moto": 0.01,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 237.04,
+    "kind": "market",
+    "source": "r-gringo-taxa-de-licenciamento",
+    "note": "Fonte Gringo (pode ser de ano anterior)."
+   },
+   "busFare": {
+    "value": 5.1,
+    "city": "Vitória (Transcol)",
+    "kind": "market",
+    "source": "r-diariodotransporte-tarifa-de-onibus-do-sistema-tra",
+    "note": "Sistema metropolitano Transcol, desde 11/01/2026."
+   }
+  },
+  {
+   "uf": "GO",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.58,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.0375,
+    "moto": 0.03,
+    "motoExemptUpToCc": null,
+    "kind": "official",
+    "note": "Moto: Lei 23.287/2025: isenção para motos até 150 cc com 6+ anos de uso; motos até 125 cc com menos de 6 anos têm redução de 50% na base (sem infrações, licenciamento em dia, fora do Cadin). Moto com menos de 6 anos paga (com redução se ≤125 cc). Carro: Governo de GO: 3,75% 'demais veículos', 3,45% utilitários; FAQ da Economia-GO cita 3% para automóvel até 100 cv (ambíguo; algumas fontes dizem 3,45% até 100 cv). Isenção para veículos com 15+ anos.",
+    "source": "r-goias-isencao-do-ipva-para-moto-de-ate-150-cilindr",
+    "motoSource": "r-goias-isencao-do-ipva-para-moto-de-ate-150-cilindr"
+   },
+   "licensing": {
+    "value": 251.25,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 4.3,
+    "city": "Goiânia",
+    "kind": "market",
+    "source": "r-goias-conselho-regulador-realiza-3a-sessao-extraor",
+    "note": "Tarifa ao usuário mantida em R$ 4,30 (RMTC); sem confirmação datada de 2026."
+   }
+  },
+  {
+   "uf": "MA",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.34,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.025,
+    "moto": 0.01,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Moto: 1% para moto de valor até R$ 10 mil; 2% acima. Carro: 2,5% para veículo até R$ 150 mil; 3% acima.",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 95.87,
+    "kind": "market",
+    "source": "r-gringo-taxa-de-licenciamento",
+    "note": "Fonte Gringo (pode ser de ano anterior)."
+   },
+   "busFare": {
+    "value": 4.2,
+    "city": "São Luís",
+    "kind": "market",
+    "source": "r-atarde-salvador-cobra-mais-caro-que-sao-paulo-e-ri",
+    "note": "R$ 3,70 em linhas não integradas."
+   }
+  },
+  {
+   "uf": "MG",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.37,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.04,
+    "moto": 0.02,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Carro: Pick-ups 3%. Isenção para app drivers apenas em projeto (PL 5.846/2026).",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 35.62,
+    "kind": "official",
+    "source": "r-fazenda-2026-03-30-trlav",
+    "note": "TRLAV 2026 oficial (SEF-MG), mesmo valor para todos os veículos."
+   },
+   "busFare": {
+    "value": 6.25,
+    "city": "Belo Horizonte",
+    "kind": "market",
+    "source": "r-em-7324715-bh-tem-a-2-passagem-de-onibus-mais-cara",
+    "note": "Linhas principais; R$ 6,00 circulares/alimentadoras."
+   }
+  },
+  {
+   "uf": "MS",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.4,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.03,
+    "moto": 0.02,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Carro: Maioria das fontes: 3% (SBT listou 5%, aparentemente erro). Diesel até 8 lugares 4–4,5%; GNV isento.",
+    "source": "r-autopapo-ipva-ms-2026-calendario-valores-desconto",
+    "motoSource": "r-autopapo-ipva-ms-2026-calendario-valores-desconto"
+   },
+   "licensing": {
+    "value": 235.28,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 4.95,
+    "city": "Campo Grande",
+    "kind": "market",
+    "source": "r-correiodoestado-442670",
+    "note": "Reajuste de R$ 4,75 para R$ 4,95 em julho/2026 por decisão judicial."
+   }
+  },
+  {
+   "uf": "MT",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.7,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.03,
+    "moto": 0.01,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Moto: 1% até 180 cc; 2% 181–300 cc; 3% 301–600 cc; 3,5% acima. Carro: 3% acima de 1.000 cc; 2% até 1.000 cc. App drivers com veículo a GNV: isenção (Lei 11.490/2021).",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 140.0,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 4.95,
+    "city": "Cuiabá",
+    "kind": "market",
+    "source": "r-autopapo-preco-passagem-de-onibus-veja-valores-cap",
+    "note": "Valor de 2025; fontes 2026 divergem (R$ 4,60–4,95). Domingos gratuitos."
+   }
+  },
+  {
+   "uf": "PA",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.49,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.025,
+    "moto": 0.01,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Moto: Programa 'Bom Motorista' dá descontos (acumuláveis para motos até 200 cc) a quem não tem multas; algumas fontes falam em isenção total — não confirmado.",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 288.08,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 4.6,
+    "city": "Belém",
+    "kind": "market",
+    "source": "r-diariodopara-tarifa-de-onibus-sobe-mas-belem-ainda",
+    "note": "Data do reajuste incerta; gratuidade aos domingos e feriados."
+   }
+  },
+  {
+   "uf": "PB",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.25,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.025,
+    "moto": 0,
+    "motoExemptUpToCc": 170,
+    "kind": "market",
+    "note": "Moto: isenção até 170 cc (Motos até 170 cc isentas automaticamente (lei de 2022, vigente desde 2023). App/entregadores: isenção a partir de 2027 (Lei 14.747/2026)). Carro: App drivers/entregadores: isenção pela Lei 14.747/2026, mas só a partir de 01/01/2027.",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-autopapo-isencao-de-ipva-motos-2026"
+   },
+   "licensing": {
+    "value": 206.55,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 5.2,
+    "city": "João Pessoa",
+    "kind": "market",
+    "source": "r-atarde-salvador-cobra-mais-caro-que-sao-paulo-e-ri",
+    "note": ""
+   }
+  },
+  {
+   "uf": "PE",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.7,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.024,
+    "moto": 0.02,
+    "motoExemptUpToCc": null,
+    "kind": "official",
+    "note": "Moto: 1% até 50 cc. Carro: GNV 1,5%.",
+    "source": "r-sefaz-governo-de-pernambuco-divulga-calend-c3-a1ri",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 158.0,
+    "kind": "market",
+    "source": "r-gringo-taxa-de-licenciamento",
+    "note": "Fonte Gringo (pode ser de ano anterior)."
+   },
+   "busFare": {
+    "value": 4.3,
+    "city": "Recife",
+    "kind": "market",
+    "source": "r-atarde-salvador-cobra-mais-caro-que-sao-paulo-e-ri",
+    "note": "Anel A (Grande Recife)."
+   }
+  },
+  {
+   "uf": "PI",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.56,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.025,
+    "moto": 0,
+    "motoExemptUpToCc": 170,
+    "kind": "market",
+    "note": "Moto: isenção até 170 cc (Motos até 170 cc isentas automaticamente (Lei 4.548/1992 art. isenções, redação da Lei 7.995/2023). App drivers: isenção a partir de 2027). Carro: 2,5% até R$ 150 mil; 3% acima. App drivers: isenção pela Lei 8.946/2026 com efeitos a partir de 01/01/2027 (teto de valor do veículo citado: R$ 200 mil).",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-legisweb-id-33156"
+   },
+   "licensing": {
+    "value": 129.6,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": "Gringo: R$ 168,50 carros e R$ 47,55 motos até 170 cc."
+   },
+   "busFare": {
+    "value": 4.0,
+    "city": "Teresina",
+    "kind": "market",
+    "source": "r-atarde-salvador-cobra-mais-caro-que-sao-paulo-e-ri",
+    "note": ""
+   }
+  },
+  {
+   "uf": "PR",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.55,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.019,
+    "moto": 0,
+    "motoExemptUpToCc": 170,
+    "kind": "official",
+    "note": "Moto: isenção até 170 cc (Motos até 170 cc isentas desde 2025). Carro: Alíquota reduzida de 3,5% para 1,9% a partir de 2026 (Fazenda-PR). Veículos de aluguel/GNV 1%.",
+    "source": "r-legisweb-id-31973",
+    "motoSource": "r-legisweb-id-31973"
+   },
+   "licensing": {
+    "value": 90.94,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 6.0,
+    "city": "Curitiba",
+    "kind": "official",
+    "source": "r-curitiba-81220",
+    "note": "Congelada desde 2023."
+   }
+  },
+  {
+   "uf": "RJ",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.6,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.04,
+    "moto": 0.02,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Carro: GNV/híbrido 1,5%; elétrico 0,5%.",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 293.71,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 5.0,
+    "city": "Rio de Janeiro",
+    "kind": "market",
+    "source": "r-diariodotransporte-tarifas-de-transportes-coletivo",
+    "note": "Ônibus, BRT e VLT desde 04/01/2026."
+   }
+  },
+  {
+   "uf": "RN",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.24,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.03,
+    "moto": 0.02,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Carro: GNV 1,5%.",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 90.0,
+    "kind": "market",
+    "source": "r-gringo-taxa-de-licenciamento",
+    "note": "Fonte Gringo (pode ser de ano anterior)."
+   },
+   "busFare": {
+    "value": 4.9,
+    "city": "Natal",
+    "kind": "market",
+    "source": "r-atarde-salvador-cobra-mais-caro-que-sao-paulo-e-ri",
+    "note": ""
+   }
+  },
+  {
+   "uf": "RO",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 7.42,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.03,
+    "moto": 0,
+    "motoExemptUpToCc": 170,
+    "kind": "market",
+    "note": "Moto: isenção até 170 cc (Motos até 170 cc isentas (Lei 5.706/2023)). Carro: App drivers: ISENÇÃO de IPVA para veículo usado em transporte por aplicativo (Lei 5.706/2023, Decreto 28.917/2024) — https://www.sefin.ro.gov.br/portalsefin/anexos/L23-5706--Altera,-acresce-e-revoga-dispositivos-da-Lei-n--950_2000-(Isencao-de-IPVA-para-motocicletas-e-veiculo-usado-no-transporte-por-aplicativo).pdf ; verificar requisitos.",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sefin-l23-5706-altera-acresce-e-revoga-dispositi"
+   },
+   "licensing": {
+    "value": 220.41,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 3.0,
+    "city": "Porto Velho",
+    "kind": "market",
+    "source": "r-diariodotransporte-tarifa-reduzida-para-r-3-faz-nu",
+    "note": "Tarifa reduzida para R$ 3 (vigente em 2026)."
+   }
+  },
+  {
+   "uf": "RR",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 7.57,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.03,
+    "moto": 0.02,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-zuldigital-moto-paga-ipva"
+   },
+   "licensing": {
+    "value": 164.94,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": "Veículos até 3.500 kg; motos R$ 133,42."
+   },
+   "busFare": {
+    "value": 5.5,
+    "city": "Boa Vista",
+    "kind": "market",
+    "source": "r-autopapo-preco-passagem-de-onibus-veja-valores-cap",
+    "note": "Valor de 2025; nenhum reajuste 2026 confirmado."
+   }
+  },
+  {
+   "uf": "RS",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.09,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.03,
+    "moto": 0.02,
+    "motoExemptUpToCc": null,
+    "kind": "official",
+    "note": "Carro: Isenção para veículos com 20+ anos.",
+    "source": "r-estado-apresentacao-ipva-2026-pdf",
+    "motoSource": "r-estado-apresentacao-ipva-2026-pdf"
+   },
+   "licensing": {
+    "value": 109.27,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 5.3,
+    "city": "Porto Alegre",
+    "kind": "official",
+    "source": "r-prefeitura-onibus-e-taxi-passam-operar-com-novas-t",
+    "note": "Decreto 23.669/2026, desde 19/02/2026."
+   }
+  },
+  {
+   "uf": "SC",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.28,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.02,
+    "moto": 0,
+    "motoExemptUpToCc": 200,
+    "kind": "market",
+    "note": "Moto: isenção até 200 cc (Motos até 200 cc isentas se o proprietário não cometeu infração de trânsito no ano anterior).",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-nsctotal-ipva-2026-em-sc-vai-de-r-10-para-triciclo"
+   },
+   "licensing": {
+    "value": 149.37,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 6.2,
+    "city": "Florianópolis",
+    "kind": "market",
+    "source": "r-diariodonordeste-fortaleza-e-outras-capitais-tem-a",
+    "note": "Cartão Cidadão R$ 6,20; pagamento por QR Code R$ 7,70 (desde 01/01/2026)."
+   }
+  },
+  {
+   "uf": "SE",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.91,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.025,
+    "moto": 0.02,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Moto: Programa 'Rode Bem': isenção para motos nacionais de 50–165 cc de quem ganha até 2 salários mínimos e tem só essa moto (mediante pedido). Carro: 2,5% até R$ 120 mil; 3% acima. Veículos de aluguel 1%.",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 207.36,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 4.5,
+    "city": "Aracaju",
+    "kind": "market",
+    "source": "r-atarde-salvador-cobra-mais-caro-que-sao-paulo-e-ri",
+    "note": ""
+   }
+  },
+  {
+   "uf": "SP",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.36,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.04,
+    "moto": 0,
+    "motoExemptUpToCc": 180,
+    "kind": "official",
+    "note": "Moto: isenção até 180 cc (Motos até 180 cc de pessoa física isentas a partir de 2026 (alteração da Lei 13.296/2008), se registro e licenciamento regulares). Carro: Veículos com 20+ anos isentos. Isenção para app drivers apenas em projeto (PL 51/2025).",
+    "source": "r-agenciasp-ipva-2026-conheca-categorias-isentas-de",
+    "motoSource": "r-agenciasp-governo-de-sp-sanciona-projeto-de-lei-qu"
+   },
+   "licensing": {
+    "value": 174.08,
+    "kind": "market",
+    "source": "r-garagem360-p-299826",
+    "note": "R$ 174,08 (2025: R$ 167,74), mesmo valor para todos os veículos; confirmado por várias fontes."
+   },
+   "busFare": {
+    "value": 5.3,
+    "city": "São Paulo",
+    "kind": "market",
+    "source": "r-diariodotransporte-tarifas-de-transportes-coletivo",
+    "note": "Desde 06/01/2026 (metrô/CPTM R$ 5,40)."
+   }
+  },
+  {
+   "uf": "TO",
+   "validFrom": "2026-01-01",
+   "gasoline": {
+    "value": 6.87,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ipva": {
+    "car": 0.025,
+    "moto": 0.025,
+    "motoExemptUpToCc": null,
+    "kind": "market",
+    "note": "Moto: 2,5% até 180 cc; 3,5% acima. Carro: 2,5% até 100 cv; 3,5% acima de 100 cv.",
+    "source": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "motoSource": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im"
+   },
+   "licensing": {
+    "value": 79.63,
+    "kind": "market",
+    "source": "r-despachantedok-taxa-de-licenciamento",
+    "note": ""
+   },
+   "busFare": {
+    "value": 3.85,
+    "city": "Palmas",
+    "kind": "market",
+    "source": "r-autopapo-preco-passagem-de-onibus-veja-valores-cap",
+    "note": "Valor de 2025; nenhuma fonte 2026 encontrada."
+   }
+  }
+ ]
+}

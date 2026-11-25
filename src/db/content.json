@@ -302,7 +302,8 @@
     "chartAria": "Gráfico do saldo em {{months}} meses: termina em {{last}}; retorno do investimento em {{payback}}.",
     "chartStart": "Mês 1",
     "chartZero": "investimento pago",
-    "printButton": "Imprimir ou salvar em PDF"
+    "printButton": "Imprimir ou salvar em PDF",
+    "footerRelatedTitle": "Outras calculadoras"
   },
   "method": [
     {

@@ -9,3 +9,4 @@ import reference from '../db/reference.json';
 import sources from '../db/sources.json';
 
 export const jsonDatabase = { meta, businesses, locations, reference, sources, content, formText };
+export default jsonDatabase;

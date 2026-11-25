@@ -1,0 +1,181 @@
+{
+ "workDefaults": [
+  {
+   "validFrom": "2026-01-01",
+   "vacationDays": 30,
+   "idleDays": 12,
+   "kind": "estimate",
+   "source": "ownEstimateWork",
+   "notes": "30 dias de folga, como as férias CLT; 12 dias parados por doença, chuva, oficina ou falta de clientes."
+  }
+ ],
+ "vehicles": [
+  {
+   "validFrom": "2026-01-01",
+   "kind": "market",
+   "sources": [
+    "fipeOnix",
+    "fipeCg160",
+    "fipeDepreciation",
+    "carConsumption",
+    "motoConsumption",
+    "zarp",
+    "motoRental",
+    "ebikeRental",
+    "cebrap2025"
+   ],
+   "car": {
+    "value": 53000,
+    "consumption": 12,
+    "maintenancePerKm": 0.25,
+    "insuranceRate": 0.05,
+    "depreciationRate": 0.07,
+    "rentWeekly": 700,
+    "rentalDeposit": 1200
+   },
+   "moto": {
+    "value": 15700,
+    "consumption": 35,
+    "maintenancePerKm": 0.1,
+    "insuranceRate": 0.07,
+    "depreciationRate": 0.08,
+    "rentWeekly": 250,
+    "rentalDeposit": 500
+   },
+   "bike": {
+    "value": 1200,
+    "consumption": 0,
+    "maintenancePerKm": 0.06,
+    "insuranceRate": 0,
+    "depreciationRate": 0.2,
+    "rentWeekly": 95,
+    "rentalDeposit": 0
+   },
+   "transit": {},
+   "none": {},
+   "notes": "Carro: Onix 2018 na FIPE, consumo urbano Inmetro, manutenção por km derivada do Cebrap 2024. Moto: CG 160 2022. Bicicleta: valor e manutenção estimados; aluguel de e-bike do iFood Pedal."
+  }
+ ],
+ "phone": [
+  {
+   "validFrom": "2026-01-01",
+   "monthly": 59,
+   "kind": "market",
+   "source": "phonePlans"
+  }
+ ],
+ "inssIndividual": [
+  {
+   "validFrom": "2026-01-01",
+   "fullRate": 0.2,
+   "simplifiedRate": 0.11,
+   "ceiling": 8475.55,
+   "source": "inssContribution"
+  }
+ ],
+ "incomeTax": [
+  {
+   "validFrom": "2026-01-01",
+   "brackets": [
+    {
+     "upTo": 2428.8,
+     "rate": 0,
+     "deduct": 0
+    },
+    {
+     "upTo": 2826.65,
+     "rate": 0.075,
+     "deduct": 182.16
+    },
+    {
+     "upTo": 3751.05,
+     "rate": 0.15,
+     "deduct": 394.16
+    },
+    {
+     "upTo": 4664.68,
+     "rate": 0.225,
+     "deduct": 675.49
+    },
+    {
+     "upTo": null,
+     "rate": 0.275,
+     "deduct": 908.73
+    }
+   ],
+   "simplifiedDiscount": 607.2,
+   "reduction": {
+    "fullUpTo": 5000,
+    "fullAmount": 312.89,
+    "phaseOutUpTo": 7350,
+    "constant": 978.62,
+    "factor": 0.133145,
+    "source": "irpfReduction"
+   },
+   "taxableShare": {
+    "passengers": 0.6,
+    "cargo": 0.1
+   },
+   "bookkeepingDeductible": [
+    "materials",
+    "platformFee",
+    "leads",
+    "phone"
+   ],
+   "source": "irpfTable",
+   "notes": "RIR/2018, art. 39: 60% do transporte de passageiros e 10% do de carga são tributáveis; art. 68: livro-caixa, sem despesas de locomoção e transporte."
+  }
+ ],
+ "meiProfit": [
+  {
+   "validFrom": "2026-01-01",
+   "presumption": {
+    "passengers": 0.16,
+    "cargo": 0.08,
+    "services": 0.32
+   },
+   "source": "presumption"
+  }
+ ],
+ "clt": [
+  {
+   "validFrom": "2026-01-01",
+   "inssEmployee": {
+    "ceiling": 8475.55,
+    "brackets": [
+     {
+      "upTo": 1621,
+      "rate": 0.075
+     },
+     {
+      "upTo": 2902.84,
+      "rate": 0.09
+     },
+     {
+      "upTo": 4354.27,
+      "rate": 0.12
+     },
+     {
+      "upTo": 8475.55,
+      "rate": 0.14
+     }
+    ]
+   },
+   "fgtsRate": 0.08,
+   "weeklyHours": 44,
+   "vacationDays": 30,
+   "holidays": 9,
+   "calculatorUrl": "https://allanbarcelos.github.io/calculo-clt/",
+   "source": "inssTableAuto"
+  }
+ ],
+ "iss": [
+  {
+   "validFrom": "2026-01-01",
+   "monthly": 0,
+   "kind": "estimate",
+   "source": "issSaoPaulo",
+   "notes": "São Paulo e Rio não cobram ISS do autônomo pessoa física sem estabelecimento; Belo Horizonte cobra R$ 166,20 por trimestre (2026). Padrão zero, editável."
+  }
+ ]
+}

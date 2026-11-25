@@ -9,12 +9,14 @@ import { STEPS } from './steps.js';
 
 const STORAGE_KEY = 'calculo-empreender:v1';
 
-export default function Wizard() {
+// Shared by both calculators: each page passes its steps, storage key and side summary, and its
+// services (calculator, formDefaults, formState) come from the ServicesProvider.
+export default function Wizard({ stepList = STEPS, storageKey = STORAGE_KEY, Summary = LiveSummary }) {
   const { calculator, formDefaults, formState } = useServices();
   const t = useFormText();
-  const steps = STEPS.map((s) => ({ ...s, ...t.step(s.id) }));
+  const steps = stepList.map((s) => ({ ...s, ...t.step(s.id) }));
   const defaults = useMemo(() => formDefaults.defaults(), [formDefaults]);
-  const [data, setData] = usePersistentState(STORAGE_KEY, defaults, (stored) => formState.restore(stored));
+  const [data, setData] = usePersistentState(storageKey, defaults, (stored) => formState.restore(stored));
   const [step, setStep] = useState(0);
   const headingRef = useRef(null);
   const firstRender = useRef(true);
@@ -60,7 +62,7 @@ export default function Wizard() {
             onReset={reset}
           />
         </form>
-        {!current.isResult && <LiveSummary result={result} onReset={pristine ? null : reset} />}
+        {!current.isResult && <Summary result={result} onReset={pristine ? null : reset} />}
       </div>
     </section>
   );

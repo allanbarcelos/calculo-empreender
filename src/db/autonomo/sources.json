@@ -1,0 +1,833 @@
+{
+ "sources": [
+  {
+   "id": "pnadApps2024",
+   "title": "Trabalhador por aplicativo ganha mais, porém tem jornadas mais longas (PNAD Contínua 2024: teletrabalho e trabalho por plataformas)",
+   "short": "IBGE, PNAD 2024 (aplicativos)",
+   "org": "IBGE / Agência Brasil",
+   "url": "https://agenciabrasil.ebc.com.br/economia/noticia/2025-10/trabalhador-por-aplicativo-ganha-mais-porem-tem-jornadas-mais-longas"
+  },
+  {
+   "id": "ibgeApps",
+   "title": "Número de trabalhadores por aplicativos cresceu 25,4% entre 2022 e 2024",
+   "short": "IBGE, trabalho por aplicativos",
+   "org": "IBGE",
+   "url": "https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2012-agencia-de-noticias/noticias/44806-numero-de-trabalhadores-por-aplicativos-cresceu-25-4-entre-2022-e-2024.html"
+  },
+  {
+   "id": "cebrap2025",
+   "title": "Mobilidade urbana e logística de entregas: painel dos motoristas e entregadores parceiros (2ª onda, 2025)",
+   "short": "Cebrap/Amobitec 2025",
+   "org": "Cebrap / Amobitec",
+   "url": "https://static.congressoemfoco.com.br/attachment/2025/11/12/784c6a_Amobitec_CEBRAP_2025.pdf"
+  },
+  {
+   "id": "plp12",
+   "title": "Proposta do Executivo regulamenta o trabalho de motorista de aplicativo (PLP 12/2024)",
+   "short": "PLP 12/2024",
+   "org": "Câmara dos Deputados",
+   "url": "https://www.camara.leg.br/noticias/1041667-proposta-do-executivo-regulamenta-o-trabalho-de-motorista-de-aplicativo-prioridade"
+  },
+  {
+   "id": "tstStudy",
+   "title": "Motoristas de aplicativo gastam mais de R$ 5 mil por mês para trabalhar, aponta estudo do TST (2026)",
+   "short": "Estudo do TST (2026)",
+   "org": "Diario de Pernambuco / TST",
+   "url": "https://www.diariodepernambuco.com.br/economia/2026/08/11719975-motoristas-de-aplicativo-gastam-mais-de-rs-5-mil-por-mes-para-trabalhar-aponta-estudo-do-tst.html"
+  },
+  {
+   "id": "tstKm",
+   "title": "Lucro de motorista de aplicativo: levantamento do TST (25 km por hora, R$ 1,26 por km)",
+   "short": "TST: km e custo por km",
+   "org": "Perfil Brasil / TST",
+   "url": "https://brasil.perfil.com/carros/lucro-de-motorista-de-aplicativo-como-calcular-ganhos-reais.phtml"
+  },
+  {
+   "id": "ifoodHour",
+   "title": "iFood: 500 mil entregadores e ganho médio por hora em rota (nov/2025)",
+   "short": "iFood, ganho por hora",
+   "org": "IstoÉ Dinheiro / iFood",
+   "url": "https://istoedinheiro.com.br/ifood-500-mil-entregadores-valor-medio"
+  },
+  {
+   "id": "fipeOnix",
+   "title": "Tabela FIPE: Chevrolet Onix 2018",
+   "short": "FIPE, Onix 2018",
+   "org": "Tabela FIPE",
+   "url": "https://www.tabelafipebrasil.com/carros/GM---CHEVROLET/modelo/ONIX/2018"
+  },
+  {
+   "id": "fipeCg160",
+   "title": "Tabela FIPE: Honda CG 160 Fan Flex 2022",
+   "short": "FIPE, CG 160 2022",
+   "org": "Tabela FIPE",
+   "url": "https://www.tabelafipebrasil.com/motos/HONDA/CG-160-FAN-FLEX/2022-Flex"
+  },
+  {
+   "id": "fipeDepreciation",
+   "title": "Tabela FIPE e depreciação dos veículos em 2026",
+   "short": "Depreciação FIPE 2026",
+   "org": "NaPista",
+   "url": "https://napista.com.br/radar/tabela-fipe-depreciacao-2026"
+  },
+  {
+   "id": "zarp",
+   "title": "Zarp (Localiza): preços e planos de aluguel para motoristas de aplicativo em 2026",
+   "short": "Aluguel de carro, Zarp",
+   "org": "Educando seu Bolso",
+   "url": "https://educandoseubolso.blog.br/veiculo/carro-por-assinatura/zarp-localiza"
+  },
+  {
+   "id": "motoRental",
+   "title": "Yamaha entra no aluguel de motos com Factor 150 por R$ 364 por semana",
+   "short": "Aluguel de moto",
+   "org": "Garagem360",
+   "url": "https://garagem360.com.br/yamaha-entra-no-aluguel-de-motos-com-factor-150-por-r-364-por-semana-e-mira-entregadores-da-mottu/"
+  },
+  {
+   "id": "ebikeRental",
+   "title": "Tembici e iFood lançam bicicletas elétricas para entregadores (R$ 95 por semana)",
+   "short": "Aluguel de e-bike",
+   "org": "Portal do Trânsito",
+   "url": "https://www.portaldotransito.com.br/noticias/mobilidade-e-tecnologia/tembici-e-ifood-lancam-operacao-com-bicicletas-eletricas-para-entregadores-em-curitiba/"
+  },
+  {
+   "id": "carConsumption",
+   "title": "Consumo de carros populares (Inmetro, ciclo urbano)",
+   "short": "Consumo Inmetro",
+   "org": "Motorshow / Inmetro",
+   "url": "https://motorshow.com.br/chevrolet-onix-plus-e-o-carro-mais-economico-do-brasil/"
+  },
+  {
+   "id": "motoConsumption",
+   "title": "Quantos km por litro faz a CG 160 Fan",
+   "short": "Consumo CG 160",
+   "org": "Motor Agora",
+   "url": "https://www.motoragora.com.br/?p=67392"
+  },
+  {
+   "id": "cnhExams",
+   "title": "Exames da CNH: teto de preço para exame médico e psicológico",
+   "short": "Exames da CNH",
+   "org": "Metrópoles",
+   "url": "https://www.metropoles.com/sao-paulo/cnh-exames-devem-custar-ate-90-sp"
+  },
+  {
+   "id": "motofreteCourse",
+   "title": "Portaria Senatran 240/2025: cursos especializados, incluindo o de motofretista",
+   "short": "Curso de motofretista",
+   "org": "Senatran",
+   "url": "https://www.gov.br/transportes/pt-br/assuntos/transito/arquivos-senatran/portarias/2025/Portaria2402025.pdf"
+  },
+  {
+   "id": "motofreteLaw",
+   "title": "Lei 12.009/2009: atividade de motofretista e mototaxista",
+   "short": "Lei 12.009/2009",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/L12009.htm"
+  },
+  {
+   "id": "nr10Course",
+   "title": "Treinamento NR-10 Básico (40 horas)",
+   "short": "Curso NR-10",
+   "org": "Engehall",
+   "url": "https://engehall.com.br/nr-10-basico/"
+  },
+  {
+   "id": "electricianPrice",
+   "title": "Quanto cobra um eletricista em 2026",
+   "short": "Preço de eletricista",
+   "org": "Lar Pontual",
+   "url": "https://larpontual.com.br/portal/quanto-cobra-um-eletricista"
+  },
+  {
+   "id": "showerPrice",
+   "title": "Quanto custa instalar um chuveiro elétrico em 2026",
+   "short": "Preço de instalação",
+   "org": "Catraca Livre",
+   "url": "https://catracalivre.com.br/noticias/quanto-custa-instalar-um-chuveiro-eletrico-qual-o-preco-de-um-eletricista-para-fazer-o-servico-em-2026/"
+  },
+  {
+   "id": "plumberPrice",
+   "title": "Quanto custa um encanador em 2026",
+   "short": "Preço de encanador",
+   "org": "Lar Pontual",
+   "url": "https://larpontual.com.br/portal/quanto-custa-um-encanador"
+  },
+  {
+   "id": "plumberPrice2",
+   "title": "Quanto custa um serviço de encanador",
+   "short": "Preço de encanador (Cronoshare)",
+   "org": "Cronoshare",
+   "url": "https://www.cronoshare.com.br/quanto-custa/servico-encanador"
+  },
+  {
+   "id": "getninjas",
+   "title": "Como funciona o GetNinjas (pacotes de moedas para contatos)",
+   "short": "GetNinjas",
+   "org": "Tecnoblog",
+   "url": "https://tecnoblog.net/responde/como-funciona-o-getninjas/"
+  },
+  {
+   "id": "cleanerPrice",
+   "title": "Diaristas: quanto cobrar por um dia completo de faxina em 2026",
+   "short": "Preço da diária",
+   "org": "Catraca Livre",
+   "url": "https://catracalivre.com.br/noticias/diaristas-quanto-devo-cobrar-por-um-dia-completo-de-faxina-em-2026/"
+  },
+  {
+   "id": "cleanerPrice2",
+   "title": "Quanto custa uma diarista",
+   "short": "Preço da diária (Cronoshare)",
+   "org": "Cronoshare",
+   "url": "https://www.cronoshare.com.br/quanto-custa/quanto-custa-diarista"
+  },
+  {
+   "id": "manicurePrice",
+   "title": "Tabela de preço de manicure 2026",
+   "short": "Preço de manicure",
+   "org": "InfinitePay",
+   "url": "https://www.infinitepay.io/blog/tabela-de-preco-manicure"
+  },
+  {
+   "id": "manicureKit",
+   "title": "Lista de material para manicure iniciante",
+   "short": "Material de manicure",
+   "org": "InfinitePay",
+   "url": "https://www.infinitepay.io/blog/lista-de-material-para-manicure-iniciante"
+  },
+  {
+   "id": "manicureHome",
+   "title": "Quanto ganha uma manicure que atende em domicílio (2026)",
+   "short": "Manicure a domicílio",
+   "org": "Catraca Livre",
+   "url": "https://catracalivre.com.br/noticias/quanto-ganha-uma-manicure-que-atende-em-domicilio/"
+  },
+  {
+   "id": "beautyApps",
+   "title": "Como a uberização chega aos serviços de beleza (comissão de aplicativos)",
+   "short": "Aplicativos de beleza",
+   "org": "Outras Palavras",
+   "url": "https://outraspalavras.net/trabalhoeprecariado/como-a-uberizacao-chega-aos-servicos-de-beleza/"
+  },
+  {
+   "id": "phonePlans",
+   "title": "Planos de celular controle mais baratos em 2026",
+   "short": "Planos de celular",
+   "org": "MelhorPlano",
+   "url": "https://melhorplano.net/planos-de-celular/plano-controle"
+  },
+  {
+   "id": "cagedDriver",
+   "title": "Salário de motorista de carro de passeio, CBO 7823-05 (Novo CAGED)",
+   "short": "Salário CLT de motorista",
+   "org": "Portal Salário / Novo CAGED",
+   "url": "https://www.salario.com.br/profissao/motorista-de-carro-de-passeio-cbo-782305"
+  },
+  {
+   "id": "cagedCourier",
+   "title": "Salário de motociclista no transporte de documentos e pequenos volumes, CBO 5191-10 (Novo CAGED)",
+   "short": "Salário CLT de motoboy",
+   "org": "Portal Salário / Novo CAGED",
+   "url": "https://www.salario.com.br/profissao/motociclista-no-transporte-de-documentos-e-pequenos-volumes-cbo-519110"
+  },
+  {
+   "id": "cagedElectrician",
+   "title": "Salário de eletricista de instalações, CBO 7156-15 (Novo CAGED)",
+   "short": "Salário CLT de eletricista",
+   "org": "Portal Salário / Novo CAGED",
+   "url": "https://www.salario.com.br/profissao/eletricista-de-instalacoes-cbo-715615"
+  },
+  {
+   "id": "cagedPlumber",
+   "title": "Salário de encanador, CBO 7241-10 (Novo CAGED)",
+   "short": "Salário CLT de encanador",
+   "org": "Portal Salário / Novo CAGED",
+   "url": "https://www.salario.com.br/profissao/encanador-cbo-724110"
+  },
+  {
+   "id": "cagedCleaner",
+   "title": "Salário de faxineiro no serviço doméstico, CBO 5121-15 (Novo CAGED)",
+   "short": "Salário CLT de faxineira",
+   "org": "Portal Salário / Novo CAGED",
+   "url": "https://www.salario.com.br/profissao/faxineiro-no-servico-domestico-cbo-512115"
+  },
+  {
+   "id": "cagedManicure",
+   "title": "Salário de manicure, CBO 5161-20 (Novo CAGED)",
+   "short": "Salário CLT de manicure",
+   "org": "Portal Salário / Novo CAGED",
+   "url": "https://www.salario.com.br/profissao/manicure-cbo-516120"
+  },
+  {
+   "id": "dangerPay",
+   "title": "Lei 12.997/2014: adicional de periculosidade de 30% para trabalhadores em motocicleta",
+   "short": "Periculosidade do motoboy",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12997.htm"
+  },
+  {
+   "id": "rir2018",
+   "title": "Decreto 9.580/2018 (Regulamento do Imposto de Renda): arts. 39, 67, 68 e 69",
+   "short": "RIR/2018",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/decreto/d9580.htm"
+  },
+  {
+   "id": "irpfTable",
+   "title": "Tabelas do imposto de renda de 2026 e redução da Lei 15.270/2025",
+   "short": "Tabela do IR 2026",
+   "org": "Receita Federal",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/tabelas/2026"
+  },
+  {
+   "id": "irpfReduction",
+   "title": "Lei 15.270/2025: redução do imposto de renda mensal e anual",
+   "short": "Lei 15.270/2025",
+   "org": "Presidência da República",
+   "url": "https://planalto.gov.br/ccivil_03/_Ato2023-2026/2025/Lei/L15270.htm"
+  },
+  {
+   "id": "carneLeaoReduction",
+   "title": "Receita Federal orienta fontes pagadoras e contribuintes do carnê-leão a calcular a redução do IR a partir de 2026",
+   "short": "Redução no carnê-leão",
+   "org": "Fenacon / Receita Federal",
+   "url": "https://fenacon.org.br/noticias/receita-federal-orienta-fontes-pagadoras-e-contribuintes-a-calcular-a-reducao-do-imposto-de-renda-a-partir-de-1o-de-janeiro-de-2026/"
+  },
+  {
+   "id": "presumption",
+   "title": "Lei 9.249/1995, art. 15: percentuais de presunção do lucro (8%, 16% e 32%)",
+   "short": "Lei 9.249/1995",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l9249.htm"
+  },
+  {
+   "id": "meiIncomeTax",
+   "title": "MEI e Imposto de Renda: lucro isento e tributável",
+   "short": "MEI e IR (Sebrae)",
+   "org": "Sebrae",
+   "url": "https://sebrae.com.br/Sebrae/Portal%20Sebrae/Arquivos/ebook_Sebrae_Mei_e_Imposto_de_Renda.pdf"
+  },
+  {
+   "id": "inssIndividual",
+   "title": "Lei 8.213/1991: benefícios, carências e plano simplificado (arts. 18, 25 e 26)",
+   "short": "Lei 8.213/1991",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8213cons.htm"
+  },
+  {
+   "id": "inssContribution",
+   "title": "Lei 8.212/1991, art. 21: contribuição do contribuinte individual (20% e 11%)",
+   "short": "Lei 8.212/1991",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm"
+  },
+  {
+   "id": "driverInssBase",
+   "title": "Decreto 3.048/1999, art. 214, § 19: salário de contribuição do condutor autônomo e do motorista de aplicativo (20% do valor bruto)",
+   "short": "Decreto 3.048/1999",
+   "org": "Câmara dos Deputados (texto atualizado)",
+   "url": "https://www2.camara.leg.br/legin/fed/decret/1999/decreto-3048-6-maio-1999-368532-normaatualizada-pe.html"
+  },
+  {
+   "id": "inssTableAuto",
+   "title": "Tabela de contribuição mensal do INSS 2026",
+   "short": "Tabela do INSS 2026",
+   "org": "INSS",
+   "url": "https://www.gov.br/inss/pt-br/direitos-e-deveres/inscricao-e-contribuicao/tabela-de-contribuicao-mensal"
+  },
+  {
+   "id": "lei13640",
+   "title": "Lei 13.640/2018: transporte remunerado privado por aplicativo (inscrição no INSS)",
+   "short": "Lei 13.640/2018",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13640.htm"
+  },
+  {
+   "id": "lc150",
+   "title": "Lei Complementar 150/2015: empregado doméstico (mais de 2 dias por semana)",
+   "short": "LC 150/2015",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp150.htm"
+  },
+  {
+   "id": "meiOccupations",
+   "title": "Resolução CGSN 140/2018: ocupações permitidas ao MEI (Anexo XI)",
+   "short": "Ocupações do MEI",
+   "org": "Receita Federal / CGSN",
+   "url": "http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=92278"
+  },
+  {
+   "id": "driverCnae",
+   "title": "CNAE 4923-0/02 no Anexo XI: motorista (por aplicativo ou não) independente",
+   "short": "CNAE do motorista MEI",
+   "org": "Tabelas Fiscais",
+   "url": "https://tabelasfiscais.com.br/cnae/4923002"
+  },
+  {
+   "id": "issSaoPaulo",
+   "title": "São Paulo: isenção de ISS para profissionais autônomos pessoa física (Lei 14.864/2008)",
+   "short": "ISS autônomo, São Paulo",
+   "org": "Prefeitura de São Paulo",
+   "url": "https://prefeitura.sp.gov.br/web/fazenda/w/servicos/iss/11630"
+  },
+  {
+   "id": "issRio",
+   "title": "Rio de Janeiro: ISS do profissional autônomo (estabelecido e não estabelecido)",
+   "short": "ISS autônomo, Rio",
+   "org": "Prefeitura do Rio",
+   "url": "https://carioca.rio/servicos/iss-profissional-autonomo-autonomo-estabelecido-autonomo-equiparado-a-empresa-e-autonomo-nao-estabelecido/"
+  },
+  {
+   "id": "issBh",
+   "title": "Belo Horizonte: ISSQN de profissionais autônomos 2026",
+   "short": "ISS autônomo, BH",
+   "org": "Prefeitura de Belo Horizonte",
+   "url": "https://prefeitura.pbh.gov.br/fazenda/profissionais-autonomos"
+  },
+  {
+   "id": "stfTema1291",
+   "title": "STF, Tema 1291: vínculo de emprego entre motoristas e plataformas (repercussão geral)",
+   "short": "STF, Tema 1291",
+   "org": "STF",
+   "url": "https://portal.stf.jus.br/jurisprudenciarepercussao/detalharprocesso.asp?numerotema=1291"
+  },
+  {
+   "id": "stfPostponed",
+   "title": "STF retira de pauta julgamento sobre trabalho em plataformas (25/06/2026)",
+   "short": "STF adia julgamento",
+   "org": "STF",
+   "url": "https://noticias.stf.jus.br/?p=164310"
+  },
+  {
+   "id": "plp152",
+   "title": "Congresso adia votação do projeto dos aplicativos (PLP 152/2025)",
+   "short": "PLP 152/2025",
+   "org": "Brasil de Fato",
+   "url": "https://www.brasildefato.com.br/2026/04/14/entregadores-de-aplicativos-fazem-protestos-em-pelo-menos-23-capitais-e-congresso-adia-votacao-de-pl-dos-apps/"
+  },
+  {
+   "id": "cltCalculator",
+   "title": "Cálculo CLT: custo e salário líquido de um empregado",
+   "short": "Cálculo CLT",
+   "org": "Cálculo CLT",
+   "url": "https://allanbarcelos.github.io/calculo-clt/"
+  },
+  {
+   "id": "fgtsLaw",
+   "title": "Lei 8.036/1990: FGTS de 8% da remuneração",
+   "short": "Lei 8.036/1990 (FGTS)",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/l8036consol.htm"
+  },
+  {
+   "id": "manicureLaw",
+   "title": "Lei 12.592/2012: profissões de cabeleireiro, manicure, pedicure e outras",
+   "short": "Lei 12.592/2012",
+   "org": "Presidência da República",
+   "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12592.htm"
+  },
+  {
+   "id": "ownEstimateWork",
+   "title": "Estimativas próprias do Cálculo Autônomo, com o raciocínio de cada uma",
+   "short": "Estimativa própria",
+   "org": "Cálculo Autônomo",
+   "url": "https://github.com/allanbarcelos/calculo-empreender#estimativas-do-c%C3%A1lculo-aut%C3%B4nomo"
+  },
+  {
+   "id": "anpLpc",
+   "title": "Levantamento de Preços de Combustíveis — resumo semanal de 15 a 21/11/2026 (gasolina comum, média por estado)",
+   "short": "ANP, preço dos combustíveis",
+   "org": "ANP",
+   "url": "https://www.gov.br/anp/pt-br/assuntos/precos-e-defesa-da-concorrencia/precos/arquivos-lpc/2026/resumo_semanal_lpc_2026_11_15_2026-11-21.xlsx"
+  },
+  {
+   "id": "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+   "title": "IPVA 2026: qual estado com maior e menor imposto – ranking",
+   "short": "SBT News",
+   "org": "SBT News",
+   "url": "https://sbtnews.sbt.com.br/noticia/brasil/ipva-2026-qual-estado-com-maior-e-menor-imposto-veja-ranking"
+  },
+  {
+   "id": "r-autopapo-isencao-de-ipva-motos-2026",
+   "title": "Isenção de IPVA para motos em 2026",
+   "short": "AutoPapo",
+   "org": "AutoPapo",
+   "url": "https://autopapo.com.br/noticia/isencao-de-ipva-motos-2026/"
+  },
+  {
+   "id": "r-despachantedok-taxa-de-licenciamento",
+   "title": "Taxa de licenciamento 2026: valores de cada estado",
+   "short": "Despachante Dok",
+   "org": "Despachante Dok",
+   "url": "https://www.despachantedok.com.br/blog/licenciamento/taxa-de-licenciamento/"
+  },
+  {
+   "id": "r-diariodotransporte-conselho-aprova-tarifa-tecnica",
+   "title": "diariodotransporte.com.br",
+   "short": "diariodotransporte.com.br",
+   "org": "diariodotransporte.com.br",
+   "url": "https://diariodotransporte.com.br/2026/06/24/conselho-aprova-tarifa-tecnica-de-r-1129-para-a-jtp-operar-transportes-publicos-em-rio-branco-no-lugar-da-ricco/"
+  },
+  {
+   "id": "r-atarde-salvador-cobra-mais-caro-que-sao-paulo-e-ri",
+   "title": "Salvador cobra mais caro que São Paulo e Rio no transporte público (05/01/2026)",
+   "short": "A Tarde",
+   "org": "A Tarde",
+   "url": "https://atarde.com.br/salvador/salvador-cobra-mais-caro-que-sao-paulo-e-rio-no-transporte-publico-1374804"
+  },
+  {
+   "id": "r-autopapo-ipva-am-2026-datas-valores-descontos",
+   "title": "autopapo.com.br",
+   "short": "autopapo.com.br",
+   "org": "autopapo.com.br",
+   "url": "https://autopapo.com.br/noticia/ipva-am-2026-datas-valores-descontos/"
+  },
+  {
+   "id": "r-diariodotransporte-vale-transporte-em-manaus-am-pa",
+   "title": "diariodotransporte.com.br",
+   "short": "diariodotransporte.com.br",
+   "org": "diariodotransporte.com.br",
+   "url": "https://diariodotransporte.com.br/2026/03/01/vale-transporte-em-manaus-am-passa-a-custar-r-5-a-partir-deste-domingo-1o/"
+  },
+  {
+   "id": "r-autopapo-preco-passagem-de-onibus-veja-valores-cap",
+   "title": "Preço da passagem de ônibus nas capitais (abr/2025)",
+   "short": "AutoPapo",
+   "org": "AutoPapo",
+   "url": "https://autopapo.com.br/noticia/preco-passagem-de-onibus-veja-valores-capitais-brasil/"
+  },
+  {
+   "id": "r-cnnbrasil-salvador-passa-a-ter-uma-das-tarifas-de",
+   "title": "cnnbrasil.com.br",
+   "short": "cnnbrasil.com.br",
+   "org": "cnnbrasil.com.br",
+   "url": "https://www.cnnbrasil.com.br/nacional/nordeste/ba/salvador-passa-a-ter-uma-das-tarifas-de-onibus-mais-caras-do-pais-veja/"
+  },
+  {
+   "id": "r-diariodonordeste-ipva-2026-de-motos-no-ceara-varia",
+   "title": "diariodonordeste.verdesmares.com.br",
+   "short": "diariodonordeste.verdesmares.com.br",
+   "org": "diariodonordeste.verdesmares.com.br",
+   "url": "https://diariodonordeste.verdesmares.com.br/ultima-hora/automovel/ipva-2026-de-motos-no-ceara-varia-de-r-3934-a-r-10431-veja-modelos-1.3722390"
+  },
+  {
+   "id": "r-gringo-taxa-de-licenciamento",
+   "title": "Taxa de Licenciamento 2026 por estado",
+   "short": "Gringo",
+   "org": "Gringo",
+   "url": "https://gringo.com.vc/blog/taxa-de-licenciamento/"
+  },
+  {
+   "id": "r-diariodonordeste-passagem-de-onibus-em-fortaleza-s",
+   "title": "diariodonordeste.verdesmares.com.br",
+   "short": "diariodonordeste.verdesmares.com.br",
+   "org": "diariodonordeste.verdesmares.com.br",
+   "url": "https://diariodonordeste.verdesmares.com.br/ceara/passagem-de-onibus-em-fortaleza-sobe-para-r-540-a-partir-de-1-de-janeiro-1.3712107"
+  },
+  {
+   "id": "r-vrum-7302591-ipva-2026-df-divulga-calendario-e-ali",
+   "title": "vrum.com.br",
+   "short": "vrum.com.br",
+   "org": "vrum.com.br",
+   "url": "https://www.vrum.com.br/noticias/2025/11/7302591-ipva-2026-df-divulga-calendario-e-aliquotas-veja-tabela.html"
+  },
+  {
+   "id": "r-diariodotransporte-tarifa-de-onibus-do-sistema-tra",
+   "title": "diariodotransporte.com.br",
+   "short": "diariodotransporte.com.br",
+   "org": "diariodotransporte.com.br",
+   "url": "https://diariodotransporte.com.br/2026/01/09/tarifa-de-onibus-do-sistema-transcol-na-grande-vitoria-sobe-para-r-510-a-partir-de-domingo-11-de-janeiro-de-2026/"
+  },
+  {
+   "id": "r-goias-isencao-do-ipva-para-moto-de-ate-150-cilindr",
+   "title": "Isenção do IPVA para moto de até 150 cilindradas já está em vigor",
+   "short": "Economia-GO",
+   "org": "Economia-GO",
+   "url": "https://goias.gov.br/economia/isencao-do-ipva-para-moto-de-ate-150-cilindradas-ja-esta-em-vigor/"
+  },
+  {
+   "id": "r-goias-conselho-regulador-realiza-3a-sessao-extraor",
+   "title": "goias.gov.br",
+   "short": "goias.gov.br",
+   "org": "goias.gov.br",
+   "url": "https://goias.gov.br/agr/conselho-regulador-realiza-3a-sessao-extraordinaria-do-ano/"
+  },
+  {
+   "id": "r-fazenda-2026-03-30-trlav",
+   "title": "TRLAV 2026",
+   "short": "SEF-MG",
+   "org": "SEF-MG",
+   "url": "https://www.fazenda.mg.gov.br/noticias/2026/2026.03.30_TRLAV/"
+  },
+  {
+   "id": "r-em-7324715-bh-tem-a-2-passagem-de-onibus-mais-cara",
+   "title": "em.com.br",
+   "short": "em.com.br",
+   "org": "em.com.br",
+   "url": "https://www.em.com.br/gerais/2026/01/7324715-bh-tem-a-2-passagem-de-onibus-mais-cara-entre-capitais-em-2026.html"
+  },
+  {
+   "id": "r-autopapo-ipva-ms-2026-calendario-valores-desconto",
+   "title": "autopapo.com.br",
+   "short": "autopapo.com.br",
+   "org": "autopapo.com.br",
+   "url": "https://autopapo.com.br/noticia/ipva-ms-2026-calendario-valores-desconto/"
+  },
+  {
+   "id": "r-correiodoestado-442670",
+   "title": "correiodoestado.com.br",
+   "short": "correiodoestado.com.br",
+   "org": "correiodoestado.com.br",
+   "url": "https://correiodoestado.com.br/cidades/tarifa-de-onibus-fica-mais-cara-em-campo-grande/442670/"
+  },
+  {
+   "id": "r-diariodopara-tarifa-de-onibus-sobe-mas-belem-ainda",
+   "title": "diariodopara.com.br",
+   "short": "diariodopara.com.br",
+   "org": "diariodopara.com.br",
+   "url": "https://diariodopara.com.br/belem/tarifa-de-onibus-sobe-mas-belem-ainda-tem-uma-das-mais-baixas-do-brasil/"
+  },
+  {
+   "id": "r-sefaz-governo-de-pernambuco-divulga-calend-c3-a1ri",
+   "title": "Calendário do IPVA 2026 com alíquota mantida em 2,4%",
+   "short": "Sefaz-PE",
+   "org": "Sefaz-PE",
+   "url": "https://www.sefaz.pe.gov.br/Noticias-Destaque/Paginas/Governo-de-Pernambuco-divulga-calend%C3%A1rio-do-IPVA-2026-com-al%C3%ADquota-mantida-em-2%2C4%2C-a-menor-do-Nordeste.aspx"
+  },
+  {
+   "id": "r-legisweb-id-33156",
+   "title": "legisweb.com.br",
+   "short": "legisweb.com.br",
+   "org": "legisweb.com.br",
+   "url": "https://www.legisweb.com.br/noticia/?id=33156"
+  },
+  {
+   "id": "r-legisweb-id-31973",
+   "title": "legisweb.com.br",
+   "short": "legisweb.com.br",
+   "org": "legisweb.com.br",
+   "url": "https://www.legisweb.com.br/noticia/?id=31973"
+  },
+  {
+   "id": "r-curitiba-81220",
+   "title": "curitiba.pr.gov.br",
+   "short": "curitiba.pr.gov.br",
+   "org": "curitiba.pr.gov.br",
+   "url": "https://www.curitiba.pr.gov.br/noticias/prefeitura-de-curitiba-mantem-tarifa-de-onibus-em-r-6-e-programas-sociais-no-transporte-em-2026/81220"
+  },
+  {
+   "id": "r-diariodotransporte-tarifas-de-transportes-coletivo",
+   "title": "diariodotransporte.com.br",
+   "short": "diariodotransporte.com.br",
+   "org": "diariodotransporte.com.br",
+   "url": "https://diariodotransporte.com.br/2026/01/05/tarifas-de-transportes-coletivos-estao-mais-altas-em-mais-duas-capitais-rio-de-janeiro-e-salvador/"
+  },
+  {
+   "id": "r-sefin-l23-5706-altera-acresce-e-revoga-dispositi",
+   "title": "sefin.ro.gov.br",
+   "short": "sefin.ro.gov.br",
+   "org": "sefin.ro.gov.br",
+   "url": "https://www.sefin.ro.gov.br/portalsefin/anexos/L23-5706--Altera,-acresce-e-revoga-dispositivos-da-Lei-n--950_2000-(Isencao-de-IPVA-para-motocicletas-e-veiculo-usado-no-transporte-por-aplicativo).pdf"
+  },
+  {
+   "id": "r-diariodotransporte-tarifa-reduzida-para-r-3-faz-nu",
+   "title": "diariodotransporte.com.br",
+   "short": "diariodotransporte.com.br",
+   "org": "diariodotransporte.com.br",
+   "url": "https://diariodotransporte.com.br/2026/06/05/tarifa-reduzida-para-r-3-faz-numero-de-passageiros-crescer-25-em-porto-velho-ro-apos-um-ano/"
+  },
+  {
+   "id": "r-zuldigital-moto-paga-ipva",
+   "title": "Moto paga IPVA? Veja a regra de cada estado",
+   "short": "Zul Digital",
+   "org": "Zul Digital",
+   "url": "https://www.zuldigital.com.br/blog/moto-paga-ipva/"
+  },
+  {
+   "id": "r-estado-apresentacao-ipva-2026-pdf",
+   "title": "Apresentação IPVA 2026",
+   "short": "Governo do RS",
+   "org": "Governo do RS",
+   "url": "https://estado.rs.gov.br/upload/arquivos/202512/apresentacao-ipva-2026.pdf"
+  },
+  {
+   "id": "r-prefeitura-onibus-e-taxi-passam-operar-com-novas-t",
+   "title": "prefeitura.poa.br",
+   "short": "prefeitura.poa.br",
+   "org": "prefeitura.poa.br",
+   "url": "https://prefeitura.poa.br/smmu/noticias/onibus-e-taxi-passam-operar-com-novas-tarifas-partir-desta-quinta"
+  },
+  {
+   "id": "r-nsctotal-ipva-2026-em-sc-vai-de-r-10-para-triciclo",
+   "title": "nsctotal.com.br",
+   "short": "nsctotal.com.br",
+   "org": "nsctotal.com.br",
+   "url": "https://www.nsctotal.com.br/economia/ipva-2026-em-sc-vai-de-r-10-para-triciclo-e-r-761-mil-para-ferrari-rara"
+  },
+  {
+   "id": "r-diariodonordeste-fortaleza-e-outras-capitais-tem-a",
+   "title": "diariodonordeste.verdesmares.com.br",
+   "short": "diariodonordeste.verdesmares.com.br",
+   "org": "diariodonordeste.verdesmares.com.br",
+   "url": "https://diariodonordeste.verdesmares.com.br/ceara/fortaleza-e-outras-capitais-tem-aumento-da-tarifa-de-onibus-em-2026-1.3723325"
+  },
+  {
+   "id": "r-agenciasp-ipva-2026-conheca-categorias-isentas-de",
+   "title": "agenciasp.sp.gov.br",
+   "short": "agenciasp.sp.gov.br",
+   "org": "agenciasp.sp.gov.br",
+   "url": "https://www.agenciasp.sp.gov.br/ipva-2026-conheca-categorias-isentas-de-pagamento-em-sp-alem-de-motos-ate-180-cilindradas/"
+  },
+  {
+   "id": "r-agenciasp-governo-de-sp-sanciona-projeto-de-lei-qu",
+   "title": "Governo de SP sanciona lei que isenta IPVA para motos de até 180 cilindradas",
+   "short": "Governo de SP",
+   "org": "Governo de SP",
+   "url": "https://www.agenciasp.sp.gov.br/transporte-e-transito/governo-de-sp-sanciona-projeto-de-lei-que-isenta-ipvapara-motos-de-ate-180-cilindradas/"
+  },
+  {
+   "id": "r-garagem360-p-299826",
+   "title": "garagem360.com.br",
+   "short": "garagem360.com.br",
+   "org": "garagem360.com.br",
+   "url": "https://garagem360.com.br/?p=299826"
+  }
+ ],
+ "groups": [
+  {
+   "title": "Leis, impostos e INSS",
+   "ids": [
+    "rir2018",
+    "irpfTable",
+    "irpfReduction",
+    "carneLeaoReduction",
+    "presumption",
+    "meiIncomeTax",
+    "inssContribution",
+    "inssIndividual",
+    "driverInssBase",
+    "inssTableAuto",
+    "fgtsLaw",
+    "meiOccupations",
+    "driverCnae",
+    "lei13640",
+    "lc150",
+    "issSaoPaulo",
+    "issRio",
+    "issBh",
+    "manicureLaw"
+   ]
+  },
+  {
+   "title": "Trabalho por aplicativo",
+   "ids": [
+    "pnadApps2024",
+    "ibgeApps",
+    "cebrap2025",
+    "tstStudy",
+    "tstKm",
+    "ifoodHour",
+    "plp12",
+    "plp152",
+    "stfTema1291",
+    "stfPostponed"
+   ]
+  },
+  {
+   "title": "Veículos e combustível",
+   "ids": [
+    "anpLpc",
+    "fipeOnix",
+    "fipeCg160",
+    "fipeDepreciation",
+    "carConsumption",
+    "motoConsumption",
+    "zarp",
+    "motoRental",
+    "ebikeRental",
+    "cnhExams",
+    "motofreteCourse",
+    "motofreteLaw"
+   ]
+  },
+  {
+   "title": "IPVA, licenciamento e ônibus por estado",
+   "ids": [
+    "r-sbtnews-ipva-2026-qual-estado-com-maior-e-menor-im",
+    "r-autopapo-isencao-de-ipva-motos-2026",
+    "r-despachantedok-taxa-de-licenciamento",
+    "r-diariodotransporte-conselho-aprova-tarifa-tecnica",
+    "r-atarde-salvador-cobra-mais-caro-que-sao-paulo-e-ri",
+    "r-autopapo-ipva-am-2026-datas-valores-descontos",
+    "r-diariodotransporte-vale-transporte-em-manaus-am-pa",
+    "r-autopapo-preco-passagem-de-onibus-veja-valores-cap",
+    "r-cnnbrasil-salvador-passa-a-ter-uma-das-tarifas-de",
+    "r-diariodonordeste-ipva-2026-de-motos-no-ceara-varia",
+    "r-gringo-taxa-de-licenciamento",
+    "r-diariodonordeste-passagem-de-onibus-em-fortaleza-s",
+    "r-vrum-7302591-ipva-2026-df-divulga-calendario-e-ali",
+    "r-diariodotransporte-tarifa-de-onibus-do-sistema-tra",
+    "r-goias-isencao-do-ipva-para-moto-de-ate-150-cilindr",
+    "r-goias-conselho-regulador-realiza-3a-sessao-extraor",
+    "r-fazenda-2026-03-30-trlav",
+    "r-em-7324715-bh-tem-a-2-passagem-de-onibus-mais-cara",
+    "r-autopapo-ipva-ms-2026-calendario-valores-desconto",
+    "r-correiodoestado-442670",
+    "r-diariodopara-tarifa-de-onibus-sobe-mas-belem-ainda",
+    "r-sefaz-governo-de-pernambuco-divulga-calend-c3-a1ri",
+    "r-legisweb-id-33156",
+    "r-legisweb-id-31973",
+    "r-curitiba-81220",
+    "r-diariodotransporte-tarifas-de-transportes-coletivo",
+    "r-sefin-l23-5706-altera-acresce-e-revoga-dispositi",
+    "r-diariodotransporte-tarifa-reduzida-para-r-3-faz-nu",
+    "r-zuldigital-moto-paga-ipva",
+    "r-estado-apresentacao-ipva-2026-pdf",
+    "r-prefeitura-onibus-e-taxi-passam-operar-com-novas-t",
+    "r-nsctotal-ipva-2026-em-sc-vai-de-r-10-para-triciclo",
+    "r-diariodonordeste-fortaleza-e-outras-capitais-tem-a",
+    "r-agenciasp-ipva-2026-conheca-categorias-isentas-de",
+    "r-agenciasp-governo-de-sp-sanciona-projeto-de-lei-qu",
+    "r-garagem360-p-299826"
+   ]
+  },
+  {
+   "title": "Preços de serviços, ferramentas e celular",
+   "ids": [
+    "electricianPrice",
+    "showerPrice",
+    "nr10Course",
+    "plumberPrice",
+    "plumberPrice2",
+    "getninjas",
+    "cleanerPrice",
+    "cleanerPrice2",
+    "manicurePrice",
+    "manicureKit",
+    "manicureHome",
+    "beautyApps",
+    "phonePlans"
+   ]
+  },
+  {
+   "title": "Salários CLT de referência",
+   "ids": [
+    "cagedDriver",
+    "cagedCourier",
+    "dangerPay",
+    "cagedElectrician",
+    "cagedPlumber",
+    "cagedCleaner",
+    "cagedManicure",
+    "cltCalculator"
+   ]
+  },
+  {
+   "title": "Estimativas",
+   "ids": [
+    "ownEstimateWork"
+   ]
+  }
+ ]
+}

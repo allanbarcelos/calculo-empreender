@@ -1,0 +1,388 @@
+{
+  "explainers": [
+    {
+      "id": "work",
+      "validFrom": "2026-01-01",
+      "title": "Como calculamos o mês de trabalho",
+      "kind": "steps",
+      "items": [
+        {
+          "title": "Dias no ano.",
+          "text": "Dias por mês × 12, menos os dias de folga e os dias parados. Dividimos por 12 para ter um mês médio: assim as férias e os dias sem trabalho aparecem no resultado, enquanto seguro, celular e INSS continuam sendo pagos todo mês."
+        },
+        {
+          "title": "Faturamento.",
+          "text": "Aplicativos: horas logadas × ganho por hora logada. Serviços: serviços por dia × valor por serviço × dias trabalhados."
+        },
+        {
+          "title": "Horas reais.",
+          "text": "A renda por hora usa todas as horas de trabalho, incluindo espera por chamadas, deslocamento e orçamentos que não viram serviço. É o erro mais comum de quem faz a conta sozinho."
+        }
+      ]
+    },
+    {
+      "id": "vehicle",
+      "validFrom": "2026-01-01",
+      "title": "Como calculamos o custo do veículo",
+      "kind": "steps",
+      "items": [
+        {
+          "title": "Combustível.",
+          "text": "Km rodados ÷ consumo × preço do litro. Os km incluem os rodados sem passageiro ou sem pedido."
+        },
+        {
+          "title": "Desgaste.",
+          "text": "O veículo perde valor a cada ano de uso. Mesmo que você já tenha pago o carro, essa perda é dinheiro que um dia vai faltar para trocar de veículo."
+        },
+        {
+          "title": "Seguro, IPVA e licenciamento.",
+          "text": "Divididos por 12. O IPVA usa a alíquota do seu estado sobre o valor do veículo."
+        },
+        {
+          "title": "Aluguel.",
+          "text": "Aluguel semanal × 52 ÷ 12. Em geral inclui seguro, IPVA e manutenção; confira o contrato."
+        }
+      ]
+    },
+    {
+      "id": "costs",
+      "validFrom": "2026-01-01",
+      "title": "Como calculamos ferramentas e custos",
+      "kind": "steps",
+      "items": [
+        {
+          "title": "Para começar.",
+          "text": "Soma das ferramentas, equipamentos e cursos marcados. O veículo próprio não entra aqui: consideramos que você já o tem, e o desgaste dele entra no custo do mês."
+        },
+        {
+          "title": "Reposição.",
+          "text": "Ferramentas e equipamentos se gastam. Dividimos o preço pelos meses de vida útil para juntar o dinheiro da troca."
+        },
+        {
+          "title": "Material.",
+          "text": "Parte do faturamento gasta com produtos e peças que você não cobra à parte do cliente."
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "validFrom": "2026-01-01",
+      "title": "Como calculamos impostos e INSS",
+      "kind": "steps",
+      "items": [
+        {
+          "title": "MEI.",
+          "text": "DAS fixo por mês: 5% do salário mínimo para o INSS e R$ 5 de ISS ([LC 123/2006, art. 18-A](source:simplesLaw)). O lucro até a parte presumida do faturamento é isento de imposto de renda; o que passar disso entra na sua declaração."
+        },
+        {
+          "title": "Autônomo.",
+          "text": "INSS de contribuinte individual (11% do salário mínimo ou 20% do valor escolhido), imposto de renda mensal pelo carnê-leão com a tabela progressiva e a redução da Lei 15.270/2025, e o ISS da prefeitura."
+        },
+        {
+          "title": "Redução do imposto de renda.",
+          "text": "Desde 2026, quem tem rendimento tributável de até R$ 5.000 por mês não paga imposto de renda, e a redução diminui até R$ 7.350 ([Lei 15.270/2025](source:irpfReduction))."
+        }
+      ]
+    },
+    {
+      "id": "clt",
+      "validFrom": "2026-01-01",
+      "title": "Como comparamos com um emprego CLT",
+      "kind": "steps",
+      "items": [
+        {
+          "title": "Dinheiro do ano.",
+          "text": "11 meses de salário líquido, o mês de férias com o adicional de 1/3 e o 13º salário, todos sem o INSS e o imposto de renda do empregado."
+        },
+        {
+          "title": "FGTS.",
+          "text": "8% do salário, do 13º e das férias, depositados numa conta em seu nome. Não é dinheiro na mão todo mês, mas é seu."
+        },
+        {
+          "title": "Horas.",
+          "text": "44 horas por semana, sem os 30 dias de férias e os feriados nacionais."
+        },
+        {
+          "title": "O que fica de fora.",
+          "text": "Vale-transporte, vale-refeição, plano de saúde e outros benefícios. Se a vaga oferece, o emprego vale mais do que mostramos."
+        }
+      ]
+    }
+  ],
+  "callouts": [
+    {
+      "id": "req_driver",
+      "tone": "info",
+      "title": "O que é exigido do motorista",
+      "text": "CNH categoria B ou superior com a observação **EAR** (exerce atividade remunerada) e inscrição no INSS como contribuinte individual ou MEI ([Lei 13.640/2018](source:lei13640)). Os aplicativos têm regras próprias de ano e modelo do carro, e algumas prefeituras exigem cadastro."
+    },
+    {
+      "id": "req_moto",
+      "tone": "warning",
+      "title": "O que é exigido do entregador de moto",
+      "text": "A [Lei 12.009/2009](source:motofreteLaw) exige 21 anos, 2 anos de CNH categoria A com a observação EAR e o curso especializado de motofretista ([Senatran](source:motofreteCourse)), que o SEST SENAT costuma oferecer de graça. A medida provisória que flexibilizava essas regras perdeu a validade em setembro de 2026. Use capacete, colete refletivo e equipamentos de segurança."
+    },
+    {
+      "id": "req_bike",
+      "tone": "info",
+      "title": "Entrega de bicicleta",
+      "text": "Não precisa de habilitação. Use capacete, luzes e colete refletivo. Uma bicicleta elétrica alugada permite mais entregas por hora, mas custa o aluguel semanal."
+    },
+    {
+      "id": "req_electrician",
+      "tone": "info",
+      "title": "O que é exigido do eletricista",
+      "text": "O curso **NR-10** (segurança em instalações elétricas), com reciclagem a cada 2 anos, e o NR-35 para trabalho acima de 2 metros. Projetos e instalações que exigem ART precisam de técnico ou engenheiro registrado no CFT ou no CREA."
+    },
+    {
+      "id": "req_plumber",
+      "tone": "info",
+      "title": "Encanador",
+      "text": "Não há registro obrigatório para reparos residenciais. Para trabalho em altura, faça o curso NR-35. Máquina desentupidora e detector de vazamento aumentam o valor do serviço, mas custam caro: estão como opcionais."
+    },
+    {
+      "id": "req_cleaner",
+      "tone": "warning",
+      "title": "Diarista ou empregada doméstica?",
+      "text": "Diarista trabalha até 2 dias por semana na mesma casa. A partir de 3 dias, é empregada doméstica, com carteira assinada, férias, 13º e FGTS pagos pela família ([LC 150/2015](source:lc150)). O Cálculo CLT calcula o custo e o salário da doméstica."
+    },
+    {
+      "id": "req_manicure",
+      "tone": "info",
+      "title": "Manicure a domicílio",
+      "text": "A profissão não exige registro ([Lei 12.592/2012](source:manicureLaw)), mas a vigilância sanitária exige esterilizar alicates e espátulas (estufa ou autoclave) e usar lixas e palitos descartáveis."
+    },
+    {
+      "id": "occupationProfile",
+      "tone": "info",
+      "title": "{{label}}: o que já vem preenchido",
+      "text": "Transporte: {{vehicle}}. {{mei}}"
+    },
+    {
+      "id": "platformLaw",
+      "tone": "info",
+      "title": "Trabalho por aplicativo: regras em discussão",
+      "text": "Não existe lei específica para motoristas e entregadores de aplicativo. O Congresso discute projetos sobre o tema, e o STF ainda vai decidir se há vínculo de emprego com as plataformas ([Tema 1291](source:stfTema1291)). Esta calculadora não trata disso: mostra só a conta do trabalho por conta própria."
+    },
+    {
+      "id": "meiRules",
+      "tone": "info",
+      "title": "Regras do MEI",
+      "text": "DAS fixo de **{{das|money}} por mês**. Faturamento de até **{{limit|money}} por ano** a partir de {{year}} ([LC 238/2026](source:lc238)); no ano em que abrir, o limite é proporcional aos meses. Pela simulação você faturaria {{revenue|money}} por ano. O lucro de até {{presumption|percent}} do faturamento é isento de imposto de renda."
+    },
+    {
+      "id": "incomeTax_passengers",
+      "tone": "info",
+      "title": "Imposto de renda do motorista",
+      "text": "No transporte de passageiros, só {{share|percent}} do que você recebe é rendimento tributável; o resto cobre os custos do veículo ([RIR/2018](source:rir2018)). Sobre esse valor, menos o INSS, aplica-se a tabela mensal do carnê-leão com a redução de 2026."
+    },
+    {
+      "id": "incomeTax_cargo",
+      "tone": "info",
+      "title": "Imposto de renda do entregador",
+      "text": "No transporte de carga, só {{share|percent}} do que você recebe é rendimento tributável ([RIR/2018](source:rir2018)). Sobre esse valor, menos o INSS, aplica-se a tabela mensal do carnê-leão com a redução de 2026."
+    },
+    {
+      "id": "incomeTax_bookkeeping",
+      "tone": "info",
+      "title": "Imposto de renda do autônomo",
+      "text": "O imposto do carnê-leão é calculado sobre o que você recebe menos as despesas do trabalho anotadas no livro-caixa (material, comissões e anúncios), e menos o INSS. Gastos com veículo e deslocamento não podem ser deduzidos ([RIR/2018](source:rir2018))."
+    },
+    {
+      "id": "benefits",
+      "tone": "info",
+      "title": "O que a sua contribuição garante",
+      "text": "MEI (5%) e plano simplificado (11%) dão direito a auxílio por incapacidade (após 12 contribuições), salário-maternidade (após 10) e aposentadoria por idade de 1 salário mínimo. Com 20% sobre um valor maior, os benefícios são calculados sobre esse valor. Sem contribuir, você fica sem renda se adoecer ([INSS](source:inssIndividual))."
+    },
+    {
+      "id": "cltIntro",
+      "tone": "info",
+      "title": "Comparação justa",
+      "text": "Um emprego CLT paga 13º, férias com 1/3 e FGTS, e o empregador cobre o INSS patronal. Para trabalhar por conta valer a pena, o que sobra para você no ano precisa cobrir tudo isso. Este é um cálculo de referência, não uma recomendação para trocar de emprego."
+    },
+    {
+      "id": "compareAhead",
+      "tone": "success",
+      "title": "Por conta própria você fica à frente",
+      "text": "Na simulação, você termina o ano com **{{difference|money}} a mais** do que no emprego CLT. Equivale a um salário CLT de **{{salary|money}}**. Lembre que essa diferença precisa pagar os riscos que o empregado não tem: renda que varia, acidente, veículo parado."
+    },
+    {
+      "id": "compareBehind",
+      "tone": "warning",
+      "title": "O emprego CLT paga mais",
+      "text": "Na simulação, você termina o ano com **{{difference|money}} a menos** do que no emprego CLT. Por conta própria, o que sobra equivale a um salário CLT de **{{salary|money}}**."
+    },
+    {
+      "id": "dataQuality",
+      "tone": "info",
+      "title": "De onde vêm os números",
+      "text": "Impostos, INSS e IPVA vêm de leis e tabelas oficiais, e o preço da gasolina vem do levantamento da ANP. Ganhos por hora, valores de serviços, custos de veículo e preços de ferramentas são médias de mercado ou estimativas, marcadas em cada item. O seu caso pode ser bem diferente: digite os seus números."
+    },
+    {
+      "id": "beforeStarting",
+      "tone": "info",
+      "title": "Antes de começar",
+      "items": [
+        {
+          "text": "Anote por algumas semanas o que entra e o que sai, inclusive os km. Os números reais costumam ser piores que os imaginados."
+        },
+        {
+          "text": "Pague o INSS desde o primeiro mês: um acidente sem cobertura pode deixar você sem renda."
+        },
+        {
+          "text": "Guarde todo mês o dinheiro do desgaste do veículo e da troca das ferramentas."
+        },
+        {
+          "text": "Se faturar perto do limite do MEI, converse com um contador antes de passar dele."
+        }
+      ]
+    },
+    {
+      "id": "warning_meiNotAllowed",
+      "tone": "warning",
+      "title": "Esta atividade não pode ser MEI",
+      "text": "Escolha \"Autônomo\" na etapa de impostos ou abra uma empresa no Simples Nacional com ajuda de um contador."
+    },
+    {
+      "id": "warning_meiLimit",
+      "tone": "warning",
+      "title": "Faturamento acima do limite do MEI",
+      "text": "Você faturaria {{revenue|money}} por ano, acima do limite de {{limit|money}}. Até 20% acima, você continua MEI naquele ano e paga imposto extra sobre o excesso ({{excess|money}}); no ano seguinte passa a microempresa, com impostos maiores."
+    },
+    {
+      "id": "warning_meiLimitOver",
+      "tone": "warning",
+      "title": "Faturamento muito acima do limite do MEI",
+      "text": "Você faturaria {{revenue|money}} por ano, mais de 20% acima do limite de {{limit|money}}. O MEI seria desenquadrado com efeito retroativo ao início do ano, com cobrança de impostos de microempresa. Simule como autônomo e procure um contador."
+    },
+    {
+      "id": "warning_domestic",
+      "tone": "warning",
+      "title": "Isso pode ser emprego doméstico",
+      "text": "Quem trabalha mais de 2 dias por semana para a mesma família é empregado doméstico ([LC 150/2015, art. 1º](source:lc150)), com carteira assinada, férias, 13º e FGTS pagos por ela. Nesse caso, não é trabalho como MEI ou diarista. O Cálculo CLT tem o cálculo do empregado doméstico."
+    },
+    {
+      "id": "warning_negative",
+      "tone": "warning",
+      "title": "As contas não fecham",
+      "text": "Com estes números, os custos e impostos passam do que entra. Reveja o valor por hora ou por serviço, as horas de trabalho e o custo do veículo."
+    },
+    {
+      "id": "warning_belowMinimum",
+      "tone": "warning",
+      "title": "Menos que o salário mínimo por hora",
+      "text": "Sobra {{hourly|money}} por hora de trabalho, abaixo dos {{minimum|money}} por hora do salário mínimo (sem contar 13º, férias e FGTS)."
+    },
+    {
+      "id": "warning_longHours",
+      "tone": "warning",
+      "title": "Jornada muito longa",
+      "text": "São cerca de {{hours}} horas por mês, bem acima das 220 horas de um emprego de 44 horas semanais. Jornadas longas no trânsito aumentam o risco de acidente."
+    },
+    {
+      "id": "warning_ownVehicle",
+      "tone": "info",
+      "title": "O veículo não está no investimento",
+      "text": "Consideramos que você já tem o veículo (valor de {{value|money}}). Se for comprar ou financiar, some a entrada ao que precisa para começar e as parcelas aos custos do mês."
+    }
+  ],
+  "breakdown": {
+    "groups": {
+      "vehicle": "Transporte",
+      "work": "Custos do trabalho",
+      "taxes": "Impostos e INSS",
+      "start": "Para começar"
+    },
+    "items": {
+      "fuel": "Combustível ({{km}} km)",
+      "transit": "Passagens",
+      "maintenance": "Manutenção e pneus",
+      "depreciation": "Desgaste do veículo (perda de valor)",
+      "insurance": "Seguro",
+      "ipva": "IPVA ({{rate|percent}} ao ano)",
+      "licensing": "Licenciamento",
+      "rent": "Aluguel do veículo",
+      "materials": "Material ({{rate|percent}} do faturamento)",
+      "platformFee": "Comissão de plataforma ({{rate|percent}})",
+      "leads": "Captação de clientes",
+      "phone": "Celular e internet",
+      "replacement": "Reposição de ferramentas e equipamentos",
+      "other": "Outros custos",
+      "das": "DAS do MEI",
+      "meiIncomeTax": "Imposto de renda sobre o lucro acima da parte isenta",
+      "inss": "INSS ({{rate|percent}} sobre {{base|money}})",
+      "incomeTax": "Imposto de renda (carnê-leão)",
+      "iss": "ISS de autônomo",
+      "rentalDeposit": "Caução do aluguel do veículo",
+      "otherInitial": "Outros gastos para começar"
+    }
+  },
+  "labels": {
+    "skipToCalculator": "Pular para a calculadora",
+    "heroEyebrow": "Valores e regras em vigor em",
+    "heroTitle": "Quanto sobra trabalhando por conta?",
+    "heroLead": "Motorista de aplicativo, entregador, eletricista, encanador, diarista ou manicure: veja os custos do veículo e das ferramentas, MEI ou autônomo, quanto sobra por hora e como fica perto de um emprego CLT.",
+    "sourcesTitle": "Fontes",
+    "sourcesIntro": "Leis, tabelas oficiais e levantamentos de mercado usados nesta calculadora. Revisão em",
+    "footerTagline": "Quanto sobra trabalhando por conta própria, com fontes e estimativas indicadas.",
+    "liveTitle": "Sobra por mês",
+    "liveRevenue": "Faturamento",
+    "liveCosts": "Custos e impostos",
+    "livePerHour": "Por hora de trabalho",
+    "liveEquivalent": "Salário CLT equivalente",
+    "liveHint": "Média do ano, com folgas e dias parados.",
+    "resetButton": "Nova simulação",
+    "resetConfirm": "Apagar os dados e começar uma nova simulação?",
+    "heroLabel": "{{occupation}} em {{place}}: sobra por mês",
+    "heroPerHour": "Por hora de trabalho",
+    "heroRevenue": "Faturamento do mês",
+    "heroCosts": "Custos e impostos",
+    "heroEquivalent": "Salário CLT equivalente",
+    "heroBreakEven": "Faturar por dia só para os custos",
+    "heroPerKm": "Custo do transporte por km",
+    "heroNote": "Mês médio do ano: {{days}} dias e {{hours}} horas de trabalho, já descontadas as folgas e os dias parados.",
+    "monthTitle": "Para onde vai o dinheiro",
+    "monthCaption": "Mês médio: faturamento, custos, impostos e o que sobra",
+    "monthRevenue": "Faturamento",
+    "monthNet": "Sobra para você",
+    "compareTitle": "Por conta própria × emprego CLT",
+    "compareCaption": "Comparação com um emprego CLT de {{salary}} ({{role}})",
+    "colItem": "Item",
+    "colAutonomous": "Por conta",
+    "colClt": "CLT",
+    "rowMonthly": "Média por mês",
+    "rowYearly": "Total no ano",
+    "rowFgts": "FGTS no ano (incluído no total)",
+    "rowHours": "Horas de trabalho no ano",
+    "rowHourly": "Por hora",
+    "rowRights": "Férias pagas, 13º e FGTS",
+    "rightsAutonomous": "Não: você guarda",
+    "rightsClt": "Sim",
+    "investmentTitle": "Para começar",
+    "investmentCaption": "Ferramentas, equipamentos, cursos e caução",
+    "investmentTotal": "Total para começar",
+    "investmentNone": "Nada a comprar além do que você já tem.",
+    "payback": "Com a sobra do mês, o que foi gasto para começar volta em cerca de {{months}} meses.",
+    "paybackNone": "Com estes números, a sobra do mês não paga o que foi gasto para começar.",
+    "printButton": "Imprimir ou salvar em PDF"
+  },
+  "method": [
+    {
+      "title": "Mês médio",
+      "text": "Somamos o ano de trabalho, sem folgas e dias parados, e dividimos por 12. Seguro, celular e INSS entram em todos os meses."
+    },
+    {
+      "title": "Custos reais do veículo",
+      "text": "Combustível pelos km rodados (inclusive sem passageiro), manutenção, desgaste, seguro, IPVA do seu estado e licenciamento, ou o aluguel."
+    },
+    {
+      "title": "Impostos",
+      "text": "MEI (DAS fixo e lucro isento até a parte presumida) ou autônomo (INSS de 11% ou 20% e imposto de renda pelo carnê-leão, com a redução de 2026)."
+    },
+    {
+      "title": "Comparação com CLT",
+      "text": "Salário líquido, férias com 1/3, 13º e FGTS no ano, contra o que sobra por conta própria, por mês e por hora."
+    }
+  ],
+  "footer": "Esta calculadora é uma ferramenta de referência e não substitui a orientação de um contador. Não é aconselhamento jurídico, tributário ou de carreira. Ganhos de aplicativos, preços e custos mudam com frequência e variam muito de pessoa para pessoa."
+}

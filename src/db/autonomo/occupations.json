@@ -1,0 +1,1006 @@
+{
+ "scenarios": [
+  {
+   "id": "low",
+   "label": "Pessimista",
+   "description": "Poucos chamados ou clientes, valores baixos."
+  },
+  {
+   "id": "medium",
+   "label": "Realista",
+   "description": "Média das referências."
+  },
+  {
+   "id": "high",
+   "label": "Otimista",
+   "description": "Boa demanda e valores altos."
+  }
+ ],
+ "occupations": [
+  {
+   "id": "motorista_app",
+   "validFrom": "2026-01-01",
+   "label": "Motorista de aplicativo",
+   "description": "Corridas de passageiros com carro próprio ou alugado (Uber, 99, inDrive e outros).",
+   "model": "hourly",
+   "work": {
+    "earningsPerHour": {
+     "low": 31,
+     "medium": 38,
+     "high": 46
+    },
+    "hoursPerDay": 8,
+    "daysPerMonth": 24,
+    "kmPerUnit": 25,
+    "kind": "estimate",
+    "source": "cebrap2025",
+    "note": "Ganho por hora logada estimado a partir do estudo Cebrap/Amobitec (R$ 51 por hora em corrida, em valores de 2026) e calibrado com a renda do IBGE (PNAD 2024). Nenhuma pesquisa mede a hora logada diretamente. Km por hora: estudo do TST (2026)."
+   },
+   "vehicle": {
+    "type": "car",
+    "options": [
+     "car"
+    ],
+    "overrides": {
+     "car": {
+      "depreciationRate": 0.1
+     }
+    }
+   },
+   "costs": {
+    "materialsRate": 0,
+    "platformFeeRate": 0,
+    "leadCostMonthly": 0,
+    "phoneMonthly": 110,
+    "kind": "estimate",
+    "source": "phonePlans",
+    "note": "O ganho por hora já vem sem a comissão do aplicativo. Celular: plano de dados e reposição do aparelho."
+   },
+   "items": [
+    {
+     "id": "cnhEar",
+     "label": "CNH com observação EAR (exames e taxa do Detran)",
+     "qty": 1,
+     "unitCost": 200,
+     "lifeYears": null,
+     "essential": true,
+     "kind": "estimate",
+     "source": "cnhExams",
+     "category": "course"
+    },
+    {
+     "id": "phoneMount",
+     "label": "Suporte veicular para celular",
+     "qty": 1,
+     "unitCost": 60,
+     "lifeYears": 2,
+     "essential": true,
+     "kind": "market",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "charger",
+     "label": "Carregador veicular rápido e cabo",
+     "qty": 1,
+     "unitCost": 80,
+     "lifeYears": 1,
+     "essential": true,
+     "kind": "market",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "carKit",
+     "label": "Kit de limpeza, tapetes e água para passageiros",
+     "qty": 1,
+     "unitCost": 120,
+     "lifeYears": 1,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "dashcam",
+     "label": "Câmera veicular",
+     "qty": 1,
+     "unitCost": 350,
+     "lifeYears": 4,
+     "essential": false,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    }
+   ],
+   "tax": {
+    "meiAllowed": true,
+    "meiOccupation": "Motorista (por aplicativo ou não) independente",
+    "cnae": "4923-0/02",
+    "meiActivity": "both",
+    "meiPresumption": "passengers",
+    "incomeTaxBase": "passengers",
+    "inssGrossShare": 0.2,
+    "issApplies": false
+   },
+   "clt": {
+    "role": "Motorista de carro de passeio (CBO 7823-05)",
+    "salary": 2200,
+    "kind": "market",
+    "source": "cagedDriver",
+    "note": "Mediana do salário de admissão no Novo CAGED (out/2025 a set/2026), sem horas extras."
+   },
+   "callouts": [
+    "req_driver",
+    "platformLaw"
+   ],
+   "sources": [
+    "cebrap2025",
+    "pnadApps2024",
+    "tstStudy",
+    "tstKm",
+    "fipeOnix",
+    "zarp",
+    "carConsumption",
+    "cnhExams",
+    "driverCnae",
+    "lei13640"
+   ],
+   "notes": "Sobre a divergência de CNAE: listas do MEI indicam 4923-0/02, e há versões com 4923-0/01. O DAS inclui ISS e ICMS."
+  },
+  {
+   "id": "entregador_moto",
+   "validFrom": "2026-01-01",
+   "label": "Entregador de moto",
+   "description": "Entregas por aplicativo (iFood, Rappi, Loggi, 99Food e outros) de moto.",
+   "model": "hourly",
+   "work": {
+    "earningsPerHour": {
+     "low": 16,
+     "medium": 21,
+     "high": 27
+    },
+    "hoursPerDay": 8,
+    "daysPerMonth": 24,
+    "kmPerUnit": 18,
+    "kind": "estimate",
+    "source": "cebrap2025",
+    "note": "Ganho por hora logada estimado a partir do Cebrap/Amobitec (R$ 33 por hora em rota, em valores de 2026) e calibrado com a renda do IBGE para motociclistas de aplicativo. Km por hora: estimativa."
+   },
+   "vehicle": {
+    "type": "moto",
+    "options": [
+     "moto"
+    ],
+    "overrides": {
+     "moto": {
+      "depreciationRate": 0.1
+     }
+    }
+   },
+   "costs": {
+    "materialsRate": 0,
+    "platformFeeRate": 0,
+    "leadCostMonthly": 0,
+    "phoneMonthly": 110,
+    "kind": "estimate",
+    "source": "phonePlans",
+    "note": "O ganho por hora já vem sem a comissão do aplicativo. Celular: plano de dados e reposição do aparelho."
+   },
+   "items": [
+    {
+     "id": "motofreteCourse",
+     "label": "Curso especializado de motofretista (30 horas)",
+     "qty": 1,
+     "unitCost": 200,
+     "lifeYears": 5,
+     "essential": true,
+     "kind": "estimate",
+     "source": "motofreteCourse",
+     "category": "course"
+    },
+    {
+     "id": "cnhEar",
+     "label": "CNH categoria A com observação EAR (exames e taxa do Detran)",
+     "qty": 1,
+     "unitCost": 200,
+     "lifeYears": null,
+     "essential": true,
+     "kind": "estimate",
+     "source": "cnhExams",
+     "category": "course"
+    },
+    {
+     "id": "bag",
+     "label": "Bag térmica de 45 litros",
+     "qty": 1,
+     "unitCost": 130,
+     "lifeYears": 1,
+     "essential": true,
+     "kind": "market",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "helmet",
+     "label": "Capacete fechado",
+     "qty": 1,
+     "unitCost": 180,
+     "lifeYears": 3,
+     "essential": true,
+     "kind": "market",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "rainSuit",
+     "label": "Capa de chuva",
+     "qty": 1,
+     "unitCost": 105,
+     "lifeYears": 1,
+     "essential": true,
+     "kind": "market",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "mount",
+     "label": "Suporte de celular antivibração",
+     "qty": 1,
+     "unitCost": 80,
+     "lifeYears": 2,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "protection",
+     "label": "Luvas, joelheiras e colete refletivo",
+     "qty": 1,
+     "unitCost": 100,
+     "lifeYears": 1,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "box",
+     "label": "Baú (alternativa à bag)",
+     "qty": 1,
+     "unitCost": 400,
+     "lifeYears": 5,
+     "essential": false,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    }
+   ],
+   "tax": {
+    "meiAllowed": true,
+    "meiOccupation": "Motoboy independente",
+    "cnae": "5320-2/02",
+    "meiActivity": "services",
+    "meiPresumption": "cargo",
+    "incomeTaxBase": "cargo",
+    "inssGrossShare": 0.2,
+    "issApplies": false
+   },
+   "clt": {
+    "role": "Motociclista entregador (CBO 5191-10)",
+    "salary": 2210,
+    "kind": "market",
+    "source": "cagedCourier",
+    "note": "Mediana do Novo CAGED (R$ 1.700) mais o adicional de periculosidade de 30% que a lei garante a quem trabalha de moto (Lei 12.997/2014)."
+   },
+   "callouts": [
+    "req_moto",
+    "platformLaw"
+   ],
+   "sources": [
+    "cebrap2025",
+    "pnadApps2024",
+    "ifoodHour",
+    "fipeCg160",
+    "motoRental",
+    "motoConsumption",
+    "motofreteCourse",
+    "motofreteLaw",
+    "dangerPay"
+   ],
+   "notes": "Enquadramento no imposto de renda como transporte de carga (10% tributável) e na presunção de 8% do MEI: interpretação mais aceita, sem posição expressa da Receita Federal."
+  },
+  {
+   "id": "entregador_bike",
+   "validFrom": "2026-01-01",
+   "label": "Entregador de bicicleta",
+   "description": "Entregas por aplicativo de bicicleta comum ou elétrica, própria ou alugada.",
+   "model": "hourly",
+   "work": {
+    "earningsPerHour": {
+     "low": 11,
+     "medium": 15,
+     "high": 19
+    },
+    "hoursPerDay": 7,
+    "daysPerMonth": 24,
+    "kmPerUnit": 9,
+    "kind": "estimate",
+    "source": "ownEstimateWork",
+    "note": "Não há pesquisa só de entregadores de bicicleta: estimativa abaixo da moto, pelo raio menor de entregas. Jornada menor pelo esforço físico."
+   },
+   "vehicle": {
+    "type": "bike",
+    "options": [
+     "bike"
+    ]
+   },
+   "costs": {
+    "materialsRate": 0,
+    "platformFeeRate": 0,
+    "leadCostMonthly": 0,
+    "phoneMonthly": 110,
+    "kind": "estimate",
+    "source": "phonePlans",
+    "note": "O ganho por hora já vem sem a comissão do aplicativo. Celular: plano de dados e reposição do aparelho."
+   },
+   "items": [
+    {
+     "id": "bag",
+     "label": "Bag térmica de 45 litros",
+     "qty": 1,
+     "unitCost": 130,
+     "lifeYears": 1,
+     "essential": true,
+     "kind": "market",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "helmet",
+     "label": "Capacete de ciclismo",
+     "qty": 1,
+     "unitCost": 110,
+     "lifeYears": 3,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "rainSuit",
+     "label": "Capa de chuva",
+     "qty": 1,
+     "unitCost": 80,
+     "lifeYears": 1,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "mount",
+     "label": "Suporte de celular para guidão",
+     "qty": 1,
+     "unitCost": 60,
+     "lifeYears": 2,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "lights",
+     "label": "Cadeado e luzes dianteira e traseira",
+     "qty": 1,
+     "unitCost": 120,
+     "lifeYears": 2,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    }
+   ],
+   "tax": {
+    "meiAllowed": true,
+    "meiOccupation": "Bikeboy (ciclista mensageiro) independente",
+    "cnae": "5320-2/02",
+    "meiActivity": "services",
+    "meiPresumption": "cargo",
+    "incomeTaxBase": "cargo",
+    "issApplies": false
+   },
+   "clt": {
+    "role": "Entregador (CBO 5191-10, referência mais próxima)",
+    "salary": 1700,
+    "kind": "market",
+    "source": "cagedCourier",
+    "note": "Não há CBO com salários de entregador de bicicleta no CAGED; usamos a mediana do motociclista entregador, sem periculosidade."
+   },
+   "callouts": [
+    "req_bike",
+    "platformLaw"
+   ],
+   "sources": [
+    "cebrap2025",
+    "ebikeRental",
+    "cagedCourier"
+   ],
+   "notes": "Enquadramento como transporte de carga (10% tributável no IR e 8% de lucro isento no MEI) é incerto para bicicleta."
+  },
+  {
+   "id": "eletricista",
+   "validFrom": "2026-01-01",
+   "label": "Eletricista",
+   "description": "Instalações e reparos elétricos em casas e comércios, por serviço.",
+   "model": "jobs",
+   "work": {
+    "ticket": {
+     "low": 120,
+     "medium": 200,
+     "high": 350
+    },
+    "jobsPerDay": {
+     "low": 1,
+     "medium": 1.5,
+     "high": 2.5
+    },
+    "hoursPerDay": 8,
+    "daysPerMonth": 24,
+    "kmPerUnit": 20,
+    "kind": "market",
+    "source": "electricianPrice",
+    "note": "Valores de guias de preço de 2026, em geral de capitais do Sudeste; no interior e no Nordeste costumam ser 20% a 30% menores. Serviços por dia: estimativa, contando dias sem chamados e orçamentos que não fecham."
+   },
+   "vehicle": {
+    "type": "car",
+    "options": [
+     "car",
+     "moto",
+     "transit"
+    ]
+   },
+   "costs": {
+    "materialsRate": 0.05,
+    "platformFeeRate": 0,
+    "leadCostMonthly": 50,
+    "phoneMonthly": 60,
+    "kind": "estimate",
+    "source": "getninjas",
+    "note": "Material principal (fios, disjuntores) é cobrado à parte do cliente; o percentual é o que você não repassa. Captação: créditos em aplicativos de orçamento, anúncios."
+   },
+   "items": [
+    {
+     "id": "nr10",
+     "label": "Curso NR-10 básico (reciclagem a cada 2 anos)",
+     "qty": 1,
+     "unitCost": 275,
+     "lifeYears": 2,
+     "essential": true,
+     "kind": "market",
+     "source": "nr10Course",
+     "category": "course"
+    },
+    {
+     "id": "nr35",
+     "label": "Curso NR-35, trabalho em altura",
+     "qty": 1,
+     "unitCost": 150,
+     "lifeYears": 2,
+     "essential": false,
+     "kind": "market",
+     "source": "nr10Course",
+     "category": "course"
+    },
+    {
+     "id": "multimeter",
+     "label": "Multímetro digital",
+     "qty": 1,
+     "unitCost": 150,
+     "lifeYears": 4,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "clamp",
+     "label": "Alicate amperímetro",
+     "qty": 1,
+     "unitCost": 250,
+     "lifeYears": 5,
+     "essential": true,
+     "kind": "market",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "insulatedKit",
+     "label": "Kit de ferramentas isoladas 1000 V",
+     "qty": 1,
+     "unitCost": 450,
+     "lifeYears": 4,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "drill",
+     "label": "Furadeira e parafusadeira a bateria",
+     "qty": 1,
+     "unitCost": 550,
+     "lifeYears": 4,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "ladder",
+     "label": "Escada de alumínio de 6 a 7 degraus",
+     "qty": 1,
+     "unitCost": 400,
+     "lifeYears": 6,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "ppe",
+     "label": "EPI: luvas isolantes, óculos, botina e capacete",
+     "qty": 1,
+     "unitCost": 400,
+     "lifeYears": 1,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "accessories",
+     "label": "Detector de tensão, passa-fio, bolsa de ferramentas e lanterna",
+     "qty": 1,
+     "unitCost": 250,
+     "lifeYears": 3,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    }
+   ],
+   "tax": {
+    "meiAllowed": true,
+    "meiOccupation": "Eletricista em residências e estabelecimentos comerciais independente",
+    "cnae": "4321-5/00",
+    "meiActivity": "services",
+    "meiPresumption": "services",
+    "incomeTaxBase": "bookkeeping"
+   },
+   "clt": {
+    "role": "Eletricista de instalações (CBO 7156-15)",
+    "salary": 2356,
+    "kind": "market",
+    "source": "cagedElectrician",
+    "note": "Mediana do Novo CAGED, sem o adicional de periculosidade de 30% pago a quem trabalha exposto a energia elétrica."
+   },
+   "callouts": [
+    "req_electrician"
+   ],
+   "sources": [
+    "electricianPrice",
+    "showerPrice",
+    "nr10Course",
+    "getninjas",
+    "cagedElectrician"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "encanador",
+   "validFrom": "2026-01-01",
+   "label": "Encanador",
+   "description": "Reparos hidráulicos, vazamentos e desentupimentos, por serviço.",
+   "model": "jobs",
+   "work": {
+    "ticket": {
+     "low": 100,
+     "medium": 180,
+     "high": 350
+    },
+    "jobsPerDay": {
+     "low": 1,
+     "medium": 1.5,
+     "high": 2.5
+    },
+    "hoursPerDay": 8,
+    "daysPerMonth": 24,
+    "kmPerUnit": 20,
+    "kind": "market",
+    "source": "plumberPrice",
+    "note": "Valores de guias de preço de 2026, em geral de capitais do Sudeste; no interior e no Nordeste costumam ser 20% a 30% menores. Serviços por dia: estimativa, contando dias sem chamados e orçamentos que não fecham."
+   },
+   "vehicle": {
+    "type": "car",
+    "options": [
+     "car",
+     "moto",
+     "transit"
+    ]
+   },
+   "costs": {
+    "materialsRate": 0.07,
+    "platformFeeRate": 0,
+    "leadCostMonthly": 50,
+    "phoneMonthly": 60,
+    "kind": "estimate",
+    "source": "getninjas",
+    "note": "Canos e conexões costumam ser cobrados do cliente; o percentual é o que você não repassa. Captação: créditos em aplicativos de orçamento, anúncios."
+   },
+   "items": [
+    {
+     "id": "hydraulicKit",
+     "label": "Kit de ferramentas hidráulicas (chaves grifo e inglesa, arco de serra, cortador de tubo)",
+     "qty": 1,
+     "unitCost": 500,
+     "lifeYears": 5,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "auger",
+     "label": "Desentupidor de cabo espiral (10 a 15 m)",
+     "qty": 1,
+     "unitCost": 250,
+     "lifeYears": 3,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "drill",
+     "label": "Furadeira e parafusadeira",
+     "qty": 1,
+     "unitCost": 450,
+     "lifeYears": 4,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "torch",
+     "label": "Maçarico e soldas",
+     "qty": 1,
+     "unitCost": 200,
+     "lifeYears": 4,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "ppe",
+     "label": "EPI: luvas, óculos, botina e joelheira",
+     "qty": 1,
+     "unitCost": 180,
+     "lifeYears": 1,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "ladder",
+     "label": "Escada",
+     "qty": 1,
+     "unitCost": 300,
+     "lifeYears": 6,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "machine",
+     "label": "Máquina desentupidora elétrica",
+     "qty": 1,
+     "unitCost": 2500,
+     "lifeYears": 5,
+     "essential": false,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "detector",
+     "label": "Detector de vazamento",
+     "qty": 1,
+     "unitCost": 2000,
+     "lifeYears": 5,
+     "essential": false,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    }
+   ],
+   "tax": {
+    "meiAllowed": true,
+    "meiOccupation": "Encanador independente",
+    "cnae": "4322-3/01",
+    "meiActivity": "services",
+    "meiPresumption": "services",
+    "incomeTaxBase": "bookkeeping"
+   },
+   "clt": {
+    "role": "Encanador (CBO 7241-10)",
+    "salary": 2664,
+    "kind": "market",
+    "source": "cagedPlumber",
+    "note": "Mediana do salário de admissão no Novo CAGED (out/2025 a set/2026)."
+   },
+   "callouts": [
+    "req_plumber"
+   ],
+   "sources": [
+    "plumberPrice",
+    "plumberPrice2",
+    "getninjas",
+    "cagedPlumber"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "diarista",
+   "validFrom": "2026-01-01",
+   "label": "Diarista",
+   "description": "Faxina por diária em casas de clientes diferentes.",
+   "model": "jobs",
+   "work": {
+    "ticket": {
+     "low": 130,
+     "medium": 180,
+     "high": 250
+    },
+    "jobsPerDay": 1,
+    "hoursPerDay": 10,
+    "daysPerMonth": 19.5,
+    "kmPerUnit": 0,
+    "kind": "market",
+    "source": "cleanerPrice",
+    "note": "Diária de cerca de 8 horas. Valores de 2026, em geral de capitais; no interior costumam ser menores. As horas incluem a ida e a volta de ônibus."
+   },
+   "vehicle": {
+    "type": "transit",
+    "options": [
+     "transit",
+     "none"
+    ],
+    "faresPerDay": 2
+   },
+   "costs": {
+    "materialsRate": 0.02,
+    "platformFeeRate": 0,
+    "leadCostMonthly": 0,
+    "phoneMonthly": 60,
+    "kind": "estimate",
+    "source": "cleanerPrice",
+    "note": "Os clientes costumam fornecer os produtos. Quem consegue clientes por aplicativo paga comissão (não divulgada, cerca de 20% a 25%)."
+   },
+   "items": [
+    {
+     "id": "uniform",
+     "label": "Uniforme e tênis antiderrapante",
+     "qty": 1,
+     "unitCost": 120,
+     "lifeYears": 1,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "supplies",
+     "label": "Luvas, panos, esponjas e borrifadores",
+     "qty": 1,
+     "unitCost": 60,
+     "lifeYears": 0.5,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "productKit",
+     "label": "Kit de produtos próprio",
+     "qty": 1,
+     "unitCost": 250,
+     "lifeYears": 0.5,
+     "essential": false,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    }
+   ],
+   "tax": {
+    "meiAllowed": true,
+    "meiOccupation": "Diarista independente",
+    "cnae": "9700-5/00",
+    "meiActivity": "services",
+    "meiPresumption": "services",
+    "incomeTaxBase": "bookkeeping",
+    "domesticRisk": true
+   },
+   "clt": {
+    "role": "Faxineira no serviço doméstico (CBO 5121-15)",
+    "salary": 1704,
+    "kind": "market",
+    "source": "cagedCleaner",
+    "note": "Mediana do Novo CAGED, com amostra pequena: a maioria das domésticas é registrada pelo eSocial Doméstico. Não pode ser menor que o salário mínimo ou o piso estadual."
+   },
+   "callouts": [
+    "req_cleaner"
+   ],
+   "sources": [
+    "cleanerPrice",
+    "cleanerPrice2",
+    "cagedCleaner",
+    "lc150"
+   ],
+   "notes": ""
+  },
+  {
+   "id": "manicure",
+   "validFrom": "2026-01-01",
+   "label": "Manicure a domicílio",
+   "description": "Manicure e pedicure na casa das clientes.",
+   "model": "jobs",
+   "work": {
+    "ticket": {
+     "low": 50,
+     "medium": 70,
+     "high": 100
+    },
+    "jobsPerDay": {
+     "low": 2,
+     "medium": 3,
+     "high": 5
+    },
+    "hoursPerDay": 8,
+    "daysPerMonth": 22,
+    "kmPerUnit": 6,
+    "kind": "market",
+    "source": "manicurePrice",
+    "note": "Pé e mão com esmaltação comum, com a taxa de deslocamento. O número de atendimentos é limitado pelo tempo entre uma casa e outra."
+   },
+   "vehicle": {
+    "type": "transit",
+    "options": [
+     "transit",
+     "moto",
+     "none"
+    ],
+    "faresPerDay": 4
+   },
+   "costs": {
+    "materialsRate": 0.15,
+    "platformFeeRate": 0,
+    "leadCostMonthly": 0,
+    "phoneMonthly": 60,
+    "kind": "estimate",
+    "source": "manicureKit",
+    "note": "Descartáveis (lixas, palitos, algodão, luvas) e esmaltes. Aplicativos de beleza ficam com cerca de 30% do valor."
+   },
+   "items": [
+    {
+     "id": "pliers",
+     "label": "Alicates de cutícula e espátulas (jogos para rodízio)",
+     "qty": 1,
+     "unitCost": 300,
+     "lifeYears": 2,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "sterilizer",
+     "label": "Estufa de esterilização",
+     "qty": 1,
+     "unitCost": 250,
+     "lifeYears": 4,
+     "essential": true,
+     "kind": "market",
+     "source": "manicureKit",
+     "category": "tool"
+    },
+    {
+     "id": "case",
+     "label": "Maleta organizadora",
+     "qty": 1,
+     "unitCost": 180,
+     "lifeYears": 3,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "polish",
+     "label": "Estoque inicial de esmaltes, bases e removedor",
+     "qty": 1,
+     "unitCost": 300,
+     "lifeYears": null,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "ledCabin",
+     "label": "Cabine LED/UV para esmaltação em gel",
+     "qty": 1,
+     "unitCost": 100,
+     "lifeYears": 3,
+     "essential": false,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "disposables",
+     "label": "Descartáveis iniciais, apoio de pé e toalhas",
+     "qty": 1,
+     "unitCost": 150,
+     "lifeYears": null,
+     "essential": true,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "tool"
+    },
+    {
+     "id": "course",
+     "label": "Curso de manicure e pedicure",
+     "qty": 1,
+     "unitCost": 300,
+     "lifeYears": null,
+     "essential": false,
+     "kind": "estimate",
+     "source": "ownEstimateWork",
+     "category": "course"
+    }
+   ],
+   "tax": {
+    "meiAllowed": true,
+    "meiOccupation": "Manicure/pedicure independente",
+    "cnae": "9602-5/02",
+    "meiActivity": "services",
+    "meiPresumption": "services",
+    "incomeTaxBase": "bookkeeping"
+   },
+   "clt": {
+    "role": "Manicure (CBO 5161-20)",
+    "salary": 1700,
+    "kind": "market",
+    "source": "cagedManicure",
+    "note": "Mediana do Novo CAGED, com amostra pequena: em salões, a maioria trabalha como parceira (Lei do Salão-Parceiro), sem carteira."
+   },
+   "callouts": [
+    "req_manicure"
+   ],
+   "sources": [
+    "manicurePrice",
+    "manicureKit",
+    "manicureHome",
+    "beautyApps",
+    "cagedManicure"
+   ],
+   "notes": ""
+  }
+ ]
+}

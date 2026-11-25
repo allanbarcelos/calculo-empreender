@@ -1,6 +1,8 @@
 # Cálculo Empreender — quanto custa abrir um negócio
 
-Single-page React (Vite) app that estimates the initial investment and the projected profit of opening a small business in Brazil — lanchonete, padaria, salão de beleza, minimercado, loja de roupas and pet shop — by state and city. The UI is in Brazilian Portuguese because that is the target audience. It follows the same principles as [Cálculo CLT](https://github.com/allanbarcelos/calculo-clt), which is linked for the payroll cost.
+React (Vite) site with two calculators. The main page estimates the initial investment and the projected profit of opening a small business in Brazil — lanchonete, padaria, salão de beleza, minimercado, loja de roupas and pet shop — by state and city. The UI is in Brazilian Portuguese because that is the target audience. It follows the same principles as [Cálculo CLT](https://github.com/allanbarcelos/calculo-clt), which is linked for the payroll cost.
+
+The second page, **Cálculo Autônomo** (`/autonomo/`), is for work without premises — motorista de aplicativo, entregador de moto or bicicleta, eletricista, encanador, diarista and manicure a domicílio: vehicle and tool costs, MEI or autônomo (contribuinte individual), net income per month and per hour, and a comparison with an equivalent CLT job. It shares the infrastructure (versioned repositories, locations, national references, UI components, wizard) and has its own domain module, so neither calculator branches on the other.
 
 ## Run
 
@@ -25,8 +27,22 @@ src/
   hooks/          useServices, usePersistentState, useFormText, useLabels
   components/     generic, data-driven UI and page layout
   features/       wizard and one folder per step
-scripts/validate-db.mjs   database validation run before every build
+  autonomo/       the autonomous-work page: its repositories, services, container, steps and tests
+  db/autonomo/    its data: occupations, per-state vehicle costs, references, sources and texts
+autonomo/index.html       second entry page of the build
+scripts/validate-db.mjs   database validation (both pages) run before every build
 ```
+
+### Autonomous-work services (`src/autonomo/services`)
+
+- `OccupationService`: occupations and the values they pre-fill (earnings, workload, vehicle, tools, courses, tax profile, CLT reference salary).
+- `WorkloadService`: an average month — days per month × 12 minus days off and idle days, ÷ 12; hours, revenue (per logged hour for apps, per job for services) and km.
+- `VehicleService`: fuel by km (ANP price of the state), maintenance per km, depreciation, insurance, IPVA (state rate, motorcycle exemptions) and licensing for an owned car or motorcycle; weekly rent for a rented one; bus fares for public transport.
+- `WorkCostService`: materials, platform commission, paid leads, phone and the replacement of tools over their life; the money needed to start.
+- `WorkTaxService`: MEI (DAS by activity, exempt profit up to 8/16/32% of revenue) or autônomo (INSS 11% of the minimum wage or 20% of the base — at least 20% of gross fares for drivers, Decreto 3.048/1999 art. 214 § 19 —, carnê-leão on 60% of passenger fares, 10% of cargo or revenue minus livro-caixa expenses, municipal ISS).
+- `IncomeTaxService`: monthly IRPF table with the Lei 15.270/2025 reduction.
+- `CltComparisonService`: yearly CLT package (11 net salaries, vacation month with 1/3, 13th, FGTS), hours per year and the salary that matches the autonomous yearly net.
+- `WorkCalculator`: orchestrates them and raises the warnings (MEI limit, diarista as domestic employee, loss, below the minimum wage per hour, long hours, own vehicle not in the investment).
 
 - `LocationService`: rent, electricity and water tariffs, Junta Comercial, fire department, business and sanitary licences for the state capital, the interior (capital rent × `interiorRentFactor`) or a city with its own data.
 - `BusinessService`: business catalogue and the values it pre-fills (equipment, fit-out, stock, monthly figures, revenue model).
@@ -57,6 +73,10 @@ Any item can carry `validFrom` / `validTo` (YYYY-MM-DD). Single-value tables use
 
 Add an item to `businesses.json` with the same fields as the existing ones and a source for each number (or `ownEstimate`). `npm run db:validate` checks ids, sources, the Simples annex, the scenarios and the equipment.
 
+### Adding an occupation
+
+Add an item to `autonomo/occupations.json` with the same fields as the existing ones (`model` `hourly` or `jobs`, `work`, `vehicle`, `costs`, `items`, `tax`, `clt`) and sources. `npm run db:validate` checks the revenue ranges, vehicles, tax profile, callouts and items.
+
 ### Adding a city
 
 Add it to `cities` and its municipal costs to `cityCosts` (`rent`, `license`, `sanitary`, each with `value`, `kind` and `source`). Cities without data use the capital's.
@@ -81,3 +101,16 @@ When no official value or published market average exists, the database uses an 
 - **Rent:** FipeZAP Comercial measures offices and commercial units up to 200 m²; street shops in busy spots usually cost more.
 
 These are references to plan, not guarantees. Confirm the values of your case before investing.
+
+## Estimativas do Cálculo Autônomo
+
+- **Earnings per logged hour (drivers and couriers):** no survey measures them. Derived from the Cebrap/Amobitec 2025 earnings per hour in a ride and calibrated so that the medium scenario reproduces the IBGE PNAD 2024 monthly income of app workers, updated to 2026 by the IPCA. Bicycle couriers: below motorcycles, as there is no specific data.
+- **Jobs per day (electrician, plumber, manicure):** 1,5 / 1,5 / 3 in the medium scenario, counting days without calls and quotes that do not close; ticket values from 2026 price guides, mostly from capitals in the Southeast.
+- **Vehicle:** maintenance per km derived from the Cebrap 2024 spending survey; insurance as a share of the FIPE value; depreciation of 10% a year for cars and motorcycles in app use (FIPE average 5–7% for normal use); bicycle value and maintenance.
+- **Phone:** data plan plus the replacement of the handset for app workers; plan only for the other occupations.
+- **Days off and idle days:** 30 and 12 a year.
+- **Tool prices and useful lives:** retail prices; lives of 1 to 6 years.
+- **ISS of the self-employed:** zero by default (São Paulo and Rio do not charge it to individuals without premises), editable.
+- **MEI income tax on the profit above the exempt share:** declared yearly; estimated monthly with the monthly table and reduction.
+- **CLT hours:** 44 hours a week without 30 days of vacation and 9 national holidays.
+- **Uncertain rules, flagged on the page:** the CNAE of the MEI driver (4923-0/01 or 4923-0/02), couriers taxed as cargo transport (10% taxable, 8% presumed profit) and the 20%-of-gross INSS base applied to motorcycle couriers.

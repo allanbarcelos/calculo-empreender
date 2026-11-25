@@ -1,5 +1,6 @@
 import { useServices } from '../../hooks/useServices.js';
 import { formatDate } from '../../lib/format.js';
+import { linkHref } from '../../lib/links.js';
 import { scrollToSection } from '../../lib/scroll.js';
 import { fillTemplate } from '../../lib/template.js';
 import BrandMark from './BrandMark.jsx';
@@ -39,6 +40,17 @@ export default function SiteFooter() {
               ))}
             </ul>
           </nav>
+
+          {meta.related?.length > 0 && (
+            <div>
+              <h2 className="site-footer__heading">{label('footerRelatedTitle')}</h2>
+              <ul>
+                {meta.related.map((r) => (
+                  <li key={r.label}><a href={linkHref(r)} {...(r.url ? external : {})}>{r.label}</a></li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           <div>
             <h2 className="site-footer__heading">{label('footerProjectTitle')}</h2>

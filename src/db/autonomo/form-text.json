@@ -1,0 +1,282 @@
+{
+  "steps": {
+    "occupation": {
+      "title": "Atividade",
+      "heading": "Qual trabalho você vai fazer por conta?",
+      "intro": "Cada atividade já vem com ganhos, custos e ferramentas típicos. Tudo pode ser ajustado nas próximas etapas."
+    },
+    "work": {
+      "title": "Jornada e ganhos",
+      "heading": "Quanto você trabalha e quanto entra",
+      "intro": "Conte todas as horas: as de espera, deslocamento e orçamento também são trabalho."
+    },
+    "vehicle": {
+      "title": "Transporte",
+      "heading": "Como você se desloca",
+      "intro": "O veículo costuma ser o maior custo. Não é só o combustível: desgaste, seguro e impostos também entram."
+    },
+    "costs": {
+      "title": "Ferramentas e custos",
+      "heading": "Ferramentas, cursos e custos do mês",
+      "intro": "O que precisa comprar antes de começar e o que gasta todo mês para trabalhar."
+    },
+    "taxes": {
+      "title": "Impostos e INSS",
+      "heading": "MEI ou autônomo",
+      "intro": "Quanto vai para impostos e para a sua previdência em cada forma de trabalhar."
+    },
+    "clt": {
+      "title": "Comparar com CLT",
+      "heading": "E se fosse um emprego com carteira?",
+      "intro": "Para comparar de forma justa, contamos tudo o que o empregado CLT recebe no ano, e não só o salário."
+    },
+    "result": {
+      "title": "Resultado",
+      "heading": "Resultado",
+      "intro": "Quanto sobra por mês e por hora, de onde vai o dinheiro e como fica perto de um emprego CLT."
+    }
+  },
+  "sections": {
+    "earnings": "Ganhos",
+    "time": "Tempo de trabalho",
+    "ownVehicle": "Veículo próprio",
+    "rental": "Veículo alugado",
+    "items": "Ferramentas, equipamentos e cursos",
+    "monthly": "Custos de todo mês"
+  },
+  "fields": {
+    "occupationId": {
+      "label": "Atividade",
+      "hint": "Trabalhos sem ponto comercial. Para abrir um negócio com loja ou salão, use o Cálculo Empreender.",
+      "meiYes": "Pode ser MEI (ocupação: {{occupation}}, CNAE {{cnae}}), se o faturamento couber no limite.",
+      "meiNo": "Não pode ser MEI: trabalha como autônomo (contribuinte individual do INSS)."
+    },
+    "uf": {
+      "label": "Estado onde vai trabalhar",
+      "hint": "Define o preço médio da gasolina, o IPVA e a tarifa de ônibus."
+    },
+    "scenario": {
+      "label": "Cenário",
+      "hint": "Preenche os ganhos com valores de referência. Depois você pode digitar os seus.",
+      "optionHourly": "{{value}} por hora logada. {{description}}",
+      "optionJobs": "{{jobs}} serviço(s) por dia de {{ticket}}. {{description}}"
+    },
+    "earningsPerHour": {
+      "label": "Ganho por hora logada no aplicativo",
+      "prefix": "R$",
+      "suffix": "/h",
+      "hint": "O que o aplicativo paga a você, já sem a comissão dele, dividido pelas horas conectado (esperando chamada também conta). Referência: {{range}}."
+    },
+    "ticket": {
+      "label": "Valor médio por serviço",
+      "prefix": "R$",
+      "hint": "Quanto você cobra pela mão de obra de um serviço ou diária. Referência: {{range}}."
+    },
+    "jobsPerDay": {
+      "label": "Serviços por dia de trabalho",
+      "hint": "Média de serviços fechados num dia trabalhado (pode ser decimal, como 1,5)."
+    },
+    "hoursPerDayHourly": {
+      "label": "Horas logado por dia",
+      "suffix": "h",
+      "hint": "Tempo conectado ao aplicativo, com e sem corrida ou entrega."
+    },
+    "hoursPerDay": {
+      "label": "Horas de trabalho por dia",
+      "suffix": "h",
+      "hint": "Inclui deslocamento, orçamentos e compra de material."
+    },
+    "daysPerMonth": {
+      "label": "Dias de trabalho por mês",
+      "hint": "Num mês normal, sem férias.",
+      "summary": "Na média do ano: {{days}} dias e {{hours}} horas por mês, faturamento de {{revenue}} por mês ({{yearly}} por ano) e {{km}} km rodados."
+    },
+    "vacationDays": {
+      "label": "Dias de folga no ano (férias)",
+      "suffix": "dias",
+      "hint": "Dias de trabalho que você vai tirar de descanso. O CLT tem 30 dias de férias pagas."
+    },
+    "idleDays": {
+      "label": "Dias parados no ano",
+      "suffix": "dias",
+      "hint": "Doença, chuva forte, veículo na oficina, falta de clientes. Nesses dias não entra dinheiro."
+    },
+    "kmPer_hour": {
+      "label": "Km rodados por hora logada",
+      "suffix": "km/h",
+      "hint": "Inclui os km sem passageiro ou sem pedido (indo buscar, voltando, esperando em movimento)."
+    },
+    "kmPer_job": {
+      "label": "Km rodados por serviço",
+      "suffix": "km",
+      "hint": "Ida e volta até o cliente, mais a compra de material."
+    },
+    "sameHomeOver2Days": {
+      "label": "Vou trabalhar mais de 2 dias por semana na mesma casa",
+      "hint": "Pela LC 150/2015, quem trabalha mais de 2 dias por semana para a mesma família é empregado doméstico, com carteira assinada."
+    },
+    "vehicleType": {
+      "label": "Meio de transporte",
+      "hint": "Escolha como você vai trabalhar ou chegar aos clientes.",
+      "option_car": "Carro",
+      "option_moto": "Moto",
+      "option_bike": "Bicicleta",
+      "option_transit": "Ônibus ou metrô",
+      "option_none": "A pé ou sem custo de transporte",
+      "desc_car": "Combustível, manutenção, desgaste, seguro, IPVA e licenciamento, ou o aluguel do carro.",
+      "desc_moto": "Combustível, manutenção, desgaste, seguro, IPVA e licenciamento, ou o aluguel da moto.",
+      "desc_bike": "Manutenção e desgaste da bicicleta, ou o aluguel de uma bicicleta elétrica.",
+      "desc_transit": "Passagens de ônibus ou metrô em cada dia de trabalho.",
+      "desc_none": "Clientes perto de casa ou transporte pago pelo cliente.",
+      "summary": "Transporte: {{total}} por mês, {{perKm}} por km rodado.",
+      "summaryNone": "Sem custo de veículo."
+    },
+    "vehicleOwnership": {
+      "label": "O veículo é",
+      "optionOwn": "Próprio",
+      "optionRented": "Alugado",
+      "descOwn": "Você paga combustível, manutenção, seguro, IPVA e licenciamento, e o veículo perde valor com o uso.",
+      "descOwnBike": "Você paga a manutenção, e a bicicleta perde valor com o uso.",
+      "descRented": "Aluguel semanal com seguro e manutenção incluídos (confira o contrato). Você paga o combustível e uma caução."
+    },
+    "vehicleValue": {
+      "label": "Valor do veículo hoje",
+      "prefix": "R$",
+      "hint": "Quanto ele vale na tabela FIPE. Serve para calcular desgaste, seguro e IPVA.",
+      "stateTaxes": "Em {{uf}}: IPVA de {{ipva}} do valor por ano e licenciamento de {{licensing}}."
+    },
+    "depreciationPct": {
+      "label": "Perda de valor por ano",
+      "suffix": "%",
+      "hint": "Quanto o veículo desvaloriza por ano. Com uso intenso, perde mais rápido."
+    },
+    "insurancePct": {
+      "label": "Seguro por ano",
+      "suffix": "% do valor",
+      "hint": "Seguro com cobertura para uso em aplicativo ou entrega. Zere se não tiver seguro (o risco fica com você)."
+    },
+    "maintenancePerKm": {
+      "label": "Manutenção por km",
+      "prefix": "R$",
+      "suffix": "/km",
+      "hint": "Revisões, óleo, pneus, freios e consertos, divididos pelos km rodados."
+    },
+    "consumption": {
+      "label": "Consumo",
+      "suffix": "km/l",
+      "hint": "Quantos km o veículo faz com um litro, na cidade."
+    },
+    "rentWeekly": {
+      "label": "Aluguel por semana",
+      "prefix": "R$",
+      "hint": "Preço de locadoras para motoristas e entregadores de aplicativo."
+    },
+    "fuelPrice": {
+      "label": "Preço da gasolina ({{uf}})",
+      "prefix": "R$",
+      "suffix": "/litro",
+      "auto": "Média do estado no levantamento da ANP ({{date}}).",
+      "useAverage": "Usar a média do estado ({{value}})"
+    },
+    "transitDaily": {
+      "label": "Transporte por dia de trabalho",
+      "prefix": "R$",
+      "auto": "{{fares}} passagens de ônibus de {{fare}} ({{city}}).",
+      "useFare": "Usar {{fares}} passagens da capital ({{value}})"
+    },
+    "items": {
+      "caption": "Ferramentas, equipamentos e cursos",
+      "colItem": "Item",
+      "colQty": "Qtd.",
+      "colUnit": "Preço unitário",
+      "colTotal": "Total",
+      "optional": "opcional",
+      "life": "troca a cada {{years}} anos",
+      "qtyAria": "Quantidade de {{item}}",
+      "unitAria": "Preço unitário de {{item}}",
+      "total": "Total para começar",
+      "investment": "Para começar: {{total}}. Os itens com tempo de troca entram também no custo do mês, para juntar o dinheiro da reposição."
+    },
+    "materialsPct": {
+      "label": "Material que você paga",
+      "suffix": "% do faturamento",
+      "hint": "Produtos e peças que não são cobrados à parte do cliente. Referência: {{reference}}."
+    },
+    "platformFeePct": {
+      "label": "Comissão de aplicativo ou agência",
+      "suffix": "% do faturamento",
+      "hint": "Para quem consegue clientes por plataforma que cobra comissão. Referência: {{reference}}."
+    },
+    "leadCostMonthly": {
+      "label": "Captação de clientes por mês",
+      "prefix": "R$",
+      "hint": "Créditos de aplicativos de orçamento, anúncios, cartões de visita."
+    },
+    "phoneMonthly": {
+      "label": "Celular e internet por mês",
+      "prefix": "R$",
+      "hint": "Plano com internet suficiente para o trabalho. Referência: {{reference}}."
+    },
+    "otherMonthly": {
+      "label": "Outros custos por mês",
+      "prefix": "R$",
+      "hint": "Estacionamento, pedágio, alimentação fora de casa, uniforme, contador."
+    },
+    "otherInitial": {
+      "label": "Outros gastos para começar",
+      "prefix": "R$",
+      "hint": "Qualquer compra inicial que não está na lista acima."
+    },
+    "regime": {
+      "label": "Como vai trabalhar",
+      "hint": "Os dois são legais. O MEI costuma pagar menos, mas tem limite de faturamento.",
+      "optionMei": "MEI",
+      "optionIndividual": "Autônomo (pessoa física)",
+      "descMei": "CNPJ de microempreendedor ({{occupation}}). Paga {{das}} por mês fixo de DAS. Limite de {{limit}} de faturamento por ano.",
+      "descMeiNotAllowed": "Esta atividade não está na lista de ocupações do MEI.",
+      "descIndividual": "Sem CNPJ: paga o INSS como contribuinte individual, o imposto de renda pelo carnê-leão e o ISS da prefeitura.",
+      "caption": "Impostos e INSS do mês",
+      "total": "Total de impostos e INSS",
+      "yearly": "Faturamento de {{revenue}} por ano; impostos e INSS levam {{rate}} dele."
+    },
+    "inssPlan": {
+      "label": "Contribuição ao INSS",
+      "hint": "Quem trabalha por conta paga o próprio INSS. Sem pagar, fica sem auxílio se adoecer e sem aposentadoria.",
+      "optionSimplified": "Plano simplificado (11%)",
+      "descSimplified": "11% do salário mínimo: {{amount}} por mês. Aposentadoria por idade de 1 salário mínimo.",
+      "optionFull": "Plano normal (20%)",
+      "descFull": "20% sobre o valor que você escolher, do salário mínimo até {{ceiling}}. Benefícios calculados sobre esse valor."
+    },
+    "inssBase": {
+      "label": "Valor sobre o qual contribuir",
+      "prefix": "R$",
+      "hint": "Entre o salário mínimo ({{minimum}}) e o teto do INSS."
+    },
+    "issMonthly": {
+      "label": "ISS de autônomo por mês",
+      "prefix": "R$",
+      "hint": "Prefeituras como São Paulo e Rio não cobram ISS do autônomo pessoa física sem estabelecimento; outras, como Belo Horizonte, cobram um valor fixo por trimestre. Confira na sua cidade."
+    },
+    "cltSalary": {
+      "label": "Salário bruto de um emprego equivalente",
+      "prefix": "R$",
+      "hint": "Referência para {{role}}: {{reference}} por mês. Use o salário de uma vaga que você conseguiria.",
+      "caption": "O que um emprego CLT paga no ano",
+      "row_monthlyNet": "Salário líquido do mês (sem INSS e IR)",
+      "row_cash": "Dinheiro no ano (11 salários, férias com 1/3 e 13º)",
+      "row_fgts": "FGTS depositado no ano",
+      "row_total": "Total no ano",
+      "row_monthly": "Média por mês",
+      "row_hours": "Horas trabalhadas no ano",
+      "row_hourly": "Por hora trabalhada",
+      "linkTitle": "Quer o cálculo completo do emprego?",
+      "linkText": "O Cálculo CLT mostra o salário líquido, os benefícios e o piso da categoria no seu estado.",
+      "linkButton": "Abrir o Cálculo CLT"
+    },
+    "inssBaseDriver": {
+      "label": "Valor sobre o qual contribuir",
+      "prefix": "R$",
+      "hint": "Para motorista e entregador autônomo, o mínimo é 20% do que você recebe das corridas ou entregas (Decreto 3.048/1999): {{minimum}} na simulação. Se digitar menos, usamos esse mínimo."
+    }
+  }
+}
