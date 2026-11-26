@@ -57,6 +57,15 @@ describe('Autonomous work page', () => {
     }
   });
 
+  it('choosing ethanol shows its state price and whether it pays off', () => {
+    next();
+    next();
+    expect(container.textContent).toContain('o etanol custa');
+    act(() => radio('ethanol').click());
+    expect(container.textContent).toContain('Média de etanol no estado');
+    expect(container.textContent).toContain('Preço do litro de etanol');
+  });
+
   it('switching to a rented vehicle shows the weekly rent', () => {
     next();
     next();

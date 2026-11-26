@@ -31,7 +31,7 @@ export function createWorkServices(database, referenceDate) {
 
   const occupationService = new OccupationService(occupationRepository, workReferenceRepository);
   const workloadService = new WorkloadService();
-  const vehicleService = new VehicleService(regionalCostRepository);
+  const vehicleService = new VehicleService(regionalCostRepository, workReferenceRepository);
   const workCostService = new WorkCostService(occupationService);
   const incomeTaxService = new IncomeTaxService(workReferenceRepository);
   const workTaxService = new WorkTaxService({ workReferenceRepository, referenceRepository, incomeTaxService });

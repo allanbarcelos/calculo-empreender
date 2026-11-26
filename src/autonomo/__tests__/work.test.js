@@ -51,6 +51,20 @@ describe('Vehicle costs', () => {
     expect(r.investment.items.some((i) => i.id === 'rentalDeposit')).toBe(true);
   });
 
+  it('ethanol: state ANP price, and a litre goes 70% as far as gasoline', () => {
+    const sp = services.repositories.regional.state('SP');
+    const r = calc(forOccupation('motorista_app', { uf: 'SP', fuelType: 'ethanol', consumption: 12 }));
+    expect(item(r, 'vehicle', 'fuel').amount).toBeCloseTo((r.work.km / (12 * 0.7)) * sp.ethanol.value, 6);
+    expect(r.fuelPrice).toBe(sp.ethanol.value);
+    // SP ethanol is 65% of gasoline: below 70%, so it pays off.
+    expect(services.vehicles.ethanolComparison('SP').cheaper).toBe(true);
+    expect(services.vehicles.ethanolComparison('AP').cheaper).toBe(false);
+  });
+
+  it('an unknown saved fuel type falls back to gasoline', () => {
+    expect(services.formState.restore({ ...services.formDefaults.defaults(), fuelType: 'diesel' }).fuelType).toBe('gasoline');
+  });
+
   it('a manual fuel price replaces the state average', () => {
     const r = calc(forOccupation('entregador_moto', { fuelAuto: false, fuelPrice: 7 }));
     expect(item(r, 'vehicle', 'fuel').amount).toBeCloseTo((r.work.km / r.input.consumption) * 7, 6);

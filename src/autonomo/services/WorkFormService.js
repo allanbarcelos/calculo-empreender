@@ -1,3 +1,5 @@
+import { FUEL_TYPES } from './VehicleService.js';
+
 // Initial form values and the restoration of a form saved in an earlier visit.
 export class WorkFormDefaultsService {
   constructor({ occupationService, workReferenceRepository, referenceRepository, locationRepository }) {
@@ -20,6 +22,7 @@ export class WorkFormDefaultsService {
       vacationDays: work.vacationDays,
       idleDays: work.idleDays,
       capitalPct: Math.round(this.reference.vehicles().capitalRate * 10000) / 100,
+      fuelType: 'gasoline',
       fuelAuto: true,
       fuelPrice: 0,
       transitAuto: true,
@@ -72,6 +75,7 @@ export class WorkFormStateService {
       data = { ...data, ...this.formDefaults.occupationPatch(data, defaults.occupationId) };
     }
     if (!this.locations.state(data.uf)) data.uf = defaults.uf;
+    if (!FUEL_TYPES.includes(data.fuelType)) data.fuelType = defaults.fuelType;
     const occupation = this.occupations.get(data.occupationId);
     data.items = Object.fromEntries(Object.entries(this.occupations.itemDefaults(occupation)).map(([id, item]) => {
       const s = data.items?.[id];

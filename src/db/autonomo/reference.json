@@ -52,9 +52,10 @@
     "rentalDeposit": 0
    },
    "capitalRate": 0.08,
+   "ethanolRatio": 0.7,
    "transit": {},
    "none": {},
-   "notes": "Carro: Onix 2018 na FIPE, consumo urbano Inmetro, manutenção por km derivada do Cebrap 2024. Moto: CG 160 2022. Bicicleta: valor e manutenção estimados; aluguel de e-bike do iFood Pedal."
+   "notes": "Carro: Onix 2018 na FIPE, consumo urbano Inmetro, manutenção por km derivada do Cebrap 2024. Moto: CG 160 2022. Bicicleta: valor e manutenção estimados; aluguel de e-bike do iFood Pedal. Etanol: um litro rende cerca de 70% do litro de gasolina (regra prática; no PBE Veicular do Inmetro o etanol rende de 70% a 75% da gasolina)."
   }
  ],
  "phone": [

@@ -28,7 +28,7 @@
       "items": [
         {
           "title": "Combustível.",
-          "text": "Km rodados ÷ consumo × preço do litro. Os km incluem os rodados sem passageiro ou sem pedido."
+          "text": "Km rodados ÷ consumo × preço do litro. Os km incluem os rodados sem passageiro ou sem pedido. Com etanol, um litro rende cerca de 70% do litro de gasolina; por isso ele só compensa quando custa menos de 70% do preço dela."
         },
         {
           "title": "Desgaste.",

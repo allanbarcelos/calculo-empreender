@@ -37,7 +37,7 @@ scripts/validate-db.mjs   database validation (both pages) run before every buil
 
 - `OccupationService`: occupations and the values they pre-fill (earnings, workload, vehicle, tools, courses, tax profile, CLT reference salary).
 - `WorkloadService`: an average month — days per month × 12 minus days off and idle days, ÷ 12; hours, revenue (per logged hour for apps, per job for services) and km.
-- `VehicleService`: fuel by km (ANP price of the state), maintenance per km, depreciation, the return the vehicle's value would earn invested, insurance, IPVA (state rate, motorcycle exemptions) and licensing for an owned car or motorcycle; weekly rent for a rented one; bus fares for public transport.
+- `VehicleService`: fuel by km (ANP price of gasoline or ethanol in the state; a litre of ethanol goes 70% as far, and the page says whether it pays off there), maintenance per km, depreciation, the return the vehicle's value would earn invested, insurance, IPVA (state rate, motorcycle exemptions) and licensing for an owned car or motorcycle; weekly rent for a rented one; bus fares for public transport.
 - `WorkCostService`: materials, platform commission, paid leads, phone and the replacement of tools over their life; the money needed to start.
 - `WorkTaxService`: MEI (DAS by activity, exempt profit up to 8/16/32% of revenue) or autônomo (INSS 11% of the minimum wage or 20% of the base — 20% of gross fares for drivers and couriers, Decreto 3.048/1999 art. 214 § 20 —, carnê-leão on 60% of passenger fares, 10% of cargo or the whole revenue with the livro-caixa expenses plus INSS as deductions, or the simplified discount when larger, municipal ISS).
 - `IncomeTaxService`: monthly IRPF table with the Lei 15.270/2025 reduction.

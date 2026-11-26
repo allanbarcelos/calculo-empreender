@@ -8,6 +8,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.29,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "licensing": {
     "value": 158.0,
     "kind": "estimate",
@@ -27,6 +33,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 7.4,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.88,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -63,6 +75,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.9,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.03,
     "moto": 0.0275,
@@ -91,6 +109,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.58,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.82,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -127,6 +151,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 5.59,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.03,
     "moto": 0.015,
@@ -155,6 +185,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.64,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.59,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -191,6 +227,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.94,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.025,
     "moto": 0.03,
@@ -219,6 +261,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.54,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.48,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -255,6 +303,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.9,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.02,
     "moto": 0.01,
@@ -283,6 +337,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.58,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.38,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -319,6 +379,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.85,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.025,
     "moto": 0.01,
@@ -347,6 +413,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.37,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.44,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -383,6 +455,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.05,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.03,
     "moto": 0.02,
@@ -411,6 +489,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.7,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.15,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -447,6 +531,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.55,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.025,
     "moto": 0.01,
@@ -475,6 +565,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.25,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.43,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -511,6 +607,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.7,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.024,
     "moto": 0.02,
@@ -539,6 +641,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.56,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.75,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -575,6 +683,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.34,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.019,
     "moto": 0,
@@ -603,6 +717,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.6,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.86,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -639,6 +759,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.72,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.03,
     "moto": 0.02,
@@ -667,6 +793,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 7.42,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 5.11,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -703,6 +835,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 5.37,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.03,
     "moto": 0.02,
@@ -731,6 +869,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.09,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.66,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -767,6 +911,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.53,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.02,
     "moto": 0,
@@ -795,6 +945,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.91,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 5.17,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
@@ -831,6 +987,12 @@
     "date": "15 a 21/11/2026",
     "source": "anpLpc"
    },
+   "ethanol": {
+    "value": 4.11,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
    "ipva": {
     "car": 0.04,
     "moto": 0,
@@ -859,6 +1021,12 @@
    "validFrom": "2026-01-01",
    "gasoline": {
     "value": 6.87,
+    "kind": "official",
+    "date": "15 a 21/11/2026",
+    "source": "anpLpc"
+   },
+   "ethanol": {
+    "value": 4.96,
     "kind": "official",
     "date": "15 a 21/11/2026",
     "source": "anpLpc"

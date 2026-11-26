@@ -3,9 +3,10 @@ import { useFormText } from '../../hooks/useFormText.js';
 import { useServices } from '../../hooks/useServices.js';
 import { formatMoney, formatPercent } from '../../lib/format.js';
 import { MOTOR_VEHICLES } from '../services/OccupationService.js';
+import { FUEL_TYPES } from '../services/VehicleService.js';
 
 export default function VehicleStep({ data, set, result }) {
-  const { formDefaults, repositories } = useServices();
+  const { formDefaults, repositories, vehicles } = useServices();
   const t = useFormText();
   const { occupation, place, vehicle } = result;
   const type = data.vehicleType;
@@ -13,7 +14,9 @@ export default function VehicleStep({ data, set, result }) {
   const ownable = motor || type === 'bike';
   const rented = data.vehicleOwnership === 'rented';
   const national = repositories.regional.national();
-  const fuel = place?.gasoline ?? national.gasoline;
+  const fuelType = vehicles.fuelType(data);
+  const fuel = vehicles.fuelReference(data.uf, fuelType);
+  const ethanol = vehicles.ethanolComparison(data.uf);
   const fare = place?.busFare ?? national.busFare;
   const sources = [fuel.source, place?.ipva.source, place?.licensing.source, fare.source].filter((id, i, all) => id && all.indexOf(id) === i).map((id) => ({ id }));
 
@@ -62,11 +65,26 @@ export default function VehicleStep({ data, set, result }) {
       )}
 
       {motor && (
+        <ChoiceGroup
+          legend={t.field('fuelType').label}
+          name="fuelType"
+          value={fuelType}
+          onChange={(v) => set({ fuelType: v, fuelAuto: true })}
+          options={FUEL_TYPES.map((v) => ({ value: v, label: t.text('fuelType', `option_${v}`), description: t.text('fuelType', `desc_${v}`) }))}
+        />
+      )}
+      {motor && (
+        <p className="hint">
+          {t.text('fuelType', ethanol.cheaper ? 'compareCheaper' : 'compareDearer', { uf: data.uf, share: formatPercent(ethanol.share), ratio: formatPercent(ethanol.ratio) })}
+        </p>
+      )}
+
+      {motor && (
         <div>
-          <NumberField {...t.field('fuelPrice', { uf: data.uf })} value={result.fuelPrice} onChange={(v) => set({ fuelPrice: v, fuelAuto: false })} />
+          <NumberField {...t.field('fuelPrice', { uf: data.uf, fuel: t.text('fuelType', `name_${fuelType}`) })} value={result.fuelPrice} onChange={(v) => set({ fuelPrice: v, fuelAuto: false })} />
           <p className="hint">
             <KindBadge kind={fuel.kind} />{' '}
-            {data.fuelAuto ? t.text('fuelPrice', 'auto', { date: fuel.date ?? '' }) : (
+            {data.fuelAuto ? t.text('fuelPrice', 'auto', { date: fuel.date ?? '', fuel: t.text('fuelType', `name_${fuelType}`) }) : (
               <button type="button" className="btn-link" onClick={() => set({ fuelAuto: true })}>{t.text('fuelPrice', 'useAverage', { value: formatMoney(fuel.value) })}</button>
             )}
           </p>

@@ -89,6 +89,7 @@ const regionalUfs = new Set(work['regional.json'].states.map((s) => s.uf));
 for (const s of loc.states) if (!regionalUfs.has(s.uf)) errors.push(`autonomo/regional.json: no costs for ${s.uf}`);
 for (const s of work['regional.json'].states) {
   if (!(s.gasoline.value > 0)) errors.push(`autonomo/regional.json ${s.uf}: gasoline must be positive`);
+  if (!(s.ethanol?.value > 0 && s.ethanol.value < s.gasoline.value)) errors.push(`autonomo/regional.json ${s.uf}: ethanol must be positive and below gasoline`);
   if (!(s.ipva.car >= 0 && s.ipva.car < 0.1 && s.ipva.moto >= 0 && s.ipva.moto < 0.1)) errors.push(`autonomo/regional.json ${s.uf}: IPVA rate out of range`);
   if (!(s.busFare.value > 0)) errors.push(`autonomo/regional.json ${s.uf}: bus fare must be positive`);
 }

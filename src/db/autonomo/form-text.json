@@ -162,20 +162,31 @@
       "hint": "Revisões, óleo, pneus, freios e consertos, divididos pelos km rodados."
     },
     "consumption": {
-      "label": "Consumo",
+      "label": "Consumo com gasolina",
       "suffix": "km/l",
-      "hint": "Quantos km o veículo faz com um litro de gasolina, na cidade. Se usa etanol ou GNV, digite o consumo e o preço desse combustível."
+      "hint": "Quantos km o veículo faz com um litro de gasolina, na cidade. Com etanol, o cálculo considera 70% disso. Se usa GNV, deixe Gasolina marcada e digite os km por m³ e o preço do m³."
     },
     "rentWeekly": {
       "label": "Aluguel por semana",
       "prefix": "R$",
       "hint": "Preço de locadoras para motoristas e entregadores de aplicativo."
     },
+    "fuelType": {
+      "label": "Combustível",
+      "option_gasoline": "Gasolina",
+      "desc_gasoline": "Gasolina comum.",
+      "option_ethanol": "Etanol",
+      "desc_ethanol": "Só para carro ou moto flex. Rende cerca de 70% do que rende a gasolina.",
+      "name_gasoline": "gasolina",
+      "name_ethanol": "etanol",
+      "compareCheaper": "Em {{uf}}, pelas médias da ANP, o etanol custa {{share}} do preço da gasolina: abaixo de {{ratio}}, ele compensa.",
+      "compareDearer": "Em {{uf}}, pelas médias da ANP, o etanol custa {{share}} do preço da gasolina: a partir de {{ratio}}, a gasolina compensa mais."
+    },
     "fuelPrice": {
-      "label": "Preço do combustível ({{uf}})",
+      "label": "Preço do litro de {{fuel}} ({{uf}})",
       "prefix": "R$",
       "suffix": "/litro",
-      "auto": "Média da gasolina comum no estado, no levantamento da ANP ({{date}}).",
+      "auto": "Média de {{fuel}} no estado, no levantamento da ANP ({{date}}).",
       "useAverage": "Usar a média do estado ({{value}})"
     },
     "transitDaily": {

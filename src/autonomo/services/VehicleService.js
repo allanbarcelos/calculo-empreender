@@ -5,19 +5,43 @@ import { MOTOR_VEHICLES } from './OccupationService.js';
 // (insurance, maintenance and taxes included) plus fuel. Public transport costs the fares of each
 // working day.
 const WEEKS_PER_MONTH = 52 / 12;
+export const FUEL_TYPES = ['gasoline', 'ethanol'];
 
 export class VehicleService {
-  constructor(regionalCostRepository) {
+  constructor(regionalCostRepository, workReferenceRepository) {
     this.regional = regionalCostRepository;
+    this.reference = workReferenceRepository;
   }
 
   place(uf) {
     return this.regional.state(uf) ?? null;
   }
 
+  fuelType(input) {
+    return input.fuelType === 'ethanol' ? 'ethanol' : 'gasoline';
+  }
+
+  // The state's ANP average of the chosen fuel, or the national one.
+  fuelReference(uf, type = 'gasoline') {
+    return this.place(uf)?.[type] ?? this.regional.national()[type];
+  }
+
   fuelPrice(input) {
     if (!input.fuelAuto) return input.fuelPrice;
-    return this.place(input.uf)?.gasoline.value ?? this.regional.national().gasoline.value;
+    return this.fuelReference(input.uf, this.fuelType(input)).value;
+  }
+
+  // The consumption is typed for gasoline; a litre of ethanol goes about 70% as far.
+  kmPerLiter(input) {
+    const ratio = this.fuelType(input) === 'ethanol' ? this.reference.vehicles().ethanolRatio : 1;
+    return input.consumption * ratio;
+  }
+
+  // Ethanol pays off when its price is below gasoline's times the ratio.
+  ethanolComparison(uf) {
+    const ratio = this.reference.vehicles().ethanolRatio;
+    const share = this.fuelReference(uf, 'ethanol').value / this.fuelReference(uf, 'gasoline').value;
+    return { share, ratio, cheaper: share < ratio };
   }
 
   transitDaily(input) {
@@ -45,7 +69,8 @@ export class VehicleService {
 
     if (MOTOR_VEHICLES.includes(type) && input.consumption > 0) {
       const price = this.fuelPrice(input);
-      add('fuel', (work.km / input.consumption) * price, input.fuelAuto ? state?.gasoline.kind : undefined, { km: Math.round(work.km), price });
+      const fuel = this.fuelType(input);
+      add('fuel', (work.km / this.kmPerLiter(input)) * price, input.fuelAuto ? state?.[fuel].kind : undefined, { km: Math.round(work.km), price, fuel });
     }
     if (type === 'transit') add('transit', this.transitDaily(input) * work.days, input.transitAuto ? state?.busFare.kind : undefined);
     if (['car', 'moto', 'bike'].includes(type)) {
